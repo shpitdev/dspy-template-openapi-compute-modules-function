@@ -1,0 +1,36 @@
+{
+  "classify.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Classify Ozempic-related complaints as either Adverse Events or Product Complaints.\n\nAdverse Events involve patient safety, medical reactions, or health outcomes.\nProduct Complaints involve device defects, packaging issues, or quality problems without patient harm.",
+      "fields": [
+        {
+          "prefix": "Complaint:",
+          "description": "The complaint text about Ozempic"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Classification:",
+          "description": "Either 'Adverse Event' or 'Product Complaint'"
+        },
+        {
+          "prefix": "Justification:",
+          "description": "Brief explanation for the classification"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}
