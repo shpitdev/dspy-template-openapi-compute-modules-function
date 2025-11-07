@@ -204,6 +204,9 @@ cython_debug/
 # Claude Code
 .claude/settings.local.json
 
+# DSPy cache
+data/.dspy_cache/
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
