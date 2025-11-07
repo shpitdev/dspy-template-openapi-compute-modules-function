@@ -4,21 +4,15 @@ from __future__ import annotations
 
 import time
 
-from dotenv import load_dotenv
-
 from src.common.config import configure_lm
 from src.serving.service import ComplaintRequest, get_classification_function
-
-load_dotenv()
 
 configure_lm()
 
 try:
     predict = get_classification_function()
 except FileNotFoundError:
-    raise SystemExit(
-        "Optimized artifact missing. Run 'python -m src.pipeline.main' before running this demo."
-    )
+    raise SystemExit("Optimized artifact missing. Run 'uv run python -m src.pipeline.main' before running this demo.")
 
 new_complaints = [
     {
@@ -51,7 +45,11 @@ total_time = 0.0
 
 for complaint in new_complaints:
     request = ComplaintRequest(complaint=complaint["text"])
-    print(f"Complaint #{complaint['id']}: {complaint['text'][:80]}..." if len(complaint["text"]) > 80 else f"Complaint #{complaint['id']}: {complaint['text']}")
+    print(
+        f"Complaint #{complaint['id']}: {complaint['text'][:80]}..."
+        if len(complaint["text"]) > 80
+        else f"Complaint #{complaint['id']}: {complaint['text']}"
+    )
 
     start = time.time()
     response = predict(request)

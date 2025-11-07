@@ -27,6 +27,7 @@
     "lm": null
   },
   "metadata": {
+    "model": "openai/gpt-oss-120b",
     "dependency_versions": {
       "python": "3.11",
       "dspy": "3.0.3",

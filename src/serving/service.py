@@ -63,11 +63,7 @@ def get_classification_function(
         classifier = _load_classifier(resolved_path)
 
     def _predict(request: ComplaintRequest) -> ComplaintResponse:
-        target_path = (
-            Path(request.model_path).expanduser().resolve()
-            if request.model_path
-            else resolved_path
-        )
+        target_path = Path(request.model_path).expanduser().resolve() if request.model_path else resolved_path
 
         if target_path == resolved_path:
             active_classifier = classifier

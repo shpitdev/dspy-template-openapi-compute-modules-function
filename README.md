@@ -10,8 +10,8 @@ Real-world DSPy workflows for pharma/medtech teams. The current module focuses o
 
 ## Requirements
 
-- Python 3.10+
-- [`uv`](https://docs.astral.sh/uv/) (recommended) or any virtualenv tooling
+- Python 3.12+
+- [`uv`](https://docs.astral.sh/uv/) for env + dependency management (no `pip`/`poetry`)
 - OpenAI-compatible API key
   - Default provider: [OpenRouter](https://openrouter.ai/) using `openai/gpt-oss-120b`
   - Override via environment variables without touching code
@@ -38,10 +38,9 @@ cp .env.example .env
 ## Project Setup
 
 ```bash
-uv venv                     # or python -m venv .venv
+uv sync                     # creates/updates .venv from pyproject + uv.lock
 source .venv/bin/activate
-uv pip install -e .         # installs dependencies from pyproject
-python3 scripts/generate_sample_data.py  # creates data/train.json & data/test.json
+uv run python scripts/generate_sample_data.py  # creates data/train.json & data/test.json
 ```
 
 This creates a clean layout:
@@ -59,12 +58,32 @@ This creates a clean layout:
 └── inference_demo.py               # Simple batch inference helper
 ```
 
+### Code Formatting
+
+This project uses [Ruff](https://docs.astral.sh/ruff/) for both formatting and linting (line length: 120).
+
+**Format and fix all issues:**
+```bash
+uv run ruff format .              # Format all Python files
+uv run ruff check --fix .         # Fix all auto-fixable linting issues
+```
+
+**Check for issues without fixing:**
+```bash
+uv run ruff check .               # Check for linting issues
+uv run ruff format --check .      # Check formatting without changing files
+```
+
+**Note:** Ruff's formatter preserves triple-quoted strings (`"""`) as-is by design. For files with long triple-quoted strings (like data generation scripts), you may need to manually wrap them if desired.
+
+**VSCode users:** Format on save is enabled by default using Ruff. Install the recommended extensions (Python, Ruff) when prompted.
+
 ---
 
 ## 1. Optimize / Refresh the Classifier
 
 ```bash
-python -m src.pipeline.main
+uv run python -m src.pipeline.main
 ```
 
 The run will:
@@ -82,7 +101,7 @@ Running the pipeline is idempotent—rerun whenever you update data or want to s
 ## 2. Serve the Classifier via FastAPI
 
 ```bash
-uvicorn src.api.app:app --reload
+uv run uvicorn src.api.app:app --reload
 ```
 
 - Swagger/OpenAPI UI: `http://localhost:8000/docs`
@@ -125,11 +144,9 @@ If the artifact is missing, the API returns `503 Service Unavailable` with instr
 ## 3. Use the Pydantic Interface Directly
 
 ```python
-from dotenv import load_dotenv
 from src.common.config import configure_lm
 from src.serving.service import ComplaintRequest, get_classification_function
 
-load_dotenv()
 configure_lm()
 predict = get_classification_function()
 
@@ -144,7 +161,7 @@ Pass `model_path="artifacts/ozempic_classifier_optimized.json"` (or another arti
 
 ## Demo Script
 
-`python inference_demo.py` executes a small batch of complaints through the shared interface and prints latency/throughput stats. Useful for quick smoke tests after retraining.
+`uv run python inference_demo.py` executes a small batch of complaints through the shared interface and prints latency/throughput stats. Useful for quick smoke tests after retraining.
 
 ---
 

@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import json
+
+import dspy
 from dspy.teleprompt import BootstrapFewShotWithRandomSearch
 
 from ..common.classifier import (
@@ -65,6 +68,25 @@ def run_pipeline() -> None:
     ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
     print("Saving optimized model...")
     optimized_classifier.save(str(DEFAULT_CLASSIFIER_PATH))
+
+    # Add model information to the saved artifact metadata
+    model_name = dspy.settings.lm.model if dspy.settings.lm else None
+    if model_name:
+        print(f"Including model information: {model_name}")
+        with open(DEFAULT_CLASSIFIER_PATH, "r") as f:
+            artifact_data = json.load(f)
+
+        # Ensure metadata section exists
+        if "metadata" not in artifact_data:
+            artifact_data["metadata"] = {}
+
+        # Add model information to metadata
+        artifact_data["metadata"]["model"] = model_name
+
+        # Save the updated artifact
+        with open(DEFAULT_CLASSIFIER_PATH, "w") as f:
+            json.dump(artifact_data, f, indent=2)
+
     print(f"✓ Saved to: {DEFAULT_CLASSIFIER_PATH}\n")
 
 
