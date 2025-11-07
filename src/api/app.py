@@ -35,7 +35,22 @@ app = FastAPI(
         "Run the optimization pipeline to refresh the underlying prompt artifact."
     ),
     lifespan=_lifespan,
+    docs_url="/docs",
+    redoc_url="/redoc",
 )
+
+
+@app.get("/", tags=["system"], summary="API Root")
+def root() -> dict[str, str]:
+    """Root endpoint with API information and links to documentation."""
+    return {
+        "name": "DSPy Complaint Classifier API",
+        "version": "0.2.0",
+        "status": "running",
+        "docs": "/docs",
+        "redoc": "/redoc",
+        "health": "/health",
+    }
 
 
 @app.get("/health", tags=["system"], summary="Health check")

@@ -110,7 +110,9 @@ Running the pipeline is idempotent—rerun whenever you update data or want to s
 uv run uvicorn src.api.app:app --reload
 ```
 
+- API Root: `http://localhost:8000/` (shows available endpoints)
 - Swagger/OpenAPI UI: `http://localhost:8000/docs`
+- ReDoc UI: `http://localhost:8000/redoc`
 - Health endpoint: `GET /health`
 - Classification endpoint: `POST /classify` (uses the same Pydantic models as the internal service layer)
 
