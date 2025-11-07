@@ -1,0 +1,18 @@
+{
+  "mcpServers": {},
+  "environmentVariables": {},
+  "outputStyle": {
+    "enabled": true,
+    "style": "default"
+  },
+  "permissions": {
+    "bash": {
+      "allowedCommands": [],
+      "blockedCommands": []
+    },
+    "edit": {
+      "allowedPaths": [],
+      "blockedPaths": []
+    }
+  }
+}
