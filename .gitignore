@@ -207,6 +207,9 @@ cython_debug/
 # DSPy cache
 data/.dspy_cache/
 
+# Playwright browser testing artifacts
+.playwright-mcp/
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
