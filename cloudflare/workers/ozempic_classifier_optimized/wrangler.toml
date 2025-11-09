@@ -1,0 +1,6 @@
+name = "ozempic-classifier-optimized"
+main = "index.js"
+compatibility_date = "2024-11-01"
+
+[ai]
+binding = "AI"

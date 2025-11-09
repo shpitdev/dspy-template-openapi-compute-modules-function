@@ -13,7 +13,9 @@
     "**/.DS_Store": true,
     "**/.ipynb_checkpoints": true,
     "**/htmlcov": true,
-    "**/.coverage": true
+    "**/.coverage": true,
+    "**/node_modules": true,
+    "**/.wrangler": true
   },
   "search.exclude": {
     "**/__pycache__": true,
@@ -29,7 +31,9 @@
     "**/.DS_Store": true,
     "**/.ipynb_checkpoints": true,
     "**/htmlcov": true,
-    "**/.coverage": true
+    "**/.coverage": true,
+    "**/node_modules": true,
+    "**/.wrangler": true
   },
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#ab307e",
