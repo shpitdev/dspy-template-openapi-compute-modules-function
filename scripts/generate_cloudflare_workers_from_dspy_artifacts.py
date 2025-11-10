@@ -28,7 +28,7 @@ def generate_worker(artifact_path: Path) -> str:
     input_name = input_field["prefix"].rstrip(":").lower().replace(" ", "_")
 
     # Map to Cloudflare AI model
-    cf_model = "@cf/openai/gpt-oss-20b"
+    cf_model = "@cf/openai/gpt-oss-120b"
 
     return f'''// Auto-generated Cloudflare Worker from {artifact_path.name}
 
