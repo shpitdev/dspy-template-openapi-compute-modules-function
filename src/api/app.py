@@ -23,28 +23,28 @@ async def _lifespan(app: FastAPI):
     """Load all predictors at startup so TestClient + ASGI servers share logic."""
 
     configure_lm()
-    
+
     # Initialize all three classifiers
     app.state.errors = {}
-    
+
     try:
         app.state.ae_pc_predictor = get_ae_pc_classifier()
     except FileNotFoundError as exc:
         app.state.ae_pc_predictor = None
         app.state.errors["ae-pc"] = str(exc)
-    
+
     try:
         app.state.ae_category_predictor = get_ae_category_classifier()
     except FileNotFoundError as exc:
         app.state.ae_category_predictor = None
         app.state.errors["ae-category"] = str(exc)
-    
+
     try:
         app.state.pc_category_predictor = get_pc_category_classifier()
     except FileNotFoundError as exc:
         app.state.pc_category_predictor = None
         app.state.errors["pc-category"] = str(exc)
-    
+
     yield
 
 
@@ -86,23 +86,23 @@ def root() -> dict[str, str | dict[str, str]]:
 def healthcheck() -> dict[str, str | dict]:
     """Check health status of all classifiers."""
     errors = getattr(app.state, "errors", {})
-    
+
     classifier_status = {
         "ae-pc": "ok" if getattr(app.state, "ae_pc_predictor", None) else "unavailable",
         "ae-category": "ok" if getattr(app.state, "ae_category_predictor", None) else "unavailable",
         "pc-category": "ok" if getattr(app.state, "pc_category_predictor", None) else "unavailable",
     }
-    
+
     overall_status = "ok" if all(s == "ok" for s in classifier_status.values()) else "degraded"
-    
+
     response = {
         "status": overall_status,
         "classifiers": classifier_status,
     }
-    
+
     if errors:
         response["errors"] = errors
-    
+
     return response
 
 

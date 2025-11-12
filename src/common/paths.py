@@ -23,8 +23,7 @@ def get_classification_data_dir(classification_type: str = DEFAULT_CLASSIFICATIO
     """Get the data directory for a specific classification type."""
     if classification_type not in CLASSIFICATION_TYPES:
         raise ValueError(
-            f"Invalid classification type: {classification_type}. "
-            f"Valid types: {', '.join(CLASSIFICATION_TYPES.keys())}"
+            f"Invalid classification type: {classification_type}. Valid types: {', '.join(CLASSIFICATION_TYPES.keys())}"
         )
     return DATA_DIR / CLASSIFICATION_TYPES[classification_type]
 

@@ -26,7 +26,7 @@ from ..common.paths import (
 
 def run_pipeline(classification_type: str = DEFAULT_CLASSIFICATION_TYPE) -> None:
     """Train, optimize, and evaluate the classifier, then persist the artifact.
-    
+
     Args:
         classification_type: The type of classification task. Options: 'ae-pc', 'ae-category', 'pc-category'
     """
@@ -83,7 +83,7 @@ def run_pipeline(classification_type: str = DEFAULT_CLASSIFICATION_TYPE) -> None
 
     ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
     artifact_path = get_classifier_artifact_path(classification_type)
-    
+
     print("Saving optimized model...")
     optimized_classifier.save(str(artifact_path))
 
@@ -101,7 +101,7 @@ def run_pipeline(classification_type: str = DEFAULT_CLASSIFICATION_TYPE) -> None
         if model_name:
             print(f"Including model information: {model_name}")
             artifact_data["metadata"]["model"] = model_name
-        
+
         artifact_data["metadata"]["classification_type"] = classification_type
         artifact_data["metadata"]["classification_config"] = config
 
@@ -113,9 +113,7 @@ def run_pipeline(classification_type: str = DEFAULT_CLASSIFICATION_TYPE) -> None
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Train and optimize the Ozempic complaint classifier"
-    )
+    parser = argparse.ArgumentParser(description="Train and optimize the Ozempic complaint classifier")
     parser.add_argument(
         "--classification-type",
         "-t",
@@ -124,7 +122,7 @@ def main() -> None:
         choices=list(CLASSIFICATION_TYPES.keys()),
         help=f"Classification type to train (default: {DEFAULT_CLASSIFICATION_TYPE})",
     )
-    
+
     args = parser.parse_args()
     run_pipeline(args.classification_type)
 

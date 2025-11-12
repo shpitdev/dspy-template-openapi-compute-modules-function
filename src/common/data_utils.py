@@ -29,10 +29,10 @@ def prepare_datasets(
     classification_type: str = DEFAULT_CLASSIFICATION_TYPE,
 ) -> tuple[list[dspy.Example], list[dspy.Example]]:
     """Load training/test datasets and convert them into DSPy Examples.
-    
+
     Args:
         classification_type: The type of classification task. Options: 'ae-pc', 'ae-category', 'pc-category'
-    
+
     Returns:
         Tuple of (training examples, test examples)
     """
