@@ -1,11 +1,18 @@
 # DSPy Reference Examples
 
-Real-world DSPy workflows for pharma/medtech teams. The current module focuses on Ozempic complaint triage (Adverse
-Event vs Product Complaint) and shows how to:
+Real-world DSPy workflows for pharma/medtech teams. This project provides a flexible multi-classification system for
+Ozempic-related text analysis. Currently supports three classification tasks:
 
-- Programmatically optimize a prompt with DSPy
-- Persist the tuned artifact to disk (separate from source)
-- Serve the classifier via FastAPI with typed Pydantic contracts
+1. **AE vs PC Detection** - Distinguish Adverse Events from Product Complaints
+2. **AE Category Classification** - Categorize adverse events into specific medical categories
+3. **PC Category Classification** - Categorize product complaints into specific quality categories
+
+The framework shows how to:
+
+- Programmatically optimize prompts with DSPy
+- Support multiple classification tasks with dynamic signatures
+- Persist tuned artifacts to disk (separate from source)
+- Serve classifiers via FastAPI with typed Pydantic contracts
 
 ---
 
@@ -41,22 +48,40 @@ cp .env.example .env
 ```bash
 uv sync                     # creates/updates .venv from pyproject + uv.lock
 source .venv/bin/activate
-uv run python scripts/generate_sample_data_ozempic_pc_vs_ae.py  # creates data/train.json & data/test.json
+
+# Generate training data for all classification types
+uv run python scripts/datagen/ae_pc_classification_sample_data.py
+uv run python scripts/datagen/adverse_event_sample_data.py
+uv run python scripts/datagen/complaint_category_sample_data.py
 ```
 
 This creates a clean layout:
 
 ```text
 .
-├── artifacts/                      # Saved DSPy artifacts (git-tracked)
-├── data/                           # Synthetic train/test data
-├── scripts/                        # Utility scripts (data generation)
+├── artifacts/                           # Saved DSPy artifacts (git-tracked)
+│   ├── ozempic_classifier_ae-pc_optimized.json
+│   ├── ozempic_classifier_ae-category_optimized.json
+│   └── ozempic_classifier_pc-category_optimized.json
+├── data/                                # Synthetic train/test data organized by task
+│   ├── ae-pc-classification/            # AE vs PC detection
+│   │   ├── train.json
+│   │   └── test.json
+│   ├── ae-category-classification/      # AE category classification
+│   │   ├── train.json
+│   │   └── test.json
+│   └── pc-category-classification/      # PC category classification
+│       ├── train.json
+│       └── test.json
+├── scripts/
+│   ├── datagen/                         # Data generation scripts
+│   └── deploy/                          # Deployment scripts
 ├── src/
-│   ├── api/                        # FastAPI app
-│   ├── common/                     # Shared logic (config, datasets, classifier)
-│   ├── pipeline/                   # Optimization pipeline
-│   └── serving/                    # Pydantic request/response + helpers
-└── inference_demo.py               # Simple batch inference helper
+│   ├── api/                             # FastAPI app
+│   ├── common/                          # Shared logic (config, datasets, classifier)
+│   ├── pipeline/                        # Optimization pipeline
+│   └── serving/                         # Pydantic request/response + helpers
+└── inference_demo.py                    # Simple batch inference helper
 ```
 
 ### Code Formatting
@@ -87,20 +112,32 @@ when prompted.
 
 ## 1. Optimize / Refresh the Classifier
 
+Train a classifier for a specific task using the `--classification-type` flag:
+
 ```bash
-uv run python -m src.pipeline.main
+# Train AE vs PC classifier (default)
+uv run python -m src.pipeline.main --classification-type ae-pc
+
+# Train AE category classifier
+uv run python -m src.pipeline.main --classification-type ae-category
+
+# Train PC category classifier
+uv run python -m src.pipeline.main --classification-type pc-category
 ```
 
 The run will:
 
 1. Configure DSPy with your provider settings.
-2. Load `data/train.json` / `data/test.json`.
+2. Load the appropriate `data/<type>-classification/train.json` and `test.json`.
 3. Evaluate the baseline classifier.
 4. Optimize via `BootstrapFewShotWithRandomSearch`.
 5. Evaluate the optimized program.
-6. Write the artifact to `artifacts/ozempic_classifier_optimized.json`.
+6. Write the artifact to `artifacts/ozempic_classifier_<type>_optimized.json`.
 
 Running the pipeline is idempotent—rerun whenever you update data or want to swap underlying LMs.
+
+> **Note:** For a complete guide on working with multiple classification types, see
+> [CLASSIFICATION_GUIDE.md](CLASSIFICATION_GUIDE.md).
 
 ---
 
@@ -114,29 +151,28 @@ uv run uvicorn src.api.app:app --reload
 - Swagger/OpenAPI UI: `http://localhost:8000/docs`
 - ReDoc UI: `http://localhost:8000/redoc`
 - Health endpoint: `GET /health`
-- Classification endpoint: `POST /classify` (uses the same Pydantic models as the internal service layer)
 
-Example request body (auto-populated in Swagger):
+### Classification Endpoints
 
-```json
-{
-  "complaint": "My Ozempic pen arrived cracked and leaked everywhere.",
-  "model_path": null
-}
-```
+The API provides three classification endpoints:
 
-Example `curl` invocation:
+1. **`POST /classify/ae-pc`** - Classify as Adverse Event or Product Complaint (first-stage classification)
+2. **`POST /classify/ae-category`** - Classify adverse events into specific medical categories (e.g., Gastrointestinal
+   disorders, Pancreatitis, Hypoglycemia)
+3. **`POST /classify/pc-category`** - Classify product complaints into quality/defect categories (e.g., Device
+   malfunction, Packaging defect)
+
+#### Example: AE vs PC Classification
 
 ```bash
-curl -X POST http://localhost:8000/classify \
+curl -X POST http://localhost:8000/classify/ae-pc \
      -H "Content-Type: application/json" \
      -d '{
-           "complaint": "After injecting Ozempic I had severe hives and needed an EpiPen.",
-           "model_path": null
+           "complaint": "After injecting Ozempic I had severe hives and needed an EpiPen."
          }'
 ```
 
-Response structure:
+Response:
 
 ```json
 {
@@ -145,7 +181,27 @@ Response structure:
 }
 ```
 
-If the artifact is missing, the API returns `503 Service Unavailable` with instructions to rerun the pipeline.
+#### Example: AE Category Classification
+
+```bash
+curl -X POST http://localhost:8000/classify/ae-category \
+     -H "Content-Type: application/json" \
+     -d '{
+           "adverse_event": "I experienced severe nausea and vomiting after taking Ozempic."
+         }'
+```
+
+#### Example: PC Category Classification
+
+```bash
+curl -X POST http://localhost:8000/classify/pc-category \
+     -H "Content-Type: application/json" \
+     -d '{
+           "product_complaint": "The pen arrived with a cracked dose dial."
+         }'
+```
+
+If an artifact is missing, the API returns `503 Service Unavailable` with instructions to rerun the pipeline.
 
 ---
 
@@ -208,8 +264,13 @@ commands.
 
 ## Notes & Next Steps
 
-- Replace `data/*.json` with real labeled datasets or update `src/common/data_utils.py` to read from your storage
-  systems.
+- Replace `data/*-classification/*.json` with real labeled datasets or update `src/common/data_utils.py` to read from
+  your storage systems.
+- Add new classification types by:
+  1. Adding a new entry to `CLASSIFICATION_CONFIGS` in `src/common/classifier.py`
+  2. Adding a new entry to `CLASSIFICATION_TYPES` in `src/common/paths.py`
+  3. Creating training data scripts in `scripts/datagen/`
+  4. Training with `--classification-type <new-type>`
 - Add additional pipelines (extraction, severity grading, etc.) by following the same pattern: shared logic in
   `src/common`, tuning flows in `src/pipeline`, serving code in `src/api`/`src/serving`.
 - The LM client is OpenAI-compatible; switching to Anthropic, Azure OpenAI, or self-hosted proxies is just a matter of

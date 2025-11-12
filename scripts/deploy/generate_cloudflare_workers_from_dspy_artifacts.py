@@ -9,6 +9,7 @@ with the worker code and wrangler.toml configuration.
 import json
 from pathlib import Path
 
+# TODO: test our hono to cloudflare workers version OR move to leveraging kv store in cloudflare for a flexible use-case switching
 ARTIFACTS_DIR = Path(__file__).parent.parent / "artifacts"
 OUTPUT_DIR = Path(__file__).parent.parent / "cloudflare" / "workers"
 

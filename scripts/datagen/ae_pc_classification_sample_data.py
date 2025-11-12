@@ -8,7 +8,7 @@ import json
 import random
 from pathlib import Path
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data/ae-pc-classification"  # TODO confirm this is correct
 TRAIN_FILE = DATA_DIR / "train.json"
 TEST_FILE = DATA_DIR / "test.json"
 

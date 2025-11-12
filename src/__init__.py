@@ -1,27 +1,39 @@
 """Core DSPy Ozempic classifier package."""
 
 from .common import (
-    ComplaintClassification,
+    CLASSIFICATION_CONFIGS,
     ComplaintClassifier,
     classification_metric,
     configure_lm,
+    create_classification_signature,
     evaluate_model,
     prepare_datasets,
 )
 from .serving.service import (
+    AECategoryRequest,
+    AEPCRequest,
     ComplaintRequest,
     ComplaintResponse,
-    get_classification_function,
+    PCCategoryRequest,
+    get_ae_category_classifier,
+    get_ae_pc_classifier,
+    get_pc_category_classifier,
 )
 
 __all__ = [
+    "CLASSIFICATION_CONFIGS",
+    "create_classification_signature",
     "ComplaintClassifier",
-    "ComplaintClassification",
     "classification_metric",
     "configure_lm",
     "evaluate_model",
     "prepare_datasets",
     "ComplaintRequest",
+    "AEPCRequest",
+    "AECategoryRequest",
+    "PCCategoryRequest",
     "ComplaintResponse",
-    "get_classification_function",
+    "get_ae_pc_classifier",
+    "get_ae_category_classifier",
+    "get_pc_category_classifier",
 ]

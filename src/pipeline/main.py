@@ -2,37 +2,53 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 
 import dspy
 from dspy.teleprompt import BootstrapFewShotWithRandomSearch
 
 from ..common.classifier import (
+    CLASSIFICATION_CONFIGS,
     ComplaintClassifier,
     classification_metric,
     evaluate_model,
 )
 from ..common.config import configure_lm
 from ..common.data_utils import prepare_datasets
-from ..common.paths import ARTIFACTS_DIR, DEFAULT_CLASSIFIER_PATH
+from ..common.paths import (
+    ARTIFACTS_DIR,
+    CLASSIFICATION_TYPES,
+    DEFAULT_CLASSIFICATION_TYPE,
+    get_classifier_artifact_path,
+)
 
 
-def run_pipeline() -> None:
-    """Train, optimize, and evaluate the classifier, then persist the artifact."""
+def run_pipeline(classification_type: str = DEFAULT_CLASSIFICATION_TYPE) -> None:
+    """Train, optimize, and evaluate the classifier, then persist the artifact.
+
+    Args:
+        classification_type: The type of classification task. Options: 'ae-pc', 'ae-category', 'pc-category'
+    """
+
+    # Get configuration for this classification type
+    config = CLASSIFICATION_CONFIGS[classification_type]
+    folder_name = CLASSIFICATION_TYPES[classification_type]
 
     print("\n" + "=" * 60)
     print("DSPy Ozempic Complaint Classifier")
-    print("Adverse Events vs Product Complaints")
+    print(f"Classification Type: {folder_name}")
+    print(f"Task: {config['description']}")
     print("=" * 60 + "\n")
 
     configure_lm()
 
-    print("Loading training and test data...")
-    trainset, testset = prepare_datasets()
+    print(f"Loading training and test data for {classification_type}...")
+    trainset, testset = prepare_datasets(classification_type)
     print(f"✓ Loaded {len(trainset)} training examples")
     print(f"✓ Loaded {len(testset)} test examples\n")
 
-    baseline_classifier = ComplaintClassifier()
+    baseline_classifier = ComplaintClassifier(classification_type)
 
     print("\n" + "🔵 BASELINE PERFORMANCE (No Optimization)")
     baseline_accuracy = evaluate_model(baseline_classifier, testset, "Test Set")
@@ -48,7 +64,7 @@ def run_pipeline() -> None:
     )
 
     optimized_classifier = optimizer.compile(
-        ComplaintClassifier(),
+        ComplaintClassifier(classification_type),
         trainset=trainset,
     )
 
@@ -66,32 +82,49 @@ def run_pipeline() -> None:
     print("=" * 60 + "\n")
 
     ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
-    print("Saving optimized model...")
-    optimized_classifier.save(str(DEFAULT_CLASSIFIER_PATH))
+    artifact_path = get_classifier_artifact_path(classification_type)
 
-    # Add model information to the saved artifact metadata
+    print("Saving optimized model...")
+    optimized_classifier.save(str(artifact_path))
+
+    # Add model information and classification type to the saved artifact metadata
     model_name = dspy.settings.lm.model if dspy.settings.lm else None
-    if model_name:
-        print(f"Including model information: {model_name}")
-        with open(DEFAULT_CLASSIFIER_PATH) as f:
+    if model_name or classification_type:
+        with open(artifact_path) as f:
             artifact_data = json.load(f)
 
         # Ensure metadata section exists
         if "metadata" not in artifact_data:
             artifact_data["metadata"] = {}
 
-        # Add model information to metadata
-        artifact_data["metadata"]["model"] = model_name
+        # Add model and classification type information to metadata
+        if model_name:
+            print(f"Including model information: {model_name}")
+            artifact_data["metadata"]["model"] = model_name
+
+        artifact_data["metadata"]["classification_type"] = classification_type
+        artifact_data["metadata"]["classification_config"] = config
 
         # Save the updated artifact
-        with open(DEFAULT_CLASSIFIER_PATH, "w") as f:
+        with open(artifact_path, "w") as f:
             json.dump(artifact_data, f, indent=2)
 
-    print(f"✓ Saved to: {DEFAULT_CLASSIFIER_PATH}\n")
+    print(f"✓ Saved to: {artifact_path}\n")
 
 
 def main() -> None:
-    run_pipeline()
+    parser = argparse.ArgumentParser(description="Train and optimize the Ozempic complaint classifier")
+    parser.add_argument(
+        "--classification-type",
+        "-t",
+        type=str,
+        default=DEFAULT_CLASSIFICATION_TYPE,
+        choices=list(CLASSIFICATION_TYPES.keys()),
+        help=f"Classification type to train (default: {DEFAULT_CLASSIFICATION_TYPE})",
+    )
+
+    args = parser.parse_args()
+    run_pipeline(args.classification_type)
 
 
 if __name__ == "__main__":

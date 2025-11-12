@@ -7,30 +7,48 @@ from pathlib import Path
 
 import dspy
 
-from .paths import TEST_DATA_PATH, TRAIN_DATA_PATH
+from .paths import (
+    DEFAULT_CLASSIFICATION_TYPE,
+    get_test_data_path,
+    get_train_data_path,
+)
 
 
-def _load_split(path: Path) -> list[dict]:
+def _load_split(path: Path, classification_type: str) -> list[dict]:
     if not path.exists():
         raise FileNotFoundError(
-            f"Dataset file '{path}' is missing. Run 'python scripts/generate_sample_data_ozempic_pc_vs_ae.py' first."
+            f"Dataset file '{path}' is missing for classification type '{classification_type}'. "
+            f"Run the appropriate data generation script first."
         )
 
     with path.open("r", encoding="utf-8") as fp:
         return json.load(fp)
 
 
-def prepare_datasets() -> tuple[list[dspy.Example], list[dspy.Example]]:
-    """Load training/test datasets and convert them into DSPy Examples."""
+def prepare_datasets(
+    classification_type: str = DEFAULT_CLASSIFICATION_TYPE,
+) -> tuple[list[dspy.Example], list[dspy.Example]]:
+    """Load training/test datasets and convert them into DSPy Examples.
 
-    train_raw = _load_split(TRAIN_DATA_PATH)
-    test_raw = _load_split(TEST_DATA_PATH)
+    Args:
+        classification_type: The type of classification task. Options: 'ae-pc', 'ae-category', 'pc-category'
+
+    Returns:
+        Tuple of (training examples, test examples)
+    """
+
+    train_path = get_train_data_path(classification_type)
+    test_path = get_test_data_path(classification_type)
+
+    train_raw = _load_split(train_path, classification_type)
+    test_raw = _load_split(test_path, classification_type)
 
     def _to_examples(raw_batch: list[dict]) -> list[dspy.Example]:
+        # Handle both "label" and "category" keys for backwards compatibility
         return [
             dspy.Example(
-                complaint=item["complaint"],
-                classification=item["label"],
+                complaint=item.get("complaint") or item.get("narrative", ""),
+                classification=item.get("label") or item.get("category", ""),
             ).with_inputs("complaint")
             for item in raw_batch
         ]

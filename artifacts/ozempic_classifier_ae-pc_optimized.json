@@ -32,6 +32,15 @@
       "dspy": "3.0.3",
       "cloudpickle": "3.1"
     },
-    "model": "openai/gpt-oss-120b"
+    "model": "openai/gpt-oss-120b",
+    "classification_type": "ae-pc",
+    "classification_config": {
+      "description": "Classify Ozempic-related complaints as Adverse Event or Product Complaint.",
+      "output_desc": "Either 'Adverse Event' or 'Product Complaint'",
+      "labels": [
+        "Adverse Event",
+        "Product Complaint"
+      ]
+    }
   }
 }

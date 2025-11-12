@@ -1,0 +1,123 @@
+{
+  "classify.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "complaint": "So I'm trying to remember exactly when this started... I think about a week and a half ago? Maybe two weeks? Anyway, I started having really bad pain in my stomach, like upper middle area. The pain is constant and it wraps around to my back which is just weird. It's bad enough that I haven't been able to eat much at all, and a few times the pain has been so intense I threw up. Finally my wife insisted I go to the emergency room yesterday. They did blood work and a CT scan. The doctor said I have pancreatitis - inflammation of the pancreas. They asked if I drink alcohol and I said no, not really, maybe a beer on the weekend. They said I don't have gallstones. But I am on Ozempic, been taking it for like 5 or 6 months now. The doctor said the medication could be causing it and told me to stop taking it. They admitted me to the hospital and I'm not allowed to eat or drink anything, just getting fluids through an IV. They're giving me pain medication too which is helping a bit.",
+        "reasoning": "The patient reports acute upper abdominal pain radiating to the back, nausea, vomiting, and imaging (CT scan) confirming inflammation of the pancreas. No gallstones were identified, and alcohol use is minimal. The temporal relationship with several months of semaglutide (Ozempic) use and the clinician\u2019s assessment that the medication may be the cause further support the diagnosis of drug\u2011induced pancreatitis.",
+        "classification": "Pancreatitis",
+        "justification": "Symptoms and CT findings are consistent with acute pancreatitis, and the clinician attributes it to Ozempic use after ruling out other common causes."
+      },
+      {
+        "complaint": "I've been dealing with really bad indigestion and nausea for like the past two months. It started maybe a month after I began Ozempic. At first I just thought it was something I ate or maybe a stomach bug. But it never went away. The nausea is worst in the mornings and after I eat anything. I've lost my appetite completely, which I guess is helping with weight loss, but it doesn't feel healthy you know? And I've been having a lot of acid reflux too, which I never had before. Sometimes I wake up in the middle of the night with acid in my throat. I've been taking Tums like candy. I mentioned all this to my doctor at my last visit and she said these are common side effects of the medication. She prescribed me something for the nausea and something for the acid reflux. Said if it doesn't get better in a few weeks we might need to try a different diabetes medication.",
+        "classification": "Gastrointestinal disorders"
+      },
+      {
+        "complaint": "You know, I thought I was doing everything right with this medication. Taking it on the same day every week, rotating my injection sites like they showed me. But after my last dose - must have been like two weeks ago now - I got so sick. The nausea hit me like a truck, excuse my language. And I'm not usually someone who throws up easily but I was hugging the toilet for days. My wife kept bringing me crackers and ginger ale but nothing stayed down. She finally made me call the doctor when I couldn't even keep water down for 24 hours. The nurse practitioner said to stop the medication immediately and come in for an evaluation. They were worried about dehydration. Took me almost a week to feel normal again after stopping it.",
+        "classification": "Gastrointestinal disorders"
+      },
+      {
+        "complaint": "After my injection this week - I do it every Friday morning before work - the spot got really irritated. Like more than usual, you know? It was red and warm to the touch and kind of swollen. Not huge or anything, but definitely noticeable. It hurt when my waistband rubbed against it. I took a picture to show my doctor at my next appointment. It took about three days for it to calm down completely. My pharmacist said some people just have more sensitive skin and get these reactions. Still works for my diabetes though, so I'm going to keep using it and just hope it doesn't happen every time.",
+        "classification": "Injection-site reactions"
+      },
+      {
+        "complaint": "I gave myself my injection on Friday like I always do, and about an hour later I started feeling really strange. My face felt tingly and when I looked in the mirror my face was swollen, especially around my eyes and lips. And then my throat started feeling tight and I started panicking because I couldn't get a full breath. I called 911 right away and the dispatcher told me to stay on the line. The paramedics got there within maybe 5 or 6 minutes and they immediately gave me an epinephrine injection. They said I was having a severe allergic reaction. They took me to the hospital where they gave me IV steroids and antihistamines and monitored me for several hours. The emergency room doctor said this is anaphylaxis and I can never take Ozempic again. They prescribed me an EpiPen to carry with me at all times now. Really scary experience.",
+        "classification": "Hypersensitivity"
+      },
+      {
+        "complaint": "So I've been having pain in my right side, kind of under my ribs, for a few weeks now. It gets worse after I eat, especially if I eat anything greasy or fatty like pizza or fried food. The pain can last for hours and it's pretty intense, like 6 or 7 out of 10. Sometimes it radiates around to my back. I finally went to the doctor last week and she ordered an ultrasound. The ultrasound showed that I have gallstones - several of them actually. The radiologist also said my gallbladder wall is a bit thickened. My doctor said that rapid weight loss is a major risk factor for developing gallstones and I've lost about 38 pounds since starting Ozempic 7 months ago. She referred me to a surgeon and said I'll probably need to have my gallbladder removed. In the meantime she told me to stop the Ozempic and stick to a low-fat diet to minimize symptoms. Surgery is scheduled for next month.",
+        "classification": "Hepatobiliary (gallbladder) disease"
+      },
+      {
+        "complaint": "I don't really know how to explain this but I feel like my stomach has just stopped working properly. I have no appetite at all anymore, which I guess is good for losing weight, but even when I try to force myself to eat something, I feel full after just a couple bites. And then that feeling of fullness just stays for hours and hours. It's this uncomfortable, heavy feeling in my stomach. Sometimes I also feel nauseous on top of the fullness. This has been going on for about a month now and I've lost like 15 pounds because I'm barely eating. My doctor was concerned enough that she ordered a gastric emptying study. I had to eat these eggs with radioactive stuff in them and then lie under a camera for like 4 hours while they took pictures. The results showed that my stomach is emptying really slowly - took twice as long as it should. Doctor said it's gastroparesis and it's probably from the Ozempic. We're trying some medications to help speed up my digestion but if that doesn't work I might have to stop the Ozempic.",
+        "classification": "Gastrointestinal disorders (Gastroparesis)"
+      },
+      {
+        "complaint": "My eye doctor has been monitoring my diabetic retinopathy for years now, and it's always been pretty stable. But since I started this medication maybe three and a half months ago, things have changed. I've noticed my vision getting worse - things are blurry, it's harder to read street signs when I'm driving, stuff like that. I went in for my regular checkup and the ophthalmologist said my retinopathy has progressed significantly. She showed me the images and explained that there's more damage to the blood vessels in my eyes. She asked if anything had changed with my diabetes management and I told her about starting Ozempic. She said sometimes when your blood sugar improves quickly it can temporarily make the eye problems worse. I'm really worried about potentially losing my vision.",
+        "classification": "Eye disorders (Diabetic retinopathy complications)"
+      },
+      {
+        "complaint": "Patient with baseline chronic kidney disease stage 3a (baseline creatinine 1.3 mg/dL) presented to clinic with complaint of persistent nausea and decreased oral intake for approximately one week. Reports difficulty tolerating even small amounts of fluid. Physical examination remarkable for dry mucous membranes, decreased skin turgor, and orthostatic vital sign changes. Laboratory studies notable for creatinine elevation to 2.6 mg/dL, BUN 52, and urinalysis with specific gravity of 1.030 consistent with volume depletion. Patient initiated on semaglutide approximately 6 weeks prior. Admitted for IV fluid resuscitation and monitoring. GLP-1 agonist held. Repeat labs after 48 hours of hydration showed creatinine improving to 1.9 mg/dL but remained elevated above baseline.",
+        "classification": "Renal events (Acute kidney injury)"
+      },
+      {
+        "complaint": "I've been monitoring my heart rate pretty closely because I'm training for a 5K - well, I was training, this has kind of put that on hold. Since they increased my Ozempic to the 0.5 mg dose about three weeks ago, my heart has been doing this thing where it just races out of nowhere. Like I'll be sitting at my desk working and suddenly I can feel my heart pounding. I checked it with my phone and it was 102 beats per minute. That's way higher than normal for me when I'm just sitting. This has happened multiple times, usually in the afternoon or evening. Sometimes it feels like my heart is skipping beats too. I'm only 42 and I don't have any heart problems, so this is really concerning. My doctor ordered an EKG and it came back normal, but she said we should do a Holter monitor to capture what's happening when I feel these episodes. She thinks it might be related to the medication.",
+        "classification": "Cardiovascular signs"
+      },
+      {
+        "complaint": "Okay so I need to talk about what happened with my injection site this week because it really freaked me out. I do my injections in my thigh, alternating legs each week. This time I injected into my left thigh on Wednesday morning and by that afternoon the spot was really red and swollen. Like way more than usual - it was probably the size of a golf ball, maybe bigger? And it was hot to the touch and painful. I was worried it might be infected so I sent a picture to my doctor through the patient portal. She had me come in the next day to check it out. She said it didn't look infected, just a significant local reaction to the medication. She cleaned the area, put some hydrocortisone cream on it, and told me to apply cold compresses. It took almost a week to fully resolve. She said if it happens again we might need to consider a different medication.",
+        "classification": "Injection-site reactions"
+      },
+      {
+        "complaint": "Um, okay, so I've been on this medication for probably about four months now and overall it's been helping with my blood sugar. But lately I've been noticing my heart just racing sometimes for no reason. Like I'll be sitting on the couch watching TV and suddenly I can feel my heart pounding in my chest. It's kind of freaking me out to be honest. I checked my pulse a few times and it's been like 95, 98 beats per minute, which seems high when I'm just sitting there doing nothing. I used to be more in the 70s normally. Not sure if it's related to the medication or if I should be worried about something else.",
+        "classification": "Cardiovascular signs"
+      },
+      {
+        "complaint": "I mean, I know I should have called my doctor sooner, but I was just dealing with the nausea, you know? Everyone said it would get better. But then I started getting this really bad diarrhea too, like I couldn't leave the bathroom. This went on for days and I wasn't drinking enough because I felt so sick. Finally my daughter made me go to the doctor and they did blood work. They said my kidneys weren't working right, something about my creatinine being too high. They had to give me IV fluids at the hospital for two days. The doctor said the dehydration from being so sick caused kidney problems. They told me to stop the Ozempic.",
+        "classification": "Renal events (Acute kidney injury)"
+      },
+      {
+        "complaint": "Okay so, um, let me explain what happened because it's been really rough. I moved up to the 1 mg dose like three weeks ago and at first everything seemed fine. But then I started having terrible diarrhea. And I mean like 8-10 times a day, completely liquid, really urgent. Sorry if that's TMI. This went on for over a week and I was so dehydrated and weak. I also couldn't eat because I felt so nauseous, and I was afraid to eat because of the diarrhea. Finally I went to urgent care because I was feeling really out of it. They did blood work and said my kidney function was off - my creatinine was elevated, whatever that means. They gave me two bags of IV fluids and told me I needed to stop the Ozempic and see my regular doctor within a couple days. I did stop it and the diarrhea gradually got better over the next week. My doctor rechecked my kidney function and it's improving but still not back to normal. She said the dehydration from all the GI issues caused my kidneys to not work properly.",
+        "classification": "Renal events (Acute kidney injury)"
+      },
+      {
+        "complaint": "So I was at my daughter's wedding - beautiful ceremony by the way, though I probably shouldn't get into all that - but during the reception I started feeling really weird. Like dizzy and shaky and I couldn't really focus on what people were saying to me. My son-in-law noticed I was acting strange and his mom is a nurse so she came over and checked on me. She had a glucose meter in her purse - always prepared, that one - and she tested my blood sugar. It was 47! Way too low. She got me some orange juice from the bar right away and I started feeling better after a few minutes. The thing is, I take metformin and that glipizide pill, and I also started the Ozempic injections about a month ago. I have an appointment with my endocrinologist next week to adjust my meds because this is the third time my sugar has dropped too low since starting the Ozempic.",
+        "classification": "Hypoglycemia"
+      },
+      {
+        "complaint": "I was out in my garden, pulling weeds - it was a really nice Saturday afternoon - and suddenly I felt really weird and dizzy and then I just blacked out. My neighbor saw me fall and came running over. When I came to, she had already called 911 and tested my blood sugar with her meter because her husband is diabetic. It was 48! The paramedics came and gave me some glucose gel. The thing is, I take my insulin every morning and I also take this Ozempic once a week, and my doctor never adjusted my insulin dose. I think that's what caused it.",
+        "classification": "Hypoglycemia"
+      }
+    ],
+    "signature": {
+      "instructions": "Classify adverse events into specific categories.",
+      "fields": [
+        {
+          "prefix": "Complaint:",
+          "description": "The complaint text about Ozempic"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Classification:",
+          "description": "One of: Gastrointestinal disorders, Pancreatitis, Hepatobiliary (gallbladder) disease, Hypoglycemia, Eye disorders (Diabetic retinopathy complications), Renal events (Acute kidney injury), Hypersensitivity, Injection-site reactions, Cardiovascular signs, Peri-procedural aspiration risk, Gastroparesis"
+        },
+        {
+          "prefix": "Justification:",
+          "description": "Brief explanation for the classification"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    },
+    "model": "openai/gpt-oss-120b",
+    "classification_type": "ae-category",
+    "classification_config": {
+      "description": "Classify adverse events into specific categories.",
+      "output_desc": "One of: Gastrointestinal disorders, Pancreatitis, Hepatobiliary (gallbladder) disease, Hypoglycemia, Eye disorders (Diabetic retinopathy complications), Renal events (Acute kidney injury), Hypersensitivity, Injection-site reactions, Cardiovascular signs, Peri-procedural aspiration risk, Gastroparesis",
+      "labels": [
+        "Gastrointestinal disorders",
+        "Pancreatitis",
+        "Hepatobiliary (gallbladder) disease",
+        "Hypoglycemia",
+        "Eye disorders (Diabetic retinopathy complications)",
+        "Renal events (Acute kidney injury)",
+        "Hypersensitivity",
+        "Injection-site reactions",
+        "Cardiovascular signs",
+        "Peri-procedural aspiration risk",
+        "Gastrointestinal disorders (Gastroparesis)"
+      ]
+    }
+  }
+}
