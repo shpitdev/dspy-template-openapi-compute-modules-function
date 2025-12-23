@@ -594,7 +594,7 @@ def _get_hardcoded_test_data():
 def load_external_data(split: str) -> list[dict]:
     """Load and adapt data from AE and PC category classification datasets."""
     data = []
-    
+
     # Load Adverse Event data
     ae_dir = DATA_DIR.parent / "ae-category-classification"
     ae_file = ae_dir / f"{split}.json"
@@ -603,14 +603,16 @@ def load_external_data(split: str) -> list[dict]:
             with ae_file.open("r", encoding="utf-8") as f:
                 ae_items = json.load(f)
                 for item in ae_items:
-                    data.append({
-                        "complaint": item.get("narrative", item.get("narrive", "")),
-                        "label": "Adverse Event",
-                        "reasoning": f"Category: {item.get('category', 'Unknown')}. {item.get('reasoning', '')}"
-                    })
+                    data.append(
+                        {
+                            "complaint": item.get("narrative", item.get("narrive", "")),
+                            "label": "Adverse Event",
+                            "reasoning": f"Category: {item.get('category', 'Unknown')}. {item.get('reasoning', '')}",
+                        }
+                    )
         except Exception as e:
             print(f"Warning: Could not load AE data from {ae_file}: {e}")
-            
+
     # Load Product Complaint data
     pc_dir = DATA_DIR.parent / "pc-category-classification"
     pc_file = pc_dir / f"{split}.json"
@@ -619,14 +621,16 @@ def load_external_data(split: str) -> list[dict]:
             with pc_file.open("r", encoding="utf-8") as f:
                 pc_items = json.load(f)
                 for item in pc_items:
-                    data.append({
-                        "complaint": item.get("narrative", item.get("narrive", "")),
-                        "label": "Product Complaint",
-                        "reasoning": f"Category: {item.get('category', 'Unknown')}. {item.get('reasoning', '')}"
-                    })
+                    data.append(
+                        {
+                            "complaint": item.get("narrative", item.get("narrive", "")),
+                            "label": "Product Complaint",
+                            "reasoning": f"Category: {item.get('category', 'Unknown')}. {item.get('reasoning', '')}",
+                        }
+                    )
         except Exception as e:
             print(f"Warning: Could not load PC data from {pc_file}: {e}")
-            
+
     return data
 
 

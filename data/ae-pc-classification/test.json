@@ -1,123 +1,68 @@
 [
   {
-    "complaint": "I left the package in my trunk for 2 days in the summer heat. The liquid is hot. The plastic pen feels soft. I messed up and ruined the medication.",
+    "complaint": "I injected the full dose but I felt nothing. Usually it stings a little. My blood sugar didn't change at all. I wonder if it's just saline in the pen.",
     "label": "Product Complaint",
-    "reasoning": "Category: Storage/Temperature excursion. Patient-induced heat excursion."
+    "reasoning": "Category: Potency/Assay defect. Suspected lack of potency/placebo."
   },
   {
-    "complaint": "I'm calling about something that's really upsetting me. So I've been on Ozempic for about three months, and I've lost about twenty-five pounds, which so is great. But about a month ago, I started noticing that my hair was falling out. Like, a lot. I'm losing handfuls of hair in the shower,  -  it's coming out when I brush it, it's everywhere. I went to my doctor and she said it's telogen effluvium, which is hair loss that can happen after stress or major changes to your body. She thinks it's related to the um rapid weight like loss from the Ozempic. So it's not directly from the medication itself, but from the weight loss the medication causes. I'm really upset because I'm losing my hair, and it's affecting my self-esteem. I don't know if I should stop the medication, but my blood sugar is so much better. This is really affecting my quality of life. I think this needs to be documented because even though it's indirect, it's a significant problem.",
-    "label": "Adverse Event",
-    "reasoning": "Reports adverse effect (alopecia) indirectly related to medication-induced rapid weight loss, affecting patient quality of life."
-  },
-  {
-    "complaint": "The nausea is bad. I can't eat. I'm losing weight. I feel sick. I want to stop the drug. It's too much.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Gastrointestinal disorders. Intolerance due to nausea."
-  },
-  {
-    "complaint": "I was out in my garden, pulling weeds - it was a really nice Saturday afternoon - and suddenly I felt really weird and dizzy and then I just blacked out. My neighbor saw me fall and came running over. When I came to, she had already called 911 and tested my blood sugar with her meter because her husband is diabetic. It was 48! The paramedics came and gave me some glucose gel. The thing is, I take my insulin every morning and I also take this Ozempic once a week, and my doctor never adjusted my insulin dose. I think that's what caused it.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Hypoglycemia. Symptomatic severe hypoglycemia with insulin co-therapy fits this category."
-  },
-  {
-    "complaint": "Woke up in the middle of the night with excruciating pain in the center of my abdomen, radiating straight through to my back. It was a 9 out of 10 on the pain scale. I was sweating and felt feverish. My wife took me to the ER, and they did blood work which showed my lipase levels were over 1000. They did a CT scan and told me my pancreas was inflamed. I don't drink alcohol and don't have gallstones, so the doctors are pretty sure it's the Ozempic. They've taken me off it and I'm currently on IV fluids.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Pancreatitis. Classic acute pancreatitis presentation with elevated enzymes and no other obvious cause."
-  },
-  {
-    "complaint": "So I got my Ozempic pen, and when I looked at the solution inside, it looks cloudy instead of clear. Like, it's not transparent like it should be. It looks milky or hazy. I haven't used it yet because I'm concerned about what this means. Is it contaminated? Is it degraded? Is it still safe to use? I've used Ozempic pens before, and they were always clear. This is different from my usual pens. I called my doctor and they um said not to use it and to get a replacement. I'm going to return it to the pharmacy. But I you know wanted to report this because this is a quality concern. If , the solution looks different, that suggests something might be wrong with it. It could be contamination, or it could be that the medication has degraded. Either way, it's a quality issue that needs to be addressed.  - ",
+    "complaint": "This is an unfortunate situation caused by a delivery error that resulted in my medication being left unrefrigerated for way too long. I use a specialty pharmacy for my Ozempic and they shipped it via overnight delivery in an insulated package with ice packs like they're supposed to. The tracking showed it was out for delivery yesterday morning and marked as delivered at 10 AM. But I never received it. Turns out the courier mis-delivered it to my neighbor's house two doors down instead of mine. My neighbor has an enclosed front porch that isn't visible from the street, so they didn't notice the package sitting there until this morning when they were leaving for work. They brought it over to me, which was nice of them, but by then it had been sitting on their enclosed porch for almost two full days. When I felt the package, it was room temperature or even warmer - remember, it's been sitting in an enclosed porch for 48 hours. Opened it up and the ice packs were completely thawed, just bags of warm water at this point. Based on the timeline, this medication has been unrefrigerated in a warm environment for approximately 48 hours. The storage requirements say it needs to be refrigerated and shouldn't be exposed to temperatures above 86 degrees for extended periods. I have no idea what temperature it reached sitting in that enclosed porch, but it's definitely been compromised. Called the specialty pharmacy and they're sending a replacement at no charge, but this is a waste of medication due to a delivery error. They said I should not use the mis-delivered pens since the temperature excursion was so prolonged.",
     "label": "Product Complaint",
-    "reasoning": "Reports abnormal product appearance suggesting contamination or degradation, identified before use."
+    "reasoning": "Category: Storage/Temperature excursion. Two-day unrefrigerated storage due to delivery failure constitutes temperature excursion."
   },
   {
-    "complaint": "So this well is a complicated well situation. I've been on Ozempic for about three months, uh and I've been having some issues, but I'm not sure if it's an adverse event uh or a product problem. So I've been having a lot of injection site reactions - redness, swelling, pain. But here's the thing - it only happens with some pens, not all of them. well Like, I'll get a new pen, and some pens cause reactions and some don't. I've been using the same injection technique, same site preparation, everything. But some pens cause really bad reactions and some don't. I'm wondering if there's something wrong like with specific pens - like, maybe some pens have a different pH or something that's causing the reactions? Or maybe it's just an adverse reaction that happens sometimes? I'm so really confused. My doctor said it could be either - it could be an adverse reaction to the medication, or it could be a product well quality issue with specific pens. I'm documenting this because I think it's important, but I'm not sure which category it falls into.",
-    "label": "Adverse Event",
-    "reasoning": "Describes injection site reactions that occur inconsistently - likely adverse event rather than product defect since patient follows consistent technique."
-  },
-  {
-    "complaint": "The package tracking said delivered 3 days ago but I just got it. It's been lost in the mail. The ice packs are warm room temperature. The medication is spoiled.",
+    "complaint": "I bought this pen from an online 'health store' that didn't require a prescription. Now that I have it, the holographic seal on the box looks like a cheap sticker, and the font is slightly different from the pens I get at my local CVS. I'm starting to think this isn't the real medication.",
     "label": "Product Complaint",
-    "reasoning": "Category: Storage/Temperature excursion. Shipping delay leading to temperature excursion."
+    "reasoning": "Category: Counterfeit/Unauthorized source. Suspicious sourcing and visual discrepancies."
   },
   {
-    "complaint": "So, I've been tracking my heart rate with my Apple Watch because I'm kind of into fitness tracking, and I've noticed something weird since they bumped up my Ozempic dose to 1 mg. My resting heart rate used to be pretty consistent in the high 60s, low 70s. But now it's been sitting in the 90s pretty much all the time. And several times a day I get these episodes where I can really feel my heart pounding, like it's racing. It's not painful or anything but it's definitely noticeable and a little concerning. I screenshot my heart rate data and sent it to my doctor through the patient portal. She wants me to come in for an EKG to make sure everything is okay. Hoping it's nothing serious but the timing with the dose increase seems suspicious.",
+    "complaint": "So I've been on Ozempic for about six months now, and I've been doing really well with my blood sugar and weight loss. I've lost about forty pounds, which is great. But ... about a month ago, I started having this really bad pain in my right upper abdomen. Like, really sharp pain, especially after . I eat. It got worse and worse, and finally I went to my doctor. They did an ultrasound and found gallstones. The doctor said I have cholelithiasis, and the stones are pretty large. I ended up needing surgery to remove my gallbladder. The surgeon ... said that rapid weight loss can cause gallstones, and since I've lost forty pounds in six months on the Ozempic, that's probably what caused it. So . it's not directly the medication, but the weight loss from the medication led to the gallstones. I'm doing okay after the surgery, but it was scary. I had to have laparoscopic surgery,  -  which wasn't too bad, but still. I'm documenting this because even though it's indirect, the medication's effect caused a serious problem that required surgery.",
     "label": "Adverse Event",
-    "reasoning": "Category: Cardiovascular signs. Sustained HR increase and palpitations post-titration fit CV sign category."
+    "reasoning": "Reports serious adverse event (cholelithiasis) requiring surgical intervention, indirectly caused by medication-induced rapid weight loss."
   },
   {
-    "complaint": "I've been on Ozempic for over a year now and I know what the packaging should look like, so when I picked up this refill something immediately seemed off to me. The pen cap color is different - it's still blue but it's like a slightly different shade, not quite the same as all my previous pens. And the font used for the printing on the pen looks different too, like maybe a different typeface or size. Then I looked at the lot code on the carton and that font also seems inconsistent with what I'm used to seeing. The numbers look lighter or thinner somehow. Being suspicious at this point, I tried scanning the QR code with my phone to verify authenticity on the manufacturer's website like they tell you to do, and it's giving me an error message. Either the code isn't valid or it's not linking to the Novo Nordisk site like it should. I still have an empty pen from my last prescription and I compared them side by side - definitely differences in appearance. Called the pharmacy right away and they pulled my last prescription's info to compare lot numbers and packaging. They agreed something doesn't look right and they're investigating with their wholesaler. They gave me a different pen from a different batch in the meantime and that one looks correct. Really concerning that potentially counterfeit or diverted product could make it into the legitimate supply chain.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Counterfeit/Unauthorized source. Appearance inconsistencies and failed verification point to potential counterfeit/diverted product."
-  },
-  {
-    "complaint": "The tamper-evident seal on the side of the box was already slit open when I got it. The pen inside looked okay, but the fact that the seal was broken makes me worry that someone might have swapped the pen or tampered with the contents.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Packaging defect. Breached tamper evidence."
-  },
-  {
-    "complaint": "The pharmacy dispensed a box to me that expires next month. Since I'm supposed to get a three-month supply, the last two pens in the box will be expired before I even get a chance to use them. This is poor inventory management.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Distribution/Expiry. Inadequate dating for the duration of the prescription."
-  },
-  {
-    "complaint": "I bought 'generic Ozempic' from a compounding pharmacy online. It came in a vial not a pen. The label looks homemade. I'm scared to use it.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Counterfeit/Unauthorized source. Compounded/unauthorized product."
-  },
-  {
-    "complaint": "I have explosive diarrhea multiple times a day. I can't leave the house. I'm dehydrated and weak. The doctor says it's a common side effect but it's ruining my life.",
+    "complaint": "Um, so I've been having this issue where I just don't feel hungry anymore, which sounds great for weight loss, right? But it's actually kind of a problem because even when I do try to eat, I feel full after like two bites. And then for hours after eating I feel this uncomfortable fullness in my stomach. My doctor ordered some kind of test - a gastric emptying study I think they called it? - and apparently my stomach is taking way longer than normal to empty. They're calling it gastroparesis. I'm not sure what to do because the medication is helping my blood sugar but this side effect is really affecting my quality of life.",
     "label": "Adverse Event",
-    "reasoning": "Category: Gastrointestinal disorders. Severe diarrhea limiting daily activities."
+    "reasoning": "Category: Gastrointestinal disorders (Gastroparesis). Objective evidence of delayed gastric emptying consistent with gastroparesis."
   },
   {
-    "complaint": "I have pancreatitis. The pain is severe. I'm in the hospital. My pancreas is inflamed. It's from the Ozempic.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Pancreatitis. Inflamed pancreas confirmed in hospital."
-  },
-  {
-    "complaint": "I gave myself my injection on Friday like I always do, and about an hour later I started feeling really strange. My face felt tingly and when I looked in the mirror my face was swollen, especially around my eyes and lips. And then my throat started feeling tight and I started panicking because I couldn't get a full breath. I called 911 right away and the dispatcher told me to stay on the line. The paramedics got there within maybe 5 or 6 minutes and they immediately gave me an epinephrine injection. They said I was having a severe allergic reaction. They took me to the hospital where they gave me IV steroids and antihistamines and monitored me for several hours. The emergency room doctor said this is anaphylaxis and I can never take Ozempic again. They prescribed me an EpiPen to carry with me at all times now. Really scary experience.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Hypersensitivity. Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
-  },
-  {
-    "complaint": "I was driving home when my vision started going white and I felt extremely confused and disoriented. I managed to pull over just before I blacked out. A police officer found me and called paramedics. My blood sugar was 32 mg/dL. They gave me IV dextrose to bring me back. It was a terrifying experience and I could have hurt someone. My doctor is completely readjusting my diabetes regimen.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Hypoglycemia. Severe hypoglycemia with loss of consciousness while driving."
-  },
-  {
-    "complaint": "I've been waking up in the middle of the night with my heart racing. My pulse will be 120-130 bpm for no reason. I feel anxious and short of breath. My doctor put me on a beta-blocker to control the heart rate, but says if it continues I need to come off the Ozempic. It's uncomfortable and makes it hard to sleep.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Cardiovascular signs. Nocturnal tachycardia requiring beta-blocker therapy."
-  },
-  {
-    "complaint": "You know, I thought I was doing everything right with this medication. Taking it on the same day every week, rotating my injection sites like they showed me. But after my last dose - must have been like two weeks ago now - I got so sick. The nausea hit me like a truck, excuse my language. And I'm not usually someone who throws up easily but I was hugging the toilet for days. My wife kept bringing me crackers and ginger ale but nothing stayed down. She finally made me call the doctor when I couldn't even keep water down for 24 hours. The nurse practitioner said to stop the medication immediately and come in for an evaluation. They were worried about dehydration. Took me almost a week to feel normal again after stopping it.",
+    "complaint": "So, um, after they increased my dose to that 0.5 mg - I think it was like the third week in March or maybe early April? Anyway, I started feeling really sick to my stomach. Like, I couldn't keep anything down, not even water. My husband kept saying I should call the doctor but I thought maybe it would just pass, you know? But it went on for three whole days and I was just miserable. Finally called my doctor's office and the nurse told me to stop taking it immediately. And honestly, within like a day or two after stopping, I started feeling so much better. It was definitely the medication.",
     "label": "Adverse Event",
     "reasoning": "Category: Gastrointestinal disorders. Prolonged nausea/vomiting shortly after dose escalation fits GI intolerance."
   },
   {
-    "complaint": "I went in for an elective surgery to repair a hernia. I followed all the NPO instructions—didn't eat anything after midnight. But when the anesthesiologist did a quick ultrasound of my stomach before putting me under, he found a significant amount of food still in there. He said my stomach wasn't emptying properly, likely due to the Ozempic slowing down my digestion. They had to cancel the surgery to avoid the risk of me aspirating vomit into my lungs. I have to be off the meds for at least a week before we can try again.",
+    "complaint": "So I do my injection in my stomach area, rotating spots like they told me to. But this last time, the spot where I injected got really red and it was tender to touch. I measured it and it was like 3 centimeters across - maybe a little bigger than a quarter? It was also kind of itchy but not terrible. This lasted for about two days before it started getting better. I didn't have any other symptoms like fever or anything, just that local reaction. My sister who's a nurse said to keep an eye on it but that it's probably just a normal reaction some people get.",
     "label": "Adverse Event",
-    "reasoning": "Category: Peri-procedural aspiration risk. Delayed gastric emptying posing aspiration risk during anesthesia."
+    "reasoning": "Category: Injection-site reactions. Localized cutaneous reaction at administration site without systemic features."
   },
   {
-    "complaint": "My lips and tongue swelled up after the injection. I felt like my throat was closing. I used my EpiPen and went to the ER. It was a terrifying anaphylactic reaction.",
+    "complaint": "I'm calling about my patient who had a serious reaction. So the patient started Ozempic about three weeks ago, and after the second dose, they developed a rash all over their body. Like, everywhere - arms, legs, trunk, ... everywhere. They also had a fever of 102 degrees Fahrenheit. They came into my office, and I sent them for labs. Their liver enzymes were elevated - ALT was 180, AST was 150, which is significantly elevated. Normal is under 40. This looks like a systemic hypersensitivity reaction with organ involvement. The patient had no history of liver disease, no other medications that could cause this. The timing is very suspicious - second dose of Ozempic, and then this reaction. I stopped the medication immediately and started them on steroids. The rash is improving, but the liver enzymes are still elevated. This is a serious adverse drug reaction. I'm documenting this as an adverse event because it's a systemic hypersensitivity reaction with organ involvement, which . is serious.",
     "label": "Adverse Event",
-    "reasoning": "Category: Hypersensitivity. Anaphylaxis with tongue/throat swelling."
+    "reasoning": "Describes systemic hypersensitivity reaction with organ involvement, a serious adverse drug reaction."
   },
   {
-    "complaint": "I'm not losing any weight on this new batch. I'm hungry all the time. The previous pens worked great. I think this lot is weak.",
+    "complaint": "The box says 1.0 mg dose, but the pen inside has markings for only 0.25 and 0.5 mg. I can't take my full prescribed dose with this device. It's clearly the wrong pen in the wrong box.",
     "label": "Product Complaint",
-    "reasoning": "Category: Potency/Assay defect. Therapeutic failure suspicion."
+    "reasoning": "Category: Labeling error. Packaging mix-up (wrong device in carton)."
   },
   {
-    "complaint": "The pharmacy dispensed these pens to me today, but when I looked at the bottom of the box, the expiration date passed three months ago. I can't believe they're selling expired medicine. I noticed it before I injected, but it's still a major safety issue.",
+    "complaint": "Okay so this is weird - I just picked up my prescription from the pharmacy about an hour ago, and when I got home and was putting it in the fridge, I noticed something strange. The outer carton, like the box it comes in, clearly says 1 mg right there on the label. But when I actually opened the box and looked at the pen itself, the pen sleeve has 0.5 mg printed on it. So the outside box says one strength and the actual device says a different strength. That's not supposed to happen, right? I drove back to the pharmacy because I needed to make sure what I actually have, and the pharmacist was surprised too. She checked their system and my prescription is definitely for 1 mg, and the carton NDC number matches the 1 mg product, but the pen inside is clearly labeled 0.5 mg. She pulled out another pen to check and that one matched correctly. She documented everything and gave me a different pen from a different lot. But I'm wondering how many other people got mismatched products from that batch and maybe didn't notice.",
     "label": "Product Complaint",
-    "reasoning": "Category: Distribution/Expiry. Sale of expired product."
+    "reasoning": "Category: Labeling error. Inconsistent strength between outer carton and device labeling is a labeling/mix-up defect."
   },
   {
-    "complaint": "I have pancreatitis. The pain is severe. I'm in the hospital. My enzymes are high. It's from the Ozempic. I'm in pain.",
+    "complaint": "I have severe constipation. I haven't gone in 10 days. My stomach hurts. I need an enema. Laxatives don't work.",
     "label": "Adverse Event",
-    "reasoning": "Category: Pancreatitis. High enzymes and pain."
+    "reasoning": "Category: Gastrointestinal disorders. Prolonged constipation needing intervention."
+  },
+  {
+    "complaint": "The shrink wrap was missing from the carton. Anyone could have opened it. I don't feel safe using medication that isn't sealed properly.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Packaging defect. Missing secondary packaging seal."
+  },
+  {
+    "complaint": "The label on the pen is for the wrong drug. It says Victoza but the box says Ozempic. The pen looks like an Ozempic pen. It's mislabeled.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Labeling error. Product mix-up/mislabeling."
   },
   {
     "complaint": "I opened a new pen yesterday and was doing my routine inspection before the first use, and something about the solution just doesn't look right to me. It appears slightly cloudy, not crystal clear like all my previous pens have been. And there are these tiny bubbles throughout the liquid - really small ones, but definitely there. I let the pen sit upright in the fridge overnight thinking maybe the bubbles would rise to the top and dissipate, you know, like sometimes happens when you first open something. But this morning when I checked it again, the cloudiness is still there and the bubbles haven't gone away at all. All my previous pens from other lots have been perfectly clear and colorless. This one just looks different. The solution might still be okay, but the instructions say it should be clear and the visual appearance is supposed to be checked before each use. Since this one doesn't match what I'm used to seeing and doesn't match the description in the instructions, I don't feel comfortable using it. Contacted the pharmacy and they agreed the appearance sounds abnormal and are replacing it. Better safe than sorry when it comes to injectable medications. They're sending the pen back to the manufacturer to check whether it's a stability issue or contamination or what.",
@@ -125,44 +70,19 @@
     "reasoning": "Category: Stability/Appearance defect. Cloudiness suggests instability/precipitation inconsistent with labeled appearance."
   },
   {
-    "complaint": "I'm calling about a major error I found. So I got my Ozempic pen, and when I opened the box, I looked at the user manual that came with it. But the manual is for a completely different product - it's for Victoza, which is also made by Novo Nordisk, but it's a different medication. The instructions are completely wrong. They're talking about a different pen, different dosing, everything is wrong. This is a serious packaging error. If someone uses the wrong instructions, they could use the pen incorrectly,  -  which could be dangerous. I called my pharmacy and they're sending me the correct manual, but I wanted um to report this because this is a major error. The product should have the correct instructions. This is a regulatory compliance issue - the wrong instructions could lead to medication errors.",
+    "complaint": "I'm calling about a problem with my um Ozempic pen. So the injection button is completely I mean stuck. Like, I can't depress it at all, no matter how hard uh I push. I've tried everything - pushing it straight down, twisting it, nothing works. It's you know like it's frozen in place. I can dial the dose fine, the counter I mean works, but I can't actually inject because the button won't move. This is a brand new pen, I just opened it. I'm completely unable to use it. I called my pharmacy and they're sending me a replacement, but I wanted to report this because this is a mechanical failure. If the button doesn't work, people can't use the pen at all. This is a product defect that prevents use of the medication. I'm documenting this as a product complaint because it's a device malfunction.",
     "label": "Product Complaint",
-    "reasoning": "Describes serious labeling/packaging error with incorrect product instructions, a regulatory compliance issue."
+    "reasoning": "Describes device mechanical failure preventing use, a product defect without adverse patient reaction."
   },
   {
-    "complaint": "My pen broke in half when I took the cap off. The plastic snapped right at the threads. The cartridge fell out and smashed on the floor. The plastic felt very brittle.",
+    "complaint": "There is a piece of cardboard inside the blister pack. It's clean but it shouldn't be there. It's foreign material.",
     "label": "Product Complaint",
-    "reasoning": "Category: Device malfunction. Structural failure of device body."
+    "reasoning": "Category: Contamination/Foreign matter. Packaging debris contamination."
   },
   {
-    "complaint": "So I've been on Ozempic for about six months now, and I've been doing really well with my blood sugar and weight loss. I've lost about forty pounds, which is great. But about a month ago, I started having this really bad pain in my right upper abdomen. Like, really sharp pain, especially after I eat. It got worse and worse, and finally I went to my doctor. They did an ultrasound and found gallstones. The doctor said I have cholelithiasis, and the stones are pretty large. I ended up needing surgery to remove my gallbladder. The surgeon said that rapid weight loss can cause gallstones, and uh since I've lost um forty pounds in six months on the Ozempic, that's probably what caused it. So it's not directly the medication, but the weight loss from the medication led to the gallstones. I'm doing okay after the well surgery, but it was scary. I had to have laparoscopic surgery, which wasn't too bad, but still. I'm documenting this because even though it's indirect, the medication's effect caused a serious problem that required surgery.",
+    "complaint": "I developed a widespread rash all over my trunk and arms about two days after my third dose. It's red, raised, and intensely itchy. My skin feels hot to the touch. I took Benadryl but it keeps coming back. My doctor says it's a systemic hypersensitivity reaction and I need to stop the drug and take a course of steroids to calm my immune system down.",
     "label": "Adverse Event",
-    "reasoning": "Reports serious adverse event (cholelithiasis) requiring surgical intervention, indirectly caused by medication-induced rapid weight loss."
-  },
-  {
-    "complaint": "I'm calling about something I noticed when I opened my Ozempic pen box. So I got a new pen yesterday, and when I opened the box, the protective seal on the , pen was already broken. Like, it was torn and partially actually detached. The package also looked like it might have been previously opened - the outer box had some damage, and the inner packaging looked tampered with. I'm really concerned about contamination. If the seal is broken, the well pen might not be sterile anymore. I haven't used it because I'm worried about infection or contamination. I called my pharmacy and they're sending me a replacement, um but I wanted um to report this because this is a packaging integrity issue. If the packaging is compromised, the product could be contaminated or tampered with. This is a quality and safety concern.",
-    "label": "Product Complaint",
-    "reasoning": "Describes compromised packaging integrity raising sterility concerns, a product tampering or quality issue."
-  },
-  {
-    "complaint": "My blood sugar is back to pre-medication levels since I started using this new box of pens. The only thing that changed is this new prescription lot. I suspect the concentration of the medication is way below what it should be.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Potency/Assay defect. Significant clinical failure suggesting potency issues."
-  },
-  {
-    "complaint": "There's a confusing and potentially dangerous mismatch between what's printed on the carton and what's actually on the pen device. The outer carton clearly states that the pen contains 4 doses at 0.25 mg each. That's what it says right on the label. But when I look at the actual pen dose selector dial, the markings only show 0.5 mg and 1 mg dose options. There's no 0.25 mg marking anywhere on the dial that I can see. This is a major problem because my prescription specifically requires that I start at the lower 0.25 mg dose for the first four weeks as a titration period before increasing. If the pen doesn't have 0.25 mg markings, how am I supposed to take that dose? Did they package the wrong pen in this carton? Is the carton labeling wrong? I have no idea but the carton description and the actual device don't match up. I went back to the pharmacy to confirm I wasn't missing something, and the pharmacist looked at it and agreed there's definitely a mismatch - the carton says one thing and the pen shows another. She checked other pens in stock and they all had the correct dose markings that matched their cartons. So mine is some kind of labeling error or packaging mix-up. They swapped it out for a correctly labeled and marked pen. But this is a serious issue because if someone didn't notice and tried to use it, they'd end up taking the wrong dose.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Labeling error. Inconsistency between labeled dose availability and actual device markings."
-  },
-  {
-    "complaint": "I have gastroparesis. My stomach hurts and I vomit food. I can't eat solids. I'm losing too much weight. The doctor stopped the medication.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Gastrointestinal disorders (Gastroparesis). Gastroparesis necessitating discontinuation."
-  },
-  {
-    "complaint": "The dial gets stuck at 0. It won't turn to start the dose. The mechanism is jammed. I can't use it at all.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Device malfunction. Dose dial jam."
+    "reasoning": "Category: Hypersensitivity. Systemic cutaneous hypersensitivity reaction."
   },
   {
     "complaint": "I ordered my Ozempic through mail order pharmacy like I usually do, and it was delivered this afternoon while I was at work. When I got home around six o'clock, the package was sitting on my front porch, and this is in the middle of July, we've had temperatures in the nineties all week. The first thing I noticed when I picked it up was that it felt warm, not cool like it should be. Opened it up right away and the ice pack or cold pack thing they include was completely melted, just a bag of water basically. And you know those temperature indicator stickers they put on the package? The one on mine was showing red, which according to the instructions means it got too warm. The tracking info shows it left the facility yesterday morning, so that means this medication has been sitting unrefrigerated for at least twelve hours, probably longer considering transit time and sitting on my porch in direct sunlight. I called the pharmacy right away and they're sending a replacement with better packaging, but I'm concerned about whether this medication is even good anymore. They said not to use it, which makes sense, but it's frustrating that their shipping process allowed this to happen.",
@@ -175,29 +95,129 @@
     "reasoning": "Category: Device malfunction. Dimensional defect preventing needle attachment."
   },
   {
-    "complaint": "My kidneys are failing. My creatinine is high. I was dehydrated.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Renal events (Acute kidney injury). Failing kidneys."
-  },
-  {
-    "complaint": "I had a sudden onset of severe abdominal pain that radiated to my back, accompanied by nausea and vomiting. I couldn't find a comfortable position. My doctor sent me to the hospital where they found my amylase and lipase levels were dangerously high. A CT scan confirmed acute pancreatitis. I was hospitalized for five days for pain management and bowel rest. It was the most painful experience of my life. The doctors are certain it was drug-induced.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Pancreatitis. Acute pancreatitis requiring hospitalization."
-  },
-  {
-    "complaint": "I have gastroparesis. I feel full quickly. I vomit food. I'm losing weight. It's miserable. The doctor diagnosed me with stomach paralysis.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Gastrointestinal disorders (Gastroparesis). Stomach paralysis diagnosis."
-  },
-  {
-    "complaint": "I woke up in the middle of the night with this excruciating pain in my upper right abdomen. It was so bad I was crying. My husband drove me to the emergency room at like 3 AM. They did an ultrasound and found out I have gallstones - multiple ones apparently. The ER doctor said that rapid weight loss can cause this, and I have lost a lot of weight since starting Ozempic, almost 35 pounds in five months. They gave me pain medication and told me I need to follow up with a surgeon to discuss having my gallbladder removed. For now they told me to stop the Ozempic and eat a low-fat diet.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Hepatobiliary (gallbladder) disease. Cholelithiasis temporally associated with rapid weight loss on GLP-1 RA."
-  },
-  {
-    "complaint": "This medication is 2 years past expiration. I found it in the back of my grandma's fridge. Can I still use it?",
+    "complaint": "This pen expired 6 months ago. The pharmacy still gave it to me. I noticed the date when I got home. This is negligent.",
     "label": "Product Complaint",
-    "reasoning": "Category: Distribution/Expiry. Patient inquiry re: expired product."
+    "reasoning": "Category: Distribution/Expiry. Dispensing expired medication."
+  },
+  {
+    "complaint": "Patient reports significant change in bowel habits following dose escalation to 1 mg weekly. Describes difficulty with bowel movements, occurring only once every 5-7 days compared to daily pattern prior to medication. Associated with abdominal cramping, bloating, and decreased appetite. Has tried over-the-counter fiber supplements and stool softeners with minimal improvement. Physical exam notable for abdominal distension and discomfort on palpation. Recommended increased fluid intake, dietary modifications, and trial of osmotic laxative. Discussed potentially reducing dose if symptoms persist.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Gastrointestinal disorders. Prolonged constipation post-titration aligns with common GI adverse effects."
+  },
+  {
+    "complaint": "After I give myself the injection - I rotate between my stomach and thighs - the area always gets irritated but this last time was really bad. It was in my abdomen and within like 3 or 4 hours of injecting, the whole area was bright red and really swollen. It was probably 5 or 6 centimeters across, way bigger than usual. And it was painful - not like excruciating but definitely uncomfortable, especially when anything touched it or rubbed against it. It was also really itchy which drove me crazy. I put ice on it which helped a bit. My spouse thought maybe it was infected and wanted me to go to urgent care but I decided to call the nurse line first. The nurse looked at the picture I sent and said it looked like a significant local reaction but probably not an infection since I didn't have any fever or red streaking. She said to watch it and come in if it got worse. It took almost a full week to completely resolve. I'm nervous about my next injection.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Injection-site reactions. Localized cutaneous reaction at administration site without systemic features."
+  },
+  {
+    "complaint": "Patient with baseline chronic kidney disease stage 3a (baseline creatinine 1.3 mg/dL) presented to clinic with complaint of persistent nausea and decreased oral intake for approximately one week. Reports difficulty tolerating even small amounts of fluid. Physical examination remarkable for dry mucous membranes, decreased skin turgor, and orthostatic vital sign changes. Laboratory studies notable for creatinine elevation to 2.6 mg/dL, BUN 52, and urinalysis with specific gravity of 1.030 consistent with volume depletion. Patient initiated on semaglutide approximately 6 weeks prior. Admitted for IV fluid resuscitation and monitoring. GLP-1 agonist held. Repeat labs after 48 hours of hydration showed creatinine improving to 1.9 mg/dL but remained elevated above baseline.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Renal events (Acute kidney injury). AKI on CKD in the setting of GI intolerance is a recognized risk scenario."
+  },
+  {
+    "complaint": "My blood sugar is back to pre-medication levels since I started using this new box of pens. The only thing that changed is this new prescription lot. I suspect the concentration of the medication is way below what it should be.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Potency/Assay defect. Significant clinical failure suggesting potency issues."
+  },
+  {
+    "complaint": "I'm actually calling about my patient who had a serious complication. So the patient has been on Ozempic for about three months, and they've been having a lot of well GI side effects - nausea, vomiting, diarrhea. It's been pretty bad, but manageable. Last week, the patient was vomiting really severely, and they aspirated some of the vomit into their lungs. They ended up with aspiration pneumonia. They were hospitalized for five days on IV antibiotics. The patient also has GERD, which they've had for years, so that was a contributing factor. But the severe vomiting from the Ozempic definitely made the aspiration more likely. The patient is doing better now, but it was a serious infection. I'm documenting this as so an adverse event because the medication's side like effects led to a serious complication requiring hospitalization. Even though there were other factors, the Ozempic's GI effects were a major contributor.",
+    "label": "Adverse Event",
+    "reasoning": "Describes serious complication (aspiration pneumonia) resulting from GI adverse effects of Ozempic, even with contributing factors."
+  },
+  {
+    "complaint": "I've been taking my 1 mg dose for weeks but my blood sugar is climbing back up. It feels like I'm injecting water. I'm not getting the appetite suppression I usually get. I think this batch is defective or weak.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Potency/Assay defect. Lack of expected therapeutic effect suggesting potency issue."
+  },
+  {
+    "complaint": "I'm calling about a problem with my Ozempic well pen. So the label on the pen is peeling off. Like, it's coming off in strips, and I can't read the lot number or expiration  -  date anymore. The label is all smudged and unreadable. I'm really concerned because I need to know when this pen expires, and I need the lot number in well case there's a recall or something. I called my pharmacy and they said this is a quality control issue. They're going to send me a replacement, but I wanted to report this because this is a labeling defect. If people can't read the label, they might not know important information about the product. This is a quality issue that needs to be addressed.",
+    "label": "Product Complaint",
+    "reasoning": "Describes labeling defect affecting product identification and traceability, a quality issue."
+  },
+  {
+    "complaint": "My pen broke in half when I took the cap off. The plastic snapped right at the threads. The cartridge fell out and smashed on the floor. The plastic felt very brittle.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Device malfunction. Structural failure of device body."
+  },
+  {
+    "complaint": "So this is a complicated situation. I've been on Ozempic for about three months, and I've been having some issues, but I'm not sure if it's so an adverse event or a product problem. So  -  I've been having a lot of injection site well reactions - redness, swelling, pain. But here's the thing - it only happens with . some pens, not all of them. Like, I'll get a new pen, and some pens cause reactions um and some don't. I've been using I mean the same injection technique, same site preparation, everything. But some pens cause really bad reactions and some don't. I'm wondering if there's something  -  wrong with specific pens - like, maybe some pens have a different pH or something that's causing the reactions? Or maybe it's just an adverse reaction that happens sometimes? I'm really confused. My doctor said it could be either - it could be an adverse you know reaction to the medication, or it could , be a product quality issue with specific pens. I'm documenting this because I think it's important, but I'm not sure which category it falls into.",
+    "label": "Adverse Event",
+    "reasoning": "Describes injection site reactions that occur inconsistently - likely adverse event rather than product defect since patient follows consistent technique."
+  },
+  {
+    "complaint": "The labeling on the actual pen body is so smudged that I can't read the lot number or the expiration date. It looks like the ink wasn't cured properly. I need this info for my records, but it's just a blurry mess.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Labeling error. Illegible primary labeling."
+  },
+  {
+    "complaint": "I had a severe low blood sugar event where I became combative and confused. I didn't know who my family members were. They couldn't get me to eat anything so they had to use the emergency glucagon nasal spray. When I came to, I had a terrible headache and felt exhausted. It was really scary for my family to see me like that.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Hypoglycemia. Severe hypoglycemia with altered mental status requiring glucagon."
+  },
+  {
+    "complaint": "Um, so this happened last Saturday and I'm still pretty shaken up about it. I was at the grocery store, just doing my normal shopping, and I started feeling really off. Like dizzy and confused. I guess I was acting strange because another shopper asked if I was okay. I said I thought I was fine but then I started seeing spots and feeling really weak. The next thing I remember is waking up on the floor with a bunch of people around me and someone had called 911. The paramedics tested my blood sugar when they arrived and it was 42. They gave me some glucose and I started feeling better pretty quickly. The scary thing is I take insulin twice a day and I also do the Ozempic shot once a week. I've had a couple other episodes of low blood sugar over the past month but nothing this bad. The ER doctor said I really need to work with my endocrinologist to adjust my medications because having my sugar drop this low is dangerous.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Hypoglycemia. Symptomatic severe hypoglycemia with insulin co-therapy fits this category."
+  },
+  {
+    "complaint": "I'm calling about a problem I've been having. So well I've been on Ozempic for about three months, and I've been having issues with the pens. Like, sometimes the dose counter doesn't reset properly after I so inject. It stays on the dose I just injected instead of going back to zero. This happens like with some pens but not so others. I'm worried that if the counter doesn't reset, I might accidentally inject the same dose twice, or I might not know how much medication is . left in the pen. I've called my pharmacy and they well said this could be a product defect, but they're not sure. They're sending me replacement pens. But I'm also concerned that if I do accidentally so inject twice, that could cause an overdose, which would be I mean an adverse event. So I'm not sure if this is a product complaint or if it could like lead to an adverse event. I'm documenting this because it's well a safety concern.",
+    "label": "Product Complaint",
+    "reasoning": "Describes dose counter malfunction - product defect that could potentially lead to dosing errors, but no adverse event has occurred yet."
+  },
+  {
+    "complaint": "I have acute kidney failure. My creatinine is 3.0. I was dehydrated from vomiting. They are giving me fluids to try to save my kidneys. I might need dialysis.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Renal events (Acute kidney injury). Acute renal failure with potential dialysis need."
+  },
+  {
+    "complaint": "My ophthalmologist visit last month was really concerning. I've had diabetes for like 15 years now and I've always been pretty good about my eye exams because my mom went blind from diabetes and I don't want that to happen to me. My retinopathy has been mild and stable for years. But at this last visit, the doctor said there's been significant progression. She showed me the pictures and there's like bleeding in the back of my eye now and some new blood vessel growth that wasn't there before. She specifically asked if I had made any changes to my diabetes medications and I told her I started Ozempic about 4 months ago. She said that sometimes when your blood sugar improves too quickly, it can actually make the retinopathy worse before it gets better. She wants to see me every month now instead of every 6 months to monitor it closely. I'm really scared about my vision.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Eye disorders (Diabetic retinopathy complications). Temporal association with known risk of retinopathy worsening warrants categorization here."
+  },
+  {
+    "complaint": "I received this pen from an 'influencer' online who was selling their extra supply. The box is in a language I can't read, and there's no FDA approval stamp anywhere on the packaging. I'm very suspicious of the contents.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Counterfeit/Unauthorized source. Unauthorized source and foreign labeling."
+  },
+  {
+    "complaint": "This is really disturbing. I was inspecting a new pen before first use like I always do, holding it up to the light to check that the solution is clear, and I saw what looks like a black speck or particle floating in the cartridge. It's small, maybe about a millimeter in size, but definitely visible and very dark, almost black, against the clear solution. It's floating freely in the liquid and moves around when I tilt the pen. This pen has never been opened or used - it's brand new, still sealed in the original packaging. The presence of any kind of particulate matter in a sterile injectable medication is totally unacceptable. This is supposed to be a sterile product and there should be nothing floating in it. I took the pen directly to the pharmacy to show them. The pharmacist looked at it under their magnifying light and agreed it's definitely a foreign particle of some kind. She immediately documented everything, took pictures, recorded the lot number, and replaced the pen with one from a different batch. She said they'll be sending this one back to the manufacturer and filing a contamination report. This is a serious quality control issue because that particle could have been injected into someone if they didn't inspect the pen carefully first. Makes me wonder about the sterility and manufacturing conditions if stuff like this is getting through.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Contamination/Foreign matter. Visible particulate matter in sterile injectable product represents serious contamination risk."
+  },
+  {
+    "complaint": "This is extremely concerning and I've never seen anything like it before in any medication. I was inspecting a new pen before my first dose, holding it up to the light to check that the solution is clear like you're supposed to do, and I saw what appears to be a small metallic fragment floating in the solution. It's tiny, roughly the size of a pinhead, but it's definitely metallic - looks silver or gray colored, reflects light differently than the solution, clearly not part of the liquid. When I tilt the pen back and forth, the fragment moves around and sinks or floats depending on the orientation. This is completely unexpected and honestly quite scary for an injectable medication that's supposed to be sterile. How does metal get into a sealed pharmaceutical cartridge? Could it be from the manufacturing equipment? Could it have broken off from inside the pen mechanism? I have no idea, but there's no way I'm injecting any solution that has metal particles in it. The pen is otherwise sealed, the packaging was intact, and the expiration date is still over a year away, so this isn't an issue of me damaging it or it being expired. This has to be a manufacturing contamination issue. Brought it immediately to the pharmacy and they were shocked when they saw it too. Documented everything, taking the lot number, and they're filing an urgent quality complaint with the manufacturer because metallic contamination in a sterile injectable is a critical safety issue.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Contamination/Foreign matter. Metallic particulate contamination in sterile product is a critical quality defect."
+  },
+  {
+    "complaint": "My blood sugar dropped to 38. I was confused and sweating. My family had to help me. I almost passed out. It was a severe low.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Hypoglycemia. Severe hypo requiring family assistance."
+  },
+  {
+    "complaint": "My refrigerator's thermostat failed while I was away for the weekend, and the temperature inside went up to 75 degrees. My Ozempic pens were in there the whole time. I don't know how many hours they were sitting at room temperature, but it's been at least two days.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Storage/Temperature excursion. Patient storage temperature excursion."
+  },
+  {
+    "complaint": "So this is confusing. I got my Ozempic pen, and when I looked at it, the box says 0.5 milligrams, but the pen itself is labeled 1.0 milligrams. There's a mismatch between the box label and the pen label. I don't know which  -  one is correct. I called my pharmacy and they said they dispensed 0.5 milligrams, so so that's , what should be in there. But the pen says 1.0 milligrams. I'm really confused and concerned. What if I use it and get the wrong dose? That could be dangerous. I haven't used it yet - I'm waiting to hear back from my doctor about what to do. But I wanted to report this because this is a labeling error. It could be a pharmacy dispensing error, or it could be a manufacturing labeling problem. Either way, it's a product identification issue that could affect patient safety.",
+    "label": "Product Complaint",
+    "reasoning": "Reports labeling mismatch or dispensing error, a product identification issue without patient use or harm."
+  },
+  {
+    "complaint": "Patient with known type 2 diabetes mellitus presented with acute upper abdominal pain. Pain onset sudden, approximately 8 hours prior to presentation, described as severe and constant, with radiation to the back. Associated with nausea and multiple episodes of vomiting. Examination revealed epigastric tenderness with guarding. Laboratory analysis showed lipase elevated to 1,450 U/L, amylase 720 U/L. Imaging with CT abdomen revealed pancreatic inflammation consistent with acute pancreatitis, no evidence of biliary obstruction. Patient on semaglutide for approximately 4 months. Diagnosis of drug-induced pancreatitis established. Medication discontinued, patient admitted for supportive care including NPO status, IV fluids, and pain management.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Pancreatitis. Classic presentation plus lab confirmation aligns with drug-associated pancreatitis warning."
+  },
+  {
+    "complaint": "The tamper-evident seal on the side of the box was already slit open when I got it. The pen inside looked okay, but the fact that the seal was broken makes me worry that someone might have swapped the pen or tampered with the contents.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Packaging defect. Breached tamper evidence."
+  },
+  {
+    "complaint": "When I try to press the injection button, it's completely stuck. I've tried pushing it with both thumbs as hard as I can, but it won't move even a millimeter. The pen is totally unusable because of this mechanical jam.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Device malfunction. Non-functioning/stuck injection button."
   },
   {
     "complaint": "The plunger in my pen is stuck about halfway down, and no matter how hard I press the button, it won't move forward to deliver the rest of the medication. I can see there's plenty of liquid left, but the mechanism is jammed tight.",
@@ -205,14 +225,9 @@
     "reasoning": "Category: Device malfunction. Jammed plunger mechanism."
   },
   {
-    "complaint": "The ice packs in my mail-order shipment were actually still frozen solid, but they were placed directly against the pens without any padding. The liquid in the pens was frozen into a slushy ice. I know you're not supposed to freeze this stuff, so I'm assuming it's ruined.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Storage/Temperature excursion. Accidental freezing during transport."
-  },
-  {
-    "complaint": "The pharmacy is trying to sell me pens that expire in 10 days. I need a supply that lasts for at least a month. They told me 'it's all they have', but I'm not paying for medicine that will be officially expired halfway through my treatment.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Distribution/Expiry. Supply of medication with inadequate remaining shelf life."
+    "complaint": "So this is kind of complicated. My patient has been on Ozempic for about four months, and he's been having really bad constipation. Like, really severe. He's been taking laxatives, but they're not helping much. Last week, he came into the ER with severe abdominal pain and distension. We did a CT scan and found a partial bowel obstruction. He was admitted for three days, had to have an NG tube, IV fluids, the whole thing. Now, constipation is a known side effect of Ozempic, and severe uh constipation can lead to bowel obstruction. But the patient also has a history of diverticulosis, which can predispose to obstruction. So it's not entirely clear if this is directly from the Ozempic or if the Ozempic just made an you know underlying condition worse. uh But the timing is suspicious, and the constipation from Ozempic definitely contributed. I'm documenting this I mean as an adverse event because the medication's side effect led to a serious complication requiring actually hospitalization.",
+    "label": "Adverse Event",
+    "reasoning": "Reports serious GI complication (bowel obstruction) requiring hospitalization, potentially related to Ozempic-induced constipation."
   },
   {
     "complaint": "Patient admitted to medical floor with acute kidney injury superimposed on chronic kidney disease stage 3b. Baseline creatinine 1.7 mg/dL, currently 3.1 mg/dL. Patient reports 5-day history of poor oral intake secondary to persistent nausea and early satiety. Physical exam significant for orthostatic hypotension with 15 mmHg drop in systolic BP upon standing, dry mucous membranes, and decreased skin turgor. Urinalysis shows elevated specific gravity at 1.032 without evidence of intrinsic renal disease. Patient on semaglutide for 2 months. Admitted for aggressive IV fluid hydration. GLP-1 receptor agonist held. Nephrology consulted given slow recovery of renal function despite adequate volume repletion.",
@@ -220,29 +235,94 @@
     "reasoning": "Category: Renal events (Acute kidney injury). AKI likely precipitated by GI fluid loss; recognized risk with GLP-1 RAs."
   },
   {
-    "complaint": "Okay so this is weird - I just picked up my prescription from the pharmacy about an hour ago, and when I got home and was putting it in the fridge, I noticed something strange. The outer carton, like the box it comes in, clearly says 1 mg right there on the label. But when I actually opened the box and looked at the pen itself, the pen sleeve has 0.5 mg printed on it. So the outside box says one strength and the actual device says a different strength. That's not supposed to happen, right? I drove back to the pharmacy because I needed to make sure what I actually have, and the pharmacist was surprised too. She checked their system and my prescription is definitely for 1 mg, and the carton NDC number matches the 1 mg product, but the pen inside is clearly labeled 0.5 mg. She pulled out another pen to check and that one matched correctly. She documented everything and gave me a different pen from a different lot. But I'm wondering how many other people got mismatched products from that batch and maybe didn't notice.",
+    "complaint": "I had hives and swelling. My throat felt tight. I went to urgent care. They gave me steroids. It was an allergic reaction.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Hypersensitivity. Urgent care visit for allergy."
+  },
+  {
+    "complaint": "I bought 'generic Ozempic' from a compounding pharmacy online. It came in a vial not a pen. The label looks homemade. I'm scared to use it.",
     "label": "Product Complaint",
-    "reasoning": "Category: Labeling error. Inconsistent strength between outer carton and device labeling is a labeling/mix-up defect."
+    "reasoning": "Category: Counterfeit/Unauthorized source. Compounded/unauthorized product."
   },
   {
-    "complaint": "I have a painful lump at the injection site. It's red and swollen. It's been there for a few days. The doctor says it's a local reaction to the medication. It hurts when I touch it.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Injection-site reactions. Painful injection site lump."
+    "complaint": "The package tracking said delivered 3 days ago but I just got it. It's been lost in the mail. The ice packs are warm room temperature. The medication is spoiled.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Storage/Temperature excursion. Shipping delay leading to temperature excursion."
   },
   {
-    "complaint": "I've been having this pain like right here under my ribs on the right side, especially after I eat anything fatty. Started maybe two months ago? My doctor ordered an ultrasound and they found gallstones. The weird thing is I've lost about 30 pounds since I started on this medication back in like October, so I guess that's good, but now I have gallstones? Doctor said the rapid weight loss might be related. We're trying to figure out what to do next.",
+    "complaint": "Hi, um, I need to report something that's been happening since I started Ozempic. So I started Ozempic 1 milligram about six weeks ago, and I've been feeling really anxious and jittery. Like, really anxious, all the time. My heart uh races, I can't sleep, I feel like I'm on edge constantly. I've never had anxiety before this medication. I've always been a pretty calm person. But since starting Ozempic, I've been having panic attacks. My doctor said actually this could be related to the you know medication, but it's not ... a common actually side effect. I'm not sure if I should continue taking it, but my blood sugar is so much better. This is really affecting my quality of life though. I'm having trouble sleeping, I'm irritable, I'm not myself. I think this needs to be documented because it's a significant problem that started after I began the medication.",
     "label": "Adverse Event",
-    "reasoning": "Category: Hepatobiliary (gallbladder) disease. Cholelithiasis temporally associated with rapid weight loss on GLP-1 RA."
+    "reasoning": "Reports new onset psychiatric and autonomic symptoms temporally related to starting Ozempic."
   },
   {
-    "complaint": "My sugar was 40. I passed out. My family called 911. They revived me. It was scary.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Hypoglycemia. Family-witnessed syncope from hypo."
+    "complaint": "I'm not losing any weight on this new batch. I'm hungry all the time. The previous pens worked great. I think this lot is weak.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Potency/Assay defect. Therapeutic failure suspicion."
   },
   {
-    "complaint": "So I gave myself the injection on Thursday night before bed. Woke up Friday morning and my lips felt kind of tingly and weird. Looked in the bathroom mirror and my lips were definitely swollen, like noticeably puffed up. And then I noticed I had hives on my chest and neck too. I took some Benadryl right away and kept monitoring myself. The swelling got a bit worse over the next hour and I started to feel like my throat might be tightening up, though I could still breathe okay. My husband wanted to call 911 but I said let's go to the ER instead since I wasn't having trouble breathing yet. At the ER they gave me IV Benadryl and steroids and monitored me for like 4 hours. The swelling gradually went down. The doctor said this was an allergic reaction and I shouldn't take Ozempic anymore. He prescribed me an EpiPen just in case I ever have another reaction to something. Pretty scary honestly.",
+    "complaint": "The text on the pen is blurry. I can't read the dose window markings. The printing is bad quality.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Labeling error. Illegible printing."
+  },
+  {
+    "complaint": "The constipation is so bad it's causing hemorrhoids and fissures. I'm in pain every time I try to go to the bathroom. I'm using laxatives daily but they barely help. My stomach is constantly cramped. It's affecting my quality of life significantly. I'm considering stopping the medication just to get relief from this bowel issue.",
     "label": "Adverse Event",
-    "reasoning": "Category: Hypersensitivity. Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
+    "reasoning": "Category: Gastrointestinal disorders. Severe constipation causing secondary complications (hemorrhoids/fissures)."
+  },
+  {
+    "complaint": "The nausea is bad. I can't eat. I'm losing weight. I feel sick. I want to stop the drug. It's too much.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Gastrointestinal disorders. Intolerance due to nausea."
+  },
+  {
+    "complaint": "I've been having severe pain in my upper right abdomen, mostly after eating fatty meals. It's a sharp, cramping pain that doubles me over. Last night it was so bad I went to the ER. An ultrasound showed my gallbladder is full of stones and the wall is thickened. The surgeon said I have acute cholecystitis and need my gallbladder out. He mentioned that rapid weight loss can cause gallstones, and I've lost about 35 pounds in the last 4 months on this medication. It's a painful price to pay for the weight loss.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Hepatobiliary (gallbladder) disease. Acute cholecystitis and cholelithiasis associated with rapid weight loss."
+  },
+  {
+    "complaint": "The solution looks quite turbid, almost like there's a light cloud of smoke inside the liquid. It's usually crystal clear. I haven't even opened the pen yet, but I can see the cloudiness clearly through the glass window. I'm worried it's gone bad.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Stability/Appearance defect. Turbidity/cloudiness in solution."
+  },
+  {
+    "complaint": "There's a confusing and potentially dangerous mismatch between what's printed on the carton and what's actually on the pen device. The outer carton clearly states that the pen contains 4 doses at 0.25 mg each. That's what it says right on the label. But when I look at the actual pen dose selector dial, the markings only show 0.5 mg and 1 mg dose options. There's no 0.25 mg marking anywhere on the dial that I can see. This is a major problem because my prescription specifically requires that I start at the lower 0.25 mg dose for the first four weeks as a titration period before increasing. If the pen doesn't have 0.25 mg markings, how am I supposed to take that dose? Did they package the wrong pen in this carton? Is the carton labeling wrong? I have no idea but the carton description and the actual device don't match up. I went back to the pharmacy to confirm I wasn't missing something, and the pharmacist looked at it and agreed there's definitely a mismatch - the carton says one thing and the pen shows another. She checked other pens in stock and they all had the correct dose markings that matched their cartons. So mine is some kind of labeling error or packaging mix-up. They swapped it out for a correctly labeled and marked pen. But this is a serious issue because if someone didn't notice and tried to use it, they'd end up taking the wrong dose.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Labeling error. Inconsistency between labeled dose availability and actual device markings."
+  },
+  {
+    "complaint": "The pharmacy dispensed these pens to me today, but when I looked at the bottom of the box, the expiration date passed three months ago. I can't believe they're selling expired medicine. I noticed it before I injected, but it's still a major safety issue.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Distribution/Expiry. Sale of expired product."
+  },
+  {
+    "complaint": "I've been feeling a fluttering sensation in my chest, like a bird is trapped in there. It happens randomly throughout the day. I checked my pulse and it was irregular. I went to urgent care and they did an EKG which showed I was having premature ventricular contractions (PVCs) and a heart rate of 115. They think the medication is stimulating my heart too much. I have to wear a Holter monitor for 24 hours now.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Cardiovascular signs. Palpitations, PVCs, and tachycardia."
+  },
+  {
+    "complaint": "My kidneys are failing. My creatinine is high. I was dehydrated. I need fluids. The doctor is worried.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Renal events (Acute kidney injury). Doctor concern regarding renal failure."
+  },
+  {
+    "complaint": "I have deep, boring pain in my upper abdomen that goes straight through to my spine. It gets worse after I eat. My abdomen is tender to the touch. I've also had some nausea. My doctor ran labs and my lipase is 3 times the normal limit. She diagnosed me with pancreatitis and stopped the medication immediately. I'm on a clear liquid diet to let my pancreas rest.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Pancreatitis. Clinical and biochemical signs of pancreatitis."
+  },
+  {
+    "complaint": "The dose selector dial is extremely loose. It doesn't 'click' into the positions like it usually does. It just slides around, and I'm not sure if it's actually setting the dose correctly or if it's just spinning without moving the internal parts.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Device malfunction. Loose/failed dose selector dial."
+  },
+  {
+    "complaint": "My mail order prescription arrived today and I could tell something was wrong before I even opened it. The outer shipping box was completely crushed on one side, like it got dropped or had something heavy placed on top of it during transit. Opened it up and the product carton inside was also dented pretty badly. The plastic tray that holds the pen was bent and when I took the pen out, it's rattling around loosely inside, like something is broken or disconnected. The green cap has a visible crack running down the side of it and doesn't stay on securely anymore. I'm really concerned about whether the internal mechanism might be damaged too, or if the cartridge seal is compromised. This is an injectable medication so integrity is really important. There's no way I'm using this pen when it's been subjected to that kind of physical trauma. I called the mail order pharmacy right away and they're sending a replacement overnight, but they said I need to send back the damaged one with photos for their quality records. It's frustrating because this is the second time I've had issues with their packaging and shipping methods. They need to use better protective packaging for fragile medical devices.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Packaging defect. Physical damage to carton and device indicates packaging integrity failure."
+  },
+  {
+    "complaint": "I've been on Ozempic for over a year now and I know what the packaging should look like, so when I picked up this refill something immediately seemed off to me. The pen cap color is different - it's still blue but it's like a slightly different shade, not quite the same as all my previous pens. And the font used for the printing on the pen looks different too, like maybe a different typeface or size. Then I looked at the lot code on the carton and that font also seems inconsistent with what I'm used to seeing. The numbers look lighter or thinner somehow. Being suspicious at this point, I tried scanning the QR code with my phone to verify authenticity on the manufacturer's website like they tell you to do, and it's giving me an error message. Either the code isn't valid or it's not linking to the Novo Nordisk site like it should. I still have an empty pen from my last prescription and I compared them side by side - definitely differences in appearance. Called the pharmacy right away and they pulled my last prescription's info to compare lot numbers and packaging. They agreed something doesn't look right and they're investigating with their wholesaler. They gave me a different pen from a different batch in the meantime and that one looks correct. Really concerning that potentially counterfeit or diverted product could make it into the legitimate supply chain.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Counterfeit/Unauthorized source. Appearance inconsistencies and failed verification point to potential counterfeit/diverted product."
   },
   {
     "complaint": "I've been taking the 1 mg dose, but my morning blood sugar levels are higher than they were on the 0.5 mg dose from a different batch. It feels like this entire lot has very little of the active ingredient in it.",
@@ -250,29 +330,49 @@
     "reasoning": "Category: Potency/Assay defect. Suspected lack of potency based on clinical data."
   },
   {
-    "complaint": "The injection site is bruised and painful. It's a large hematoma. It hurts to touch. I must have hit a vessel or reacted bad. It looks terrible.",
+    "complaint": "I'm calling about a major error I found. So I got so my Ozempic pen, and when I opened the box, I looked at the user manual that came with it. But the manual is for a completely different product - it's for Victoza, which is also made by Novo Nordisk, but it's a different medication. The instructions are completely wrong. They're talking about a different pen, different dosing, everything is wrong. This is a serious packaging error. If someone uses the wrong instructions, they could use the pen incorrectly, which could be dangerous. I called my pharmacy and they're . sending me the correct manual, but I wanted to report this because this is a major error. The product should have the correct instructions. This is a regulatory compliance issue - the wrong instructions could lead to medication errors.",
+    "label": "Product Complaint",
+    "reasoning": "Describes serious labeling/packaging error with incorrect product instructions, a regulatory compliance issue."
+  },
+  {
+    "complaint": "So this is kind of a gray area. I've been on Ozempic for about actually four months, and I've well been doing really well. But about a month ago, I started having these episodes where I feel really weak and dizzy, and my blood sugar drops. But here's the thing - I'm not sure if it's the medication causing hypoglycemia, or if it's because I'm eating less like because of uh the nausea from the medication. Like, is it a direct effect of the medication lowering my blood sugar, or is it an indirect effect because the medication makes me nauseous so I eat less? I've had to go to the ER twice because my blood sugar got really low. The doctors said it could be either - uh it could be the medication directly affecting blood sugar, or it could be from not eating enough because of the side effects. I'm documenting this because it's a serious problem, but I'm not entirely sure of the mechanism.",
     "label": "Adverse Event",
-    "reasoning": "Category: Injection-site reactions. Large hematoma at injection site."
+    "reasoning": "Describes hypoglycemic episodes - adverse event whether directly from medication or indirectly from medication-induced reduced food intake."
   },
   {
-    "complaint": "I'm calling about a problem I've been having. So I've been on Ozempic for . about three months, and I've been having issues . with the pens. Like, sometimes the dose counter doesn't reset properly after I inject. actually It stays on the like dose I just injected instead of going back to zero. This happens with some pens but not others. I'm worried that if the counter doesn't reset, I might accidentally inject the same dose twice, or I might not know how much medication is left in the pen. I've called my pharmacy and they said this could be a product defect, but they're not sure. uh They're sending me replacement pens. But I'm also concerned that if I do accidentally inject twice, that could cause an overdose, which would be an adverse event. So I'm not sure if this is a product complaint or if it could lead to an adverse event. I'm documenting this because it's a safety concern.",
-    "label": "Product Complaint",
-    "reasoning": "Describes dose counter malfunction - product defect that could potentially lead to dosing errors, but no adverse event has occurred yet."
+    "complaint": "Okay so this is kind of embarrassing but I've been really constipated. Like, I moved up to the 1 mg dose and within a few days I just couldn't go. It's been over a week now and I'm so bloated and uncomfortable. I've tried drinking more water, eating prunes, all the things my mom always suggested, but nothing was working. Finally had to buy some laxatives from the pharmacy and that helped a bit, but I'm still not back to normal. My stomach feels so distended and I look like I'm pregnant or something. This never happened on the lower dose.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Gastrointestinal disorders. Prolonged constipation post-titration aligns with common GI adverse effects."
   },
   {
-    "complaint": "The label on the pen is for the wrong drug. It says Victoza but the box says Ozempic. The pen looks like an Ozempic pen. It's mislabeled.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Labeling error. Product mix-up/mislabeling."
+    "complaint": "I have pancreatitis. The pain is severe. I'm in the hospital. My pancreas is inflamed. I can't eat anything. It's from the medication. I'm in a lot of pain.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Pancreatitis. Hospitalized with severe pain from pancreatitis."
   },
   {
-    "complaint": "So I got my Ozempic pen, and when I opened the box, I noticed that the needles inside are the wrong size. The box contains 8 millimeter needles, but I was prescribed 4 millimeter needles. My doctor specifically prescribed 4 millimeter needles because I'm thin and have less subcutaneous tissue. The 8 millimeter needles are too long for me - they could , hit muscle or cause more pain. I can't use these needles safely. I called my pharmacy and they said this is a packaging error - the wrong needles were included in the box. They're going to send me the correct needles, but I wanted to I mean report this because this is a quality um control issue. If people get the wrong needle size, they might not be able to use the medication safely, or they might use the wrong size and have problems. This is a product configuration error.",
-    "label": "Product Complaint",
-    "reasoning": "Reports incorrect component packaging, a dispensing or product configuration error without patient harm."
+    "complaint": "My sugar dropped to 45. I was shaking and sweating. I ate sugar but it took a while to come up. I felt terrible.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Hypoglycemia. Symptomatic hypoglycemia with slow recovery."
   },
   {
-    "complaint": "My mail order prescription arrived today and I could tell something was wrong before I even opened it. The outer shipping box was completely crushed on one side, like it got dropped or had something heavy placed on top of it during transit. Opened it up and the product carton inside was also dented pretty badly. The plastic tray that holds the pen was bent and when I took the pen out, it's rattling around loosely inside, like something is broken or disconnected. The green cap has a visible crack running down the side of it and doesn't stay on securely anymore. I'm really concerned about whether the internal mechanism might be damaged too, or if the cartridge seal is compromised. This is an injectable medication so integrity is really important. There's no way I'm using this pen when it's been subjected to that kind of physical trauma. I called the mail order pharmacy right away and they're sending a replacement overnight, but they said I need to send back the damaged one with photos for their quality records. It's frustrating because this is the second time I've had issues with their packaging and shipping methods. They need to use better protective packaging for fragile medical devices.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Packaging defect. Physical damage to carton and device indicates packaging integrity failure."
+    "complaint": "They found food in my stomach during an endoscopy even though I fasted. I aspirated fluid into my lungs. Now I have pneumonia. It's because my stomach drains too slow.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Peri-procedural aspiration risk. Aspiration pneumonia confirmed after endoscopy."
+  },
+  {
+    "complaint": "My heart feels like it's racing all the time. My resting pulse is over 100 beats per minute. I feel jittery and anxious, like I've had too much caffeine. My doctor did an EKG and confirmed sinus tachycardia. He thinks it's a side effect of the Ozempic stimulating my heart.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Cardiovascular signs. Persistent sinus tachycardia causing symptoms."
+  },
+  {
+    "complaint": "I've been waking up in the middle of the night with my heart racing. My pulse will be 120-130 bpm for no reason. I feel anxious and short of breath. My doctor put me on a beta-blocker to control the heart rate, but says if it continues I need to come off the Ozempic. It's uncomfortable and makes it hard to sleep.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Cardiovascular signs. Nocturnal tachycardia requiring beta-blocker therapy."
+  },
+  {
+    "complaint": "The nausea is relentless. I dry heave in the mornings. I've lost my appetite completely. Even the smell of food makes me sick. I'm thinking of stopping the medication because I can't function like this.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Gastrointestinal disorders. Relentless nausea and dry heaving."
   },
   {
     "complaint": "The medication squirted out of the side of the needle connection when I tried to inject. The needle wasn't sealing against the pen tip properly. I wasted a whole dose.",
@@ -285,49 +385,24 @@
     "reasoning": "Category: Contamination/Foreign matter. Visible particulate contamination."
   },
   {
-    "complaint": "The text on the pen is blurry. I can't read the dose window markings. The printing is bad quality.",
+    "complaint": "I have gastroparesis. I feel full quickly. I vomit food. I'm losing weight. It's miserable. The doctor diagnosed me with stomach paralysis.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Gastrointestinal disorders (Gastroparesis). Stomach paralysis diagnosis."
+  },
+  {
+    "complaint": "The ice packs in my mail-order shipment were actually still frozen solid, but they were placed directly against the pens without any padding. The liquid in the pens was frozen into a slushy ice. I know you're not supposed to freeze this stuff, so I'm assuming it's ruined.",
     "label": "Product Complaint",
-    "reasoning": "Category: Labeling error. Illegible printing."
+    "reasoning": "Category: Storage/Temperature excursion. Accidental freezing during transport."
   },
   {
-    "complaint": "I pushed the injection button and held it for 10 seconds like the instructions say, but when I pulled the needle out, a huge stream of medicine squirted out of the pen tip. It clearly didn't deliver the full dose during the injection.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Device malfunction. Failure to deliver full dose/mechanical lag."
-  },
-  {
-    "complaint": "My face swelled up and I couldn't breathe. It was anaphylaxis. My husband used the EpiPen. We went to the ER. It was very scary.",
+    "complaint": "I broke out in hives all over my body after my second shot. My face swelled up and my lips got huge. I had trouble breathing. The ER doctor gave me Epi and steroids. He said it was a severe allergic reaction.",
     "label": "Adverse Event",
-    "reasoning": "Category: Hypersensitivity. Anaphylaxis treated with home EpiPen."
+    "reasoning": "Category: Hypersensitivity. Generalized urticaria and angioedema."
   },
   {
-    "complaint": "I have a pen that I haven't used yet - it's still in the original packaging and has been kept in my refrigerator since I got it two weeks ago. Was looking at it today to prepare for starting it this week and noticed something concerning when I examined the solution. At the very bottom of the cartridge, there's this thick white sediment that's accumulated down there. It's definitely not normal - it looks almost pasty or gel-like, not like the clear liquid solution. I tried gently rolling the pen between my palms like the instructions say to do if you see particles, thinking maybe it would mix back in and dissolve. But even after rolling it for several minutes, the sediment stays clumped at the bottom. It doesn't redissolve or disperse back into the solution. The rest of the solution in the upper portion of the cartridge looks perfectly normal and clear, but this sediment at the bottom is just sitting there. The pen has been properly refrigerated the whole time - I keep my fridge temp between 36 and 40 degrees like you're supposed to. This isn't from improper storage on my end. It looks like the protein in the solution has separated out or aggregated or something. That's a sign of degradation, right? Obviously not using this pen. The pharmacy agreed this is abnormal appearance and they're replacing it. They said the manufacturer will want to test it to see what caused the sedimentation.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Stability/Appearance defect. Sedimentation that does not redisperse indicates protein aggregation or degradation."
-  },
-  {
-    "complaint": "I'm calling about a serious problem. So my patient has been on Ozempic for about four months, and they're also on a statin for uh cholesterol. About two weeks ago, they came in complaining of severe muscle pain and weakness. Like, really severe - they could barely walk. I sent like them for labs, and their creatine kinase level was 8000. Normal is so under 200. That's extremely actually elevated. They were diagnosed with rhabdomyolysis, which is a serious condition where muscle breaks down. This could be from the statin, or it could be from an interaction between the statin and Ozempic, or it ... could be from the Ozempic itself. We stopped both so medications immediately. The patient is doing better now, but it was serious. They had to be monitored closely for kidney damage. actually I'm documenting this as an adverse event because it's a serious condition that could be uh related to the medication or a drug interaction.",
+    "complaint": "Patient presented for outpatient bronchoscopy for evaluation of persistent cough. Pre-procedure assessment completed, patient confirmed adherence to NPO guidelines (nothing to eat or drink after midnight, procedure at 11 AM). During conscious sedation with midazolam and fentanyl, patient suddenly vomited and aspirated before protective reflexes could be engaged. Procedure immediately halted, patient placed in Trendelenburg position, airway suctioned. Emergently intubated for airway protection. Therapeutic bronchoscopy performed showing significant volume of gastric contents throughout bronchial tree requiring extensive suctioning. Patient transferred to ICU intubated for continued airway management and monitoring. Chest imaging consistent with bilateral aspiration. Developed severe aspiration pneumonitis requiring mechanical ventilation for 48 hours. Comprehensive medication review revealed patient on semaglutide for 5 months. Pulmonology and anesthesiology teams emphasize need for extended GLP-1 agonist washout period (minimum 2 weeks) before any sedated procedure given profound effect on gastric emptying.",
     "label": "Adverse Event",
-    "reasoning": "Reports serious adverse event (rhabdomyolysis) with lab confirmation, potentially related to drug interaction."
-  },
-  {
-    "complaint": "I was scheduled for a routine dental procedure - just getting a couple fillings done - and they were going to give me some sedation because I get really anxious at the dentist. I followed all their instructions about not eating, I hadn't had anything since dinner the night before. But during the procedure I guess I regurgitated and they had to stop everything and make sure I didn't aspirate anything into my lungs. The dentist was really concerned and asked about all my medications. When I mentioned the Ozempic, he said that might explain why I still had food in my stomach even though I had fasted. Said something about the medication slowing down digestion. They had to monitor me for a while to make sure I didn't develop any breathing problems or pneumonia. It was really scary honestly.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Peri-procedural aspiration risk. Aspiration-like event in procedural setting linked to delayed gastric emptying risk."
-  },
-  {
-    "complaint": "Patient underwent extraction of impacted wisdom teeth under IV sedation. Despite following proper fasting guidelines (NPO after midnight), patient regurgitated gastric contents during the procedure. Anesthetist immediately secured airway and suctioned material. Post-procedure discussion revealed patient is on semaglutide therapy, which anesthetist suspects contributed to delayed gastric emptying and retained gastric volume. Patient monitored for signs of aspiration pneumonia. Recommendation documented to hold GLP-1 medications for extended period prior to any future procedures requiring sedation or anesthesia.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Peri-procedural aspiration risk. Aspiration-like event in procedural setting linked to delayed gastric emptying risk."
-  },
-  {
-    "complaint": "I have severe pain in the middle of my stomach that radiates to my back. It gets worse when I eat. My labs show elevated lipase. The doctor says it's pancreatitis caused by the medication. I'm in a lot of pain.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Pancreatitis. Classic pancreatitis pain pattern."
-  },
-  {
-    "complaint": "Um, so I've been having this issue where I just don't feel hungry anymore, which sounds great for weight loss, right? But it's actually kind of a problem because even when I do try to eat, I feel full after like two bites. And then for hours after eating I feel this uncomfortable fullness in my stomach. My doctor ordered some kind of test - a gastric emptying study I think they called it? - and apparently my stomach is taking way longer than normal to empty. They're calling it gastroparesis. I'm not sure what to do because the medication is helping my blood sugar but this side effect is really affecting my quality of life.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Gastrointestinal disorders (Gastroparesis). Objective evidence of delayed gastric emptying consistent with gastroparesis."
+    "reasoning": "Category: Peri-procedural aspiration risk. Aspiration event in context of delayed gastric emptying associated with GLP-1 RAs."
   },
   {
     "complaint": "I found a really concerning labeling discrepancy that makes me question which batch of medication I actually have. I was documenting my medication information for my records like I always do, and I noticed that the batch number printed on the actual pen body says batch U8537B. But when I looked at the batch number printed on the outer carton, it says T8537B. The first character is different - U on the pen, T on the carton. Everything else in the batch code is the same, and the expiry dates match between the pen and carton, but that first character difference is significant. Batch numbers are supposed to be unique identifiers for traceability purposes. If there's a recall or quality issue, you need to be able to identify exactly which batch a product came from. With the pen and carton showing different batch codes, there's no way to accurately trace this product. Is the pen from batch U or batch T? I called the pharmacy to ask about this discrepancy and the pharmacist couldn't explain it. She said it shouldn't happen and they're documenting it. I returned the pen because without accurate batch identification, I can't be confident about the product's provenance, quality testing, or whether it's even the right medication. This seems like a labeling error or mix-up during packaging where pens from one batch got put in cartons labeled for a different batch.",
@@ -335,184 +410,24 @@
     "reasoning": "Category: Labeling error. Batch number discrepancy between device and carton prevents accurate traceability."
   },
   {
-    "complaint": "I've been having this dull, gnawing pain in my upper abdomen for weeks, but yesterday it became sharp and severe. It radiates to my back and gets worse when I lie down. I've also been vomiting bile. My lipase levels came back at 800. The ER doctor diagnosed me with acute pancreatitis. I'm on a strict NPO diet and IV pain meds. I'm really worried about permanent damage to my pancreas.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Pancreatitis. Symptoms and labs consistent with acute pancreatitis."
-  },
-  {
-    "complaint": "I made a really stupid mistake and I'm not sure what to do now. I keep my Ozempic pen at my office so I can take it after lunch, and I have this little mini-fridge under my desk where I store it. Yesterday afternoon I was rearranging some stuff and I guess I accidentally put the pen in the small freezer compartment instead of the regular fridge part. Didn't realize my mistake until this morning when I went to check on it and found it sitting in the freezer section. It had been in there for probably 24 hours. The solution was actually partially frozen - I could see it wasn't fully solid but definitely had ice in it. I took it out and let it thaw at room temperature for a few hours, and now the solution looks clear again, no crystals or anything visible. Called the pharmacist to ask if it's still safe to use and she said absolutely not, that freezing the medication destroys it and I need to throw it away and get a new one. Something about the protein structure being damaged by freezing even if it looks normal after thawing. So now I'm out a pen because of my own carelessness. Just want to document what happened in case anyone else makes the same mistake - don't use it after freezing even if it looks okay.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Storage/Temperature excursion. Freezing violates storage conditions and may denature the product."
-  },
-  {
-    "complaint": "I'm calling about my patient who had a serious complication. So the um patient has been on Ozempic for about three months, and they've been having a lot of GI side effects - nausea, vomiting, diarrhea. It's been pretty bad, but manageable. Last week, the patient was vomiting really severely, and they aspirated some of the vomit into their lungs. They ended up with aspiration pneumonia. They were hospitalized for five days on IV antibiotics. The patient also  -  has GERD, which they've had for years, so that was a contributing factor. But the severe vomiting from the Ozempic definitely made the aspiration more likely. The patient is doing better now, but it was a serious infection. I'm documenting this as an adverse event because the medication's side effects led to a serious complication requiring hospitalization. Even though there were other factors, the Ozempic's GI effects were a major contributor.",
-    "label": "Adverse Event",
-    "reasoning": "Describes serious complication (aspiration pneumonia) resulting from GI adverse effects of Ozempic, even with contributing factors."
-  },
-  {
-    "complaint": "My kidney function tests came back abnormal. My creatinine is elevated and my potassium is high. I've been feeling dehydrated from the constant nausea. My doctor is holding my blood pressure medication and the Ozempic to try to protect my kidneys. He says I'm in stage 2 acute kidney injury. I need to drink more water but it's hard when I feel sick.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Renal events (Acute kidney injury). Stage 2 AKI with electrolyte abnormalities."
-  },
-  {
-    "complaint": "The skin at my injection site is necrotic. It turned black and scabby. It's painful and ugly. The doctor says it's a severe tissue reaction.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Injection-site reactions. Tissue necrosis at injection site."
-  },
-  {
-    "complaint": "When I try to press the injection button, it's completely stuck. I've tried pushing it with both thumbs as hard as I can, but it won't move even a millimeter. The pen is totally unusable because of this mechanical jam.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Device malfunction. Non-functioning/stuck injection button."
-  },
-  {
-    "complaint": "Hi, I need to actually report a problem with my Ozempic pen. So I got a new pen last week, and when I tried to use it, it clicks when I dial the dose, but when I press the injection button, no medication comes out. Like, nothing. I've tried it three times now, same thing every time. ... I can hear it clicking when I dial, and the counter shows the dose, but when I press the button to inject, nothing happens. I've used Ozempic pens before, so I know how to use so them. I'm  -  following all the steps correctly. The pen seems defective - like there's something wrong with the internal like mechanism that uh delivers the medication. I well haven't had any adverse effects because I haven't actually gotten any medication from it, but I'm missing doses which isn't good for my diabetes. I called my pharmacy and they said I need  -  to report this to the manufacturer. This is definitely a product defect.",
-    "label": "Product Complaint",
-    "reasoning": "Reports mechanical malfunction preventing medication delivery, a device defect without reported patient harm."
-  },
-  {
-    "complaint": "My vision is blurry. I have bleeding in my eye. It's retinopathy.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Eye disorders (Diabetic retinopathy complications). Bleeding retinopathy."
-  },
-  {
-    "complaint": "Patient with baseline chronic kidney disease stage 3 (creatinine baseline 1.4-1.5 mg/dL) presented with acute on chronic kidney injury. Reports several days of persistent nausea with markedly reduced oral intake. Physical exam notable for decreased skin turgor, orthostatic hypotension. Labs: creatinine peaked at 2.4 mg/dL, BUN 45. Urinalysis consistent with prerenal etiology. Patient recently started on semaglutide 4 weeks ago. Admitted for IV hydration; GLP-1 agonist held. Renal function improved with volume repletion but remains above baseline.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Renal events (Acute kidney injury). AKI on CKD in the setting of GI intolerance is a recognized risk scenario."
-  },
-  {
-    "complaint": "My vision is blurry. The eye doctor says I have bleeding in my eye. It's retinopathy. I need treatment.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Eye disorders (Diabetic retinopathy complications). Retinal bleeding causing blur."
-  },
-  {
-    "complaint": "I'm calling about a problem with my Ozempic pen. So the label on the pen is peeling off. Like, it's coming off in strips, and I can't read the lot number or expiration date anymore. The label is all smudged and unreadable. I'm really concerned because I need to know when this pen expires, and I need the lot number in case there's a recall or something. I called my pharmacy and they said this is a quality control issue. They're going to send me a replacement, but I wanted to report this because this is a labeling defect. If people can't read the label, they might not know important information about the product. This is a quality issue that needs to be addressed.",
-    "label": "Product Complaint",
-    "reasoning": "Describes labeling defect affecting product identification and traceability, a quality issue."
-  },
-  {
-    "complaint": "There's something wrong with the dose counter display on my pen. When I look at the little window that's supposed to show you what dose you've dialed and how many doses remain, it's completely blank. Just empty, white or gray space - no numbers visible at all. I've tried looking at it in bright light, in sunlight, with my reading glasses, and there are just no numbers showing. The pen otherwise seems to function - the dial turns and clicks like it should, the solution looks clear and normal - but I have absolutely no way to verify what dose I'm setting or confirm how many doses are left in the pen. The dose counter is a critical safety feature because you need to know you're getting the right amount of medication and track when the pen will be empty. Without being able to see the numbers, I can't safely use this pen. I don't know if the printing somehow got missed during manufacturing, or if there's an internal mechanism that's supposed to display the numbers that's broken. Either way, it's a device malfunction that makes the pen unusable. Pharmacy replaced it and documented the issue. The one they gave me as a replacement has a perfectly clear, readable dose counter like it's supposed to.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Device malfunction. Non-functional dose counter prevents proper dose verification and tracking of remaining doses."
-  },
-  {
-    "complaint": "This is extremely concerning and I've never seen anything like it before in any medication. I was inspecting a new pen before my first dose, holding it up to the light to check that the solution is clear like you're supposed to do, and I saw what appears to be a small metallic fragment floating in the solution. It's tiny, roughly the size of a pinhead, but it's definitely metallic - looks silver or gray colored, reflects light differently than the solution, clearly not part of the liquid. When I tilt the pen back and forth, the fragment moves around and sinks or floats depending on the orientation. This is completely unexpected and honestly quite scary for an injectable medication that's supposed to be sterile. How does metal get into a sealed pharmaceutical cartridge? Could it be from the manufacturing equipment? Could it have broken off from inside the pen mechanism? I have no idea, but there's no way I'm injecting any solution that has metal particles in it. The pen is otherwise sealed, the packaging was intact, and the expiration date is still over a year away, so this isn't an issue of me damaging it or it being expired. This has to be a manufacturing contamination issue. Brought it immediately to the pharmacy and they were shocked when they saw it too. Documented everything, taking the lot number, and they're filing an urgent quality complaint with the manufacturer because metallic contamination in a sterile injectable is a critical safety issue.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Contamination/Foreign matter. Metallic particulate contamination in sterile product is a critical quality defect."
-  },
-  {
-    "complaint": "My refrigerator's thermostat failed while I was away for the weekend, and the temperature inside went up to 75 degrees. My Ozempic pens were in there the whole time. I don't know how many hours they were sitting at room temperature, but it's been at least two days.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Storage/Temperature excursion. Patient storage temperature excursion."
-  },
-  {
-    "complaint": "I'm calling about a problem with my Ozempic pen. So when I dial the dose, the pen makes a really loud grinding noise. Like, a grinding well or scraping sound. It doesn't sound right at all. My previous pens made a smooth clicking sound, but this one sounds broken. I'm worried that if it sounds broken, maybe it won't deliver the right amount of medication. What if the mechanism is , damaged and I'm not getting the ... correct dose? I just opened this well pen, it's , brand new. I haven't used it so yet because I'm actually concerned about the noise and what it might mean for dosing accuracy. um I called my pharmacy and they're sending me a replacement, but I wanted to report this uh because this is a quality issue. The pen should operate smoothly and quietly. If it's making grinding noises, that suggests the mechanism is damaged or defective.",
+    "complaint": "I'm calling about a problem with my Ozempic pen. well So when I dial the dose, the pen makes a really loud grinding noise. . Like, a grinding or scraping sound. It doesn't sound right at like all. My previous pens made a smooth clicking sound, but this one sounds broken. I'm worried that you know if it sounds broken, maybe it won't deliver the right amount of medication. What if the mechanism is damaged and I'm not getting the correct dose? I just opened this pen, it's brand new. I haven't used it yet because I'm concerned about the noise and . what it might mean for dosing accuracy. I called my pharmacy and they're sending me a replacement, but I wanted to report this because this is a quality issue. The pen should operate smoothly and quietly. If it's making grinding noises, that suggests the mechanism is damaged or defective.",
     "label": "Product Complaint",
     "reasoning": "Describes abnormal device operation suggesting mechanical defect, a quality issue affecting confidence in dosing."
   },
   {
-    "complaint": "I'm calling about something that happened, but I'm not sure if it's really a problem or not. So I've been on Ozempic for about two months, and I've been having some GI side effects - nausea, some diarrhea. But it's been manageable. Last week, I mean I noticed that my pen was you know leaking a little bit after I injected. Like, a small amount of medication would leak out around the needle site after I removed the needle. I'm not sure if this is normal or if it's a problem with the pen. I'm worried that I'm not getting the full dose because some medication is leaking out. But I'm also having GI side effects, which suggests I am getting medication. I don't know if the leaking is a product actually defect or if it's just normal, or if it's related to my injection technique. I called my pharmacy and they said to report it, but I'm not sure if this is a product complaint or if it's just how the pen works. I'm documenting this because like I'm concerned about getting the correct dose.",
-    "label": "Product Complaint",
-    "reasoning": "Describes medication leakage after injection - product defect affecting dose delivery, even if some medication is being delivered."
-  },
-  {
-    "complaint": "Patient scheduled for elective carpal tunnel release under monitored anesthesia care. Pre-operative assessment completed, patient followed NPO guidelines (nothing after midnight for 8+ hour procedure scheduled at 9 AM). During induction with propofol, patient vomited and aspirated gastric contents. Immediate airway management initiated, patient intubated emergently for airway protection. Bronchoscopy performed showing large volume of particulate matter in trachea and right bronchus, suctioned. Procedure cancelled. Post-aspiration chest x-ray demonstrated bilateral lower lobe infiltrates. Patient transferred to ICU, started on broad-spectrum antibiotics. Developed aspiration pneumonia requiring 4-day ICU stay. Medication history significant for semaglutide use, last dose 4 days prior to surgery. Anesthesiology recommends all future procedures hold GLP-1 agonists minimum 14 days prior due to prolonged effects on gastric motility.",
+    "complaint": "I vomited during surgery prep. I aspirated. Now I have pneumonia. My stomach wasn't empty. It's a bad complication.",
     "label": "Adverse Event",
-    "reasoning": "Category: Peri-procedural aspiration risk. Aspiration event in context of delayed gastric emptying associated with GLP-1 RAs."
+    "reasoning": "Category: Peri-procedural aspiration risk. Pre-op vomiting and aspiration."
   },
   {
-    "complaint": "The dose selector dial is extremely loose. It doesn't 'click' into the positions like it usually does. It just slides around, and I'm not sure if it's actually setting the dose correctly or if it's just spinning without moving the internal parts.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Device malfunction. Loose/failed dose selector dial."
-  },
-  {
-    "complaint": "I'm vomiting every day. I can't keep anything down. I feel full all the time. My doctor diagnosed me with gastroparesis. My stomach isn't working. I'm losing muscle mass because I can't eat protein.",
+    "complaint": "Hi, um, well I need to report something that's been happening. So I started Ozempic about two months ago, and I've been having these episodes where my like heart starts racing. Like, really fast, up to 120 beats per minute even when I'm just sitting down. It feels like my heart is going to beat out of my chest. I went to my cardiologist and he did an EKG and found that I'm having episodes of atrial fibrillation. I've never had any heart ... problems before, no family history, nothing. The timing is suspicious because it started about a month after I began Ozempic. But I'm also , under a lot of stress at work, and I've been drinking more coffee lately. So I don't know if it's the medication or something else. My cardiologist said it could be related you know to you know the Ozempic, but he's not 100% sure. He started me on a beta blocker, which helps some, but I'm still having episodes. I'm documenting this because even though we're not certain, the timing suggests it could be related to the medication.",
     "label": "Adverse Event",
-    "reasoning": "Category: Gastrointestinal disorders (Gastroparesis). Daily vomiting and gastroparesis causing muscle loss."
+    "reasoning": "Reports cardiac adverse event (new atrial fibrillation) temporally related to Ozempic initiation, despite other potential contributing factors."
   },
   {
-    "complaint": "My blood sugar was 35. I was unconscious. The paramedics gave me IV glucose. I woke up in the ambulance. It was a severe low.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Hypoglycemia. Unconscious hypoglycemia requiring paramedics."
-  },
-  {
-    "complaint": "This pen expired 6 months ago. The pharmacy still gave it to me. I noticed the date when I got home. This is negligent.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Distribution/Expiry. Dispensing expired medication."
-  },
-  {
-    "complaint": "My kidney function is down. My creatinine is up. I was dehydrated from vomiting. The doctor is worried about my kidneys. I need fluids.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Renal events (Acute kidney injury). Renal function decline requiring fluids."
-  },
-  {
-    "complaint": "So this is confusing. I got my Ozempic pen, and when I looked at it, the box says 0.5 milligrams, but the pen itself is uh labeled 1.0 like milligrams. There's a mismatch between the box label and the pen label. I don't know which one  -  is correct. I called my pharmacy and they said they dispensed 0.5 milligrams, so that's what should be in there. But the pen says 1.0 milligrams. I'm really confused and concerned. What if I use it and get the wrong like dose? That could be dangerous. I haven't used it yet - I'm you know waiting to hear back from my doctor about what to do. But I wanted to report this because this is a labeling error. It could be a pharmacy dispensing error, or it could be a manufacturing labeling problem. Either way, it's a product identification issue that could affect patient safety.",
-    "label": "Product Complaint",
-    "reasoning": "Reports labeling mismatch or dispensing error, a product identification issue without patient use or harm."
-  },
-  {
-    "complaint": "This is really concerning. So I've been injecting like Ozempic for um about four months now, and I've been doing the injections in my abdomen, rotating sites. About two weeks ago, I noticed one of my injection sites was really red and swollen, and it was getting worse. It became really painful, and it started draining pus. I so went to urgent care,  -  and the doctor said it was an abscess. They had to do an incision and , drainage procedure right . there. It was really painful. They sent a culture, and it came back positive for staph aureus. I had to take antibiotics for two weeks. The doctor asked me about my injection technique, and I've been following all the instructions - cleaning the site, using a new needle every time, everything. This has never happened with any other medication I've injected. I'm really worried about injecting again because I don't want another infection. The doctor said this could be from contamination or improper technique, but I've been really careful. I think this is related to the Ozempic , so injections somehow.",
+    "complaint": "This is really concerning. So I've been uh injecting I mean Ozempic for about four months now, and I've been doing the injections in my abdomen, rotating sites. About two weeks ago, I noticed one of my injection sites was really red and so swollen, and it was getting worse. It became really painful, and it started draining pus. I went to urgent care, and the doctor said it was an abscess. They had to do an incision and drainage procedure right there. It I mean was really painful. They sent a culture, and it came back positive for staph aureus. I had to take antibiotics for two weeks. The doctor asked me about my injection technique, and I've been following all the instructions - cleaning the site, using a new needle every well time, everything. This has never happened with any other medication I've injected. I'm really worried about injecting again because I don't want another infection. The doctor said this could be from contamination or improper technique, but I've been really careful. uh I think this is related to the Ozempic injections somehow.",
     "label": "Adverse Event",
     "reasoning": "Describes serious infection at injection site requiring surgical intervention, an adverse event from drug administration."
-  },
-  {
-    "complaint": "The shrink wrap was missing from the carton. Anyone could have opened it. I don't feel safe using medication that isn't sealed properly.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Packaging defect. Missing secondary packaging seal."
-  },
-  {
-    "complaint": "I have severe diarrhea and cramping. I go 10 times a day. I'm losing weight from dehydration. My electrolytes are low. I feel weak and dizzy. I can't leave the house.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Gastrointestinal disorders. High-frequency diarrhea causing electrolyte imbalance."
-  },
-  {
-    "complaint": "I have severe abdominal pain that radiates to my back. I'm vomiting and have a fever. My lipase levels are elevated. The doctor diagnosed me with acute pancreatitis. I'm in the hospital getting fluids and pain medication.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Pancreatitis. Standard acute pancreatitis hospitalization."
-  },
-  {
-    "complaint": "I've been having severe pain in my upper right abdomen, mostly after eating fatty meals. It's a sharp, cramping pain that doubles me over. Last night it was so bad I went to the ER. An ultrasound showed my gallbladder is full of stones and the wall is thickened. The surgeon said I have acute cholecystitis and need my gallbladder out. He mentioned that rapid weight loss can cause gallstones, and I've lost about 35 pounds in the last 4 months on this medication. It's a painful price to pay for the weight loss.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Hepatobiliary (gallbladder) disease. Acute cholecystitis and cholelithiasis associated with rapid weight loss."
-  },
-  {
-    "complaint": "I aspirated stomach acid during a procedure. I woke up coughing and couldn't breathe. I developed pneumonia in my right lung. The doctor said my stomach hadn't emptied from the night before due to the medication.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Peri-procedural aspiration risk. Aspiration pneumonia due to delayed emptying."
-  },
-  {
-    "complaint": "I'm calling about a problem with my Ozempic pen. So the injection button is completely stuck. Like, I can't depress it at all, no matter how hard I push. I've tried everything - pushing it straight down, twisting it, nothing works. It's like it's frozen in place. I can like dial the dose fine, the counter , works, but I can't actually inject because ... the button won't move. This is a brand new  -  pen, I just opened it. I'm completely unable to use it. I called my pharmacy and they're sending me a replacement, but I wanted to report this because this is a mechanical failure. If the button doesn't work, people can't use the pen at all. This is a product defect , that prevents use of the medication. I'm documenting , this as a product complaint because it's a device malfunction.",
-    "label": "Product Complaint",
-    "reasoning": "Describes device mechanical failure preventing use, a product defect without adverse patient reaction."
-  },
-  {
-    "complaint": "So this is kind of a gray area. I've been on Ozempic for about four months, and I've been doing really well. But about a month ago, I started having these episodes where I feel really weak and dizzy, and you know my blood sugar drops. But here's the thing - I'm not sure if it's the medication causing hypoglycemia, or if it's because I'm eating less because of the nausea from well the medication. Like, is it a direct effect of the medication lowering my blood sugar, or is it so an indirect effect because the medication makes me nauseous so I eat less? I've had to go to the so ER twice because my blood sugar got really low. The doctors said it could be either - it could be actually the medication directly affecting blood sugar, or it could be from not eating enough like because of the side effects. I'm documenting this because it's a serious problem, but I'm not entirely sure of the mechanism.",
-    "label": "Adverse Event",
-    "reasoning": "Describes hypoglycemic episodes - adverse event whether directly from medication or indirectly from medication-induced reduced food intake."
-  },
-  {
-    "complaint": "I received this pen from an 'influencer' online who was selling their extra supply. The box is in a language I can't read, and there's no FDA approval stamp anywhere on the packaging. I'm very suspicious of the contents.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Counterfeit/Unauthorized source. Unauthorized source and foreign labeling."
-  },
-  {
-    "complaint": "Hi, um, I need to report something that's been happening well since I started Ozempic. So I started Ozempic 1 milligram about six weeks ago, and I've been feeling really anxious and jittery. well Like, really anxious, all the time. My heart races, I can't sleep, I feel like I'm on edge constantly. I've never had anxiety before well this medication. I've always been a pretty calm person. But since starting Ozempic, I've been having panic attacks. My doctor said this could be related to the medication, but it's not a common side effect. I'm not sure if I should continue taking it, but my blood sugar is so much better. This is really affecting my quality of life though. I'm having trouble sleeping, I'm irritable, I'm not myself. I think this needs to be documented because it's a significant problem that started after I began the medication.",
-    "label": "Adverse Event",
-    "reasoning": "Reports new onset psychiatric and autonomic symptoms temporally related to starting Ozempic."
-  },
-  {
-    "complaint": "I pushed the button to inject but no liquid came out. The counter went down to 0, but I didn't feel the injection and there was no drop on the needle tip. I checked the flow and nothing is coming out. It's clogged.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Device malfunction. Failure to deliver dose despite counter movement."
-  },
-  {
-    "complaint": "I bought these from a seller who claimed to have 'overstock'. When they arrived, the font on the label was different and the color of the pen cap was a lighter shade of blue than my previous pens. I'm afraid these are fakes.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Counterfeit/Unauthorized source. Suspicious sourcing and multiple visual counterfeit signs."
-  },
-  {
-    "complaint": "The liquid is amber colored, like apple juice. It smells funny too. It's definitely not right. I think it has degraded from heat or something. I'm returning it.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Stability/Appearance defect. Significant discoloration and odor."
   },
   {
     "complaint": "My shipment sat in a delivery truck for two days during a heatwave where temps reached over 100 degrees. When I opened the package, the ice packs were not just melted, they were actually warm to the touch. The medication box felt like it had been in an oven.",
@@ -520,94 +435,184 @@
     "reasoning": "Category: Storage/Temperature excursion. Severe heat exposure during shipping."
   },
   {
-    "complaint": "There is a piece of cardboard inside the blister pack. It's clean but it shouldn't be there. It's foreign material.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Contamination/Foreign matter. Packaging debris contamination."
+    "complaint": "The nausea is bad. I can't eat. I'm losing weight too fast. I feel sick all the time. I want to stop the drug.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Gastrointestinal disorders. Nausea causing desire to stop drug."
   },
   {
-    "complaint": "So this is complicated. I've been on Ozempic for about five months, uh and I've been having some problems, but I'm not sure what's causing them. I've been having a lot of fatigue and weakness, and I've I mean been losing weight, but not in a good way - I'm losing muscle mass, not just fat. I went to my doctor and they did labs, uh and my protein levels are low, well which suggests malnutrition. But I'm uh not sure if this is from the Ozempic causing malabsorption, or if it's because I'm eating less because of the nausea, or if it's something else entirely. The doctor said it could be related to the medication, but it's not clear. I'm documenting this because it's a I mean serious problem, but I'm not entirely sure if it's an adverse event from the medication or . if it's something else. The timing is suspicious though - it started after I ... I mean began Ozempic.",
+    "complaint": "I bought these from a seller who claimed to have 'overstock'. When they arrived, the font on the label was different and the color of the pen cap was a lighter shade of blue than my previous pens. I'm afraid these are fakes.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Counterfeit/Unauthorized source. Suspicious sourcing and multiple visual counterfeit signs."
+  },
+  {
+    "complaint": "I mean, I know I should have called my doctor sooner, but I was just dealing with the nausea, you know? Everyone said it would get better. But then I started getting this really bad diarrhea too, like I couldn't leave the bathroom. This went on for days and I wasn't drinking enough because I felt so sick. Finally my daughter made me go to the doctor and they did blood work. They said my kidneys weren't working right, something about my creatinine being too high. They had to give me IV fluids at the hospital for two days. The doctor said the dehydration from being so sick caused kidney problems. They told me to stop the Ozempic.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Renal events (Acute kidney injury). AKI likely precipitated by GI fluid loss; recognized risk with GLP-1 RAs."
+  },
+  {
+    "complaint": "So I'm trying to remember exactly when this started... I think about a week and a half ago? Maybe two weeks? Anyway, I started having really bad pain in my stomach, like upper middle area. The pain is constant and it wraps around to my back which is just weird. It's bad enough that I haven't been able to eat much at all, and a few times the pain has been so intense I threw up. Finally my wife insisted I go to the emergency room yesterday. They did blood work and a CT scan. The doctor said I have pancreatitis - inflammation of the pancreas. They asked if I drink alcohol and I said no, not really, maybe a beer on the weekend. They said I don't have gallstones. But I am on Ozempic, been taking it for like 5 or 6 months now. The doctor said the medication could be causing it and told me to stop taking it. They admitted me to the hospital and I'm not allowed to eat or drink anything, just getting fluids through an IV. They're giving me pain medication too which is helping a bit.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Pancreatitis. Biochemical evidence and symptoms consistent with pancreatitis absent biliary cause."
+  },
+  {
+    "complaint": "So I received my Ozempic pen in the mail, and when I opened the shipping box, actually the pen was frozen solid. Like, completely frozen. It was supposed to be shipped with ice packs to keep ... it cold, so but it was frozen, not just cold. The pen was hard as a rock. I called my pharmacy and they said the , medication is probably ruined now. Ozempic is supposed to be refrigerated, not frozen. If it freezes, it can damage the medication and make it ineffective. so I'm really frustrated because I've wasted a pen, and these are expensive. I haven't used it because I don't know if it's still good, and I I mean don't want to risk using ineffective medication. This is a cold chain failure - the product  -  wasn't stored or shipped at the correct temperature. I'm documenting this as a product complaint because it's a storage and shipping issue that affects product quality.",
+    "label": "Product Complaint",
+    "reasoning": "Reports cold chain failure with product freezing, affecting medication potency and quality."
+  },
+  {
+    "complaint": "The liquid is amber colored, like apple juice. It smells funny too. It's definitely not right. I think it has degraded from heat or something. I'm returning it.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Stability/Appearance defect. Significant discoloration and odor."
+  },
+  {
+    "complaint": "Presented to emergency department with severe abdominal pain, rated 9/10 in intensity, located in the epigastric region. Pain described as constant and radiating to the back. Labs remarkable for amylase 645 U/L and lipase 1,250 U/L. CT abdomen performed and negative for gallstones, though showed findings consistent with pancreatic inflammation. Patient diagnosed with acute pancreatitis. On medication review, patient taking semaglutide for 6 months. GI consulted, recommended discontinuation of GLP-1 agonist. Patient admitted for supportive management.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Pancreatitis. Biochemical evidence and symptoms consistent with pancreatitis absent biliary cause."
+  },
+  {
+    "complaint": "I'm calling about something I noticed when I opened my Ozempic pen box. So I got a new pen yesterday, and when I opened the box, the protective seal on the pen was already broken. Like, it was torn and partially detached. The package also looked like it might have been previously opened - so the outer box had some damage, and the inner packaging looked tampered with. I'm really concerned about contamination. If the seal like is broken, the pen might not be sterile anymore. I haven't used it because I'm worried about infection or contamination. I called my pharmacy and they're sending me a replacement, but  -  I wanted to report this because this is a packaging integrity issue. If the packaging is compromised, the product could be contaminated or tampered with. This is a you know quality like and safety concern.",
+    "label": "Product Complaint",
+    "reasoning": "Describes compromised packaging integrity raising sterility concerns, a product tampering or quality issue."
+  },
+  {
+    "complaint": "I have a pen that I haven't used yet - it's still in the original packaging and has been kept in my refrigerator since I got it two weeks ago. Was looking at it today to prepare for starting it this week and noticed something concerning when I examined the solution. At the very bottom of the cartridge, there's this thick white sediment that's accumulated down there. It's definitely not normal - it looks almost pasty or gel-like, not like the clear liquid solution. I tried gently rolling the pen between my palms like the instructions say to do if you see particles, thinking maybe it would mix back in and dissolve. But even after rolling it for several minutes, the sediment stays clumped at the bottom. It doesn't redissolve or disperse back into the solution. The rest of the solution in the upper portion of the cartridge looks perfectly normal and clear, but this sediment at the bottom is just sitting there. The pen has been properly refrigerated the whole time - I keep my fridge temp between 36 and 40 degrees like you're supposed to. This isn't from improper storage on my end. It looks like the protein in the solution has separated out or aggregated or something. That's a sign of degradation, right? Obviously not using this pen. The pharmacy agreed this is abnormal appearance and they're replacing it. They said the manufacturer will want to test it to see what caused the sedimentation.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Stability/Appearance defect. Sedimentation that does not redisperse indicates protein aggregation or degradation."
+  },
+  {
+    "complaint": "Woke up in the middle of the night with excruciating pain in the center of my abdomen, radiating straight through to my back. It was a 9 out of 10 on the pain scale. I was sweating and felt feverish. My wife took me to the ER, and they did blood work which showed my lipase levels were over 1000. They did a CT scan and told me my pancreas was inflamed. I don't drink alcohol and don't have gallstones, so the doctors are pretty sure it's the Ozempic. They've taken me off it and I'm currently on IV fluids.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Pancreatitis. Classic acute pancreatitis presentation with elevated enzymes and no other obvious cause."
+  },
+  {
+    "complaint": "This was really scary - I gave myself my weekly injection on Saturday morning and then about 20 minutes later my lips started tingling and then swelling up. And then my throat started feeling tight, like I couldn't quite catch my breath? My partner called 911 immediately and the paramedics came really fast, thank god. They gave me an epinephrine shot right there in my living room. They said it was a severe allergic reaction. I had to go to the hospital and they kept me for observation. The ER doctor said I absolutely cannot take this medication ever again.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Hypersensitivity. Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
+  },
+  {
+    "complaint": "Patient scheduled for elective carpal tunnel release under monitored anesthesia care. Pre-operative assessment completed, patient followed NPO guidelines (nothing after midnight for 8+ hour procedure scheduled at 9 AM). During induction with propofol, patient vomited and aspirated gastric contents. Immediate airway management initiated, patient intubated emergently for airway protection. Bronchoscopy performed showing large volume of particulate matter in trachea and right bronchus, suctioned. Procedure cancelled. Post-aspiration chest x-ray demonstrated bilateral lower lobe infiltrates. Patient transferred to ICU, started on broad-spectrum antibiotics. Developed aspiration pneumonia requiring 4-day ICU stay. Medication history significant for semaglutide use, last dose 4 days prior to surgery. Anesthesiology recommends all future procedures hold GLP-1 agonists minimum 14 days prior due to prolonged effects on gastric motility.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Peri-procedural aspiration risk. Aspiration event in context of delayed gastric emptying associated with GLP-1 RAs."
+  },
+  {
+    "complaint": "I've developed gallstones since starting Ozempic. I have attacks of pain in my right side that last for hours, especially after I eat dinner. The ultrasound showed multiple stones. My doctor says I need surgery to remove my gallbladder because the stones are causing inflammation. I've lost 40 pounds, but now I need surgery.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Hepatobiliary (gallbladder) disease. Symptomatic cholelithiasis (gallstones) requiring surgery."
+  },
+  {
+    "complaint": "I have gastroparesis. I vomit undigested food. I feel full after eating a small amount. I've lost a lot of weight. My stomach isn't working properly. I have to stop the medication.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Gastrointestinal disorders (Gastroparesis). Gastroparesis with weight loss."
+  },
+  {
+    "complaint": "My heart rate is fast. I feel it beating. It makes me nervous. The doctor checked my heart and said it's sinus tachycardia. I have to monitor it.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Cardiovascular signs. Monitoring required for tachycardia."
+  },
+  {
+    "complaint": "My kidneys are injured from dehydration. My creatinine is high. I was sick with diarrhea for days. The doctor stopped the drug to protect my kidneys.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Renal events (Acute kidney injury). AKI from diarrhea-induced dehydration."
+  },
+  {
+    "complaint": "I got dizzy and sweaty while driving. I had to pull over. My sugar was 50. I drank a soda and waited for it to come up. It was a close call.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Hypoglycemia. Hypoglycemia while driving."
+  },
+  {
+    "complaint": "I left the package in my trunk for 2 days in the summer heat. The liquid is hot. The plastic pen feels soft. I messed up and ruined the medication.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Storage/Temperature excursion. Patient-induced heat excursion."
+  },
+  {
+    "complaint": "The dial gets stuck at 0. It won't turn to start the dose. The mechanism is jammed. I can't use it at all.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Device malfunction. Dose dial jam."
+  },
+  {
+    "complaint": "The pharmacy is trying to sell me pens that expire in 10 days. I need a supply that lasts for at least a month. They told me 'it's all they have', but I'm not paying for medicine that will be officially expired halfway through my treatment.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Distribution/Expiry. Supply of medication with inadequate remaining shelf life."
+  },
+  {
+    "complaint": "I made a really stupid mistake and I'm not sure what to do now. I keep my Ozempic pen at my office so I can take it after lunch, and I have this little mini-fridge under my desk where I store it. Yesterday afternoon I was rearranging some stuff and I guess I accidentally put the pen in the small freezer compartment instead of the regular fridge part. Didn't realize my mistake until this morning when I went to check on it and found it sitting in the freezer section. It had been in there for probably 24 hours. The solution was actually partially frozen - I could see it wasn't fully solid but definitely had ice in it. I took it out and let it thaw at room temperature for a few hours, and now the solution looks clear again, no crystals or anything visible. Called the pharmacist to ask if it's still safe to use and she said absolutely not, that freezing the medication destroys it and I need to throw it away and get a new one. Something about the protein structure being damaged by freezing even if it looks normal after thawing. So now I'm out a pen because of my own carelessness. Just want to document what happened in case anyone else makes the same mistake - don't use it after freezing even if it looks okay.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Storage/Temperature excursion. Freezing violates storage conditions and may denature the product."
+  },
+  {
+    "complaint": "So this is complicated. I've been on Ozempic for about five months, and I've been having some problems, but I'm not sure what's causing them. I've been having a lot of fatigue and weakness, and I've been losing weight, but not in a good way - I'm losing muscle mass, not just fat. I went to my doctor and they did labs, and my protein levels are low, which suggests malnutrition. But I'm not sure if this is from the Ozempic causing malabsorption, or if it's because I'm eating less because of the nausea, or if it's something else entirely. The doctor said it could be related to the medication, but it's not clear. I'm documenting this because it's a serious problem, but I'm not entirely sure if it's an adverse event from the medication or if it's something else. The timing is suspicious though - it started after I began Ozempic.",
     "label": "Adverse Event",
     "reasoning": "Describes malnutrition and muscle loss - adverse event likely related to medication effects on nutrition, whether direct or indirect."
   },
   {
-    "complaint": "Patient presents with complaints of persistent tachycardia since dose titration to maximum dose of 2 mg weekly approximately 3 weeks prior. Resting heart rate documented at 96-102 bpm consistently over the past week, compared to baseline of 68-75 bpm prior to semaglutide initiation. Patient reports subjective sensation of heart racing, particularly in the evening hours, associated with mild anxiety. No chest pain, dyspnea, or syncope reported. EKG performed showing sinus tachycardia without acute ST-T wave changes. Holter monitor ordered for 24-hour assessment. Discussed potential dose reduction if symptoms persist.",
+    "complaint": "I have pancreatitis. The pain is bad. I'm in the hospital. My pancreas is inflamed.",
     "label": "Adverse Event",
-    "reasoning": "Category: Cardiovascular signs. Sustained HR increase and palpitations post-titration fit CV sign category."
+    "reasoning": "Category: Pancreatitis. Inflamed pancreas."
   },
   {
-    "complaint": "I bought this pen from an online 'health store' that didn't require a prescription. Now that I have it, the holographic seal on the box looks like a cheap sticker, and the font is slightly different from the pens I get at my local CVS. I'm starting to think this isn't the real medication.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Counterfeit/Unauthorized source. Suspicious sourcing and visual discrepancies."
-  },
-  {
-    "complaint": "This is an unfortunate situation caused by a delivery error that resulted in my medication being left unrefrigerated for way too long. I use a specialty pharmacy for my Ozempic and they shipped it via overnight delivery in an insulated package with ice packs like they're supposed to. The tracking showed it was out for delivery yesterday morning and marked as delivered at 10 AM. But I never received it. Turns out the courier mis-delivered it to my neighbor's house two doors down instead of mine. My neighbor has an enclosed front porch that isn't visible from the street, so they didn't notice the package sitting there until this morning when they were leaving for work. They brought it over to me, which was nice of them, but by then it had been sitting on their enclosed porch for almost two full days. When I felt the package, it was room temperature or even warmer - remember, it's been sitting in an enclosed porch for 48 hours. Opened it up and the ice packs were completely thawed, just bags of warm water at this point. Based on the timeline, this medication has been unrefrigerated in a warm environment for approximately 48 hours. The storage requirements say it needs to be refrigerated and shouldn't be exposed to temperatures above 86 degrees for extended periods. I have no idea what temperature it reached sitting in that enclosed porch, but it's definitely been compromised. Called the specialty pharmacy and they're sending a replacement at no charge, but this is a waste of medication due to a delivery error. They said I should not use the mis-delivered pens since the temperature excursion was so prolonged.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Storage/Temperature excursion. Two-day unrefrigerated storage due to delivery failure constitutes temperature excursion."
-  },
-  {
-    "complaint": "So this happened on a Tuesday morning, I remember because I had just gotten to work. Started feeling really shaky and sweaty out of nowhere. My vision got kind of blurry and I felt confused - my coworker said I wasn't making sense when I was talking. She had me check my blood sugar because she's a type 1 diabetic and recognized the symptoms. It was 52, which is really low. She gave me some juice and I started feeling better after about 10 minutes. The thing is, I take my glipizide pill every morning and I also take the Ozempic shot once a week. I called my doctor and she said we need to adjust my medications because taking them together is making my blood sugar go too low.",
+    "complaint": "So I gave myself the injection on Thursday night before bed. Woke up Friday morning and my lips felt kind of tingly and weird. Looked in the bathroom mirror and my lips were definitely swollen, like noticeably puffed up. And then I noticed I had hives on my chest and neck too. I took some Benadryl right away and kept monitoring myself. The swelling got a bit worse over the next hour and I started to feel like my throat might be tightening up, though I could still breathe okay. My husband wanted to call 911 but I said let's go to the ER instead since I wasn't having trouble breathing yet. At the ER they gave me IV Benadryl and steroids and monitored me for like 4 hours. The swelling gradually went down. The doctor said this was an allergic reaction and I shouldn't take Ozempic anymore. He prescribed me an EpiPen just in case I ever have another reaction to something. Pretty scary honestly.",
     "label": "Adverse Event",
-    "reasoning": "Category: Hypoglycemia. Low glucose with symptoms and a sulfonylurea co-med increases hypoglycemia risk."
+    "reasoning": "Category: Hypersensitivity. Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
   },
   {
-    "complaint": "Hi, um, I need to report something that's been happening. so So I started Ozempic about two months ago, I mean and I've been having these episodes where my heart starts racing. Like, really fast, up to 120 beats per minute even when , I'm just sitting down. It feels like my heart is going to beat out of my chest. I went to my cardiologist and he did an EKG and found that I'm having episodes of atrial fibrillation. I've never had any heart problems before, no family history, nothing. The timing is suspicious because it started about well a month after I began Ozempic. But I'm also under a lot of stress at work, um and I've been drinking more coffee lately. So I don't know if it's the medication or um something else. My cardiologist said it could be related to the Ozempic, but he's not 100% sure. He started me  -  on a beta blocker, which helps some, but I'm still having episodes. I'm documenting this because even though we're not certain, the timing suggests it could be related to the medication.",
-    "label": "Adverse Event",
-    "reasoning": "Reports cardiac adverse event (new atrial fibrillation) temporally related to Ozempic initiation, despite other potential contributing factors."
-  },
-  {
-    "complaint": "The box says 1.0 mg dose, but the pen inside has markings for only 0.25 and 0.5 mg. I can't take my full prescribed dose with this device. It's clearly the wrong pen in the wrong box.",
+    "complaint": "So I got my Ozempic pen, and when I I mean looked at the solution inside, it looks cloudy instead of clear. I mean Like, it's not transparent like it should be. It looks milky you know or hazy. I haven't used it yet because I'm concerned about what this means. Is it contaminated? Is it degraded? Is it still safe to use? I've used Ozempic pens before, and they ... were always clear. This is different from my usual pens. I called my doctor and they said not to use it and to get a replacement. I'm going to return it to the pharmacy. But I wanted to report this because this is a quality concern. If the solution looks different, that suggests something might be wrong with it. It could be contamination, or it could be that the medication has degraded. Either way, it's a quality issue that needs to be addressed.",
     "label": "Product Complaint",
-    "reasoning": "Category: Labeling error. Packaging mix-up (wrong device in carton)."
+    "reasoning": "Reports abnormal product appearance suggesting contamination or degradation, identified before use."
   },
   {
-    "complaint": "I was supposed to have surgery but they cancelled it because my stomach was full of food. I hadn't eaten since the night before, but the ultrasound showed food in my stomach. The anesthesiologist said I was a high aspiration risk because of the delayed gastric emptying from my medication.",
+    "complaint": "This was really scary. So I've been on Ozempic for about five weeks, and I've I mean been having a lot of nausea and vomiting. It's been pretty bad, but I was trying to stick with it because my actually doctor said the side you know effects should improve. But last week, I was vomiting really badly for two weeks straight. I couldn't keep anything down, not you know even water. I got really dehydrated. My blood pressure dropped really low, and I you know actually passed out. My husband found me on the floor and called 911. The paramedics came and took me to the hospital. I was really dehydrated, my blood pressure was 80 over 50, which is dangerously low. They gave me IV fluids and kept me overnight. The well doctors said the vomiting from Ozempic caused severe dehydration, which led to low blood pressure and fainting. I'm better now, but it was really scary. I've stopped . the medication because I can't deal with this level of side effects. I think this needs actually to be reported because it was a serious complication.",
     "label": "Adverse Event",
-    "reasoning": "Category: Peri-procedural aspiration risk. Surgery cancellation due to full stomach/aspiration risk."
+    "reasoning": "Describes serious complications (dehydration, hypotension, syncope) from medication adverse effects requiring emergency care."
   },
   {
-    "complaint": "My kidneys aren't working right. My doctor said my creatinine levels are way up and my GFR is down. I was dehydrated from all the vomiting I had last week. They gave me fluids in the hospital but my kidneys are slow to recover. The doctor called it acute kidney injury and took me off the medication.",
+    "complaint": "So I got my like Ozempic well pen, and when I opened the box, I noticed that the needles inside are the wrong size. The box contains 8 millimeter needles, but I was prescribed 4 millimeter needles. My doctor specifically prescribed 4 millimeter needles because I'm thin and have less subcutaneous tissue. The 8 millimeter actually needles are too long for me - they could hit muscle or cause more pain. I can't use these needles safely. I called my pharmacy and they said this is a packaging error - the wrong needles were included in the box. They're going to send me the correct needles, but I wanted to report this because this is a quality control issue. If so people get the wrong needle size, they might not be able to use the medication safely, or they might use the wrong size and have problems. This is a product configuration error.",
+    "label": "Product Complaint",
+    "reasoning": "Reports incorrect component packaging, a dispensing or product configuration error without patient harm."
+  },
+  {
+    "complaint": "My sugar was 35. I was unconscious. The paramedics helped me. It was scary. I need to lower my insulin.",
     "label": "Adverse Event",
-    "reasoning": "Category: Renal events (Acute kidney injury). AKI secondary to dehydration/vomiting."
+    "reasoning": "Category: Hypoglycemia. Unconscious hypo requiring insulin adjustment."
   },
   {
-    "complaint": "I don't really know how to explain this but I feel like my stomach has just stopped working properly. I have no appetite at all anymore, which I guess is good for losing weight, but even when I try to force myself to eat something, I feel full after just a couple bites. And then that feeling of fullness just stays for hours and hours. It's this uncomfortable, heavy feeling in my stomach. Sometimes I also feel nauseous on top of the fullness. This has been going on for about a month now and I've lost like 15 pounds because I'm barely eating. My doctor was concerned enough that she ordered a gastric emptying study. I had to eat these eggs with radioactive stuff in them and then lie under a camera for like 4 hours while they took pictures. The results showed that my stomach is emptying really slowly - took twice as long as it should. Doctor said it's gastroparesis and it's probably from the Ozempic. We're trying some medications to help speed up my digestion but if that doesn't work I might have to stop the Ozempic.",
+    "complaint": "My resting heart rate has gone up significantly since I started this drug. I used to be in the low 60s, but now my Fitbit shows I'm consistently in the 80s or 90s, even when I'm just sitting on the couch watching TV. Sometimes I can feel my heart pounding in my chest, like palpitations. It's a bit unsettling. My doctor did an EKG and said it's sinus tachycardia, likely a side effect of the GLP-1 agonist. We're monitoring it, but if it stays this high, I might have to stop.",
     "label": "Adverse Event",
-    "reasoning": "Category: Gastrointestinal disorders (Gastroparesis). Objective evidence of delayed gastric emptying consistent with gastroparesis."
+    "reasoning": "Category: Cardiovascular signs. Sustained increase in resting heart rate and palpitations."
   },
   {
-    "complaint": "I bought a package that comes with three pens in it because it's supposed to be more economical that way. Started using the first pen and it seemed fine, worked normally through all the doses. Opened the second pen when it was time and something looked weird right away - there's this big air gap at the top of the cartridge, like it's not filled up as much as it should be. The liquid level is noticeably lower than it was in the first pen. Used it for two doses but the air gap looks even bigger now, bigger than it should be for only two doses used. Opened the third pen to compare and that one looks normal, filled to the proper level like the first one was. So two out of three pens from the same package are completely different - one filled properly, two underfilled with excessive headspace. Either they didn't put enough medication in those two pens, or there's a leak somewhere, or the fill volume was wrong during manufacturing. Either way, I'm probably not getting the right amount of medication from those underfilled pens. Contacted the pharmacy and they're replacing the entire 3-pack. They said this is definitely a manufacturing fill or packaging defect and they're reporting it to track if other pens from that lot have the same issue.",
+    "complaint": "I'm calling about a actually serious problem. So my patient has been on Ozempic for about four months, and they're also on a statin for cholesterol. About two weeks ago, they came in complaining of severe muscle pain and weakness. Like, really severe - they could barely walk. I sent them for labs, and their creatine kinase level was 8000. Normal is under 200. That's extremely elevated. They were diagnosed with rhabdomyolysis, which is a serious condition where muscle breaks down. This could be from the statin, or it could be from an interaction between the statin and Ozempic, or it could be from the Ozempic itself. We stopped both medications immediately. The patient is doing better now, but it was serious. They had to be monitored closely for kidney  -  damage. I'm documenting this as an adverse event because it's a serious condition that could be related to the medication or a drug . interaction.",
+    "label": "Adverse Event",
+    "reasoning": "Reports serious adverse event (rhabdomyolysis) with lab confirmation, potentially related to drug interaction."
+  },
+  {
+    "complaint": "My heart rate is fast. I feel it. It makes me nervous. The doctor checked it.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Cardiovascular signs. Doctor check of heart rate."
+  },
+  {
+    "complaint": "I went to the ER because I haven't urinated in 24 hours. I've been feeling dizzy and my heart is racing. They told me I'm in acute renal failure from severe dehydration. My creatinine is 3.5! They are talking about putting me on dialysis temporarily if my kidneys don't respond to fluids. I can't believe a stomach bug from this medication could cause my kidneys to shut down.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Renal events (Acute kidney injury). Severe AKI with anuria and potential need for dialysis."
+  },
+  {
+    "complaint": "I pushed the injection button and held it for 10 seconds like the instructions say, but when I pulled the needle out, a huge stream of medicine squirted out of the pen tip. It clearly didn't deliver the full dose during the injection.",
     "label": "Product Complaint",
-    "reasoning": "Category: Packaging defect. Underfill/abnormal headspace across units from the same pack indicates fill/packaging issue."
+    "reasoning": "Category: Device malfunction. Failure to deliver full dose/mechanical lag."
   },
   {
-    "complaint": "The labeling on the actual pen body is so smudged that I can't read the lot number or the expiration date. It looks like the ink wasn't cured properly. I need this info for my records, but it's just a blurry mess.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Labeling error. Illegible primary labeling."
-  },
-  {
-    "complaint": "I injected the full dose but I felt nothing. Usually it stings a little. My blood sugar didn't change at all. I wonder if it's just saline in the pen.",
-    "label": "Product Complaint",
-    "reasoning": "Category: Potency/Assay defect. Suspected lack of potency/placebo."
-  },
-  {
-    "complaint": "Patient reports significant change in bowel habits following dose escalation to 1 mg weekly. Describes difficulty with bowel movements, occurring only once every 5-7 days compared to daily pattern prior to medication. Associated with abdominal cramping, bloating, and decreased appetite. Has tried over-the-counter fiber supplements and stool softeners with minimal improvement. Physical exam notable for abdominal distension and discomfort on palpation. Recommended increased fluid intake, dietary modifications, and trial of osmotic laxative. Discussed potentially reducing dose if symptoms persist.",
+    "complaint": "So, um, this is my second time trying to report this because I wasn't sure if it was related but my doctor said I should definitely document it. I've been on Ozempic for maybe 8 or 9 weeks now? And my blood sugar has been great, like the best it's been in years. But I've been having issues with my bowels - specifically constipation. I know, TMI, but it's been really bad. I'm only going maybe once a week if I'm lucky, and when I do it's really difficult and uncomfortable. My stomach is constantly bloated and I look like I'm pregnant even though I've actually lost weight overall. I've been taking Miralax every day, drinking tons of water, eating salads with lots of fiber, and it's still a problem. My doctor is suggesting we try a lower dose to see if that helps because apparently this is a pretty common side effect.",
     "label": "Adverse Event",
     "reasoning": "Category: Gastrointestinal disorders. Prolonged constipation post-titration aligns with common GI adverse effects."
   },
   {
-    "complaint": "This is really disturbing. I was inspecting a new pen before first use like I always do, holding it up to the light to check that the solution is clear, and I saw what looks like a black speck or particle floating in the cartridge. It's small, maybe about a millimeter in size, but definitely visible and very dark, almost black, against the clear solution. It's floating freely in the liquid and moves around when I tilt the pen. This pen has never been opened or used - it's brand new, still sealed in the original packaging. The presence of any kind of particulate matter in a sterile injectable medication is totally unacceptable. This is supposed to be a sterile product and there should be nothing floating in it. I took the pen directly to the pharmacy to show them. The pharmacist looked at it under their magnifying light and agreed it's definitely a foreign particle of some kind. She immediately documented everything, took pictures, recorded the lot number, and replaced the pen with one from a different batch. She said they'll be sending this one back to the manufacturer and filing a contamination report. This is a serious quality control issue because that particle could have been injected into someone if they didn't inspect the pen carefully first. Makes me wonder about the sterility and manufacturing conditions if stuff like this is getting through.",
+    "complaint": "This medication is 2 years past expiration. I found it in the back of my grandma's fridge. Can I still use it?",
     "label": "Product Complaint",
-    "reasoning": "Category: Contamination/Foreign matter. Visible particulate matter in sterile injectable product represents serious contamination risk."
+    "reasoning": "Category: Distribution/Expiry. Patient inquiry re: expired product."
   },
   {
-    "complaint": "I had hives and swelling after the shot. My throat felt tight. I went to the ER. They gave me meds. It was an allergic reaction. I'm scared to take it again.",
+    "complaint": "My retina specialist is concerned about the new blood vessels growing in my eye. He says I have proliferative retinopathy now. I've had some episodes where my vision goes dark for a few minutes. He attributes the rapid progression to the sudden drop in my A1C levels since starting Ozempic. I'm scheduled for laser photocoagulation surgery next week to save my sight.",
     "label": "Adverse Event",
-    "reasoning": "Category: Hypersensitivity. Fear of recurrence after allergy."
-  },
-  {
-    "complaint": "I constantly feel like I have a brick sitting in my stomach. The bloating is painful and I look six months pregnant. I'm burping these foul, sulfur-smelling burps that are so embarrassing. I can't eat normal meals anymore because I just feel so full and sick immediately. My doctor says these are classic symptoms of gastroparesis caused by the GLP-1 agonist.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Gastrointestinal disorders (Gastroparesis). Classic symptoms of gastroparesis including sulfur burps and bloating."
+    "reasoning": "Category: Eye disorders (Diabetic retinopathy complications). Proliferative retinopathy with transient vision loss."
   },
   {
     "complaint": "My sugar dropped to 40 while I was driving. I got confused and pulled over. I drank juice and waited. It was a close call. I was scared I would crash.",
@@ -615,53 +620,48 @@
     "reasoning": "Category: Hypoglycemia. Hypoglycemia while driving posing safety risk."
   },
   {
-    "complaint": "My heart rate is high all the time. I feel palpitations. It makes me anxious. The doctor says it's a side effect. I might need a beta blocker.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Cardiovascular signs. Anxiety-inducing tachycardia."
-  },
-  {
-    "complaint": "I aspirated stomach contents during a scope. I have pneumonia now. My stomach was full of liquid. The doctor says it delayed emptying.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Peri-procedural aspiration risk. Aspiration during endoscopy."
-  },
-  {
-    "complaint": "I've been taking my 1 mg dose for weeks but my blood sugar is climbing back up. It feels like I'm injecting water. I'm not getting the appetite suppression I usually get. I think this batch is defective or weak.",
+    "complaint": "Hi, I need to report a problem with my Ozempic pen. So I got a new pen last week, and when I tried to use it, it clicks when I dial the dose, but when I press the injection button, no medication comes out. Like, nothing. I've tried it three times now, same thing every time. I can hear it clicking when I dial, and the counter shows the dose, but when I press um the button to inject, nothing happens. I've used Ozempic pens before, so I know how to use them. I'm following all the steps correctly. The pen seems defective - like there's something wrong with the internal mechanism that delivers the medication. I haven't had any adverse effects because I haven't actually gotten any medication from it, but I'm missing doses which isn't so good for my diabetes. I called my pharmacy and they said I need to report like this to the manufacturer. This is definitely a product defect.",
     "label": "Product Complaint",
-    "reasoning": "Category: Potency/Assay defect. Lack of expected therapeutic effect suggesting potency issue."
+    "reasoning": "Reports mechanical malfunction preventing medication delivery, a device defect without reported patient harm."
   },
   {
-    "complaint": "This was really scary. So I've been on Ozempic for about five weeks, and I've been having a lot of nausea and vomiting. It's been pretty bad, but I was trying to stick with it because my doctor said the side effects should improve. But last week, I was vomiting really badly for two weeks straight. I couldn't keep anything down, not even water. I got really dehydrated. My blood pressure dropped really low, and I actually passed out. My husband found me on the floor and called 911. The paramedics came and took me you know to the hospital. I was really dehydrated, my blood pressure was 80 over like 50, which is dangerously low. They gave me IV fluids and I mean kept me overnight. The doctors said the vomiting from Ozempic caused severe dehydration, which led to low blood pressure and fainting. I'm better now, but it was really scary. I've stopped the medication because I can't deal with this level of side effects. I think this needs to , be reported because it was a serious complication.",
-    "label": "Adverse Event",
-    "reasoning": "Describes serious complications (dehydration, hypotension, syncope) from medication adverse effects requiring emergency care."
-  },
-  {
-    "complaint": "So this is kind of complicated. My patient has been on Ozempic for about four months, and he's been having really bad constipation. Like, really severe. He's been taking laxatives, but they're not helping much. Last week, he came into the ER with severe abdominal pain and distension. We did a CT scan and found a partial bowel obstruction. He um was admitted for three days, had to have an NG tube, IV fluids, the whole thing. Now, constipation I mean is a known side effect of Ozempic, and severe constipation can lead to bowel obstruction. But the patient also has a history of diverticulosis, which can predispose to obstruction. So it's not entirely clear if this is directly from the Ozempic or if the Ozempic just made an underlying condition worse. But the timing is suspicious, and the constipation from Ozempic ... definitely contributed. I'm documenting this as an adverse event because the medication's side effect led to uh a serious complication requiring hospitalization.",
-    "label": "Adverse Event",
-    "reasoning": "Reports serious GI complication (bowel obstruction) requiring hospitalization, potentially related to Ozempic-induced constipation."
-  },
-  {
-    "complaint": "I'm calling about my patient who had a serious reaction. So the patient started Ozempic about three weeks ago, and after , the second dose, they developed a rash all over their body. Like, everywhere - arms, legs, trunk, everywhere. They also had a fever of 102 degrees Fahrenheit. They well came into my office, and I sent them for labs. Their liver enzymes were elevated - ALT was 180, AST was 150, which is significantly elevated. Normal is under 40. This looks like a systemic hypersensitivity reaction with organ involvement. The patient had no history of liver disease, no other medications that could cause this. The timing is very suspicious - , second dose of Ozempic, and then this reaction. I stopped the medication immediately and started them on steroids. The rash is improving, but the liver enzymes are still elevated. This is a serious adverse drug reaction. I'm documenting this as an adverse event because it's a systemic hypersensitivity reaction with organ involvement, which is I mean serious.",
-    "label": "Adverse Event",
-    "reasoning": "Describes systemic hypersensitivity reaction with organ involvement, a serious adverse drug reaction."
-  },
-  {
-    "complaint": "I had a hypoglycemic seizure. My blood sugar was 30. My husband found me shaking on the floor. He called 911. They gave me glucagon. I woke up in the ER with a headache.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Hypoglycemia. Hypoglycemic seizure requiring emergency intervention."
-  },
-  {
-    "complaint": "My eye doctor has been monitoring my diabetic retinopathy for years now, and it's always been pretty stable. But since I started this medication maybe three and a half months ago, things have changed. I've noticed my vision getting worse - things are blurry, it's harder to read street signs when I'm driving, stuff like that. I went in for my regular checkup and the ophthalmologist said my retinopathy has progressed significantly. She showed me the images and explained that there's more damage to the blood vessels in my eyes. She asked if anything had changed with my diabetes management and I told her about starting Ozempic. She said sometimes when your blood sugar improves quickly it can temporarily make the eye problems worse. I'm really worried about potentially losing my vision.",
-    "label": "Adverse Event",
-    "reasoning": "Category: Eye disorders (Diabetic retinopathy complications). Temporal association with known risk of retinopathy worsening warrants categorization here."
-  },
-  {
-    "complaint": "The solution looks quite turbid, almost like there's a light cloud of smoke inside the liquid. It's usually crystal clear. I haven't even opened the pen yet, but I can see the cloudiness clearly through the glass window. I'm worried it's gone bad.",
+    "complaint": "I'm calling about something that happened, but I'm not um sure if it's really a problem or not. So I've been on Ozempic for about two months, and I've been having some GI side effects - , nausea, some diarrhea. But it's been manageable. Last week, I you know noticed that my pen was leaking a actually little bit after I injected. Like, a small amount of medication would leak out around the needle site after I removed the needle. I'm not sure if this is normal or if it's a problem with the pen. I'm worried that I'm not getting ... the full dose because some medication is leaking out. But I'm also having GI side effects, which suggests I am getting medication. I don't know so if the leaking is a product defect or if it's just normal, or if it's related to my injection technique. I called my you know pharmacy and they said to report it, but I'm not sure if this is a product complaint or if it's just how the pen works. I'm documenting this because I'm concerned about getting the correct dose.",
     "label": "Product Complaint",
-    "reasoning": "Category: Stability/Appearance defect. Turbidity/cloudiness in solution."
+    "reasoning": "Describes medication leakage after injection - product defect affecting dose delivery, even if some medication is being delivered."
   },
   {
-    "complaint": "So I received my Ozempic pen in the mail, and when I opened the shipping box, the pen was frozen solid. Like, completely frozen. It was supposed to be shipped so with ice packs to keep it cold, but it was frozen, not just cold. The pen was hard as a rock. I called my pharmacy and they said the medication is probably ruined now. Ozempic , is supposed to be refrigerated, not frozen. If it freezes, it can damage the medication like and uh make it ineffective. I'm really frustrated because I've wasted a pen, and these are expensive. I haven't used it because I don't know if it's still good, like and I don't want to risk using ineffective medication. This is a cold chain failure - the product wasn't stored or shipped at the correct temperature. I'm documenting this as a product complaint because it's a storage and shipping issue that affects product quality.",
+    "complaint": "I've been dealing with persistent nausea for the past three weeks since I started the 0.5 mg dose. It's not just a little queasiness; it's a deep, rolling stomach upset that lasts all day. I'm having trouble eating anything substantial, and I've lost about 8 pounds, which is faster than I wanted. Yesterday, I actually vomited while driving to work, which was a nightmare. My doctor suggested splitting the dose or going back down, but I'm worried about losing the blood sugar control. It's really affecting my daily life.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Gastrointestinal disorders. Persistent, severe nausea and vomiting affecting daily activities."
+  },
+  {
+    "complaint": "I have a hard, itchy lump at the injection site. It's red and warm. It's been there for a week. I'm worried it's an infection or a bad reaction to the drug.",
+    "label": "Adverse Event",
+    "reasoning": "Category: Injection-site reactions. Persistent, inflammatory injection site nodule."
+  },
+  {
+    "complaint": "I bought a package that comes with three pens in it because it's supposed to be more economical that way. Started using the first pen and it seemed fine, worked normally through all the doses. Opened the second pen when it was time and something looked weird right away - there's this big air gap at the top of the cartridge, like it's not filled up as much as it should be. The liquid level is noticeably lower than it was in the first pen. Used it for two doses but the air gap looks even bigger now, bigger than it should be for only two doses used. Opened the third pen to compare and that one looks normal, filled to the proper level like the first one was. So two out of three pens from the same package are completely different - one filled properly, two underfilled with excessive headspace. Either they didn't put enough medication in those two pens, or there's a leak somewhere, or the fill volume was wrong during manufacturing. Either way, I'm probably not getting the right amount of medication from those underfilled pens. Contacted the pharmacy and they're replacing the entire 3-pack. They said this is definitely a manufacturing fill or packaging defect and they're reporting it to track if other pens from that lot have the same issue.",
     "label": "Product Complaint",
-    "reasoning": "Reports cold chain failure with product freezing, affecting medication potency and quality."
+    "reasoning": "Category: Packaging defect. Underfill/abnormal headspace across units from the same pack indicates fill/packaging issue."
+  },
+  {
+    "complaint": "There's something wrong with the dose counter display on my pen. When I look at the little window that's supposed to show you what dose you've dialed and how many doses remain, it's completely blank. Just empty, white or gray space - no numbers visible at all. I've tried looking at it in bright light, in sunlight, with my reading glasses, and there are just no numbers showing. The pen otherwise seems to function - the dial turns and clicks like it should, the solution looks clear and normal - but I have absolutely no way to verify what dose I'm setting or confirm how many doses are left in the pen. The dose counter is a critical safety feature because you need to know you're getting the right amount of medication and track when the pen will be empty. Without being able to see the numbers, I can't safely use this pen. I don't know if the printing somehow got missed during manufacturing, or if there's an internal mechanism that's supposed to display the numbers that's broken. Either way, it's a device malfunction that makes the pen unusable. Pharmacy replaced it and documented the issue. The one they gave me as a replacement has a perfectly clear, readable dose counter like it's supposed to.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Device malfunction. Non-functional dose counter prevents proper dose verification and tracking of remaining doses."
+  },
+  {
+    "complaint": "I'm calling about something that's really upsetting me. So I've been on Ozempic for about three months, and I've lost about twenty-five pounds, which is great. But about a month ago, I started noticing that my hair was falling like out. Like, a lot. I'm losing handfuls ... of hair in the actually shower, it's coming out when I brush it, it's everywhere. I went to my doctor and she said it's telogen effluvium, which is hair loss that can happen after stress or um major changes to your body. She thinks it's related to the rapid weight loss from the Ozempic. So it's not directly from the medication itself, but from the weight loss the medication causes. I'm really upset because I'm losing my hair, and it's affecting my self-esteem. you know I don't know if I should stop the medication, but my blood sugar is so much better.  -  This is really affecting my quality of life. I think this needs to be documented because even though it's um indirect, it's a significant problem.",
+    "label": "Adverse Event",
+    "reasoning": "Reports adverse effect (alopecia) indirectly related to medication-induced rapid weight loss, affecting patient quality of life."
+  },
+  {
+    "complaint": "The pharmacy dispensed a box to me that expires next month. Since I'm supposed to get a three-month supply, the last two pens in the box will be expired before I even get a chance to use them. This is poor inventory management.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Distribution/Expiry. Inadequate dating for the duration of the prescription."
+  },
+  {
+    "complaint": "I pushed the button to inject but no liquid came out. The counter went down to 0, but I didn't feel the injection and there was no drop on the needle tip. I checked the flow and nothing is coming out. It's clogged.",
+    "label": "Product Complaint",
+    "reasoning": "Category: Device malfunction. Failure to deliver dose despite counter movement."
   }
 ]

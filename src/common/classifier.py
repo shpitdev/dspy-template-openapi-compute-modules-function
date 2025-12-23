@@ -93,6 +93,8 @@ class ComplaintClassifier(dspy.Module):
 def classification_metric(example: dspy.Example, pred: dspy.Prediction, trace=None) -> float:
     """Return 1.0 if the predicted label matches the ground truth."""
 
+    if pred.classification is None:
+        return 0.0
     predicted = pred.classification.strip().lower()
     actual = example.classification.strip().lower()
     return float(predicted == actual)
@@ -116,10 +118,10 @@ def evaluate_model(model: ComplaintClassifier, dataset: list[dspy.Example], data
         status = "✓" if is_correct else "✗"
         print(f"{status} Example {i}/{total}")
         print(f"  Complaint: {example.complaint[:80]}...")
-        print(f"  Predicted: {prediction.classification}")
+        print(f"  Predicted: {prediction.classification or '(None - truncated response)'}")
         print(f"  Actual: {example.classification}")
         if not is_correct:
-            print(f"  Justification: {prediction.justification}")
+            print(f"  Justification: {prediction.justification or '(None)'}")
         print()
 
     accuracy = correct / total

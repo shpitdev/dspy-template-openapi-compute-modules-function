@@ -78,8 +78,8 @@ complaint_category_sample_data = [
     },
     {
         "narrative": "Something really strange and concerning happened with my injection last week. I'm on the starting dose of 0.25 mg, so I carefully dialed it to exactly that marking like I always do. But when I did the injection, something felt different. The plunger movement seemed to go on longer than usual, and there was this unusual resistance that I hadn't felt before. The whole injection took maybe twice as long as it normally does. I thought maybe I was just imagining things, but over the next few hours I started feeling really off - more nauseous than I've ever been on this medication, kind of shaky, just not right at all. Called my doctor's office and the nurse had me come in. My blood sugar was lower than expected and she was concerned that maybe I got more than the 0.25 mg dose I dialed. Like maybe the pen delivered more medication than what was showing on the dose selector. I had to monitor my blood sugar closely for the next day or so. I still have the pen and I'm afraid to use it again. The pharmacy is having me return it to send to the manufacturer for testing because if the dosing mechanism is off, that's a serious safety issue. The nurse said to document everything that happened in case the pen is found to be defective.",
-        "category": "Potency/Assay defect",
-        "reasoning": "Observed dose over-delivery suggests incorrect dose accuracy; treat as potency/delivery defect.",
+        "category": "Device malfunction",
+        "reasoning": "Dosing mechanism delivered incorrect amount; device mechanical failure.",
     },
     {
         "narrative": "I've been on Ozempic for over a year now and I know what the packaging should look like, so when I picked up this refill something immediately seemed off to me. The pen cap color is different - it's still blue but it's like a slightly different shade, not quite the same as all my previous pens. And the font used for the printing on the pen looks different too, like maybe a different typeface or size. Then I looked at the lot code on the carton and that font also seems inconsistent with what I'm used to seeing. The numbers look lighter or thinner somehow. Being suspicious at this point, I tried scanning the QR code with my phone to verify authenticity on the manufacturer's website like they tell you to do, and it's giving me an error message. Either the code isn't valid or it's not linking to the Novo Nordisk site like it should. I still have an empty pen from my last prescription and I compared them side by side - definitely differences in appearance. Called the pharmacy right away and they pulled my last prescription's info to compare lot numbers and packaging. They agreed something doesn't look right and they're investigating with their wholesaler. They gave me a different pen from a different batch in the meantime and that one looks correct. Really concerning that potentially counterfeit or diverted product could make it into the legitimate supply chain.",
@@ -268,8 +268,8 @@ complaint_category_sample_data = [
     },
     {
         "narrative": "This is strange and I'm not sure what to make of it. I have two pens from the same carton, same lot number, and both of them have an unusual marking inside the cartridge. When you look at the glass cartridge that holds the solution, there's this ring-shaped mark or stain on the inner glass surface, roughly in the middle of the cartridge. It's not in the solution itself - the solution appears clear - but you can see it on the inside wall of the glass. Looks like some kind of residue or discoloration that formed a ring around the inside circumference. At first I thought maybe it was just a reflection or something on the outside of the glass, but when I look carefully and turn the pen, it's definitely on the inner surface. Both pens from the same carton have this same marking. My previous pens from other batches never had any marks or discoloration on the glass at all. The cartridge glass has always been perfectly clear inside and out. I'm concerned this could be residue from the filling process, or discoloration from the medication degrading and depositing something on the glass, or maybe even contamination. The solution itself looks clear, but having visible residue or staining on the container interior is not normal and makes me question whether the product is okay to use. Brought them to the pharmacy and they agreed the markings are unusual and shouldn't be there. They're replacing both pens and sending them to the manufacturer to investigate what caused the staining.",
-        "category": "Stability/Appearance defect",
-        "reasoning": "Visible residue or staining on container interior suggests contamination or degradation product.",
+        "category": "Contamination/Foreign matter",
+        "reasoning": "Residue or staining on container interior indicates contamination from manufacturing process.",
     },
     {
         "narrative": "The protective cap on my pen is damaged and I'm worried about whether the pen itself is still safe to use. The green outer cap that covers the pen and protects the mechanism has a visible crack running vertically down one side. It's not just a hairline crack - you can see it clearly and feel it with your finger. Because of this crack, the cap doesn't fit snugly onto the pen body anymore. It's loose, and when I tilt the pen or turn it upside down, the cap actually falls off. The cap is supposed to protect the pen from damage, dust, and contamination when not in use. With a cracked cap that doesn't stay on, I'm concerned that the pen mechanism could get damaged or the injection interface could get contaminated. I went back to the pharmacy to show them and they gave me a replacement pen from their stock. But get this - the replacement pen they gave me also has minor cracks in the cap, not as bad as the first one but still visible. Makes me wonder if there's a batch issue with the caps being brittle or improperly molded. The pharmacist pulled a few more from stock to check and found that several pens from the same lot had cap cracks of varying severity. They're pulling that entire lot from their shelves and reporting it to their quality team. This seems like a manufacturing defect affecting multiple units where the cap material or molding process isn't right and the caps are prone to cracking.",
@@ -316,1015 +316,1008 @@ complaint_category_sample_data = [
         "category": "Storage/Temperature excursion",
         "reasoning": "Extended exposure to high temperatures in non-refrigerated delivery vehicle compromises medication integrity.",
     },
-
     {
         "narrative": "I opened the box and the pen was sitting in a pool of liquid. The cap was wet and when I took it off, I could see fluid leaking from the cartridge. It smells like insulin or medicine. I haven't used it but half the liquid is gone. I think the cartridge is cracked.",
         "category": "Device malfunction",
-        "reasoning": "Leaking cartridge indicating device failure."
+        "reasoning": "Leaking cartridge indicating device failure.",
     },
     {
         "narrative": "The solution in my pen has turned a weird pinkish color. It's supposed to be clear. I've kept it in the fridge the whole time. I'm afraid to use it because it looks contaminated or spoiled. Is this safe?",
         "category": "Stability/Appearance defect",
-        "reasoning": "Discoloration (pink) indicating stability/contamination issue."
+        "reasoning": "Discoloration (pink) indicating stability/contamination issue.",
     },
     {
         "narrative": "I received my order yesterday and the ice packs were completely melted and warm. The box felt hot to the touch. It sat on my porch in 90 degree weather for 6 hours. The temperature strip inside was red, indicating it got too hot. I don't trust that the medication is still good.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "High temperature exposure during shipping/delivery."
+        "reasoning": "High temperature exposure during shipping/delivery.",
     },
     {
         "narrative": "I tried to dial the dose to 0.5 mg but the knob is stuck. It won't turn past 0.25 mg. I've tried applying more force but I don't want to break it. It clicks but won't advance. This is a brand new pen.",
         "category": "Device malfunction",
-        "reasoning": "Jammed dose selector mechanism."
+        "reasoning": "Jammed dose selector mechanism.",
     },
     {
         "narrative": "The expiration date on the pen says 2023, but it's 2024. The pharmacy just dispensed this to me yesterday. I can't believe they gave me medication that expired a year ago. I'm taking it back immediately.",
         "category": "Distribution/Expiry",
-        "reasoning": "Dispensing of expired product."
+        "reasoning": "Dispensing of expired product.",
     },
     {
         "narrative": "There is a small black particle floating in the liquid. It looks like a piece of rubber stopper. It moves around when I shake the pen. I'm not going to inject that into my body. This is a quality control failure.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Visible particulate matter (rubber) in sterile solution."
+        "reasoning": "Visible particulate matter (rubber) in sterile solution.",
     },
     {
         "narrative": "The label on the box says 1 mg dose, but the pen inside says 0.25 mg / 0.5 mg dose. They don't match. I don't know which one is right or if I have the right medication. This is very confusing and dangerous.",
         "category": "Labeling error",
-        "reasoning": "Mismatch between carton and container labeling."
+        "reasoning": "Mismatch between carton and container labeling.",
     },
     {
         "narrative": "I bought this online from a Canadian pharmacy site because it was cheaper. The box arrived and all the writing is in a foreign language, maybe Turkish? The pen looks slightly different than my usual ones. I suspect it might be fake or diverted.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Foreign labeling and suspicious source suggesting counterfeit/diversion."
+        "reasoning": "Foreign labeling and suspicious source suggesting counterfeit/diversion.",
     },
     {
         "narrative": "I've been taking my 1 mg dose for weeks but my blood sugar is climbing back up. It feels like I'm injecting water. I'm not getting the appetite suppression I usually get. I think this batch is defective or weak.",
         "category": "Potency/Assay defect",
-        "reasoning": "Lack of expected therapeutic effect suggesting potency issue."
+        "reasoning": "Lack of expected therapeutic effect suggesting potency issue.",
     },
     {
         "narrative": "The needle hub cracked when I tried to screw it onto the pen. I tried another needle and the same thing happened. The threads on the pen seem to be stripped or damaged. I can't attach a needle securely to inject.",
         "category": "Device malfunction",
-        "reasoning": "Defective pen threads preventing needle attachment."
+        "reasoning": "Defective pen threads preventing needle attachment.",
     },
     {
         "narrative": "The box arrived crushed and open. The tamper seal was broken. The pen was rolling around loose inside the shipping envelope. I don't know if it's been tampered with or if it's sterile. I can't use this.",
         "category": "Packaging defect",
-        "reasoning": "Damaged and tampered packaging."
+        "reasoning": "Damaged and tampered packaging.",
     },
     {
         "narrative": "The liquid is cloudy and milky. There are white clumps floating in it. It's supposed to be clear and colorless. I shook it but it didn't dissolve. It looks like the protein has precipitated out.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Turbidity and precipitation indicating product degradation."
+        "reasoning": "Turbidity and precipitation indicating product degradation.",
     },
     {
         "narrative": "The injection button won't pop back out after I push it. It's stuck in the depressed position. I can't dial the next dose because it won't reset. The spring must be broken.",
         "category": "Device malfunction",
-        "reasoning": "Broken injection button mechanism."
+        "reasoning": "Broken injection button mechanism.",
     },
     {
         "narrative": "I found a hair inside the sealed blister pack with the pen. It was stuck to the side of the pen. It's disgusting. How does that happen in a sterile manufacturing facility?",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Biological contamination (hair) in packaging."
+        "reasoning": "Biological contamination (hair) in packaging.",
     },
     {
         "narrative": "My pharmacist noticed the lot number on the box doesn't match the lot number on the pen. The box says lot ABC and the pen says lot XYZ. They said it's a packaging mix-up and had to return it.",
         "category": "Labeling error",
-        "reasoning": "Lot number mismatch between primary and secondary packaging."
+        "reasoning": "Lot number mismatch between primary and secondary packaging.",
     },
     {
         "narrative": "I accidentally left my pen in the car overnight and it froze. It's solid ice inside. I know I can't use it now. The instructions say do not freeze. It was 20 degrees last night.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Product accidentally frozen."
+        "reasoning": "Product accidentally frozen.",
     },
     {
         "narrative": "The pen cap is cracked down the side and won't stay on. It falls off in my bag. The needle attachment part is exposed to dirt. It was like this when I took it out of the box.",
         "category": "Packaging defect",
-        "reasoning": "Broken pen cap affecting protection."
+        "reasoning": "Broken pen cap affecting protection.",
     },
     {
         "narrative": "I suspect these pens are counterfeit. The packaging looks low quality and the colors are off. The QR code on the side doesn't scan. The price was too good to be true.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Visual discrepancies and scan failure indicating counterfeit."
+        "reasoning": "Visual discrepancies and scan failure indicating counterfeit.",
     },
     {
         "narrative": "I pushed the button to inject but no liquid came out. The counter went down to 0, but I didn't feel the injection and there was no drop on the needle tip. I checked the flow and nothing is coming out. It's clogged.",
         "category": "Device malfunction",
-        "reasoning": "Failure to deliver dose despite counter movement."
+        "reasoning": "Failure to deliver dose despite counter movement.",
     },
     {
         "narrative": "There is no expiration date printed on the pen label. The area is blank. I can see where it should be but the ink is missing. I don't know if it's safe to use.",
         "category": "Labeling error",
-        "reasoning": "Missing expiration date on primary container."
+        "reasoning": "Missing expiration date on primary container.",
     },
     {
         "narrative": "The solution has crystals in it that look like shards of glass. They are settling at the bottom. I've never seen this before. I'm afraid it will clog the needle or hurt me.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Crystallization in solution."
+        "reasoning": "Crystallization in solution.",
     },
     {
         "narrative": "The pharmacy sent me 3 month supply but the pens expire in 2 weeks. I can't use them all before they expire. This is a waste of money. They shouldn't dispense short-dated stock.",
         "category": "Distribution/Expiry",
-        "reasoning": "Short-dated product distribution."
+        "reasoning": "Short-dated product distribution.",
     },
     {
         "narrative": "There is a bug inside the sealed plastic tray! It looks like a small fly. It's dead but it's inside the sterile packaging with the pen. This is a major contamination issue.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Insect contamination in packaging."
+        "reasoning": "Insect contamination in packaging.",
     },
     {
         "narrative": "The dose window is foggy and I can't read the numbers. It looks like moisture got inside the mechanism. I can't set the dose accurately because I can't see the lines.",
         "category": "Device malfunction",
-        "reasoning": "Unreadable dose window due to fogging."
+        "reasoning": "Unreadable dose window due to fogging.",
     },
     {
         "narrative": "The box was soaked in water when it arrived. The cardboard is falling apart. The pens inside are wet. I don't know if the water was clean or dirty. The integrity is compromised.",
         "category": "Packaging defect",
-        "reasoning": "Water damage to packaging."
+        "reasoning": "Water damage to packaging.",
     },
     {
         "narrative": "I ordered Ozempic but received a box of Saxenda instead. The pharmacy mixed up the order. The label on the bag has my name and Ozempic, but the box is Saxenda.",
-        "category": "Labeling error",
-        "reasoning": "Pharmacy dispensing error/mislabeled bag."
+        "category": "Distribution/Expiry",
+        "reasoning": "Pharmacy dispensing error - wrong product distributed.",
     },
     {
         "narrative": "My pen broke in half when I took the cap off. The plastic snapped right at the threads. The cartridge fell out and smashed on the floor. The plastic felt very brittle.",
         "category": "Device malfunction",
-        "reasoning": "Structural failure of device body."
+        "reasoning": "Structural failure of device body.",
     },
     {
         "narrative": "The liquid is amber colored, like apple juice. It smells funny too. It's definitely not right. I think it has degraded from heat or something. I'm returning it.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Significant discoloration and odor."
+        "reasoning": "Significant discoloration and odor.",
     },
     {
         "narrative": "I bought this from a friend who said they didn't need it anymore. The box is open and some pens are missing. I don't know how it was stored. I'm worried it might be tampered with.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Unauthorized peer-to-peer sale/storage concern."
+        "reasoning": "Unauthorized peer-to-peer sale/storage concern.",
     },
     {
         "narrative": "The plunger is already halfway down the cartridge on a new pen. It looks like it's been used but the seal was intact. Is it underfilled? I'm missing doses.",
         "category": "Potency/Assay defect",
-        "reasoning": "Underfill or used product suspicion."
+        "reasoning": "Underfill or used product suspicion.",
     },
     {
         "narrative": "The needle is bent inside the sterile cap. It looks like a fish hook. I can't use it. I opened another one and it was fine. Just a bad needle batch.",
         "category": "Device malfunction",
-        "reasoning": "Defective needle component."
+        "reasoning": "Defective needle component.",
     },
     {
         "narrative": "The package tracking said delivered 3 days ago but I just got it. It's been lost in the mail. The ice packs are warm room temperature. The medication is spoiled.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Shipping delay leading to temperature excursion."
+        "reasoning": "Shipping delay leading to temperature excursion.",
     },
     {
         "narrative": "There are blue plastic shavings floating in the solution. It looks like debris from the pen manufacturing. It's definitely foreign material.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Plastic particulate contamination."
+        "reasoning": "Plastic particulate contamination.",
     },
     {
         "narrative": "The instructions for use are missing from the box. There is no pamphlet. I'm a new user and I don't know how to inject it. The box was sealed so it wasn't taken out.",
         "category": "Packaging defect",
-        "reasoning": "Missing package insert."
+        "reasoning": "Missing package insert.",
     },
     {
         "narrative": "The dose selector dial feels gritty and makes a grinding noise. It's hard to turn. It feels like there is sand inside the mechanism. I'm worried it will jam.",
         "category": "Device malfunction",
-        "reasoning": "High friction/gritty dose selector."
+        "reasoning": "High friction/gritty dose selector.",
     },
     {
         "narrative": "The barcode on the box scans as a completely different product at the register. The pharmacist couldn't sell it to me. The UPC seems to be printed wrong.",
         "category": "Labeling error",
-        "reasoning": "Barcode/UPC error."
+        "reasoning": "Barcode/UPC error.",
     },
     {
         "narrative": "The pen feels very light, like it's empty. I can see liquid but maybe it's not full. I weighed it compared to my old one and it's lighter. I think it's underfilled.",
         "category": "Potency/Assay defect",
-        "reasoning": "Suspected underfill."
+        "reasoning": "Suspected underfill.",
     },
     {
         "narrative": "I received a recall notice for this lot number. They said there might be glass particles in the solution. I checked and I have two pens from this lot. I need to return them.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Recall due to glass particulate risk."
+        "reasoning": "Recall due to glass particulate risk.",
     },
     {
         "narrative": "The rubber stopper at the end of the cartridge is crooked. It's not sitting flat. I'm worried it won't push the liquid out evenly. It looks like a manufacturing defect.",
         "category": "Device malfunction",
-        "reasoning": "Misaligned plunger/stopper."
+        "reasoning": "Misaligned plunger/stopper.",
     },
     {
         "narrative": "The expiration date is rubbed off the box. It looks like it was printed with bad ink. I can't tell when it expires. I don't want to use old medication.",
         "category": "Labeling error",
-        "reasoning": "Illegible expiration date."
+        "reasoning": "Illegible expiration date.",
     },
     {
         "narrative": "I ordered from a website without a prescription. The pens arrived in a plain envelope with no ice. The label is in Spanish. I think I got scammed with fake medicine.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Unregulated internet purchase/counterfeit."
+        "reasoning": "Unregulated internet purchase/counterfeit.",
     },
     {
         "narrative": "The medication squirted out of the side of the needle connection when I tried to inject. The needle wasn't sealing against the pen tip properly. I wasted a whole dose.",
         "category": "Device malfunction",
-        "reasoning": "Leakage at needle interface."
+        "reasoning": "Leakage at needle interface.",
     },
     {
         "narrative": "There is oil separation in the liquid. It looks like salad dressing that needs shaking. It's supposed to be a uniform solution. Something is wrong with the formulation.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Phase separation/instability."
+        "reasoning": "Phase separation/instability.",
     },
     {
         "narrative": "The box is labeled 0.25 mg but the pen inside has a 1 mg dial. I almost overdosed. This is a serious packaging error. The pharmacy gave me the sealed box.",
         "category": "Labeling error",
-        "reasoning": "Wrong product in carton."
+        "reasoning": "Wrong product in carton.",
     },
     {
         "narrative": "The spring inside the pen broke and shot out the back when I tried to inject. The whole mechanism fell apart in my hands. It's completely broken.",
         "category": "Device malfunction",
-        "reasoning": "Catastrophic mechanical failure."
+        "reasoning": "Catastrophic mechanical failure.",
     },
     {
         "narrative": "The refrigerator broke while I was on vacation. The temperature went up to 80 degrees for a week. The pens were warm. I know they aren't good anymore.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Storage temperature excursion."
+        "reasoning": "Storage temperature excursion.",
     },
     {
         "narrative": "There is a piece of metal wire inside the cartridge. It looks like a staple. It's rusting in the liquid. This is dangerous contamination.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Metal contaminant."
+        "reasoning": "Metal contaminant.",
     },
     {
         "narrative": "The label text is blurry and double printed. It looks like a printing error. It makes the pen look cheap and fake. I can barely read the instructions.",
         "category": "Labeling error",
-        "reasoning": "Poor print quality/legibility."
+        "reasoning": "Poor print quality/legibility.",
     },
     {
         "narrative": "I've been taking this for months but this new box isn't working. My appetite is back and my sugar is high. I think this batch has no active ingredient. It's a dud.",
         "category": "Potency/Assay defect",
-        "reasoning": "Suspected lack of API/potency."
+        "reasoning": "Suspected lack of API/potency.",
     },
     {
         "narrative": "The pen cap was glued on. I had to use pliers to get it off. It left glue residue on the needle attachment. I can't use it safely.",
         "category": "Packaging defect",
-        "reasoning": "Adhesive issue/cap stuck."
-    }
-,
-
+        "reasoning": "Adhesive issue/cap stuck.",
+    },
     {
         "narrative": "The solution in this pen is not clear. It has a foggy, hazy appearance. It's supposed to be transparent. I compared it to my last pen and the difference is obvious. I'm returning it.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Hazy/foggy appearance."
+        "reasoning": "Hazy/foggy appearance.",
     },
     {
         "narrative": "The push button is extremely hard to press. I have to use two hands to get it to move. It feels like there is too much friction in the mechanism. I can't inject properly.",
         "category": "Device malfunction",
-        "reasoning": "Excessive injection force required."
+        "reasoning": "Excessive injection force required.",
     },
     {
         "narrative": "I left the package in my trunk for 2 days in the summer heat. The liquid is hot. The plastic pen feels soft. I messed up and ruined the medication.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Patient-induced heat excursion."
+        "reasoning": "Patient-induced heat excursion.",
     },
     {
         "narrative": "There is a small orange particle floating in the clear liquid. It looks like plastic. It doesn't belong there. I'm afraid it will block the needle.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Colored particulate matter."
+        "reasoning": "Colored particulate matter.",
     },
     {
         "narrative": "The lot number is missing from the carton. The space is blank. I can't check if it's recalled. The pharmacy said it's a printing error from the manufacturer.",
         "category": "Labeling error",
-        "reasoning": "Missing lot number."
+        "reasoning": "Missing lot number.",
     },
     {
         "narrative": "The needle won't fit on the pen. The hub is too small or the pen tip is too big. I tried multiple needles from different boxes. The pen threads are deformed.",
         "category": "Device malfunction",
-        "reasoning": "Dimensional defect preventing needle attachment."
+        "reasoning": "Dimensional defect preventing needle attachment.",
     },
     {
         "narrative": "The shrink wrap was missing from the carton. Anyone could have opened it. I don't feel safe using medication that isn't sealed properly.",
         "category": "Packaging defect",
-        "reasoning": "Missing secondary packaging seal."
+        "reasoning": "Missing secondary packaging seal.",
     },
     {
         "narrative": "I bought this at a flea market stand. The guy said it was real. Now I'm looking at it and the logo is crooked. I think I made a bad decision.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Unauthorized vendor/market."
+        "reasoning": "Unauthorized vendor/market.",
     },
     {
         "narrative": "I injected the full dose but I felt nothing. Usually it stings a little. My blood sugar didn't change at all. I wonder if it's just saline in the pen.",
         "category": "Potency/Assay defect",
-        "reasoning": "Suspected lack of potency/placebo."
+        "reasoning": "Suspected lack of potency/placebo.",
     },
     {
         "narrative": "This pen expired 6 months ago. The pharmacy still gave it to me. I noticed the date when I got home. This is negligent.",
         "category": "Distribution/Expiry",
-        "reasoning": "Dispensing expired medication."
+        "reasoning": "Dispensing expired medication.",
     },
     {
         "narrative": "The liquid has turned brown. It looks like tea. It's been in the fridge. I think it oxidized. It looks spoiled.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Oxidation/discoloration."
+        "reasoning": "Oxidation/discoloration.",
     },
     {
         "narrative": "The dose knob broke off in my hand when I turned it. Now I can't set the dose. The plastic just snapped. Cheap construction.",
         "category": "Device malfunction",
-        "reasoning": "Component breakage (knob)."
+        "reasoning": "Component breakage (knob).",
     },
     {
         "narrative": "The delivery box was sitting in the sun. The ice pack was warm water. The pens were hot. They shouldn't leave medication in the sun.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Delivery temp excursion."
+        "reasoning": "Delivery temp excursion.",
     },
     {
         "narrative": "There is a speck of dirt inside the glass cartridge. It's dark and grainy. It's definitely inside the liquid. That's not sterile.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Dirt/particulate contamination."
+        "reasoning": "Dirt/particulate contamination.",
     },
     {
         "narrative": "The label on the pen is for the wrong drug. It says Victoza but the box says Ozempic. The pen looks like an Ozempic pen. It's mislabeled.",
         "category": "Labeling error",
-        "reasoning": "Product mix-up/mislabeling."
+        "reasoning": "Product mix-up/mislabeling.",
     },
     {
         "narrative": "Liquid leaked out of the pen cap when I removed it. The cartridge is cracked at the neck. Glass shards fell out. It's dangerous.",
         "category": "Device malfunction",
-        "reasoning": "Cracked cartridge/leakage."
+        "reasoning": "Cracked cartridge/leakage.",
     },
     {
         "narrative": "The inner cardboard tray is torn and the pen was loose. It looks like it was crushed during packing. The pen might be damaged.",
         "category": "Packaging defect",
-        "reasoning": "Damaged internal packaging."
+        "reasoning": "Damaged internal packaging.",
     },
     {
         "narrative": "The packaging text looks blurry and the blue color is too light. The QR code goes to a 404 page. It's definitely a knock-off.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Counterfeit packaging indicators."
+        "reasoning": "Counterfeit packaging indicators.",
     },
     {
         "narrative": "I'm not losing any weight on this new batch. I'm hungry all the time. The previous pens worked great. I think this lot is weak.",
         "category": "Potency/Assay defect",
-        "reasoning": "Therapeutic failure suspicion."
+        "reasoning": "Therapeutic failure suspicion.",
     },
     {
         "narrative": "The pharmacy gave me pens that expire next week. I need them for a month. They are trying to get rid of old stock. I refused them.",
         "category": "Distribution/Expiry",
-        "reasoning": "Short expiry refusal."
+        "reasoning": "Short expiry refusal.",
     },
     {
         "narrative": "There is white fluff floating in the pen. It looks like mold or fungus. It's growing in the liquid. It's terrifying.",
-        "category": "Stability/Appearance defect",
-        "reasoning": "Microbial growth suspicion."
+        "category": "Contamination/Foreign matter",
+        "reasoning": "Microbial contamination (mold/fungus growth).",
     },
     {
         "narrative": "The dial gets stuck at 0. It won't turn to start the dose. The mechanism is jammed. I can't use it at all.",
         "category": "Device malfunction",
-        "reasoning": "Dose dial jam."
+        "reasoning": "Dose dial jam.",
     },
     {
         "narrative": "I put the pen in the freezer by mistake. I thawed it out but it looks cloudy. The instructions say discard if frozen. I have to throw it away.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Accidental freezing."
+        "reasoning": "Accidental freezing.",
     },
     {
         "narrative": "There is a piece of cardboard inside the blister pack. It's clean but it shouldn't be there. It's foreign material.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Packaging debris contamination."
+        "reasoning": "Packaging debris contamination.",
     },
     {
         "narrative": "The text on the label is smeared. I can't read the instructions or the dose. The ink isn't dry. It wipes off on my finger.",
         "category": "Labeling error",
-        "reasoning": "Poor ink adhesion/smearing."
+        "reasoning": "Poor ink adhesion/smearing.",
     },
     {
         "narrative": "The glass cartridge is shattered inside the pen holder. I can hear the glass rattling. Liquid is leaking out the bottom.",
         "category": "Device malfunction",
-        "reasoning": "Shattered cartridge."
+        "reasoning": "Shattered cartridge.",
     },
     {
         "narrative": "The tamper seal on the box was cut. Someone opened this before me. I don't trust it. The pharmacy needs to replace it.",
         "category": "Packaging defect",
-        "reasoning": "Tampered seal."
+        "reasoning": "Tampered seal.",
     },
     {
         "narrative": "I bought 'generic Ozempic' from a compounding pharmacy online. It came in a vial not a pen. The label looks homemade. I'm scared to use it.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Compounded/unauthorized product."
+        "reasoning": "Compounded/unauthorized product.",
     },
     {
         "narrative": "This pen seems to have just water in it. It's clear but it has no effect. My glucose is 300. It's useless.",
         "category": "Potency/Assay defect",
-        "reasoning": "Ineffective product."
+        "reasoning": "Ineffective product.",
     },
     {
         "narrative": "This medication is 2 years past expiration. I found it in the back of my grandma's fridge. Can I still use it?",
         "category": "Distribution/Expiry",
-        "reasoning": "Patient inquiry re: expired product."
+        "reasoning": "Patient inquiry re: expired product.",
     },
     {
         "narrative": "The liquid is cloudy and thick. It's not flowing right. It looks like it curdled. It's definitely bad.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Viscosity/cloudiness change."
+        "reasoning": "Viscosity/cloudiness change.",
     },
     {
         "narrative": "The injection button broke off. It just snapped. Now I can't push the plunger. The plastic is very weak.",
         "category": "Device malfunction",
-        "reasoning": "Button breakage."
+        "reasoning": "Button breakage.",
     },
     {
         "narrative": "The delivery truck had no AC. The box was scorching hot. The medication is cooked. It needs to be refrigerated.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Heat damage during transport."
+        "reasoning": "Heat damage during transport.",
     },
     {
         "narrative": "There is a grey particle in the solution. It looks like metal dust. It settles to the bottom. I'm returning it.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Metal particulate."
+        "reasoning": "Metal particulate.",
     },
     {
         "narrative": "The label is pasted over another label. I peeled it back and it's a different drug underneath. This is fraud.",
         "category": "Labeling error",
-        "reasoning": "Over-labeling/fraud."
+        "reasoning": "Over-labeling/fraud.",
     },
     {
         "narrative": "The pen leaked the whole dose onto my leg. The needle was on tight. It leaked from the pen body seams.",
         "category": "Device malfunction",
-        "reasoning": "Seam leakage."
+        "reasoning": "Seam leakage.",
     },
     {
         "narrative": "The box is crushed and water damaged. It looks like it was dropped in a puddle. The pens are wet and dirty.",
         "category": "Packaging defect",
-        "reasoning": "Environmental damage to packaging."
+        "reasoning": "Environmental damage to packaging.",
     },
     {
         "narrative": "The pen looks fake. The blue is the wrong shade. The plastic feels cheap. The label is crooked. It's a counterfeit.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Visual counterfeit indicators."
+        "reasoning": "Visual counterfeit indicators.",
     },
     {
         "narrative": "I took the shot but felt no resistance. It was too easy. I don't think it injected anything. The pen is defective.",
-        "category": "Potency/Assay defect",
-        "reasoning": "Injection feel abnormality."
+        "category": "Device malfunction",
+        "reasoning": "Injection mechanism failure - no resistance indicates plunger/delivery mechanism defect.",
     },
     {
         "narrative": "The pharmacy sold me expired goods. The date is from last month. This is unacceptable safety practice.",
         "category": "Distribution/Expiry",
-        "reasoning": "Retail expired sale."
+        "reasoning": "Retail expired sale.",
     },
     {
         "narrative": "The liquid has separated into layers. Oil and water. It shouldn't look like that. It's spoiled.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Phase separation."
+        "reasoning": "Phase separation.",
     },
     {
         "narrative": "The dose dial is stuck between numbers. It won't click into place. I can't select the correct dose.",
         "category": "Device malfunction",
-        "reasoning": "Dose selector misalignment."
+        "reasoning": "Dose selector misalignment.",
     },
     {
         "narrative": "My refrigerator froze everything last night. The Ozempic is frozen solid. The glass cartridge cracked from the ice expansion.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Freezing with container breach."
+        "reasoning": "Freezing with container breach.",
     },
     {
         "narrative": "There is a hair trapped in the glass of the cartridge. It's embedded in the wall. Manufacturing defect.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Embedded foreign matter."
+        "reasoning": "Embedded foreign matter.",
     },
     {
         "narrative": "The text on the pen is blurry. I can't read the dose window markings. The printing is bad quality.",
         "category": "Labeling error",
-        "reasoning": "Illegible printing."
+        "reasoning": "Illegible printing.",
     },
     {
         "narrative": "The spring mechanism sounds broken. It rattles when I shake the pen. It doesn't inject smoothly.",
         "category": "Device malfunction",
-        "reasoning": "Loose internal components."
+        "reasoning": "Loose internal components.",
     },
     {
         "narrative": "The foil seal on the pen cap was open. It's not sterile. I can't use it. It was like that in the box.",
         "category": "Packaging defect",
-        "reasoning": "Sterile barrier breach."
+        "reasoning": "Sterile barrier breach.",
     },
     {
         "narrative": "The QR code takes me to a fake website. It asks for my credit card. This product is a scam.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Phishing/Fake verification site."
+        "reasoning": "Phishing/Fake verification site.",
     },
     {
         "narrative": "The drug seems weak. I'm not getting the benefits. My hunger is back. I think the concentration is wrong.",
         "category": "Potency/Assay defect",
-        "reasoning": "Suspected low potency."
+        "reasoning": "Suspected low potency.",
     },
     {
         "narrative": "This expiry date is in a weird format. Day/Month/Year. It's confusing. Is it expired or not?",
-        "category": "Distribution/Expiry",
-        "reasoning": "Date format confusion."
-    }
-,
-
+        "category": "Labeling error",
+        "reasoning": "Confusing date format on label.",
+    },
     {
         "narrative": "The solution in this pen has developed a distinct yellowish hue that wasn't there when I first picked it up. I've kept it refrigerated exactly as instructed, but it definitely doesn't look clear and colorless anymore. I'm hesitant to use it because discoloration usually means the chemical structure has changed or it's contaminated.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Discoloration indicating potential instability."
+        "reasoning": "Discoloration indicating potential instability.",
     },
     {
         "narrative": "When I try to press the injection button, it feels like there's something blocking it internally. It takes an incredible amount of force to get it to budge, and even then, it only moves a tiny bit before getting stuck again. I'm afraid I'm not getting the full dose because the mechanism just isn't advancing the plunger correctly.",
         "category": "Device malfunction",
-        "reasoning": "Mechanical resistance in the injection button."
+        "reasoning": "Mechanical resistance in the injection button.",
     },
     {
         "narrative": "My delivery arrived while I was at work, and the courier left it on the front steps in direct sunlight. By the time I got home and opened the box, the internal temperature indicator had turned dark red, and the pens felt warm to the touch. The ice packs had completely liquified and were room temperature.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Confirmed temperature excursion during delivery."
+        "reasoning": "Confirmed temperature excursion during delivery.",
     },
     {
         "narrative": "I was inspecting the liquid through the window before my shot and noticed a tiny, dark speck floating around. It looks like a piece of grit or maybe a fragment of the rubber stopper. It's definitely a foreign object inside the sealed glass, and I'm not comfortable injecting it.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Visible particulate matter in the solution."
+        "reasoning": "Visible particulate matter in the solution.",
     },
     {
         "narrative": "I just realized that the dose counter on my pen only goes up to 0.5 mg, but the box it came in is clearly labeled as the 1 mg strength. The pharmacy label also says 1 mg. This mismatch is really confusing and I'm worried I've been underdosing myself for the last two weeks.",
         "category": "Labeling error",
-        "reasoning": "Mismatch between device markings and carton labeling."
+        "reasoning": "Mismatch between device markings and carton labeling.",
     },
     {
         "narrative": "The needle tips that came with this box seem to have a manufacturing defect. Every time I try to screw one onto the pen, the plastic threads just strip away, and the needle stays loose. I've tried four different needles from the same pack and none of them will stay on securely enough to inject.",
         "category": "Device malfunction",
-        "reasoning": "Defective needle threads preventing use."
+        "reasoning": "Defective needle threads preventing use.",
     },
     {
         "narrative": "The outer carton was completely smashed on one side when I picked it up. When I opened it, the pen itself has a visible crack in the clear plastic window area. I'm worried that the vacuum seal of the medication might be broken or that it might leak everywhere when I try to use it.",
         "category": "Packaging defect",
-        "reasoning": "Physical damage to the primary container."
+        "reasoning": "Physical damage to the primary container.",
     },
     {
         "narrative": "I bought this pen from an online 'health store' that didn't require a prescription. Now that I have it, the holographic seal on the box looks like a cheap sticker, and the font is slightly different from the pens I get at my local CVS. I'm starting to think this isn't the real medication.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Suspicious sourcing and visual discrepancies."
+        "reasoning": "Suspicious sourcing and visual discrepancies.",
     },
     {
         "narrative": "I've been on the 1 mg dose for a month now and I'm actually gaining weight. My blood sugar numbers are higher than they were when I was on the 0.5 mg dose from a different batch. It feels like this entire box of pens is just water or has no active medicine in it.",
         "category": "Potency/Assay defect",
-        "reasoning": "Lack of expected clinical effect suggesting low potency."
+        "reasoning": "Lack of expected clinical effect suggesting low potency.",
     },
     {
         "narrative": "The pharmacy dispensed these pens to me today, but when I looked at the bottom of the box, the expiration date passed three months ago. I can't believe they're selling expired medicine. I noticed it before I injected, but it's still a major safety issue.",
         "category": "Distribution/Expiry",
-        "reasoning": "Sale of expired product."
+        "reasoning": "Sale of expired product.",
     },
     {
         "narrative": "The solution looks quite turbid, almost like there's a light cloud of smoke inside the liquid. It's usually crystal clear. I haven't even opened the pen yet, but I can see the cloudiness clearly through the glass window. I'm worried it's gone bad.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Turbidity/cloudiness in solution."
+        "reasoning": "Turbidity/cloudiness in solution.",
     },
     {
         "narrative": "As I was dialing the dose, the dial suddenly snapped and started spinning freely in both directions without clicking. It won't stay on the 0.5 mg setting at all. The internal ratchet must have broken. Now I have no way to select my dose.",
         "category": "Device malfunction",
-        "reasoning": "Mechanical failure of the dose dial."
+        "reasoning": "Mechanical failure of the dose dial.",
     },
     {
         "narrative": "The ice packs in my mail-order shipment were actually still frozen solid, but they were placed directly against the pens without any padding. The liquid in the pens was frozen into a slushy ice. I know you're not supposed to freeze this stuff, so I'm assuming it's ruined.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Accidental freezing during transport."
+        "reasoning": "Accidental freezing during transport.",
     },
     {
         "narrative": "There is a long, thin fiber—it looks like a white thread—floating inside the medication. It's definitely inside the cartridge, not on the outside of the glass. It's quite long, maybe half an inch. This is a serious quality control problem.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Foreign fiber contamination."
+        "reasoning": "Foreign fiber contamination.",
     },
     {
         "narrative": "The instructions for use inside the box are for a completely different medication—something called Victoza. The box and the pen say Ozempic, but the booklet is wrong. If I followed these instructions, I might have used the device incorrectly.",
         "category": "Labeling error",
-        "reasoning": "Incorrect package insert."
+        "reasoning": "Incorrect package insert.",
     },
     {
         "narrative": "The plunger in my pen is stuck about halfway down, and no matter how hard I press the button, it won't move forward to deliver the rest of the medication. I can see there's plenty of liquid left, but the mechanism is jammed tight.",
         "category": "Device malfunction",
-        "reasoning": "Jammed plunger mechanism."
+        "reasoning": "Jammed plunger mechanism.",
     },
     {
         "narrative": "The tamper-evident seal on the side of the box was already slit open when I got it. The pen inside looked okay, but the fact that the seal was broken makes me worry that someone might have swapped the pen or tampered with the contents.",
         "category": "Packaging defect",
-        "reasoning": "Breached tamper evidence."
+        "reasoning": "Breached tamper evidence.",
     },
     {
         "narrative": "I found a seller on a social media marketplace offering these pens at half price. When they arrived, the box had no NDC number and the manufacturer's address was in a country I didn't recognize. The solution also has a weird chemical smell.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Unauthorized source and multiple counterfeit signs."
+        "reasoning": "Unauthorized source and multiple counterfeit signs.",
     },
     {
         "narrative": "My blood sugar usually drops within 24 hours of my shot, but this time it's stayed consistently high. I even checked the pen to make sure I actually injected, and the dose counter moved, but I'm just not feeling any of the usual effects. This batch feels very weak.",
         "category": "Potency/Assay defect",
-        "reasoning": "Suspected sub-potency."
+        "reasoning": "Suspected sub-potency.",
     },
     {
         "narrative": "The pharmacy is constantly sending me pens that expire within 10 days of me receiving them. Since I only take one shot a week, I'm always using 'expired' medication by the time I get to the third or fourth pen. They need to manage their inventory better.",
         "category": "Distribution/Expiry",
-        "reasoning": "Short-dated product distribution."
+        "reasoning": "Short-dated product distribution.",
     },
     {
         "narrative": "There's a bunch of tiny white flakes at the bottom of the pen. They look like dandruff or little crystals. I tried shaking it gently to see if they would dissolve, but they just float around and then settle back down. It's definitely not a clear solution anymore.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Particulate precipitation/stability issue."
+        "reasoning": "Particulate precipitation/stability issue.",
     },
     {
         "narrative": "I screwed the needle on and tried to prime the pen like the manual says, but nothing comes out of the needle. I tried a second needle, but still no drop appears at the tip. It seems like the internal channel of the pen is blocked or not engaging with the needle.",
         "category": "Device malfunction",
-        "reasoning": "Failure to prime/deliver liquid."
+        "reasoning": "Failure to prime/deliver liquid.",
     },
     {
         "narrative": "My refrigerator's thermostat failed while I was away for the weekend, and the temperature inside went up to 75 degrees. My Ozempic pens were in there the whole time. I don't know how many hours they were sitting at room temperature, but it's been at least two days.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Patient storage temperature excursion."
+        "reasoning": "Patient storage temperature excursion.",
     },
     {
         "narrative": "I can see what looks like a tiny bit of black rubber floating in the cartridge. It looks exactly like the material of the stopper. Maybe the needle sliced a piece off when I inserted it, but it's now floating in the main reservoir.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Fragment of internal component in solution."
+        "reasoning": "Fragment of internal component in solution.",
     },
     {
         "narrative": "The labeling on the actual pen body is so smudged that I can't read the lot number or the expiration date. It looks like the ink wasn't cured properly. I need this info for my records, but it's just a blurry mess.",
         "category": "Labeling error",
-        "reasoning": "Illegible primary labeling."
+        "reasoning": "Illegible primary labeling.",
     },
     {
         "narrative": "Medication is leaking out from the side of the pen body, not the needle, whenever I apply pressure. There must be a crack in the internal housing or a failed seal somewhere inside. It's getting all over my hands instead of going into my skin.",
         "category": "Device malfunction",
-        "reasoning": "Internal device leakage."
+        "reasoning": "Internal device leakage.",
     },
     {
         "narrative": "The box didn't have any of the plastic needle tips included inside. It's supposed to come with a set, but the compartments in the tray were just empty. I had to go back to the pharmacy and buy a separate box of needles just to take my dose.",
         "category": "Packaging defect",
-        "reasoning": "Missing components in package."
+        "reasoning": "Missing components in package.",
     },
     {
         "narrative": "I checked the lot number on the manufacturer's website to verify the authenticity, and the system says that lot number doesn't exist. I'm really concerned because I've already used one of the pens from this box. This looks like a counterfeit batch.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Failed lot verification."
+        "reasoning": "Failed lot verification.",
     },
     {
         "narrative": "I've been on this medication for months and I usually get quite nauseous after the shot, but with this new pen, I feel nothing at all. My appetite is back to normal and my blood sugar hasn't budged. I'm worried I got a batch that was sitting in a hot warehouse too long.",
         "category": "Potency/Assay defect",
-        "reasoning": "Loss of potency/efficacy."
+        "reasoning": "Loss of potency/efficacy.",
     },
     {
         "narrative": "This pen is dated to expire in exactly 4 days. I'm supposed to use it for the next 4 weeks. By the time I take my second dose, it will already be past the manufacturer's safety date. The pharmacy shouldn't be giving out stock this old.",
         "category": "Distribution/Expiry",
-        "reasoning": "Inappropriate shelf life for prescription duration."
+        "reasoning": "Inappropriate shelf life for prescription duration.",
     },
     {
         "narrative": "There's an oily film on the surface of the liquid inside the pen window. It looks like a rainbow sheen, similar to oil on water. It doesn't look like a consistent, clear medication. I'm worried the ingredients have separated.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Phase separation/appearance defect."
+        "reasoning": "Phase separation/appearance defect.",
     },
     {
         "narrative": "The dose selector dial is extremely loose. It doesn't 'click' into the positions like it usually does. It just slides around, and I'm not sure if it's actually setting the dose correctly or if it's just spinning without moving the internal parts.",
         "category": "Device malfunction",
-        "reasoning": "Loose/failed dose selector dial."
+        "reasoning": "Loose/failed dose selector dial.",
     },
     {
         "narrative": "My shipment arrived today and the box was sopping wet. One of the ice packs had burst and leaked all over the medication boxes. The cardboard is falling apart and I'm worried the moisture might have gotten into the pens or compromised the sterility.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Packaging failure leading to potential damage."
+        "reasoning": "Packaging failure leading to potential damage.",
     },
     {
         "narrative": "There's a small piece of blue plastic floating in the medication. It looks like it might have come from the cap or the internal mechanism during assembly. It's definitely a foreign object and it's large enough to see easily.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Foreign particulate matter."
+        "reasoning": "Foreign particulate matter.",
     },
     {
         "narrative": "The box says 'Store between 2C and 8C', but the pharmacy label stuck over it says 'Store at room temperature'. These instructions are contradictory and I don't know which one to follow to keep the medicine from spoiling.",
         "category": "Labeling error",
-        "reasoning": "Conflicting storage instructions."
+        "reasoning": "Conflicting storage instructions.",
     },
     {
         "narrative": "I pressed the button to inject, but the plunger didn't move at all. The counter stayed at 0.5 mg. I tried again, pressing much harder, and still nothing. The device is completely unresponsive even though I followed the priming steps.",
         "category": "Device malfunction",
-        "reasoning": "Device non-responsiveness/failure to fire."
+        "reasoning": "Device non-responsiveness/failure to fire.",
     },
     {
         "narrative": "The cardboard tray that holds the pen inside the box was missing entirely. The pen was just rattling around loose inside the carton during shipping. The glass looks okay, but I'm worried about internal damage from all that shaking.",
         "category": "Packaging defect",
-        "reasoning": "Missing internal packaging component."
+        "reasoning": "Missing internal packaging component.",
     },
     {
         "narrative": "The printing on the box has several spelling errors, including the word 'medication' being spelled 'medicasion'. Also, the logo looks slightly stretched. This doesn't look like a professional pharmaceutical product.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Spelling errors and visual counterfeit signs."
+        "reasoning": "Spelling errors and visual counterfeit signs.",
     },
     {
         "narrative": "Usually, after I inject, I can feel the drug working within a day—my morning blood sugar is much lower. But with this new pen, my numbers are exactly the same as if I hadn't taken anything. I suspect this pen is defective or has no active ingredient.",
         "category": "Potency/Assay defect",
-        "reasoning": "Therapeutic failure/potency concern."
+        "reasoning": "Therapeutic failure/potency concern.",
     },
     {
         "narrative": "I found a box of these in the back of my cabinet that expired in 2022. I asked my pharmacist if I could still use them since they've been in the fridge, and they said absolutely not. I'm reporting this as a distribution concern because they were part of a bulk order.",
         "category": "Distribution/Expiry",
-        "reasoning": "Expired product in inventory."
+        "reasoning": "Expired product in inventory.",
     },
     {
         "narrative": "The liquid in the pen cartridge has a cloudy, suspension-like appearance. It's not clear at all. It looks more like milk than the clear water-like liquid I'm used to. I haven't used it because the manual says it must be clear.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Solution turbidity."
+        "reasoning": "Solution turbidity.",
     },
     {
         "narrative": "The spring inside the pen made a loud 'twang' sound when I was dialing the dose, and now the button is stuck halfway down. I can't push it in or pull it out. The whole mechanism feels like it's collapsed inside.",
         "category": "Device malfunction",
-        "reasoning": "Internal mechanical failure."
+        "reasoning": "Internal mechanical failure.",
     },
     {
         "narrative": "The package sat in the sorting facility for four days during a record-breaking heatwave with no refrigeration. When it finally arrived, the ice packs were not just melted, they were actually warm. The pens were quite hot to the touch.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Extreme temperature excursion during transit."
+        "reasoning": "Extreme temperature excursion during transit.",
     },
     {
         "narrative": "I can see a tiny sliver of glass—it looks like a needle-thin shard—floating in the liquid near the stopper. I'm terrified that if I inject this, I'll be pushing glass into my body. This is a terrifying quality control failure.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Glass particulate contamination."
+        "reasoning": "Glass particulate contamination.",
     },
     {
         "narrative": "The lot number on the box is different from the lot number on the pen. One says batch 4455, the other says batch 4456. This makes it impossible to know which batch this medication actually belongs to if there's a recall.",
         "category": "Labeling error",
-        "reasoning": "Mismatched lot numbers."
+        "reasoning": "Mismatched lot numbers.",
     },
     {
         "narrative": "The needle snapped off right at the hub while I was trying to screw it onto the pen. The metal part just fell out of the plastic. I'm lucky I wasn't already injecting, or the needle would have been stuck in my skin.",
         "category": "Device malfunction",
-        "reasoning": "Needle component failure."
+        "reasoning": "Needle component failure.",
     },
     {
         "narrative": "The box arrived with the top flap completely torn off and missing. The pen was still inside, but it was exposed to the elements and whoever handled the mail. I don't feel like the product's integrity was maintained.",
         "category": "Packaging defect",
-        "reasoning": "Significant secondary packaging damage."
+        "reasoning": "Significant secondary packaging damage.",
     },
     {
         "narrative": "I received this pen from an 'influencer' online who was selling their extra supply. The box is in a language I can't read, and there's no FDA approval stamp anywhere on the packaging. I'm very suspicious of the contents.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Unauthorized source and foreign labeling."
+        "reasoning": "Unauthorized source and foreign labeling.",
     },
     {
         "narrative": "I've lost all the progress I made on my A1C since starting this new box of pens. My doctor is confused why my numbers are spiked, and the only change is this new prescription. I think the medicine in these pens is degraded or inert.",
         "category": "Potency/Assay defect",
-        "reasoning": "Clinical failure suggesting lack of potency."
+        "reasoning": "Clinical failure suggesting lack of potency.",
     },
     {
         "narrative": "My pharmacy just told me they had to pull all the pens from the lot I was dispensed last week because they were found to be past their 'use by' date. They want me to bring them back for a swap. It's a major distribution error.",
         "category": "Distribution/Expiry",
-        "reasoning": "Recall due to expiry issues."
-    }
-,
-
+        "reasoning": "Recall due to expiry issues.",
+    },
     {
         "narrative": "The medication in the pen has a strange, hazy look to it, like someone dropped a pinch of flour into water. It's not clear at all. I've used this brand for months and it's always been perfectly clear. I'm afraid to use this one because it looks unstable.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Hazy solution indicating instability."
+        "reasoning": "Hazy solution indicating instability.",
     },
     {
         "narrative": "The dial on my pen is stuck at the 0.25 mg mark and won't turn any further. I've tried twisting it gently and then more firmly, but it's completely jammed. It feels like something is caught in the internal gears of the device.",
         "category": "Device malfunction",
-        "reasoning": "Jammed dose dial selector."
+        "reasoning": "Jammed dose dial selector.",
     },
     {
         "narrative": "My shipment sat in a delivery truck for two days during a heatwave where temps reached over 100 degrees. When I opened the package, the ice packs were not just melted, they were actually warm to the touch. The medication box felt like it had been in an oven.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Severe heat exposure during shipping."
+        "reasoning": "Severe heat exposure during shipping.",
     },
     {
         "narrative": "I was checking the liquid before my injection and saw a tiny black speck—maybe a piece of dust or plastic—floating right near the center of the cartridge. I'm definitely not injecting anything with visible particles in it.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Visible particulate contamination."
+        "reasoning": "Visible particulate contamination.",
     },
     {
         "narrative": "The label on my pen says it's the 0.5 mg strength, but the box it came in is clearly labeled as 1 mg. This is a huge mismatch and could have led to a serious dosing error if I hadn't double-checked everything before use.",
         "category": "Labeling error",
-        "reasoning": "Strength mismatch between carton and pen device."
+        "reasoning": "Strength mismatch between carton and pen device.",
     },
     {
         "narrative": "When I try to screw the needle onto the pen, it won't lock into place. It just keeps spinning and spinning as if the threads are stripped. I've tried multiple needles from the same box, so it must be the threads on the pen itself that are defective.",
         "category": "Device malfunction",
-        "reasoning": "Defective device threads preventing needle attachment."
+        "reasoning": "Defective device threads preventing needle attachment.",
     },
     {
         "narrative": "The box arrived crushed and the protective seal on the pen was already torn open. The cap was rolling around loose in the carton. I'm worried about whether the pen was exposed to germs or if it was tampered with before reaching me.",
         "category": "Packaging defect",
-        "reasoning": "Compromised packaging and sterile barrier."
+        "reasoning": "Compromised packaging and sterile barrier.",
     },
     {
         "narrative": "I ordered this from a site that claimed to sell the name brand at a steep discount. Now that I have it, the logo is slightly blurry and the security hologram doesn't change color. I'm pretty sure I received a counterfeit product.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Counterfeit indicators on packaging and suspicious source."
+        "reasoning": "Counterfeit indicators on packaging and suspicious source.",
     },
     {
         "narrative": "I've been on this medication for three months and it's worked great, but this new batch doesn't seem to do anything. My blood sugar numbers are way up and I'm feeling hungry all the time again. It feels like there's no medicine in these pens.",
         "category": "Potency/Assay defect",
-        "reasoning": "Lack of therapeutic effect suggesting poor potency."
+        "reasoning": "Lack of therapeutic effect suggesting poor potency.",
     },
     {
         "narrative": "The pharmacy gave me a pen today that expires in less than a week. I'm supposed to use this over the next month. They shouldn't be dispensing stock that is this close to its expiration date for a multi-week treatment.",
         "category": "Distribution/Expiry",
-        "reasoning": "Dispensing product with inadequate shelf life remaining."
+        "reasoning": "Dispensing product with inadequate shelf life remaining.",
     },
     {
         "narrative": "The liquid in my pen has a distinctly cloudy appearance, almost like diluted milk. I checked the manual and it says the solution should be clear. I haven't used it because I'm worried it's degraded or contaminated.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Cloudy appearance indicating product instability."
+        "reasoning": "Cloudy appearance indicating product instability.",
     },
     {
         "narrative": "When I press the button to inject, the plunger doesn't move forward. I can hear the clicking sound, but the dose counter stays at 0.5 mg and no liquid comes out of the needle. The internal mechanism seems to be disconnected.",
         "category": "Device malfunction",
-        "reasoning": "Mechanical failure preventing dose delivery."
+        "reasoning": "Mechanical failure preventing dose delivery.",
     },
     {
         "narrative": "My order was delayed in the mail and when it finally arrived after 5 days, the ice packs had completely melted and the pens were room temperature. The thermal indicator inside the box was red, confirming it got too warm.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Temperature excursion during transit due to delay."
+        "reasoning": "Temperature excursion during transit due to delay.",
     },
     {
         "narrative": "I can see what looks like a tiny bit of red plastic floating in the medication liquid. It's very small but definitely noticeable through the pen window. It looks like it might have come from the manufacturing machinery.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Foreign particulate matter in solution."
+        "reasoning": "Foreign particulate matter in solution.",
     },
     {
         "narrative": "The expiration date on the pen itself is missing. The space where it's supposed to be printed is just a blank white box. The outer carton has a date, but I need to be able to verify it on the actual device for safety.",
         "category": "Labeling error",
-        "reasoning": "Missing critical labeling information on the device."
+        "reasoning": "Missing critical labeling information on the device.",
     },
     {
         "narrative": "The dose selector knob is incredibly stiff. It takes two hands to turn it, and it feels like it's grinding against something inside. I'm afraid if I keep using it, the whole mechanism will just snap off.",
         "category": "Device malfunction",
-        "reasoning": "High friction/stiffness in dose selector."
+        "reasoning": "High friction/stiffness in dose selector.",
     },
     {
         "narrative": "The outer carton was soaked in some kind of oily liquid when I picked it up. It doesn't smell like the medicine, so I think something else leaked onto it during shipping. The pens inside seem okay, but the packaging is ruined.",
         "category": "Packaging defect",
-        "reasoning": "Environmental contamination/damage to packaging."
+        "reasoning": "Environmental contamination/damage to packaging.",
     },
     {
         "narrative": "I checked the QR code on the box with my phone and it took me to a website that doesn't belong to the manufacturer. It looks like a fake site designed to look official. This definitely isn't legitimate medication.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Fake verification site confirming counterfeit product."
+        "reasoning": "Fake verification site confirming counterfeit product.",
     },
     {
         "narrative": "I've been taking the 1 mg dose, but my morning blood sugar levels are higher than they were on the 0.5 mg dose from a different batch. It feels like this entire lot has very little of the active ingredient in it.",
         "category": "Potency/Assay defect",
-        "reasoning": "Suspected lack of potency based on clinical data."
+        "reasoning": "Suspected lack of potency based on clinical data.",
     },
     {
         "narrative": "The pen I received from the pharmacy today has an expiration date that passed six months ago. I can't believe they didn't catch this before handing it over to me. It's a huge oversight by the distribution team.",
         "category": "Distribution/Expiry",
-        "reasoning": "Dispensing of significantly outdated medication."
+        "reasoning": "Dispensing of significantly outdated medication.",
     },
     {
         "narrative": "There's a bunch of tiny white crystals sitting at the bottom of the pen cartridge. I tried rolling it between my palms to see if they'd dissolve, but they didn't budge. The liquid isn't a uniform solution anymore.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Crystallization indicating formulation failure."
+        "reasoning": "Crystallization indicating formulation failure.",
     },
     {
         "narrative": "I pushed the injection button and held it for 10 seconds like the instructions say, but when I pulled the needle out, a huge stream of medicine squirted out of the pen tip. It clearly didn't deliver the full dose during the injection.",
         "category": "Device malfunction",
-        "reasoning": "Failure to deliver full dose/mechanical lag."
+        "reasoning": "Failure to deliver full dose/mechanical lag.",
     },
     {
         "narrative": "I found out my pharmacy was storing these pens in a regular cabinet because their fridge was full. They told me it was 'fine for a few days', but the manufacturer's label specifically says they must be refrigerated before first use.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Improper storage conditions at the retail level."
+        "reasoning": "Improper storage conditions at the retail level.",
     },
     {
         "narrative": "There is a dark hair—it looks like a cat or dog hair—trapped inside the sealed glass cartridge along with the medication. This is a disgusting and serious breach of sterile manufacturing standards.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Biological contamination in sterile container."
+        "reasoning": "Biological contamination in sterile container.",
     },
     {
         "narrative": "The dosage instructions on the pen label are printed in Spanish, but I'm in an English-speaking region and the box is in English. This mix-up is very confusing and I'm not sure if the concentration is the same as what I usually get.",
         "category": "Labeling error",
-        "reasoning": "Language/labeling mix-up on device."
+        "reasoning": "Language/labeling mix-up on device.",
     },
     {
         "narrative": "Medication is leaking out of the back of the pen, near the dose counter, whenever I press the button. It seems like an internal seal has failed and the liquid is taking the path of least resistance out the wrong end of the device.",
         "category": "Device malfunction",
-        "reasoning": "Internal seal failure leading to backward leakage."
+        "reasoning": "Internal seal failure leading to backward leakage.",
     },
     {
         "narrative": "The box arrived with no instructions or patient info leaflet inside. The slot in the cardboard where they usually sit was just empty. As a first-time user, I really needed those documents to know how to use the pen correctly.",
         "category": "Packaging defect",
-        "reasoning": "Missing critical documentation in package."
+        "reasoning": "Missing critical documentation in package.",
     },
     {
         "narrative": "I bought these from a seller who claimed to have 'overstock'. When they arrived, the font on the label was different and the color of the pen cap was a lighter shade of blue than my previous pens. I'm afraid these are fakes.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Suspicious sourcing and multiple visual counterfeit signs."
+        "reasoning": "Suspicious sourcing and multiple visual counterfeit signs.",
     },
     {
         "narrative": "My blood sugar usually drops very predictably after my shot, but with this batch, my numbers have stayed exactly where they were when I wasn't on any medication at all. It's like I'm injecting a placebo.",
         "category": "Potency/Assay defect",
-        "reasoning": "Lack of efficacy suggesting zero or low potency."
+        "reasoning": "Lack of efficacy suggesting zero or low potency.",
     },
     {
         "narrative": "The pharmacy is trying to sell me pens that expire in 10 days. I need a supply that lasts for at least a month. They told me 'it's all they have', but I'm not paying for medicine that will be officially expired halfway through my treatment.",
         "category": "Distribution/Expiry",
-        "reasoning": "Supply of medication with inadequate remaining shelf life."
+        "reasoning": "Supply of medication with inadequate remaining shelf life.",
     },
     {
         "narrative": "The liquid has a faint yellowish tint to it today. I checked my other pens and they are all crystal clear. This discoloration makes me think the medicine has degraded or was exposed to light or heat for too long.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Discoloration indicating product degradation."
+        "reasoning": "Discoloration indicating product degradation.",
     },
     {
         "narrative": "The dose selector dial doesn't click anymore. It just spins loosely in both directions. I have no way of knowing if I've dialed up the correct dose because the mechanism isn't catching at the set points.",
         "category": "Device malfunction",
-        "reasoning": "Failure of dose selector ratchet mechanism."
+        "reasoning": "Failure of dose selector ratchet mechanism.",
     },
     {
         "narrative": "I accidentally left the box of pens on the kitchen counter for 24 hours in a warm room before I realized they should have gone in the fridge. I know they're supposed to stay cold until they're first used.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Patient error resulting in room-temp exposure."
+        "reasoning": "Patient error resulting in room-temp exposure.",
     },
     {
         "narrative": "I can see a tiny silver sliver—it looks like a piece of metal—floating in the liquid inside the pen window. I'm worried it's a piece of the manufacturing equipment that broke off during the filling process.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Metallic particulate contamination."
+        "reasoning": "Metallic particulate contamination.",
     },
     {
         "narrative": "The box says 1.0 mg dose, but the pen inside has markings for only 0.25 and 0.5 mg. I can't take my full prescribed dose with this device. It's clearly the wrong pen in the wrong box.",
         "category": "Labeling error",
-        "reasoning": "Packaging mix-up (wrong device in carton)."
+        "reasoning": "Packaging mix-up (wrong device in carton).",
     },
     {
         "narrative": "When I try to press the injection button, it's completely stuck. I've tried pushing it with both thumbs as hard as I can, but it won't move even a millimeter. The pen is totally unusable because of this mechanical jam.",
         "category": "Device malfunction",
-        "reasoning": "Non-functioning/stuck injection button."
+        "reasoning": "Non-functioning/stuck injection button.",
     },
     {
         "narrative": "The box arrived with the cardboard tray smashed, and the pen was wedged into a corner. The glass window has a small crack in it. I'm afraid to use it because the crack might allow air or bacteria into the medication.",
         "category": "Packaging defect",
-        "reasoning": "Damage to primary container due to shipping."
+        "reasoning": "Damage to primary container due to shipping.",
     },
     {
         "narrative": "The price for these pens was less than half of what I usually pay, and they came in a plain white box with no branding. The seller said they were 'direct from the factory', but I'm 99% sure they are counterfeit.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Unauthorized source and non-standard packaging."
+        "reasoning": "Unauthorized source and non-standard packaging.",
     },
     {
         "narrative": "My blood sugar is back to pre-medication levels since I started using this new box of pens. The only thing that changed is this new prescription lot. I suspect the concentration of the medication is way below what it should be.",
         "category": "Potency/Assay defect",
-        "reasoning": "Significant clinical failure suggesting potency issues."
+        "reasoning": "Significant clinical failure suggesting potency issues.",
     },
     {
         "narrative": "The pharmacy dispensed a box to me that expires next month. Since I'm supposed to get a three-month supply, the last two pens in the box will be expired before I even get a chance to use them. This is poor inventory management.",
         "category": "Distribution/Expiry",
-        "reasoning": "Inadequate dating for the duration of the prescription."
+        "reasoning": "Inadequate dating for the duration of the prescription.",
     },
     {
         "narrative": "The solution looks quite cloudy, almost like there's a fine dust suspended in the liquid. It's usually very clear. I haven't used it because the instructions say not to use it if it's turbid or discolored.",
         "category": "Stability/Appearance defect",
-        "reasoning": "Turbidity/cloudiness in solution."
+        "reasoning": "Turbidity/cloudiness in solution.",
     },
     {
         "narrative": "The dial made a loud cracking sound when I was turning it, and now it just spins freely without changing the dose numbers. I can't set my 0.5 mg dose because the internal gears must have snapped.",
         "category": "Device malfunction",
-        "reasoning": "Mechanical breakage of the dial mechanism."
+        "reasoning": "Mechanical breakage of the dial mechanism.",
     },
     {
         "narrative": "The courier left the package in a mailbox that was over 90 degrees inside. When I opened the box, the pens were actually warm to the touch. The ice packs had completely failed to keep them cool during the transit.",
         "category": "Storage/Temperature excursion",
-        "reasoning": "Temperature excursion during courier delivery."
+        "reasoning": "Temperature excursion during courier delivery.",
     },
     {
         "narrative": "There's a small piece of dark material floating in the pen that looks like a fragment of wood or cardboard. I don't know how it got in there, but it's definitely not part of the medication. I'm returning it to the pharmacy.",
         "category": "Contamination/Foreign matter",
-        "reasoning": "Visible foreign particulate contamination."
+        "reasoning": "Visible foreign particulate contamination.",
     },
     {
         "narrative": "The National Drug Code (NDC) on the pen doesn't match the one on the box. They are close, but the last few digits are different. This makes me worry that the wrong medication or the wrong strength was put in this box.",
         "category": "Labeling error",
-        "reasoning": "Mismatch in identification codes (NDC mismatch)."
+        "reasoning": "Mismatch in identification codes (NDC mismatch).",
     },
     {
         "narrative": "The injection button is so stiff that my elderly mother can't press it down at all. I tried it myself and it requires a huge amount of pressure to move. This is a major design flaw or manufacturing defect for people with hand issues.",
         "category": "Device malfunction",
-        "reasoning": "Excessive force required for operation."
+        "reasoning": "Excessive force required for operation.",
     },
     {
         "narrative": "The box arrived with the top flap missing and the inner tray was loose inside the mailing envelope. The pen was rolling around without any protection. I don't think the product's integrity can be guaranteed after that.",
         "category": "Packaging defect",
-        "reasoning": "Compromised secondary packaging during shipping."
+        "reasoning": "Compromised secondary packaging during shipping.",
     },
     {
         "narrative": "I received these from an overseas pharmacy that didn't ask for a prescription. The label has numerous typos and the holographic seal looks like it was printed on a regular inkjet printer. I suspect these are fakes.",
         "category": "Counterfeit/Unauthorized source",
-        "reasoning": "Counterfeit indicators and unauthorized supply channel."
+        "reasoning": "Counterfeit indicators and unauthorized supply channel.",
     },
     {
         "narrative": "My morning fasting blood sugar has gone from 95 to 160 since I switched to this new lot of pens. I'm following my diet and exercise plan exactly the same. I'm convinced this batch of medicine is weak or degraded.",
         "category": "Potency/Assay defect",
-        "reasoning": "Loss of glycemic control suggesting sub-potency."
+        "reasoning": "Loss of glycemic control suggesting sub-potency.",
     },
     {
         "narrative": "The batch number on this pen is part of a list of recalled lots I saw online due to concerns about the shelf life and stability. I called my pharmacy and they confirmed I should return them. It's a distribution failure.",
         "category": "Distribution/Expiry",
-        "reasoning": "Product distributed from a recalled/unstable batch."
-    }
-,
+        "reasoning": "Product distributed from a recalled/unstable batch.",
+    },
 ]
+
 
 def split_and_write_datasets() -> None:
     """Split data into train/test sets and write to appropriate folders."""
