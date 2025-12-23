@@ -82,10 +82,9 @@ adverse_event_sample_data = [
         "reasoning": "Rapid-onset angioedema with airway involvement denotes serious allergic reaction.",
     },
     {
-        "narrive": "Um, so I've been having this issue where I just don't feel hungry anymore, which sounds great for weight loss, right? But it's actually kind of a problem because even when I do try to eat, I feel full after like two bites. And then for hours after eating I feel this uncomfortable fullness in my stomach. My doctor ordered some kind of test - a gastric emptying study I think they called it? - and apparently my stomach is taking way longer than normal to empty. They're calling it gastroparesis. I'm not sure what to do because the medication is helping my blood sugar but this side effect is really affecting my quality of life.",
+        "narrative": "Um, so I've been having this issue where I just don't feel hungry anymore, which sounds great for weight loss, right? But it's actually kind of a problem because even when I do try to eat, I feel full after like two bites. And then for hours after eating I feel this uncomfortable fullness in my stomach. My doctor ordered some kind of test - a gastric emptying study I think they called it? - and apparently my stomach is taking way longer than normal to empty. They're calling it gastroparesis. I'm not sure what to do because the medication is helping my blood sugar but this side effect is really affecting my quality of life.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
         "reasoning": "Objective evidence of delayed gastric emptying consistent with gastroparesis.",
-        "note": "Key 'narrative' field typo intentionally included to test robustness.",
     },
     {
         "narrative": "I was out in my garden, pulling weeds - it was a really nice Saturday afternoon - and suddenly I felt really weird and dizzy and then I just blacked out. My neighbor saw me fall and came running over. When I came to, she had already called 911 and tested my blood sugar with her meter because her husband is diabetic. It was 48! The paramedics came and gave me some glucose gel. The thing is, I take my insulin every morning and I also take this Ozempic once a week, and my doctor never adjusted my insulin dose. I think that's what caused it.",
@@ -427,1015 +426,1008 @@ adverse_event_sample_data = [
         "category": "Eye disorders (Diabetic retinopathy complications)",
         "reasoning": "Clinical documentation of retinopathy worsening after initiation.",
     },
-
     {
         "narrative": "I've been dealing with persistent nausea for the past three weeks since I started the 0.5 mg dose. It's not just a little queasiness; it's a deep, rolling stomach upset that lasts all day. I'm having trouble eating anything substantial, and I've lost about 8 pounds, which is faster than I wanted. Yesterday, I actually vomited while driving to work, which was a nightmare. My doctor suggested splitting the dose or going back down, but I'm worried about losing the blood sugar control. It's really affecting my daily life.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Persistent, severe nausea and vomiting affecting daily activities."
+        "reasoning": "Persistent, severe nausea and vomiting affecting daily activities.",
     },
     {
         "narrative": "Woke up in the middle of the night with excruciating pain in the center of my abdomen, radiating straight through to my back. It was a 9 out of 10 on the pain scale. I was sweating and felt feverish. My wife took me to the ER, and they did blood work which showed my lipase levels were over 1000. They did a CT scan and told me my pancreas was inflamed. I don't drink alcohol and don't have gallstones, so the doctors are pretty sure it's the Ozempic. They've taken me off it and I'm currently on IV fluids.",
         "category": "Pancreatitis",
-        "reasoning": "Classic acute pancreatitis presentation with elevated enzymes and no other obvious cause."
+        "reasoning": "Classic acute pancreatitis presentation with elevated enzymes and no other obvious cause.",
     },
     {
         "narrative": "I went for my regular eye exam, expecting everything to be fine since my blood sugar has been so much better lately. But the ophthalmologist was really concerned. He showed me images of my retina and pointed out several new areas of bleeding and cotton wool spots that weren't there six months ago. He diagnosed me with progression to proliferative diabetic retinopathy. He asked if I'd started any new diabetes meds recently, and when I mentioned Ozempic, he said rapid glucose improvement can sometimes trigger this. I might need laser treatment now.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Worsening of retinopathy temporally associated with rapid glucose control improvement."
+        "reasoning": "Worsening of retinopathy temporally associated with rapid glucose control improvement.",
     },
     {
         "narrative": "I had a scary episode at the grocery store yesterday. I started feeling shaky and lightheaded, and then I broke out in a cold sweat. I felt confused and couldn't figure out where I was for a minute. I managed to check my blood sugar and it was 48 mg/dL. I drank a juice box right away and sat on the floor until I felt better. I'm taking glimepiride along with the Ozempic, and my doctor thinks the combination is too strong now that I've lost some weight. We're going to lower the glimepiride dose.",
         "category": "Hypoglycemia",
-        "reasoning": "Symptomatic hypoglycemia likely exacerbated by sulfonylurea co-therapy."
+        "reasoning": "Symptomatic hypoglycemia likely exacerbated by sulfonylurea co-therapy.",
     },
     {
         "narrative": "About an hour after my injection this week, my lips started feeling tingly and numb. Then I looked in the mirror and my eyes were puffy and swollen shut. My throat felt a bit tight, like I had a lump in it. I didn't wait around; I went straight to the urgent care. They gave me a shot of epinephrine and some Benadryl. The doctor said it was definitely an allergic reaction to the medication and told me I absolutely cannot take it again. It's a shame because it was working, but I can't risk my airway closing up.",
         "category": "Hypersensitivity",
-        "reasoning": "Angioedema and potential airway compromise indicating hypersensitivity."
+        "reasoning": "Angioedema and potential airway compromise indicating hypersensitivity.",
     },
     {
         "narrative": "I've noticed a hard, red lump at my injection site on my thigh. It's about the size of a golf ball and it's warm to the touch. It's also really itchy and sore when my clothes rub against it. This started about 2 days after my shot and hasn't gone away yet. I've been icing it, but it's still pretty angry looking. I've never had a reaction like this before with insulin or other shots. I'm going to try injecting in my stomach next time to see if it makes a difference, but I'm worried I might be developing an allergy.",
         "category": "Injection-site reactions",
-        "reasoning": "Significant localized injection site reaction (induration, erythema, pruritus)."
+        "reasoning": "Significant localized injection site reaction (induration, erythema, pruritus).",
     },
     {
         "narrative": "My resting heart rate has gone up significantly since I started this drug. I used to be in the low 60s, but now my Fitbit shows I'm consistently in the 80s or 90s, even when I'm just sitting on the couch watching TV. Sometimes I can feel my heart pounding in my chest, like palpitations. It's a bit unsettling. My doctor did an EKG and said it's sinus tachycardia, likely a side effect of the GLP-1 agonist. We're monitoring it, but if it stays this high, I might have to stop.",
         "category": "Cardiovascular signs",
-        "reasoning": "Sustained increase in resting heart rate and palpitations."
+        "reasoning": "Sustained increase in resting heart rate and palpitations.",
     },
     {
         "narrative": "I went in for an elective surgery to repair a hernia. I followed all the NPO instructions—didn't eat anything after midnight. But when the anesthesiologist did a quick ultrasound of my stomach before putting me under, he found a significant amount of food still in there. He said my stomach wasn't emptying properly, likely due to the Ozempic slowing down my digestion. They had to cancel the surgery to avoid the risk of me aspirating vomit into my lungs. I have to be off the meds for at least a week before we can try again.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Delayed gastric emptying posing aspiration risk during anesthesia."
+        "reasoning": "Delayed gastric emptying posing aspiration risk during anesthesia.",
     },
     {
         "narrative": "I've been having severe pain in my upper right abdomen, mostly after eating fatty meals. It's a sharp, cramping pain that doubles me over. Last night it was so bad I went to the ER. An ultrasound showed my gallbladder is full of stones and the wall is thickened. The surgeon said I have acute cholecystitis and need my gallbladder out. He mentioned that rapid weight loss can cause gallstones, and I've lost about 35 pounds in the last 4 months on this medication. It's a painful price to pay for the weight loss.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Acute cholecystitis and cholelithiasis associated with rapid weight loss."
+        "reasoning": "Acute cholecystitis and cholelithiasis associated with rapid weight loss.",
     },
     {
         "narrative": "I haven't been able to keep any food down for four days because of the nausea. I've also had terrible diarrhea. I went to my doctor because I felt so weak and dizzy when I stood up. They ran some labs and told me my kidneys are in trouble—my creatinine has jumped up to 2.1 from my normal 0.9. They said I have acute kidney injury from dehydration. I'm currently in the hospital getting IV fluids to try to flush my kidneys out and get them working again. No more Ozempic for me.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "AKI secondary to severe dehydration from GI adverse events."
+        "reasoning": "AKI secondary to severe dehydration from GI adverse events.",
     },
     {
         "narrative": "I feel bloated all the time, like I just ate a Thanksgiving dinner, even when I haven't eaten in hours. When I do eat, I get full after two bites. I've been vomiting up undigested food that I ate like 12 hours ago. My doctor ordered a gastric emptying study and it confirmed severe gastroparesis. My stomach is just not moving food through. It's miserable—I feel sick constantly and my blood sugars are erratic because the food isn't digesting predictably.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Symptoms and diagnostic confirmation of gastroparesis."
+        "reasoning": "Symptoms and diagnostic confirmation of gastroparesis.",
     },
     {
         "narrative": "This constipation is absolutely unbearable. I haven't had a bowel movement in over a week despite taking Miralax, stool softeners, and drinking tons of water. My stomach is hard and distended, and I'm having cramping pain. I actually had to go to the ER for an enema and manual disimpaction because I was so backed up. The doctor said my bowels have just slowed down to a crawl. I'm scared to eat anything because I know it's just going to sit there.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Severe, refractory constipation requiring medical intervention."
+        "reasoning": "Severe, refractory constipation requiring medical intervention.",
     },
     {
         "narrative": "I had a sudden onset of severe abdominal pain that radiated to my back, accompanied by nausea and vomiting. I couldn't find a comfortable position. My doctor sent me to the hospital where they found my amylase and lipase levels were dangerously high. A CT scan confirmed acute pancreatitis. I was hospitalized for five days for pain management and bowel rest. It was the most painful experience of my life. The doctors are certain it was drug-induced.",
         "category": "Pancreatitis",
-        "reasoning": "Acute pancreatitis requiring hospitalization."
+        "reasoning": "Acute pancreatitis requiring hospitalization.",
     },
     {
         "narrative": "I've been experiencing yellowing of my skin and the whites of my eyes over the last few days. My urine has also turned a very dark tea color. I went to the doctor and my liver enzymes are elevated and my bilirubin is high. An ultrasound showed a gallstone is blocking my common bile duct. I need an ERCP procedure to remove the stone. I never had gallbladder issues before starting this medication and losing the weight.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Obstructive jaundice due to choledocholithiasis."
+        "reasoning": "Obstructive jaundice due to choledocholithiasis.",
     },
     {
         "narrative": "I take insulin for my type 2 diabetes and started Ozempic about a month ago. Last night, I woke up soaked in sweat, heart pounding, and feeling incredibly confused. My wife checked my sugar and it was 38. She had to force-feed me glucose gel because I was too out of it to drink juice. It took almost 30 minutes for me to feel normal again. We're definitely going to have to lower my insulin dose if I stay on this.",
         "category": "Hypoglycemia",
-        "reasoning": "Severe nocturnal hypoglycemia requiring assistance."
+        "reasoning": "Severe nocturnal hypoglycemia requiring assistance.",
     },
     {
         "narrative": "My vision has become increasingly blurry in my right eye, and I'm seeing floating dark spots. I went to my retina specialist and he found a vitreous hemorrhage. He said the blood vessels in my retina are leaking. This is a progression of my diabetic eye disease. He thinks the sudden drop in my A1C might have shocked my system and caused the retinopathy to flare up. I'm scheduled for injections in my eye to try to stop the bleeding.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Vitreous hemorrhage and worsening retinopathy."
+        "reasoning": "Vitreous hemorrhage and worsening retinopathy.",
     },
     {
         "narrative": "I've been feeling incredibly fatigued and noticed I'm not urinating much despite drinking water. My legs and ankles are swollen. My doctor did some blood work and called me in a panic—my eGFR has dropped to 30 and my creatinine is 2.5. He diagnosed me with acute kidney failure. He thinks it's because I was dehydrated from the diarrhea I had last week. I have to stop the medication and possibly see a nephrologist.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Acute renal failure evidenced by significant creatinine rise and GFR drop."
+        "reasoning": "Acute renal failure evidenced by significant creatinine rise and GFR drop.",
     },
     {
         "narrative": "About 15 minutes after my injection, I started wheezing and feeling like I couldn't catch my breath. My chest felt tight and my skin was incredibly itchy. I looked in the mirror and I was covered in hives. I used my son's EpiPen and my husband called 911. The paramedics said my blood pressure was low and I was having an anaphylactic reaction. I spent the night in the ER for observation. It was terrifying.",
         "category": "Hypersensitivity",
-        "reasoning": "Anaphylaxis with respiratory and cardiovascular involvement."
+        "reasoning": "Anaphylaxis with respiratory and cardiovascular involvement.",
     },
     {
         "narrative": "The injection site on my stomach has turned into a large, painful bruise that's purple and black. It's about 3 inches across and has a hard lump underneath it. It hurts to bend over or wear pants with a waistband. It's been there for a week and isn't fading much. I might have hit a blood vessel, but the reaction seems excessive. My doctor said to avoid that area for future injections.",
         "category": "Injection-site reactions",
-        "reasoning": "Severe injection site bruising and induration."
+        "reasoning": "Severe injection site bruising and induration.",
     },
     {
         "narrative": "I've been feeling a fluttering sensation in my chest, like a bird is trapped in there. It happens randomly throughout the day. I checked my pulse and it was irregular. I went to urgent care and they did an EKG which showed I was having premature ventricular contractions (PVCs) and a heart rate of 115. They think the medication is stimulating my heart too much. I have to wear a Holter monitor for 24 hours now.",
         "category": "Cardiovascular signs",
-        "reasoning": "Palpitations, PVCs, and tachycardia."
+        "reasoning": "Palpitations, PVCs, and tachycardia.",
     },
     {
         "narrative": "I went in for a colonoscopy and during the sedation, I apparently regurgitated stomach contents. I aspirated some of the fluid into my lungs. When I woke up, I was coughing and my oxygen levels were low. They did a chest X-ray and found aspiration pneumonia. I had to be admitted to the hospital for IV antibiotics and oxygen. The gastroenterologist said my stomach was still full of liquid even though I had prepped correctly.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Aspiration pneumonia complicating a procedure due to retained gastric contents."
+        "reasoning": "Aspiration pneumonia complicating a procedure due to retained gastric contents.",
     },
     {
         "narrative": "I literally cannot eat solid food anymore. If I eat more than a few crackers, I feel sick and vomit. I've lost 15 pounds in two weeks, but not in a healthy way. I feel weak and malnourished. My doctor diagnosed me with gastroparesis—paralysis of the stomach. The medication has basically shut down my digestion. I'm on a liquid diet now and we're stopping the drug to see if my stomach function returns.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Severe gastroparesis causing inability to tolerate solid food."
+        "reasoning": "Severe gastroparesis causing inability to tolerate solid food.",
     },
     {
         "narrative": "I have had chronic diarrhea for over a month. It's explosive and urgent—I've had accidents at work which is humiliating. I'm taking Imodium daily but it barely helps. My electrolytes are all out of whack from the fluid loss. I feel dehydrated and exhausted constantly. My doctor says we have to stop the medication because my body just can't tolerate these GI side effects.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Chronic, uncontrolled diarrhea affecting quality of life."
+        "reasoning": "Chronic, uncontrolled diarrhea affecting quality of life.",
     },
     {
         "narrative": "I've been having this dull, gnawing pain in my upper abdomen for weeks, but yesterday it became sharp and severe. It radiates to my back and gets worse when I lie down. I've also been vomiting bile. My lipase levels came back at 800. The ER doctor diagnosed me with acute pancreatitis. I'm on a strict NPO diet and IV pain meds. I'm really worried about permanent damage to my pancreas.",
         "category": "Pancreatitis",
-        "reasoning": "Symptoms and labs consistent with acute pancreatitis."
+        "reasoning": "Symptoms and labs consistent with acute pancreatitis.",
     },
     {
         "narrative": "I had a sudden attack of intense pain in my upper right belly that lasted for 4 hours. It felt like I was being stabbed. I was vomiting and sweating from the pain. An ultrasound confirmed I have multiple gallstones and sludge in my gallbladder. The surgeon recommends taking it out before it gets infected or blocks a duct. He said the rapid weight loss triggered the stone formation.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Biliary colic and gallstones requiring surgical consultation."
+        "reasoning": "Biliary colic and gallstones requiring surgical consultation.",
     },
     {
         "narrative": "I was driving home when my vision started going white and I felt extremely confused and disoriented. I managed to pull over just before I blacked out. A police officer found me and called paramedics. My blood sugar was 32 mg/dL. They gave me IV dextrose to bring me back. It was a terrifying experience and I could have hurt someone. My doctor is completely readjusting my diabetes regimen.",
         "category": "Hypoglycemia",
-        "reasoning": "Severe hypoglycemia with loss of consciousness while driving."
+        "reasoning": "Severe hypoglycemia with loss of consciousness while driving.",
     },
     {
         "narrative": "My routine eye exam showed significant worsening of my diabetic eye disease. I have macular edema now, which is swelling in the back of the eye, causing my central vision to be blurry and distorted. The retina specialist says it's likely due to the 'early worsening' phenomenon from my blood sugar dropping so quickly on this medication. I need to start getting injections in my eye to treat the swelling.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Diabetic macular edema associated with rapid treatment response."
+        "reasoning": "Diabetic macular edema associated with rapid treatment response.",
     },
     {
         "narrative": "I went for routine blood work and my doctor called me immediately to stop taking the medication. My creatinine has doubled since my last visit three months ago, indicating my kidney function has plummeted. I haven't been feeling great—tired, nauseous, drinking less water than I should. It seems the dehydration from the mild nausea has tipped my kidneys into acute failure. I need to focus on rehydration immediately.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Asymptomatic but chemically significant acute kidney injury."
+        "reasoning": "Asymptomatic but chemically significant acute kidney injury.",
     },
     {
         "narrative": "I developed a widespread rash all over my trunk and arms about two days after my third dose. It's red, raised, and intensely itchy. My skin feels hot to the touch. I took Benadryl but it keeps coming back. My doctor says it's a systemic hypersensitivity reaction and I need to stop the drug and take a course of steroids to calm my immune system down.",
         "category": "Hypersensitivity",
-        "reasoning": "Systemic cutaneous hypersensitivity reaction."
+        "reasoning": "Systemic cutaneous hypersensitivity reaction.",
     },
     {
         "narrative": "The skin around my injection site is peeling and blistering. It looks like a chemical burn. It's incredibly painful and raw. I've been cleaning it and using antibiotic ointment, but it's not healing well. I rotate my sites, but this one bad reaction has me scared to inject again. My doctor thinks I might be reacting to one of the preservatives in the solution.",
         "category": "Injection-site reactions",
-        "reasoning": "Severe local skin reaction with blistering/desquamation."
+        "reasoning": "Severe local skin reaction with blistering/desquamation.",
     },
     {
         "narrative": "My heart feels like it's doing flip-flops in my chest. I get these sudden episodes where my pulse spikes to 130 and I feel lightheaded and short of breath. It happens when I'm just sitting at my desk. It makes me feel incredibly anxious. My cardiologist ruled out other causes and believes it's a side effect of the medication increasing my sympathetic nervous system tone.",
         "category": "Cardiovascular signs",
-        "reasoning": "Symptomatic arrhythmias/palpitations and tachycardia."
+        "reasoning": "Symptomatic arrhythmias/palpitations and tachycardia.",
     },
     {
         "narrative": "I was scheduled for a gastric sleeve surgery, but they had to abort the procedure after induction. When they put the camera down, they found my stomach was full of solid food, even though I had fasted for 14 hours. The surgeon said the risk of aspiration was too high to proceed. He said my stomach isn't emptying and I need to be off this medication for at least 3 weeks before we try again.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Aborted surgery due to retained gastric contents (aspiration risk)."
+        "reasoning": "Aborted surgery due to retained gastric contents (aspiration risk).",
     },
     {
         "narrative": "I constantly feel like I have a brick sitting in my stomach. The bloating is painful and I look six months pregnant. I'm burping these foul, sulfur-smelling burps that are so embarrassing. I can't eat normal meals anymore because I just feel so full and sick immediately. My doctor says these are classic symptoms of gastroparesis caused by the GLP-1 agonist.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Classic symptoms of gastroparesis including sulfur burps and bloating."
+        "reasoning": "Classic symptoms of gastroparesis including sulfur burps and bloating.",
     },
     {
         "narrative": "I've been vomiting multiple times a day for weeks. I can't keep my oral diabetes meds down, and I'm getting weak. I've tried anti-nausea medication but it barely touches it. The vomiting is violent and dry heaving when my stomach is empty. I'm exhausted and my throat hurts from the acid. This medication is just too harsh for my system.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Intractable vomiting unresponsive to antiemetics."
+        "reasoning": "Intractable vomiting unresponsive to antiemetics.",
     },
     {
         "narrative": "I have deep, boring pain in my upper abdomen that goes straight through to my spine. It gets worse after I eat. My abdomen is tender to the touch. I've also had some nausea. My doctor ran labs and my lipase is 3 times the normal limit. She diagnosed me with pancreatitis and stopped the medication immediately. I'm on a clear liquid diet to let my pancreas rest.",
         "category": "Pancreatitis",
-        "reasoning": "Clinical and biochemical signs of pancreatitis."
+        "reasoning": "Clinical and biochemical signs of pancreatitis.",
     },
     {
         "narrative": "I had a sudden onset of fever, chills, and severe pain in my upper right abdomen. My husband took me to the emergency room. An ultrasound showed my gallbladder was inflamed and I had stones blocking the cystic duct. They admitted me for IV antibiotics and I had surgery to remove my gallbladder the next morning. The surgeon said it was really infected.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Acute cholecystitis with systemic signs (fever, chills) requiring surgery."
+        "reasoning": "Acute cholecystitis with systemic signs (fever, chills) requiring surgery.",
     },
     {
         "narrative": "I was at work and suddenly couldn't concentrate on my computer screen. My hands started trembling so bad I couldn't type. I felt like I was going to faint. My colleague noticed I looked pale and brought me a soda. I checked my sugar after drinking it and it was still only 55. It must have been even lower before. It took an hour before I felt safe to drive home.",
         "category": "Hypoglycemia",
-        "reasoning": "Symptomatic hypoglycemia affecting work and cognitive function."
+        "reasoning": "Symptomatic hypoglycemia affecting work and cognitive function.",
     },
     {
         "narrative": "My retina specialist is concerned about the new blood vessels growing in my eye. He says I have proliferative retinopathy now. I've had some episodes where my vision goes dark for a few minutes. He attributes the rapid progression to the sudden drop in my A1C levels since starting Ozempic. I'm scheduled for laser photocoagulation surgery next week to save my sight.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Proliferative retinopathy with transient vision loss."
+        "reasoning": "Proliferative retinopathy with transient vision loss.",
     },
     {
         "narrative": "I went to the ER because I haven't urinated in 24 hours. I've been feeling dizzy and my heart is racing. They told me I'm in acute renal failure from severe dehydration. My creatinine is 3.5! They are talking about putting me on dialysis temporarily if my kidneys don't respond to fluids. I can't believe a stomach bug from this medication could cause my kidneys to shut down.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Severe AKI with anuria and potential need for dialysis."
+        "reasoning": "Severe AKI with anuria and potential need for dialysis.",
     },
     {
         "narrative": "I had an immediate reaction to the injection. My tongue swelled up so much I couldn't speak properly, and I started wheezing. My wife drove me to the fire station down the street. They gave me oxygen and called an ambulance. By the time I got to the hospital, they had to give me epinephrine twice. The doctor said I came very close to needing a breathing tube.",
         "category": "Hypersensitivity",
-        "reasoning": "Near-fatal anaphylaxis with airway obstruction."
+        "reasoning": "Near-fatal anaphylaxis with airway obstruction.",
     },
     {
         "narrative": "I have a large, painful nodule at the injection site on my abdomen. It's been there for weeks and isn't going away. It feels like a marble under my skin. The area is also red and itchy. My doctor says it's a sterile abscess or a granuloma reaction to the medication. We might have to drain it if it doesn't resolve soon.",
         "category": "Injection-site reactions",
-        "reasoning": "Persistent sterile abscess/granuloma at injection site."
+        "reasoning": "Persistent sterile abscess/granuloma at injection site.",
     },
     {
         "narrative": "I've been waking up in the middle of the night with my heart racing. My pulse will be 120-130 bpm for no reason. I feel anxious and short of breath. My doctor put me on a beta-blocker to control the heart rate, but says if it continues I need to come off the Ozempic. It's uncomfortable and makes it hard to sleep.",
         "category": "Cardiovascular signs",
-        "reasoning": "Nocturnal tachycardia requiring beta-blocker therapy."
+        "reasoning": "Nocturnal tachycardia requiring beta-blocker therapy.",
     },
     {
         "narrative": "I aspirated gastric contents during an emergency appendectomy. Even though I hadn't eaten due to the appendicitis pain, my stomach was full of fluid. I developed severe aspiration pneumonia in my right lung and had to be on a ventilator for two days. The ICU doctors said my stomach was not emptying at all, likely due to the GLP-1 agonist.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Aspiration pneumonia complicating emergency surgery due to gastric stasis."
+        "reasoning": "Aspiration pneumonia complicating emergency surgery due to gastric stasis.",
     },
     {
         "narrative": "I vomit undigested food almost every day. I feel nauseous from the moment I wake up until I go to sleep. I've lost my appetite completely. My doctor says my stomach paralysis is severe based on the emptying study. I'm malnourished and weak. We stopped the drug two weeks ago but the symptoms are resolving very slowly.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Severe, persistent gastroparesis symptoms leading to malnutrition."
+        "reasoning": "Severe, persistent gastroparesis symptoms leading to malnutrition.",
     },
     {
         "narrative": "The constipation is so bad it's causing hemorrhoids and fissures. I'm in pain every time I try to go to the bathroom. I'm using laxatives daily but they barely help. My stomach is constantly cramped. It's affecting my quality of life significantly. I'm considering stopping the medication just to get relief from this bowel issue.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Severe constipation causing secondary complications (hemorrhoids/fissures)."
+        "reasoning": "Severe constipation causing secondary complications (hemorrhoids/fissures).",
     },
     {
         "narrative": "I was hospitalized for acute pancreatitis last week. The pain was unbearable, radiating through my back. My lipase was over 2000. I was on IV fluids and pain meds for four days. They ruled out gallstones and alcohol. The doctors told me I can never take Ozempic or any drug in this class again because the risk of it happening again is too high.",
         "category": "Pancreatitis",
-        "reasoning": "Severe acute pancreatitis leading to permanent discontinuation of drug class."
+        "reasoning": "Severe acute pancreatitis leading to permanent discontinuation of drug class.",
     },
     {
         "narrative": "I've had recurrent attacks of gallbladder pain. It feels like a vice grip under my ribs. An ultrasound showed my gallbladder is full of sludge and small stones. The gastroenterologist says the medication caused the rapid weight loss which led to the stones. I'm scheduled for a laparoscopic cholecystectomy next month to remove the gallbladder.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Symptomatic biliary sludge/stones requiring elective surgery."
+        "reasoning": "Symptomatic biliary sludge/stones requiring elective surgery.",
     },
     {
         "narrative": "I had a severe low blood sugar event where I became combative and confused. I didn't know who my family members were. They couldn't get me to eat anything so they had to use the emergency glucagon nasal spray. When I came to, I had a terrible headache and felt exhausted. It was really scary for my family to see me like that.",
         "category": "Hypoglycemia",
-        "reasoning": "Severe hypoglycemia with altered mental status requiring glucagon."
+        "reasoning": "Severe hypoglycemia with altered mental status requiring glucagon.",
     },
     {
         "narrative": "I've lost significant vision in my left eye due to a retinal bleed. My ophthalmologist diagnosed me with proliferative diabetic retinopathy. He says the blood vessels grew rapidly and burst. He believes the aggressive blood sugar lowering from the Ozempic played a major role in this acute worsening. I'm devastated about the vision loss.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Vision loss due to retinal hemorrhage associated with treatment."
+        "reasoning": "Vision loss due to retinal hemorrhage associated with treatment.",
     },
     {
         "narrative": "My kidney function tests came back abnormal. My creatinine is elevated and my potassium is high. I've been feeling dehydrated from the constant nausea. My doctor is holding my blood pressure medication and the Ozempic to try to protect my kidneys. He says I'm in stage 2 acute kidney injury. I need to drink more water but it's hard when I feel sick.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Stage 2 AKI with electrolyte abnormalities."
-    }
-,
-
+        "reasoning": "Stage 2 AKI with electrolyte abnormalities.",
+    },
     {
         "narrative": "I've been battling constant nausea for weeks. It's like having the stomach flu but it never goes away. I've vomited bile several times this week. I can't keep my normal diet down and I'm surviving on toast and ginger ale. My doctor prescribed Zofran but it makes me sleepy. I'm thinking about quitting the medication.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Persistent, bile-stained vomiting and nausea requiring antiemetics."
+        "reasoning": "Persistent, bile-stained vomiting and nausea requiring antiemetics.",
     },
     {
         "narrative": "I had intense stomach pain that felt like a knife twisting in my gut. It went straight through to my back. I was doubled over in agony. The ER diagnosed me with acute pancreatitis based on my blood work and CT scan. My lipase was 1500. They said it's a known side effect of the GLP-1 medication I'm taking.",
         "category": "Pancreatitis",
-        "reasoning": "Acute pancreatitis with high lipase and severe radiating pain."
+        "reasoning": "Acute pancreatitis with high lipase and severe radiating pain.",
     },
     {
         "narrative": "I've developed gallstones since starting Ozempic. I have attacks of pain in my right side that last for hours, especially after I eat dinner. The ultrasound showed multiple stones. My doctor says I need surgery to remove my gallbladder because the stones are causing inflammation. I've lost 40 pounds, but now I need surgery.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Symptomatic cholelithiasis (gallstones) requiring surgery."
+        "reasoning": "Symptomatic cholelithiasis (gallstones) requiring surgery.",
     },
     {
         "narrative": "My blood sugar dropped to 45 while I was sleeping. My continuous glucose monitor alarm woke me up. I was shaking so bad I could barely open a juice box. I felt like I was going to pass out. I had to eat three granola bars before I stopped shaking. I'm terrified of going to sleep now.",
         "category": "Hypoglycemia",
-        "reasoning": "Severe nocturnal hypoglycemia detected by CGM."
+        "reasoning": "Severe nocturnal hypoglycemia detected by CGM.",
     },
     {
         "narrative": "The vision in my right eye has gotten blurry and I'm seeing spots. My eye doctor says I have new bleeding in my retina. He calls it diabetic retinopathy progression. He thinks the rapid drop in my A1C levels shocked my body and caused the eye damage to worsen. I need laser treatment immediately.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Progression of retinopathy with new hemorrhage requiring laser."
+        "reasoning": "Progression of retinopathy with new hemorrhage requiring laser.",
     },
     {
         "narrative": "My kidneys aren't working right. My doctor said my creatinine levels are way up and my GFR is down. I was dehydrated from all the vomiting I had last week. They gave me fluids in the hospital but my kidneys are slow to recover. The doctor called it acute kidney injury and took me off the medication.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "AKI secondary to dehydration/vomiting."
+        "reasoning": "AKI secondary to dehydration/vomiting.",
     },
     {
         "narrative": "My throat started to swell shut about 20 minutes after my shot. I couldn't swallow and my voice sounded raspy. My husband rushed me to the ER. They gave me epinephrine and steroids. The doctor said it was a severe allergic reaction and I could have suffocated if I waited any longer.",
         "category": "Hypersensitivity",
-        "reasoning": "Anaphylaxis with airway edema."
+        "reasoning": "Anaphylaxis with airway edema.",
     },
     {
         "narrative": "I have a huge, red, itchy welt on my stomach where I injected the medication. It's hot and painful to the touch. It's been there for four days and isn't getting better. It looks like a giant bug bite. My doctor says it's a localized injection site reaction but told me to watch for signs of infection.",
         "category": "Injection-site reactions",
-        "reasoning": "Significant localized injection site reaction."
+        "reasoning": "Significant localized injection site reaction.",
     },
     {
         "narrative": "My heart feels like it's racing all the time. My resting pulse is over 100 beats per minute. I feel jittery and anxious, like I've had too much caffeine. My doctor did an EKG and confirmed sinus tachycardia. He thinks it's a side effect of the Ozempic stimulating my heart.",
         "category": "Cardiovascular signs",
-        "reasoning": "Persistent sinus tachycardia causing symptoms."
+        "reasoning": "Persistent sinus tachycardia causing symptoms.",
     },
     {
         "narrative": "I was supposed to have surgery but they cancelled it because my stomach was full of food. I hadn't eaten since the night before, but the ultrasound showed food in my stomach. The anesthesiologist said I was a high aspiration risk because of the delayed gastric emptying from my medication.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Surgery cancellation due to full stomach/aspiration risk."
+        "reasoning": "Surgery cancellation due to full stomach/aspiration risk.",
     },
     {
         "narrative": "I feel full after two bites of food. My stomach hurts and I feel nauseous all day. I've been vomiting undigested food hours after eating. My doctor diagnosed me with gastroparesis. My stomach is paralyzed and won't move food through. I'm losing weight too fast because I can't eat.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Gastroparesis with early satiety and vomiting undigested food."
+        "reasoning": "Gastroparesis with early satiety and vomiting undigested food.",
     },
     {
         "narrative": "I haven't pooped in 10 days. My stomach is rock hard and hurts. I'm taking laxatives but nothing is working. I feel toxic and bloated. I went to urgent care and they gave me an enema, but I'm still backed up. This constipation is worse than the diabetes.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Severe constipation refractory to laxatives."
+        "reasoning": "Severe constipation refractory to laxatives.",
     },
     {
         "narrative": "I ended up in the hospital with pancreatitis. The pain was unbearable, like a belt tightening around my upper belly. My enzymes were sky high. I had to be on IVs for days without eating. The doctors blamed the Ozempic and said I can never take it again.",
         "category": "Pancreatitis",
-        "reasoning": "Hospitalization for acute pancreatitis."
+        "reasoning": "Hospitalization for acute pancreatitis.",
     },
     {
         "narrative": "I had a gallbladder attack last night. The pain in my right side was intense and I was vomiting. An ultrasound showed stones. The surgeon says my gallbladder is inflamed and needs to come out. He said rapid weight loss often causes gallstones.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Acute gallbladder attack requiring surgery."
+        "reasoning": "Acute gallbladder attack requiring surgery.",
     },
     {
         "narrative": "I passed out at the gym because my blood sugar dropped to 40. I didn't feel it coming on until it was too late. The paramedics had to revive me with glucose. It was really scary. I've had to lower my insulin dose significantly to avoid this happening again.",
         "category": "Hypoglycemia",
-        "reasoning": "Syncope due to severe hypoglycemia."
+        "reasoning": "Syncope due to severe hypoglycemia.",
     },
     {
         "narrative": "My diabetic retinopathy has gotten worse since I started this drug. I have new bleeders in my eye and my vision is cloudy. The specialist says the rapid improvement in my blood sugar actually triggered the worsening. I need eye injections now.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Worsening retinopathy requiring intraocular injections."
+        "reasoning": "Worsening retinopathy requiring intraocular injections.",
     },
     {
         "narrative": "My kidneys took a hit from being so dehydrated. I had diarrhea for a week and couldn't drink enough. My creatinine went up to 2.0. The doctor stopped the medication and put me on fluids. He says I have acute kidney injury.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "AKI from dehydration/diarrhea."
+        "reasoning": "AKI from dehydration/diarrhea.",
     },
     {
         "narrative": "I broke out in hives all over my body after my second shot. My face swelled up and my lips got huge. I had trouble breathing. The ER doctor gave me Epi and steroids. He said it was a severe allergic reaction.",
         "category": "Hypersensitivity",
-        "reasoning": "Generalized urticaria and angioedema."
+        "reasoning": "Generalized urticaria and angioedema.",
     },
     {
         "narrative": "The injection site on my thigh is bruised and painful. It's a large purple bruise with a lump under it. It hurts when I walk. I think I might have hit a vessel or reacted to the fluid. It's taking a long time to heal.",
         "category": "Injection-site reactions",
-        "reasoning": "Large, painful injection site bruise/hematoma."
+        "reasoning": "Large, painful injection site bruise/hematoma.",
     },
     {
         "narrative": "My heart rate won't go below 100 bpm. I feel palpitations in my chest and throat. It's making me anxious and short of breath. My doctor is concerned about the persistent tachycardia and wants me to see a cardiologist.",
         "category": "Cardiovascular signs",
-        "reasoning": "Persistent tachycardia causing anxiety and dyspnea."
+        "reasoning": "Persistent tachycardia causing anxiety and dyspnea.",
     },
     {
         "narrative": "I aspirated stomach acid during a procedure. I woke up coughing and couldn't breathe. I developed pneumonia in my right lung. The doctor said my stomach hadn't emptied from the night before due to the medication.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Aspiration pneumonia due to delayed emptying."
+        "reasoning": "Aspiration pneumonia due to delayed emptying.",
     },
     {
         "narrative": "I'm vomiting every day. I can't keep anything down. I feel full all the time. My doctor diagnosed me with gastroparesis. My stomach isn't working. I'm losing muscle mass because I can't eat protein.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Daily vomiting and gastroparesis causing muscle loss."
+        "reasoning": "Daily vomiting and gastroparesis causing muscle loss.",
     },
     {
         "narrative": "The nausea is relentless. I dry heave in the mornings. I've lost my appetite completely. Even the smell of food makes me sick. I'm thinking of stopping the medication because I can't function like this.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Relentless nausea and dry heaving."
+        "reasoning": "Relentless nausea and dry heaving.",
     },
     {
         "narrative": "I have severe pain in the middle of my stomach that radiates to my back. It gets worse when I eat. My labs show elevated lipase. The doctor says it's pancreatitis caused by the medication. I'm in a lot of pain.",
         "category": "Pancreatitis",
-        "reasoning": "Classic pancreatitis pain pattern."
+        "reasoning": "Classic pancreatitis pain pattern.",
     },
     {
         "narrative": "I have jaundice and dark urine. The doctor says a gallstone is stuck in my bile duct. I need a procedure to remove it. My liver enzymes are high. This is a complication from the rapid weight loss.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Obstructive jaundice from gallstone."
+        "reasoning": "Obstructive jaundice from gallstone.",
     },
     {
         "narrative": "My blood sugar crashed to 35. I was confused and combative. My wife had to call 911. They gave me glucose IV. I don't remember any of it. It was a severe hypoglycemic event.",
         "category": "Hypoglycemia",
-        "reasoning": "Severe hypoglycemia with altered mental status."
+        "reasoning": "Severe hypoglycemia with altered mental status.",
     },
     {
         "narrative": "I have new cotton wool spots in my retina. My vision is blurry. The eye doctor says my retinopathy is progressing rapidly. He blames the sudden drop in my blood sugar. I'm worried about going blind.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Rapid progression of retinopathy with vision threat."
+        "reasoning": "Rapid progression of retinopathy with vision threat.",
     },
     {
         "narrative": "My kidney function is declining. My creatinine is rising and my urine output is low. The doctor says I'm dehydrated and my kidneys are stressed. We stopped the medication to let them recover.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Declining renal function/oliguria."
+        "reasoning": "Declining renal function/oliguria.",
     },
     {
         "narrative": "My lips and tongue swelled up after the injection. I felt like my throat was closing. I used my EpiPen and went to the ER. It was a terrifying anaphylactic reaction.",
         "category": "Hypersensitivity",
-        "reasoning": "Anaphylaxis with tongue/throat swelling."
+        "reasoning": "Anaphylaxis with tongue/throat swelling.",
     },
     {
         "narrative": "I have a hard, itchy lump at the injection site. It's red and warm. It's been there for a week. I'm worried it's an infection or a bad reaction to the drug.",
         "category": "Injection-site reactions",
-        "reasoning": "Persistent, inflammatory injection site nodule."
+        "reasoning": "Persistent, inflammatory injection site nodule.",
     },
     {
         "narrative": "I feel my heart skipping beats. It flutters in my chest. My pulse is irregular. The doctor says I'm having PVCs and my heart rate is high. It's uncomfortable and scary.",
         "category": "Cardiovascular signs",
-        "reasoning": "Palpitations and irregular heartbeat (PVCs)."
+        "reasoning": "Palpitations and irregular heartbeat (PVCs).",
     },
     {
         "narrative": "I vomited during anesthesia induction. They had to suction my lungs. I'm now on antibiotics for aspiration pneumonia. My stomach was full despite fasting.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Aspiration during anesthesia induction."
+        "reasoning": "Aspiration during anesthesia induction.",
     },
     {
         "narrative": "My stomach is paralyzed. Food just sits there. I burp up rotten egg smells. I feel sick all the time. The gastric emptying study confirmed gastroparesis.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Confirmed gastroparesis with sulfur burps."
+        "reasoning": "Confirmed gastroparesis with sulfur burps.",
     },
     {
         "narrative": "I have explosive diarrhea multiple times a day. I can't leave the house. I'm dehydrated and weak. The doctor says it's a common side effect but it's ruining my life.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Severe diarrhea limiting daily activities."
+        "reasoning": "Severe diarrhea limiting daily activities.",
     },
     {
         "narrative": "I was hospitalized for acute pancreatitis. My lipase was over 3000. The pain was 10/10. I was on IVs for a week. The doctors said it was definitely the drug.",
         "category": "Pancreatitis",
-        "reasoning": "Severe pancreatitis with very high enzymes."
+        "reasoning": "Severe pancreatitis with very high enzymes.",
     },
     {
         "narrative": "My gallbladder is full of stones. I have attacks of pain in my right shoulder. The surgeon says I need it removed. The weight loss was too fast for my gallbladder to handle.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Symptomatic gallstones with referred pain."
+        "reasoning": "Symptomatic gallstones with referred pain.",
     },
     {
         "narrative": "I got dizzy and sweaty while driving. I had to pull over. My sugar was 50. I drank a soda and waited for it to come up. It was a close call.",
         "category": "Hypoglycemia",
-        "reasoning": "Hypoglycemia while driving."
+        "reasoning": "Hypoglycemia while driving.",
     },
     {
         "narrative": "My retina specialist found hemorrhages in my eye. He says the retinopathy is active again. He thinks the Ozempic caused the flare up by lowering my sugar too fast.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Retinopathy flare-up from rapid control."
+        "reasoning": "Retinopathy flare-up from rapid control.",
     },
     {
         "narrative": "I have acute kidney failure. My creatinine is 3.0. I was dehydrated from vomiting. They are giving me fluids to try to save my kidneys. I might need dialysis.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Acute renal failure with potential dialysis need."
+        "reasoning": "Acute renal failure with potential dialysis need.",
     },
     {
         "narrative": "I had a severe allergic reaction. Hives everywhere, swollen face, trouble breathing. The ambulance took me to the hospital. I can never take this drug again.",
         "category": "Hypersensitivity",
-        "reasoning": "Systemic allergic reaction requiring ambulance."
+        "reasoning": "Systemic allergic reaction requiring ambulance.",
     },
     {
         "narrative": "The skin at my injection site is necrotic. It turned black and scabby. It's painful and ugly. The doctor says it's a severe tissue reaction.",
         "category": "Injection-site reactions",
-        "reasoning": "Tissue necrosis at injection site."
+        "reasoning": "Tissue necrosis at injection site.",
     },
     {
         "narrative": "My heart rate is consistently 115 bpm. I feel short of breath when I walk. The cardiologist put me on beta blockers. He says the drug is overstimulating my heart.",
         "category": "Cardiovascular signs",
-        "reasoning": "Symptomatic tachycardia requiring medication."
+        "reasoning": "Symptomatic tachycardia requiring medication.",
     },
     {
         "narrative": "They found food in my stomach during an endoscopy even though I fasted. I aspirated fluid into my lungs. Now I have pneumonia. It's because my stomach drains too slow.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Aspiration pneumonia confirmed after endoscopy."
+        "reasoning": "Aspiration pneumonia confirmed after endoscopy.",
     },
     {
         "narrative": "I can't eat solid food. I vomit everything up. My stomach is paralyzed. I've lost too much weight. I'm weak and malnourished. It's gastroparesis.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Severe gastroparesis causing intolerance to solids."
+        "reasoning": "Severe gastroparesis causing intolerance to solids.",
     },
     {
         "narrative": "I have severe constipation and abdominal cramping. I haven't gone in a week. I feel bloated and sick. Laxatives aren't helping. I'm miserable.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Severe constipation with abdominal pain."
+        "reasoning": "Severe constipation with abdominal pain.",
     },
     {
         "narrative": "I have acute pancreatitis. The pain is severe and radiates to my back. I'm vomiting and have a fever. My labs confirm inflammation. I'm in the hospital.",
         "category": "Pancreatitis",
-        "reasoning": "Hospitalized for acute pancreatitis symptoms."
+        "reasoning": "Hospitalized for acute pancreatitis symptoms.",
     },
     {
         "narrative": "I have gallstones and cholecystitis. The pain is sharp in my right side. I need surgery to remove my gallbladder. The doctor says it's from the medication.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Cholecystitis requiring cholecystectomy."
+        "reasoning": "Cholecystitis requiring cholecystectomy.",
     },
     {
         "narrative": "My blood sugar dropped to 38. I was confused and sweating. My family had to help me. I almost passed out. It was a severe low.",
         "category": "Hypoglycemia",
-        "reasoning": "Severe hypo requiring family assistance."
+        "reasoning": "Severe hypo requiring family assistance.",
     },
     {
         "narrative": "My vision is blurry from macular edema. The eye doctor says my retinopathy is worse. I need laser treatment. It's a complication of the rapid blood sugar drop.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Macular edema requiring laser."
+        "reasoning": "Macular edema requiring laser.",
     },
     {
         "narrative": "My kidneys are injured from dehydration. My creatinine is high. I was sick with diarrhea for days. The doctor stopped the drug to protect my kidneys.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "AKI from diarrhea-induced dehydration."
-    }
-,
-
+        "reasoning": "AKI from diarrhea-induced dehydration.",
+    },
     {
         "narrative": "The nausea is debilitating. I spend half the day in the bathroom dry heaving. I can't work or take care of my kids. I've lost 10 pounds in a week from not eating. This medication is too strong for my stomach.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Debilitating nausea affecting daily function."
+        "reasoning": "Debilitating nausea affecting daily function.",
     },
     {
         "narrative": "I was diagnosed with acute pancreatitis. The pain was so bad I thought I was dying. It felt like my insides were on fire. My lipase was 2500. I was in the hospital for 6 days. I'm terrified to take any diabetes drugs now.",
         "category": "Pancreatitis",
-        "reasoning": "Severe pancreatitis with hospitalization and fear of recurrence."
+        "reasoning": "Severe pancreatitis with hospitalization and fear of recurrence.",
     },
     {
         "narrative": "I have multiple gallstones and need surgery. The pain attacks are frequent and severe. I can't eat anything with fat. The doctor says the rapid weight loss caused the stones to form.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Multiple gallstones with frequent biliary colic."
+        "reasoning": "Multiple gallstones with frequent biliary colic.",
     },
     {
         "narrative": "I had a hypoglycemic seizure. My blood sugar was 30. My husband found me shaking on the floor. He called 911. They gave me glucagon. I woke up in the ER with a headache.",
         "category": "Hypoglycemia",
-        "reasoning": "Hypoglycemic seizure requiring emergency intervention."
+        "reasoning": "Hypoglycemic seizure requiring emergency intervention.",
     },
     {
         "narrative": "My retina is bleeding. I see red streaks in my vision. The doctor says I have proliferative retinopathy. It got worse after I started Ozempic. I need urgent laser surgery to stop the bleeding.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Vitreous hemorrhage/retinal bleeding requiring urgent laser."
+        "reasoning": "Vitreous hemorrhage/retinal bleeding requiring urgent laser.",
     },
     {
         "narrative": "I have stage 3 kidney failure. My creatinine is 4.0. I was dehydrated from vomiting for weeks. The doctors are trying to save my kidneys with fluids. I might need temporary dialysis.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Stage 3 kidney failure with potential for dialysis."
+        "reasoning": "Stage 3 kidney failure with potential for dialysis.",
     },
     {
         "narrative": "My face and neck swelled up after the shot. I couldn't breathe. It was anaphylaxis. The ER doctor saved my life with epinephrine. I'm allergic to the medication.",
         "category": "Hypersensitivity",
-        "reasoning": "Life-threatening anaphylaxis."
+        "reasoning": "Life-threatening anaphylaxis.",
     },
     {
         "narrative": "I have a painful, red lump at the injection site. It's hot and swollen. It looks like an infection but the doctor says it's a sterile abscess from the drug. It's very uncomfortable.",
         "category": "Injection-site reactions",
-        "reasoning": "Sterile abscess at injection site."
+        "reasoning": "Sterile abscess at injection site.",
     },
     {
         "narrative": "My heart races when I stand up. My pulse goes to 120. I feel dizzy and short of breath. The cardiologist diagnosed me with POTS-like symptoms from the medication. I have to stop taking it.",
         "category": "Cardiovascular signs",
-        "reasoning": "Postural tachycardia and dizziness."
+        "reasoning": "Postural tachycardia and dizziness.",
     },
     {
         "narrative": "I aspirated food during surgery. I have pneumonia now. My stomach was full of food from the day before. The doctors say my stomach paralysis caused the aspiration.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Aspiration pneumonia due to gastric stasis."
+        "reasoning": "Aspiration pneumonia due to gastric stasis.",
     },
     {
         "narrative": "My stomach is paralyzed. I vomit undigested food. I feel full and sick all the time. The gastric emptying scan was abnormal. I have gastroparesis from the drug.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Gastroparesis diagnosed by scan."
+        "reasoning": "Gastroparesis diagnosed by scan.",
     },
     {
         "narrative": "I have severe diarrhea and cramping. I go 10 times a day. I'm losing weight from dehydration. My electrolytes are low. I feel weak and dizzy. I can't leave the house.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "High-frequency diarrhea causing electrolyte imbalance."
+        "reasoning": "High-frequency diarrhea causing electrolyte imbalance.",
     },
     {
         "narrative": "I have acute pancreatitis. The pain radiates to my back. I'm nauseous and vomiting. My enzymes are high. I'm in the hospital on pain meds. It's definitely the Ozempic.",
         "category": "Pancreatitis",
-        "reasoning": "Drug-induced pancreatitis requiring hospital care."
+        "reasoning": "Drug-induced pancreatitis requiring hospital care.",
     },
     {
         "narrative": "My gallbladder is inflamed and full of stones. I have pain in my right shoulder. I need surgery. The doctor says the weight loss was too fast for my body.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Cholecystitis with referred shoulder pain."
+        "reasoning": "Cholecystitis with referred shoulder pain.",
     },
     {
         "narrative": "My sugar dropped to 40 while I was driving. I got confused and pulled over. I drank juice and waited. It was a close call. I was scared I would crash.",
         "category": "Hypoglycemia",
-        "reasoning": "Hypoglycemia while driving posing safety risk."
+        "reasoning": "Hypoglycemia while driving posing safety risk.",
     },
     {
         "narrative": "My vision is blurry and I see floaters. The eye doctor says my retinopathy is active. He thinks the rapid A1C drop caused the worsening. I need treatment to save my sight.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Active retinopathy threatening sight."
+        "reasoning": "Active retinopathy threatening sight.",
     },
     {
         "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated from sickness. The doctor stopped the drug. I'm worried about permanent kidney damage.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "AKI with concern for permanent damage."
+        "reasoning": "AKI with concern for permanent damage.",
     },
     {
         "narrative": "I had an allergic reaction with hives and swelling. My throat felt tight. I went to the ER. They gave me meds to stop the reaction. I can't take this drug again.",
         "category": "Hypersensitivity",
-        "reasoning": "Allergic reaction with throat tightness."
+        "reasoning": "Allergic reaction with throat tightness.",
     },
     {
         "narrative": "The injection site is bruised and painful. It's a large hematoma. It hurts to touch. I must have hit a vessel or reacted bad. It looks terrible.",
         "category": "Injection-site reactions",
-        "reasoning": "Large hematoma at injection site."
+        "reasoning": "Large hematoma at injection site.",
     },
     {
         "narrative": "My heart rate is high all the time. I feel palpitations. It makes me anxious. The doctor says it's a side effect. I might need a beta blocker.",
         "category": "Cardiovascular signs",
-        "reasoning": "Anxiety-inducing tachycardia."
+        "reasoning": "Anxiety-inducing tachycardia.",
     },
     {
         "narrative": "I vomited during induction of anesthesia. They had to suction me. I have aspiration pneumonia. My stomach wasn't empty. It's a serious complication.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Intraoperative aspiration leading to pneumonia."
+        "reasoning": "Intraoperative aspiration leading to pneumonia.",
     },
     {
         "narrative": "I have gastroparesis. My stomach hurts and I vomit food. I can't eat solids. I'm losing too much weight. The doctor stopped the medication.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Gastroparesis necessitating discontinuation."
+        "reasoning": "Gastroparesis necessitating discontinuation.",
     },
     {
         "narrative": "The nausea is constant. I feel like I have the flu. I can't eat. I'm weak and tired. I've lost my appetite. It's not worth it.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Flu-like nausea and anorexia."
+        "reasoning": "Flu-like nausea and anorexia.",
     },
     {
         "narrative": "I have severe abdominal pain and vomiting. My lipase is high. The CT shows pancreatitis. I'm in the hospital. I'm in so much pain.",
         "category": "Pancreatitis",
-        "reasoning": "CT-confirmed pancreatitis with severe pain."
+        "reasoning": "CT-confirmed pancreatitis with severe pain.",
     },
     {
         "narrative": "I have gallstones and need surgery. The pain is severe after eating. My gallbladder is not working. The rapid weight loss caused it.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Non-functional gallbladder due to stones."
+        "reasoning": "Non-functional gallbladder due to stones.",
     },
     {
         "narrative": "My blood sugar was 35. I was unconscious. The paramedics gave me IV glucose. I woke up in the ambulance. It was a severe low.",
         "category": "Hypoglycemia",
-        "reasoning": "Unconscious hypoglycemia requiring paramedics."
+        "reasoning": "Unconscious hypoglycemia requiring paramedics.",
     },
     {
         "narrative": "My diabetic eye disease is worse. I have bleeding in my retina. The doctor says the rapid sugar control caused it. I need laser surgery.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Worsening eye disease linked to control."
+        "reasoning": "Worsening eye disease linked to control.",
     },
     {
         "narrative": "My kidney function is down. My creatinine is up. I was dehydrated from vomiting. The doctor is worried about my kidneys. I need fluids.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Renal function decline requiring fluids."
+        "reasoning": "Renal function decline requiring fluids.",
     },
     {
         "narrative": "My face swelled up and I couldn't breathe. It was anaphylaxis. My husband used the EpiPen. We went to the ER. It was very scary.",
         "category": "Hypersensitivity",
-        "reasoning": "Anaphylaxis treated with home EpiPen."
+        "reasoning": "Anaphylaxis treated with home EpiPen.",
     },
     {
         "narrative": "I have a red, itchy rash at the injection site. It spreads and burns. It lasts for days. I think I'm allergic to the injection.",
         "category": "Injection-site reactions",
-        "reasoning": "Spreading, burning injection site rash."
+        "reasoning": "Spreading, burning injection site rash.",
     },
     {
         "narrative": "My heart is pounding in my chest. My pulse is 110. I feel short of breath. The doctor says it's tachycardia from the drug. I need to stop taking it.",
         "category": "Cardiovascular signs",
-        "reasoning": "Pounding heart and dyspnea."
+        "reasoning": "Pounding heart and dyspnea.",
     },
     {
         "narrative": "I aspirated stomach contents during a scope. I have pneumonia now. My stomach was full of liquid. The doctor says it delayed emptying.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Aspiration during endoscopy."
+        "reasoning": "Aspiration during endoscopy.",
     },
     {
         "narrative": "I vomit every day. My stomach is paralyzed. I can't keep food down. I'm malnourished. The doctor diagnosed gastroparesis.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Daily vomiting due to stomach paralysis."
+        "reasoning": "Daily vomiting due to stomach paralysis.",
     },
     {
         "narrative": "I have severe constipation. I haven't gone in 10 days. My stomach hurts. I need an enema. Laxatives don't work.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Prolonged constipation needing intervention."
+        "reasoning": "Prolonged constipation needing intervention.",
     },
     {
         "narrative": "I have acute pancreatitis. The pain is in my back. I'm vomiting. My enzymes are elevated. I'm in the hospital.",
         "category": "Pancreatitis",
-        "reasoning": "Back pain and vomiting from pancreatitis."
+        "reasoning": "Back pain and vomiting from pancreatitis.",
     },
     {
         "narrative": "I have gallstones. The pain is sharp in my right side. I need my gallbladder removed. The doctor says it's a common side effect.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Common side effect of gallstones requiring surgery."
+        "reasoning": "Common side effect of gallstones requiring surgery.",
     },
     {
         "narrative": "My sugar dropped to 45. I was shaking and sweating. I ate sugar but it took a while to come up. I felt terrible.",
         "category": "Hypoglycemia",
-        "reasoning": "Symptomatic hypoglycemia with slow recovery."
+        "reasoning": "Symptomatic hypoglycemia with slow recovery.",
     },
     {
         "narrative": "My retinopathy is worse. I have new spots in my vision. The doctor is monitoring it closely. He thinks the drug caused the progression.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "New visual spots from retinopathy."
+        "reasoning": "New visual spots from retinopathy.",
     },
     {
         "narrative": "My kidneys are hurt. My creatinine is high. I was dehydrated. The doctor stopped the drug. I hope my kidneys recover.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Hope for renal recovery after drug cessation."
+        "reasoning": "Hope for renal recovery after drug cessation.",
     },
     {
         "narrative": "I had hives and lip swelling. My throat felt tight. I went to urgent care. They gave me steroids. It was an allergic reaction.",
         "category": "Hypersensitivity",
-        "reasoning": "Allergic reaction treated at urgent care."
+        "reasoning": "Allergic reaction treated at urgent care.",
     },
     {
         "narrative": "The injection site is hard and painful. It's a lump. It's been there for weeks. The doctor says it's a reaction to the medication.",
         "category": "Injection-site reactions",
-        "reasoning": "Long-lasting painful injection site lump."
+        "reasoning": "Long-lasting painful injection site lump.",
     },
     {
         "narrative": "My heart rate is fast. I feel it beating. It makes me nervous. The doctor checked my heart and said it's sinus tachycardia.",
         "category": "Cardiovascular signs",
-        "reasoning": "Nervousness caused by tachycardia."
+        "reasoning": "Nervousness caused by tachycardia.",
     },
     {
         "narrative": "I vomited during surgery prep. I aspirated. Now I have pneumonia. My stomach wasn't empty. It's a bad complication.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Pre-op vomiting and aspiration."
+        "reasoning": "Pre-op vomiting and aspiration.",
     },
     {
         "narrative": "I have gastroparesis. I feel full after one bite. I vomit food from yesterday. I'm losing weight. It's miserable.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Miserable symptoms of gastroparesis."
+        "reasoning": "Miserable symptoms of gastroparesis.",
     },
     {
         "narrative": "The nausea is bad. I can't eat. I'm losing weight too fast. I feel sick all the time. I want to stop the drug.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Nausea causing desire to stop drug."
+        "reasoning": "Nausea causing desire to stop drug.",
     },
     {
         "narrative": "I have pancreatitis. The pain is severe. I'm in the hospital. My pancreas is inflamed. It's from the Ozempic.",
         "category": "Pancreatitis",
-        "reasoning": "Inflamed pancreas confirmed in hospital."
+        "reasoning": "Inflamed pancreas confirmed in hospital.",
     },
     {
         "narrative": "I have gallstones. The pain is in my shoulder. I need surgery. The doctor blames the rapid weight loss.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Referred shoulder pain from gallstones."
+        "reasoning": "Referred shoulder pain from gallstones.",
     },
     {
         "narrative": "My sugar was 40. I passed out. My family called 911. They revived me. It was scary.",
         "category": "Hypoglycemia",
-        "reasoning": "Family-witnessed syncope from hypo."
+        "reasoning": "Family-witnessed syncope from hypo.",
     },
     {
         "narrative": "My vision is blurry. The eye doctor says I have bleeding in my eye. It's retinopathy. I need treatment.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Retinal bleeding causing blur."
+        "reasoning": "Retinal bleeding causing blur.",
     },
     {
         "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated. I need fluids. The doctor is worried.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Doctor concern regarding renal failure."
-    }
-,
-
+        "reasoning": "Doctor concern regarding renal failure.",
+    },
     {
         "narrative": "I've been feeling nauseous for weeks. I can't eat anything without feeling sick. I've lost my appetite. It's really hard to function at work. My doctor says it's a common side effect but it's not getting better.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Persistent nausea affecting work function."
+        "reasoning": "Persistent nausea affecting work function.",
     },
     {
         "narrative": "I have severe abdominal pain that radiates to my back. I'm vomiting and have a fever. My lipase levels are elevated. The doctor diagnosed me with acute pancreatitis. I'm in the hospital getting fluids and pain medication.",
         "category": "Pancreatitis",
-        "reasoning": "Standard acute pancreatitis hospitalization."
+        "reasoning": "Standard acute pancreatitis hospitalization.",
     },
     {
         "narrative": "I have gallstones and need to have my gallbladder removed. I have pain in my right side after eating. The doctor says the rapid weight loss caused the stones. I'm scheduled for surgery next week.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Scheduled cholecystectomy for gallstones."
+        "reasoning": "Scheduled cholecystectomy for gallstones.",
     },
     {
         "narrative": "My blood sugar dropped to 45. I was shaking and sweating. I felt like I was going to pass out. I drank some juice and felt better. It was a scary experience. I'm worried about it happening again.",
         "category": "Hypoglycemia",
-        "reasoning": "Symptomatic hypo with fear of recurrence."
+        "reasoning": "Symptomatic hypo with fear of recurrence.",
     },
     {
         "narrative": "My vision is blurry and I'm seeing spots. The eye doctor says my diabetic retinopathy has gotten worse. He thinks the rapid improvement in my blood sugar caused it. I might need laser treatment.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Worsening retinopathy with potential for laser."
+        "reasoning": "Worsening retinopathy with potential for laser.",
     },
     {
         "narrative": "My kidney function has decreased. My creatinine levels are high. I was dehydrated from vomiting. The doctor stopped the medication to let my kidneys recover. I need to drink more water.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Renal function decrease due to dehydration."
+        "reasoning": "Renal function decrease due to dehydration.",
     },
     {
         "narrative": "I had an allergic reaction to the injection. My face swelled up and I had trouble breathing. I went to the ER and they gave me epinephrine. I can't take this medication anymore.",
         "category": "Hypersensitivity",
-        "reasoning": "Anaphylaxis requiring discontinuation."
+        "reasoning": "Anaphylaxis requiring discontinuation.",
     },
     {
         "narrative": "I have a painful lump at the injection site. It's red and swollen. It's been there for a few days. The doctor says it's a local reaction to the medication. It hurts when I touch it.",
         "category": "Injection-site reactions",
-        "reasoning": "Painful injection site lump."
+        "reasoning": "Painful injection site lump.",
     },
     {
         "narrative": "My heart is racing. I feel palpitations in my chest. My pulse is over 100. It makes me feel anxious. The doctor says it's a side effect of the medication. I might need a beta blocker.",
         "category": "Cardiovascular signs",
-        "reasoning": "Tachycardia requiring potential beta blocker."
+        "reasoning": "Tachycardia requiring potential beta blocker.",
     },
     {
         "narrative": "I aspirated stomach contents during surgery. I have pneumonia now. My stomach wasn't empty even though I fasted. The doctor says the medication slowed down my digestion.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Aspiration due to slowed digestion."
+        "reasoning": "Aspiration due to slowed digestion.",
     },
     {
         "narrative": "I have gastroparesis. I vomit undigested food. I feel full after eating a small amount. I've lost a lot of weight. My stomach isn't working properly. I have to stop the medication.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Gastroparesis with weight loss."
+        "reasoning": "Gastroparesis with weight loss.",
     },
     {
         "narrative": "I have severe constipation. I haven't had a bowel movement in a week. My stomach hurts. Laxatives aren't helping. I feel bloated and uncomfortable. I need relief.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Severe constipation seeking relief."
+        "reasoning": "Severe constipation seeking relief.",
     },
     {
         "narrative": "I have pancreatitis. The pain is severe. I'm in the hospital. My pancreas is inflamed. I can't eat anything. It's from the medication. I'm in a lot of pain.",
         "category": "Pancreatitis",
-        "reasoning": "Hospitalized with severe pain from pancreatitis."
+        "reasoning": "Hospitalized with severe pain from pancreatitis.",
     },
     {
         "narrative": "I have gallstones. The pain is in my right side. I need surgery. The doctor says the weight loss caused it. I'm scheduled for a cholecystectomy.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Weight-loss induced gallstones."
+        "reasoning": "Weight-loss induced gallstones.",
     },
     {
         "narrative": "My blood sugar was 40. I passed out. My husband called 911. They gave me glucose. I woke up in the ambulance. It was a severe low blood sugar event.",
         "category": "Hypoglycemia",
-        "reasoning": "Ambulance transport for severe hypo."
+        "reasoning": "Ambulance transport for severe hypo.",
     },
     {
         "narrative": "My retinopathy is worse. I have bleeding in my eye. The doctor says the rapid sugar control caused it. I need laser surgery to save my vision.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Laser surgery needed for retinopathy."
+        "reasoning": "Laser surgery needed for retinopathy.",
     },
     {
         "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated. The doctor stopped the drug. I'm worried about my kidney function. I need fluids.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Renal failure concern."
+        "reasoning": "Renal failure concern.",
     },
     {
         "narrative": "I had hives and swelling after the shot. My throat felt tight. I went to the ER. They gave me meds. It was an allergic reaction. I'm scared to take it again.",
         "category": "Hypersensitivity",
-        "reasoning": "Fear of recurrence after allergy."
+        "reasoning": "Fear of recurrence after allergy.",
     },
     {
         "narrative": "The injection site is bruised and painful. It's a large hematoma. It hurts to touch. I think I hit a vessel. It looks bad.",
         "category": "Injection-site reactions",
-        "reasoning": "Hematoma appearance."
+        "reasoning": "Hematoma appearance.",
     },
     {
         "narrative": "My heart rate is fast. I feel it beating. It makes me nervous. The doctor checked my heart and said it's sinus tachycardia. I have to monitor it.",
         "category": "Cardiovascular signs",
-        "reasoning": "Monitoring required for tachycardia."
+        "reasoning": "Monitoring required for tachycardia.",
     },
     {
         "narrative": "I vomited during surgery. I aspirated. Now I have pneumonia. My stomach wasn't empty. It's a complication from the drug.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Surgical complication due to drug."
+        "reasoning": "Surgical complication due to drug.",
     },
     {
         "narrative": "I have gastroparesis. I feel full quickly. I vomit food. I'm losing weight. It's miserable. The doctor diagnosed me with stomach paralysis.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Stomach paralysis diagnosis."
+        "reasoning": "Stomach paralysis diagnosis.",
     },
     {
         "narrative": "The nausea is bad. I can't eat. I'm losing weight. I feel sick. I want to stop the drug. It's too much.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Intolerance due to nausea."
+        "reasoning": "Intolerance due to nausea.",
     },
     {
         "narrative": "I have pancreatitis. The pain is severe. I'm in the hospital. My enzymes are high. It's from the Ozempic. I'm in pain.",
         "category": "Pancreatitis",
-        "reasoning": "High enzymes and pain."
+        "reasoning": "High enzymes and pain.",
     },
     {
         "narrative": "I have gallstones. The pain is in my shoulder. I need surgery. The doctor blames the weight loss. It's painful.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Painful gallstones."
+        "reasoning": "Painful gallstones.",
     },
     {
         "narrative": "My sugar was 35. I was unconscious. The paramedics helped me. It was scary. I need to lower my insulin.",
         "category": "Hypoglycemia",
-        "reasoning": "Unconscious hypo requiring insulin adjustment."
+        "reasoning": "Unconscious hypo requiring insulin adjustment.",
     },
     {
         "narrative": "My vision is blurry. I have bleeding in my eye. It's retinopathy. I need treatment. The doctor is concerned.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Concern for vision."
+        "reasoning": "Concern for vision.",
     },
     {
         "narrative": "My kidneys are hurt. My creatinine is high. I was dehydrated. The doctor stopped the drug. I hope I recover.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Renal recovery hope."
+        "reasoning": "Renal recovery hope.",
     },
     {
         "narrative": "I had hives and swelling. My throat felt tight. I went to urgent care. They gave me steroids. It was an allergic reaction.",
         "category": "Hypersensitivity",
-        "reasoning": "Urgent care visit for allergy."
+        "reasoning": "Urgent care visit for allergy.",
     },
     {
         "narrative": "The injection site is hard. It's a lump. It hurts. It's been there for weeks. The doctor says it's a reaction.",
         "category": "Injection-site reactions",
-        "reasoning": "Reaction at site."
+        "reasoning": "Reaction at site.",
     },
     {
         "narrative": "My heart rate is high. I feel palpitations. It makes me anxious. The doctor says it's a side effect.",
         "category": "Cardiovascular signs",
-        "reasoning": "Side effect anxiety."
+        "reasoning": "Side effect anxiety.",
     },
     {
         "narrative": "I vomited during surgery. I aspirated. Now I have pneumonia. My stomach wasn't empty.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Pneumonia from aspiration."
+        "reasoning": "Pneumonia from aspiration.",
     },
     {
         "narrative": "I have gastroparesis. I vomit food. I can't eat solids. I'm losing weight. It's hard.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Hardship from gastroparesis."
+        "reasoning": "Hardship from gastroparesis.",
     },
     {
         "narrative": "I have severe constipation. I haven't gone in days. My stomach hurts. I need help.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Need for constipation help."
+        "reasoning": "Need for constipation help.",
     },
     {
         "narrative": "I have pancreatitis. The pain is bad. I'm in the hospital. My pancreas is inflamed.",
         "category": "Pancreatitis",
-        "reasoning": "Inflamed pancreas."
+        "reasoning": "Inflamed pancreas.",
     },
     {
         "narrative": "I have gallstones. The pain is sharp. I need surgery. The doctor says it's common.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Common gallstone surgery."
+        "reasoning": "Common gallstone surgery.",
     },
     {
         "narrative": "My sugar dropped to 45. I was shaking. I ate sugar. I felt bad.",
         "category": "Hypoglycemia",
-        "reasoning": "Shaking from low sugar."
+        "reasoning": "Shaking from low sugar.",
     },
     {
         "narrative": "My retinopathy is worse. I have spots in my vision. The doctor is watching it.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Observation of worsening retinopathy."
+        "reasoning": "Observation of worsening retinopathy.",
     },
     {
         "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated. I need fluids.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Fluids for renal failure."
+        "reasoning": "Fluids for renal failure.",
     },
     {
         "narrative": "I had hives and swelling. My throat felt tight. I went to the ER. It was scary.",
         "category": "Hypersensitivity",
-        "reasoning": "Scary allergic event."
+        "reasoning": "Scary allergic event.",
     },
     {
         "narrative": "The injection site is painful. It's a bruise. It hurts. It looks bad.",
         "category": "Injection-site reactions",
-        "reasoning": "Bad looking bruise."
+        "reasoning": "Bad looking bruise.",
     },
     {
         "narrative": "My heart rate is fast. I feel it. It makes me nervous. The doctor checked it.",
         "category": "Cardiovascular signs",
-        "reasoning": "Doctor check of heart rate."
+        "reasoning": "Doctor check of heart rate.",
     },
     {
         "narrative": "I vomited during surgery. I aspirated. Now I have pneumonia.",
         "category": "Peri-procedural aspiration risk",
-        "reasoning": "Post-surgical pneumonia."
+        "reasoning": "Post-surgical pneumonia.",
     },
     {
         "narrative": "I have gastroparesis. I vomit food. I can't eat. I'm losing weight.",
         "category": "Gastrointestinal disorders (Gastroparesis)",
-        "reasoning": "Weight loss from vomiting."
+        "reasoning": "Weight loss from vomiting.",
     },
     {
         "narrative": "The nausea is bad. I can't eat. I feel sick. I want to stop.",
         "category": "Gastrointestinal disorders",
-        "reasoning": "Wanting to stop due to nausea."
+        "reasoning": "Wanting to stop due to nausea.",
     },
     {
         "narrative": "I have pancreatitis. The pain is severe. I'm in the hospital.",
         "category": "Pancreatitis",
-        "reasoning": "Severe pain in hospital."
+        "reasoning": "Severe pain in hospital.",
     },
     {
         "narrative": "I have gallstones. The pain is in my shoulder. I need surgery.",
         "category": "Hepatobiliary (gallbladder) disease",
-        "reasoning": "Shoulder pain from gallstones."
+        "reasoning": "Shoulder pain from gallstones.",
     },
     {
         "narrative": "My sugar was 40. I passed out. My family called 911.",
         "category": "Hypoglycemia",
-        "reasoning": "911 call for hypo."
+        "reasoning": "911 call for hypo.",
     },
     {
         "narrative": "My vision is blurry. I have bleeding in my eye. It's retinopathy.",
         "category": "Eye disorders (Diabetic retinopathy complications)",
-        "reasoning": "Bleeding retinopathy."
+        "reasoning": "Bleeding retinopathy.",
     },
     {
         "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated.",
         "category": "Renal events (Acute kidney injury)",
-        "reasoning": "Failing kidneys."
-    }
-,
+        "reasoning": "Failing kidneys.",
+    },
 ]
+
 
 def split_and_write_datasets() -> None:
     """Split data into train/test sets and write to appropriate folders."""

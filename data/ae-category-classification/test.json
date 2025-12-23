@@ -1,118 +1,33 @@
 [
   {
-    "narrative": "My heart rate is high all the time. I feel palpitations. It makes me anxious. The doctor says it's a side effect. I might need a beta blocker.",
-    "category": "Cardiovascular signs",
-    "reasoning": "Anxiety-inducing tachycardia."
-  },
-  {
-    "narrative": "I have pancreatitis. The pain is severe. I'm in the hospital. My enzymes are high. It's from the Ozempic. I'm in pain.",
-    "category": "Pancreatitis",
-    "reasoning": "High enzymes and pain."
-  },
-  {
-    "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "Failing kidneys."
-  },
-  {
-    "narrative": "Patient underwent extraction of impacted wisdom teeth under IV sedation. Despite following proper fasting guidelines (NPO after midnight), patient regurgitated gastric contents during the procedure. Anesthetist immediately secured airway and suctioned material. Post-procedure discussion revealed patient is on semaglutide therapy, which anesthetist suspects contributed to delayed gastric emptying and retained gastric volume. Patient monitored for signs of aspiration pneumonia. Recommendation documented to hold GLP-1 medications for extended period prior to any future procedures requiring sedation or anesthesia.",
+    "narrative": "Patient scheduled for elective carpal tunnel release under monitored anesthesia care. Pre-operative assessment completed, patient followed NPO guidelines (nothing after midnight for 8+ hour procedure scheduled at 9 AM). During induction with propofol, patient vomited and aspirated gastric contents. Immediate airway management initiated, patient intubated emergently for airway protection. Bronchoscopy performed showing large volume of particulate matter in trachea and right bronchus, suctioned. Procedure cancelled. Post-aspiration chest x-ray demonstrated bilateral lower lobe infiltrates. Patient transferred to ICU, started on broad-spectrum antibiotics. Developed aspiration pneumonia requiring 4-day ICU stay. Medication history significant for semaglutide use, last dose 4 days prior to surgery. Anesthesiology recommends all future procedures hold GLP-1 agonists minimum 14 days prior due to prolonged effects on gastric motility.",
     "category": "Peri-procedural aspiration risk",
-    "reasoning": "Aspiration-like event in procedural setting linked to delayed gastric emptying risk."
+    "reasoning": "Aspiration event in context of delayed gastric emptying associated with GLP-1 RAs."
   },
   {
-    "narrative": "I went in for an elective surgery to repair a hernia. I followed all the NPO instructions—didn't eat anything after midnight. But when the anesthesiologist did a quick ultrasound of my stomach before putting me under, he found a significant amount of food still in there. He said my stomach wasn't emptying properly, likely due to the Ozempic slowing down my digestion. They had to cancel the surgery to avoid the risk of me aspirating vomit into my lungs. I have to be off the meds for at least a week before we can try again.",
-    "category": "Peri-procedural aspiration risk",
-    "reasoning": "Delayed gastric emptying posing aspiration risk during anesthesia."
-  },
-  {
-    "narrative": "I gave myself my injection on Friday like I always do, and about an hour later I started feeling really strange. My face felt tingly and when I looked in the mirror my face was swollen, especially around my eyes and lips. And then my throat started feeling tight and I started panicking because I couldn't get a full breath. I called 911 right away and the dispatcher told me to stay on the line. The paramedics got there within maybe 5 or 6 minutes and they immediately gave me an epinephrine injection. They said I was having a severe allergic reaction. They took me to the hospital where they gave me IV steroids and antihistamines and monitored me for several hours. The emergency room doctor said this is anaphylaxis and I can never take Ozempic again. They prescribed me an EpiPen to carry with me at all times now. Really scary experience.",
-    "category": "Hypersensitivity",
-    "reasoning": "Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
-  },
-  {
-    "narrative": "My vision is blurry. I have bleeding in my eye. It's retinopathy.",
-    "category": "Eye disorders (Diabetic retinopathy complications)",
-    "reasoning": "Bleeding retinopathy."
-  },
-  {
-    "narrative": "So this happened on a Tuesday morning, I remember because I had just gotten to work. Started feeling really shaky and sweaty out of nowhere. My vision got kind of blurry and I felt confused - my coworker said I wasn't making sense when I was talking. She had me check my blood sugar because she's a type 1 diabetic and recognized the symptoms. It was 52, which is really low. She gave me some juice and I started feeling better after about 10 minutes. The thing is, I take my glipizide pill every morning and I also take the Ozempic shot once a week. I called my doctor and she said we need to adjust my medications because taking them together is making my blood sugar go too low.",
+    "narrative": "Um, so this happened last Saturday and I'm still pretty shaken up about it. I was at the grocery store, just doing my normal shopping, and I started feeling really off. Like dizzy and confused. I guess I was acting strange because another shopper asked if I was okay. I said I thought I was fine but then I started seeing spots and feeling really weak. The next thing I remember is waking up on the floor with a bunch of people around me and someone had called 911. The paramedics tested my blood sugar when they arrived and it was 42. They gave me some glucose and I started feeling better pretty quickly. The scary thing is I take insulin twice a day and I also do the Ozempic shot once a week. I've had a couple other episodes of low blood sugar over the past month but nothing this bad. The ER doctor said I really need to work with my endocrinologist to adjust my medications because having my sugar drop this low is dangerous.",
     "category": "Hypoglycemia",
-    "reasoning": "Low glucose with symptoms and a sulfonylurea co-med increases hypoglycemia risk."
+    "reasoning": "Symptomatic severe hypoglycemia with insulin co-therapy fits this category."
   },
   {
-    "narrative": "I've been having this pain like right here under my ribs on the right side, especially after I eat anything fatty. Started maybe two months ago? My doctor ordered an ultrasound and they found gallstones. The weird thing is I've lost about 30 pounds since I started on this medication back in like October, so I guess that's good, but now I have gallstones? Doctor said the rapid weight loss might be related. We're trying to figure out what to do next.",
-    "category": "Hepatobiliary (gallbladder) disease",
-    "reasoning": "Cholelithiasis temporally associated with rapid weight loss on GLP-1 RA."
+    "narrative": "I broke out in hives all over my body after my second shot. My face swelled up and my lips got huge. I had trouble breathing. The ER doctor gave me Epi and steroids. He said it was a severe allergic reaction.",
+    "category": "Hypersensitivity",
+    "reasoning": "Generalized urticaria and angioedema."
   },
   {
-    "narrative": "The skin at my injection site is necrotic. It turned black and scabby. It's painful and ugly. The doctor says it's a severe tissue reaction.",
+    "narrative": "I developed a widespread rash all over my trunk and arms about two days after my third dose. It's red, raised, and intensely itchy. My skin feels hot to the touch. I took Benadryl but it keeps coming back. My doctor says it's a systemic hypersensitivity reaction and I need to stop the drug and take a course of steroids to calm my immune system down.",
+    "category": "Hypersensitivity",
+    "reasoning": "Systemic cutaneous hypersensitivity reaction."
+  },
+  {
+    "narrative": "So I do my injection in my stomach area, rotating spots like they told me to. But this last time, the spot where I injected got really red and it was tender to touch. I measured it and it was like 3 centimeters across - maybe a little bigger than a quarter? It was also kind of itchy but not terrible. This lasted for about two days before it started getting better. I didn't have any other symptoms like fever or anything, just that local reaction. My sister who's a nurse said to keep an eye on it but that it's probably just a normal reaction some people get.",
     "category": "Injection-site reactions",
-    "reasoning": "Tissue necrosis at injection site."
+    "reasoning": "Localized cutaneous reaction at administration site without systemic features."
   },
   {
-    "narrative": "I was scheduled for a routine dental procedure - just getting a couple fillings done - and they were going to give me some sedation because I get really anxious at the dentist. I followed all their instructions about not eating, I hadn't had anything since dinner the night before. But during the procedure I guess I regurgitated and they had to stop everything and make sure I didn't aspirate anything into my lungs. The dentist was really concerned and asked about all my medications. When I mentioned the Ozempic, he said that might explain why I still had food in my stomach even though I had fasted. Said something about the medication slowing down digestion. They had to monitor me for a while to make sure I didn't develop any breathing problems or pneumonia. It was really scary honestly.",
-    "category": "Peri-procedural aspiration risk",
-    "reasoning": "Aspiration-like event in procedural setting linked to delayed gastric emptying risk."
-  },
-  {
-    "narrative": "My kidneys aren't working right. My doctor said my creatinine levels are way up and my GFR is down. I was dehydrated from all the vomiting I had last week. They gave me fluids in the hospital but my kidneys are slow to recover. The doctor called it acute kidney injury and took me off the medication.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "AKI secondary to dehydration/vomiting."
-  },
-  {
-    "narrative": "So, I've been tracking my heart rate with my Apple Watch because I'm kind of into fitness tracking, and I've noticed something weird since they bumped up my Ozempic dose to 1 mg. My resting heart rate used to be pretty consistent in the high 60s, low 70s. But now it's been sitting in the 90s pretty much all the time. And several times a day I get these episodes where I can really feel my heart pounding, like it's racing. It's not painful or anything but it's definitely noticeable and a little concerning. I screenshot my heart rate data and sent it to my doctor through the patient portal. She wants me to come in for an EKG to make sure everything is okay. Hoping it's nothing serious but the timing with the dose increase seems suspicious.",
-    "category": "Cardiovascular signs",
-    "reasoning": "Sustained HR increase and palpitations post-titration fit CV sign category."
-  },
-  {
-    "narrative": "I was supposed to have surgery but they cancelled it because my stomach was full of food. I hadn't eaten since the night before, but the ultrasound showed food in my stomach. The anesthesiologist said I was a high aspiration risk because of the delayed gastric emptying from my medication.",
-    "category": "Peri-procedural aspiration risk",
-    "reasoning": "Surgery cancellation due to full stomach/aspiration risk."
-  },
-  {
-    "narrative": "My eye doctor has been monitoring my diabetic retinopathy for years now, and it's always been pretty stable. But since I started this medication maybe three and a half months ago, things have changed. I've noticed my vision getting worse - things are blurry, it's harder to read street signs when I'm driving, stuff like that. I went in for my regular checkup and the ophthalmologist said my retinopathy has progressed significantly. She showed me the images and explained that there's more damage to the blood vessels in my eyes. She asked if anything had changed with my diabetes management and I told her about starting Ozempic. She said sometimes when your blood sugar improves quickly it can temporarily make the eye problems worse. I'm really worried about potentially losing my vision.",
+    "narrative": "My ophthalmologist visit last month was really concerning. I've had diabetes for like 15 years now and I've always been pretty good about my eye exams because my mom went blind from diabetes and I don't want that to happen to me. My retinopathy has been mild and stable for years. But at this last visit, the doctor said there's been significant progression. She showed me the pictures and there's like bleeding in the back of my eye now and some new blood vessel growth that wasn't there before. She specifically asked if I had made any changes to my diabetes medications and I told her I started Ozempic about 4 months ago. She said that sometimes when your blood sugar improves too quickly, it can actually make the retinopathy worse before it gets better. She wants to see me every month now instead of every 6 months to monitor it closely. I'm really scared about my vision.",
     "category": "Eye disorders (Diabetic retinopathy complications)",
     "reasoning": "Temporal association with known risk of retinopathy worsening warrants categorization here."
-  },
-  {
-    "narrative": "I don't really know how to explain this but I feel like my stomach has just stopped working properly. I have no appetite at all anymore, which I guess is good for losing weight, but even when I try to force myself to eat something, I feel full after just a couple bites. And then that feeling of fullness just stays for hours and hours. It's this uncomfortable, heavy feeling in my stomach. Sometimes I also feel nauseous on top of the fullness. This has been going on for about a month now and I've lost like 15 pounds because I'm barely eating. My doctor was concerned enough that she ordered a gastric emptying study. I had to eat these eggs with radioactive stuff in them and then lie under a camera for like 4 hours while they took pictures. The results showed that my stomach is emptying really slowly - took twice as long as it should. Doctor said it's gastroparesis and it's probably from the Ozempic. We're trying some medications to help speed up my digestion but if that doesn't work I might have to stop the Ozempic.",
-    "category": "Gastrointestinal disorders (Gastroparesis)",
-    "reasoning": "Objective evidence of delayed gastric emptying consistent with gastroparesis."
-  },
-  {
-    "narrative": "I have gastroparesis. I feel full quickly. I vomit food. I'm losing weight. It's miserable. The doctor diagnosed me with stomach paralysis.",
-    "category": "Gastrointestinal disorders (Gastroparesis)",
-    "reasoning": "Stomach paralysis diagnosis."
-  },
-  {
-    "narrative": "My lips and tongue swelled up after the injection. I felt like my throat was closing. I used my EpiPen and went to the ER. It was a terrifying anaphylactic reaction.",
-    "category": "Hypersensitivity",
-    "reasoning": "Anaphylaxis with tongue/throat swelling."
-  },
-  {
-    "narrative": "I have explosive diarrhea multiple times a day. I can't leave the house. I'm dehydrated and weak. The doctor says it's a common side effect but it's ruining my life.",
-    "category": "Gastrointestinal disorders",
-    "reasoning": "Severe diarrhea limiting daily activities."
-  },
-  {
-    "narrative": "My face swelled up and I couldn't breathe. It was anaphylaxis. My husband used the EpiPen. We went to the ER. It was very scary.",
-    "category": "Hypersensitivity",
-    "reasoning": "Anaphylaxis treated with home EpiPen."
-  },
-  {
-    "narrative": "Patient admitted to medical floor with acute kidney injury superimposed on chronic kidney disease stage 3b. Baseline creatinine 1.7 mg/dL, currently 3.1 mg/dL. Patient reports 5-day history of poor oral intake secondary to persistent nausea and early satiety. Physical exam significant for orthostatic hypotension with 15 mmHg drop in systolic BP upon standing, dry mucous membranes, and decreased skin turgor. Urinalysis shows elevated specific gravity at 1.032 without evidence of intrinsic renal disease. Patient on semaglutide for 2 months. Admitted for aggressive IV fluid hydration. GLP-1 receptor agonist held. Nephrology consulted given slow recovery of renal function despite adequate volume repletion.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "AKI likely precipitated by GI fluid loss; recognized risk with GLP-1 RAs."
-  },
-  {
-    "narrative": "I had a sudden onset of severe abdominal pain that radiated to my back, accompanied by nausea and vomiting. I couldn't find a comfortable position. My doctor sent me to the hospital where they found my amylase and lipase levels were dangerously high. A CT scan confirmed acute pancreatitis. I was hospitalized for five days for pain management and bowel rest. It was the most painful experience of my life. The doctors are certain it was drug-induced.",
-    "category": "Pancreatitis",
-    "reasoning": "Acute pancreatitis requiring hospitalization."
-  },
-  {
-    "narrative": "My vision is blurry. The eye doctor says I have bleeding in my eye. It's retinopathy. I need treatment.",
-    "category": "Eye disorders (Diabetic retinopathy complications)",
-    "reasoning": "Retinal bleeding causing blur."
   },
   {
     "narrative": "The nausea is bad. I can't eat. I'm losing weight. I feel sick. I want to stop the drug. It's too much.",
@@ -120,34 +35,19 @@
     "reasoning": "Intolerance due to nausea."
   },
   {
-    "narrative": "My blood sugar was 35. I was unconscious. The paramedics gave me IV glucose. I woke up in the ambulance. It was a severe low.",
-    "category": "Hypoglycemia",
-    "reasoning": "Unconscious hypoglycemia requiring paramedics."
-  },
-  {
-    "narrative": "I have a painful lump at the injection site. It's red and swollen. It's been there for a few days. The doctor says it's a local reaction to the medication. It hurts when I touch it.",
-    "category": "Injection-site reactions",
-    "reasoning": "Painful injection site lump."
-  },
-  {
-    "narrative": "I have severe diarrhea and cramping. I go 10 times a day. I'm losing weight from dehydration. My electrolytes are low. I feel weak and dizzy. I can't leave the house.",
-    "category": "Gastrointestinal disorders",
-    "reasoning": "High-frequency diarrhea causing electrolyte imbalance."
-  },
-  {
-    "narrative": "I was driving home when my vision started going white and I felt extremely confused and disoriented. I managed to pull over just before I blacked out. A police officer found me and called paramedics. My blood sugar was 32 mg/dL. They gave me IV dextrose to bring me back. It was a terrifying experience and I could have hurt someone. My doctor is completely readjusting my diabetes regimen.",
-    "category": "Hypoglycemia",
-    "reasoning": "Severe hypoglycemia with loss of consciousness while driving."
-  },
-  {
     "narrative": "I've been having severe pain in my upper right abdomen, mostly after eating fatty meals. It's a sharp, cramping pain that doubles me over. Last night it was so bad I went to the ER. An ultrasound showed my gallbladder is full of stones and the wall is thickened. The surgeon said I have acute cholecystitis and need my gallbladder out. He mentioned that rapid weight loss can cause gallstones, and I've lost about 35 pounds in the last 4 months on this medication. It's a painful price to pay for the weight loss.",
     "category": "Hepatobiliary (gallbladder) disease",
     "reasoning": "Acute cholecystitis and cholelithiasis associated with rapid weight loss."
   },
   {
-    "narrative": "The injection site is bruised and painful. It's a large hematoma. It hurts to touch. I must have hit a vessel or reacted bad. It looks terrible.",
-    "category": "Injection-site reactions",
-    "reasoning": "Large hematoma at injection site."
+    "narrative": "I've been dealing with persistent nausea for the past three weeks since I started the 0.5 mg dose. It's not just a little queasiness; it's a deep, rolling stomach upset that lasts all day. I'm having trouble eating anything substantial, and I've lost about 8 pounds, which is faster than I wanted. Yesterday, I actually vomited while driving to work, which was a nightmare. My doctor suggested splitting the dose or going back down, but I'm worried about losing the blood sugar control. It's really affecting my daily life.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Persistent, severe nausea and vomiting affecting daily activities."
+  },
+  {
+    "narrative": "My heart rate is fast. I feel it beating. It makes me nervous. The doctor checked my heart and said it's sinus tachycardia. I have to monitor it.",
+    "category": "Cardiovascular signs",
+    "reasoning": "Monitoring required for tachycardia."
   },
   {
     "narrative": "So I gave myself the injection on Thursday night before bed. Woke up Friday morning and my lips felt kind of tingly and weird. Looked in the bathroom mirror and my lips were definitely swollen, like noticeably puffed up. And then I noticed I had hives on my chest and neck too. I took some Benadryl right away and kept monitoring myself. The swelling got a bit worse over the next hour and I started to feel like my throat might be tightening up, though I could still breathe okay. My husband wanted to call 911 but I said let's go to the ER instead since I wasn't having trouble breathing yet. At the ER they gave me IV Benadryl and steroids and monitored me for like 4 hours. The swelling gradually went down. The doctor said this was an allergic reaction and I shouldn't take Ozempic anymore. He prescribed me an EpiPen just in case I ever have another reaction to something. Pretty scary honestly.",
@@ -155,75 +55,109 @@
     "reasoning": "Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
   },
   {
+    "narrative": "I went to the ER because I haven't urinated in 24 hours. I've been feeling dizzy and my heart is racing. They told me I'm in acute renal failure from severe dehydration. My creatinine is 3.5! They are talking about putting me on dialysis temporarily if my kidneys don't respond to fluids. I can't believe a stomach bug from this medication could cause my kidneys to shut down.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "Severe AKI with anuria and potential need for dialysis."
+  },
+  {
     "narrative": "I've been waking up in the middle of the night with my heart racing. My pulse will be 120-130 bpm for no reason. I feel anxious and short of breath. My doctor put me on a beta-blocker to control the heart rate, but says if it continues I need to come off the Ozempic. It's uncomfortable and makes it hard to sleep.",
     "category": "Cardiovascular signs",
     "reasoning": "Nocturnal tachycardia requiring beta-blocker therapy."
   },
   {
-    "narrative": "I have pancreatitis. The pain is severe. I'm in the hospital. My pancreas is inflamed. It's from the Ozempic.",
-    "category": "Pancreatitis",
-    "reasoning": "Inflamed pancreas confirmed in hospital."
+    "narrative": "I have gastroparesis. I feel full quickly. I vomit food. I'm losing weight. It's miserable. The doctor diagnosed me with stomach paralysis.",
+    "category": "Gastrointestinal disorders (Gastroparesis)",
+    "reasoning": "Stomach paralysis diagnosis."
   },
   {
-    "narrative": "I had a hypoglycemic seizure. My blood sugar was 30. My husband found me shaking on the floor. He called 911. They gave me glucagon. I woke up in the ER with a headache.",
+    "narrative": "Patient with baseline chronic kidney disease stage 3a (baseline creatinine 1.3 mg/dL) presented to clinic with complaint of persistent nausea and decreased oral intake for approximately one week. Reports difficulty tolerating even small amounts of fluid. Physical examination remarkable for dry mucous membranes, decreased skin turgor, and orthostatic vital sign changes. Laboratory studies notable for creatinine elevation to 2.6 mg/dL, BUN 52, and urinalysis with specific gravity of 1.030 consistent with volume depletion. Patient initiated on semaglutide approximately 6 weeks prior. Admitted for IV fluid resuscitation and monitoring. GLP-1 agonist held. Repeat labs after 48 hours of hydration showed creatinine improving to 1.9 mg/dL but remained elevated above baseline.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "AKI on CKD in the setting of GI intolerance is a recognized risk scenario."
+  },
+  {
+    "narrative": "The constipation is so bad it's causing hemorrhoids and fissures. I'm in pain every time I try to go to the bathroom. I'm using laxatives daily but they barely help. My stomach is constantly cramped. It's affecting my quality of life significantly. I'm considering stopping the medication just to get relief from this bowel issue.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Severe constipation causing secondary complications (hemorrhoids/fissures)."
+  },
+  {
+    "narrative": "My resting heart rate has gone up significantly since I started this drug. I used to be in the low 60s, but now my Fitbit shows I'm consistently in the 80s or 90s, even when I'm just sitting on the couch watching TV. Sometimes I can feel my heart pounding in my chest, like palpitations. It's a bit unsettling. My doctor did an EKG and said it's sinus tachycardia, likely a side effect of the GLP-1 agonist. We're monitoring it, but if it stays this high, I might have to stop.",
+    "category": "Cardiovascular signs",
+    "reasoning": "Sustained increase in resting heart rate and palpitations."
+  },
+  {
+    "narrative": "I've developed gallstones since starting Ozempic. I have attacks of pain in my right side that last for hours, especially after I eat dinner. The ultrasound showed multiple stones. My doctor says I need surgery to remove my gallbladder because the stones are causing inflammation. I've lost 40 pounds, but now I need surgery.",
+    "category": "Hepatobiliary (gallbladder) disease",
+    "reasoning": "Symptomatic cholelithiasis (gallstones) requiring surgery."
+  },
+  {
+    "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated. I need fluids. The doctor is worried.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "Doctor concern regarding renal failure."
+  },
+  {
+    "narrative": "I got dizzy and sweaty while driving. I had to pull over. My sugar was 50. I drank a soda and waited for it to come up. It was a close call.",
     "category": "Hypoglycemia",
-    "reasoning": "Hypoglycemic seizure requiring emergency intervention."
+    "reasoning": "Hypoglycemia while driving."
   },
   {
-    "narrative": "I have severe abdominal pain that radiates to my back. I'm vomiting and have a fever. My lipase levels are elevated. The doctor diagnosed me with acute pancreatitis. I'm in the hospital getting fluids and pain medication.",
+    "narrative": "Patient with known type 2 diabetes mellitus presented with acute upper abdominal pain. Pain onset sudden, approximately 8 hours prior to presentation, described as severe and constant, with radiation to the back. Associated with nausea and multiple episodes of vomiting. Examination revealed epigastric tenderness with guarding. Laboratory analysis showed lipase elevated to 1,450 U/L, amylase 720 U/L. Imaging with CT abdomen revealed pancreatic inflammation consistent with acute pancreatitis, no evidence of biliary obstruction. Patient on semaglutide for approximately 4 months. Diagnosis of drug-induced pancreatitis established. Medication discontinued, patient admitted for supportive care including NPO status, IV fluids, and pain management.",
     "category": "Pancreatitis",
-    "reasoning": "Standard acute pancreatitis hospitalization."
+    "reasoning": "Classic presentation plus lab confirmation aligns with drug-associated pancreatitis warning."
   },
   {
-    "narrative": "Patient scheduled for elective carpal tunnel release under monitored anesthesia care. Pre-operative assessment completed, patient followed NPO guidelines (nothing after midnight for 8+ hour procedure scheduled at 9 AM). During induction with propofol, patient vomited and aspirated gastric contents. Immediate airway management initiated, patient intubated emergently for airway protection. Bronchoscopy performed showing large volume of particulate matter in trachea and right bronchus, suctioned. Procedure cancelled. Post-aspiration chest x-ray demonstrated bilateral lower lobe infiltrates. Patient transferred to ICU, started on broad-spectrum antibiotics. Developed aspiration pneumonia requiring 4-day ICU stay. Medication history significant for semaglutide use, last dose 4 days prior to surgery. Anesthesiology recommends all future procedures hold GLP-1 agonists minimum 14 days prior due to prolonged effects on gastric motility.",
+    "narrative": "They found food in my stomach during an endoscopy even though I fasted. I aspirated fluid into my lungs. Now I have pneumonia. It's because my stomach drains too slow.",
     "category": "Peri-procedural aspiration risk",
-    "reasoning": "Aspiration event in context of delayed gastric emptying associated with GLP-1 RAs."
+    "reasoning": "Aspiration pneumonia confirmed after endoscopy."
   },
   {
-    "narrative": "I had hives and swelling after the shot. My throat felt tight. I went to the ER. They gave me meds. It was an allergic reaction. I'm scared to take it again.",
-    "category": "Hypersensitivity",
-    "reasoning": "Fear of recurrence after allergy."
+    "narrative": "My sugar was 35. I was unconscious. The paramedics helped me. It was scary. I need to lower my insulin.",
+    "category": "Hypoglycemia",
+    "reasoning": "Unconscious hypo requiring insulin adjustment."
   },
   {
-    "narrative": "I aspirated stomach contents during a scope. I have pneumonia now. My stomach was full of liquid. The doctor says it delayed emptying.",
-    "category": "Peri-procedural aspiration risk",
-    "reasoning": "Aspiration during endoscopy."
+    "narrative": "My blood sugar dropped to 38. I was confused and sweating. My family had to help me. I almost passed out. It was a severe low.",
+    "category": "Hypoglycemia",
+    "reasoning": "Severe hypo requiring family assistance."
   },
   {
-    "narrative": "Patient reports significant change in bowel habits following dose escalation to 1 mg weekly. Describes difficulty with bowel movements, occurring only once every 5-7 days compared to daily pattern prior to medication. Associated with abdominal cramping, bloating, and decreased appetite. Has tried over-the-counter fiber supplements and stool softeners with minimal improvement. Physical exam notable for abdominal distension and discomfort on palpation. Recommended increased fluid intake, dietary modifications, and trial of osmotic laxative. Discussed potentially reducing dose if symptoms persist.",
+    "narrative": "After I give myself the injection - I rotate between my stomach and thighs - the area always gets irritated but this last time was really bad. It was in my abdomen and within like 3 or 4 hours of injecting, the whole area was bright red and really swollen. It was probably 5 or 6 centimeters across, way bigger than usual. And it was painful - not like excruciating but definitely uncomfortable, especially when anything touched it or rubbed against it. It was also really itchy which drove me crazy. I put ice on it which helped a bit. My spouse thought maybe it was infected and wanted me to go to urgent care but I decided to call the nurse line first. The nurse looked at the picture I sent and said it looked like a significant local reaction but probably not an infection since I didn't have any fever or red streaking. She said to watch it and come in if it got worse. It took almost a full week to completely resolve. I'm nervous about my next injection.",
+    "category": "Injection-site reactions",
+    "reasoning": "Localized cutaneous reaction at administration site without systemic features."
+  },
+  {
+    "narrative": "I have severe constipation. I haven't gone in 10 days. My stomach hurts. I need an enema. Laxatives don't work.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Prolonged constipation needing intervention."
+  },
+  {
+    "narrative": "My kidneys are injured from dehydration. My creatinine is high. I was sick with diarrhea for days. The doctor stopped the drug to protect my kidneys.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "AKI from diarrhea-induced dehydration."
+  },
+  {
+    "narrative": "I have a hard, itchy lump at the injection site. It's red and warm. It's been there for a week. I'm worried it's an infection or a bad reaction to the drug.",
+    "category": "Injection-site reactions",
+    "reasoning": "Persistent, inflammatory injection site nodule."
+  },
+  {
+    "narrative": "My sugar dropped to 45. I was shaking and sweating. I ate sugar but it took a while to come up. I felt terrible.",
+    "category": "Hypoglycemia",
+    "reasoning": "Symptomatic hypoglycemia with slow recovery."
+  },
+  {
+    "narrative": "The nausea is bad. I can't eat. I'm losing weight too fast. I feel sick all the time. I want to stop the drug.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Nausea causing desire to stop drug."
+  },
+  {
+    "narrative": "Patient admitted to medical floor with acute kidney injury superimposed on chronic kidney disease stage 3b. Baseline creatinine 1.7 mg/dL, currently 3.1 mg/dL. Patient reports 5-day history of poor oral intake secondary to persistent nausea and early satiety. Physical exam significant for orthostatic hypotension with 15 mmHg drop in systolic BP upon standing, dry mucous membranes, and decreased skin turgor. Urinalysis shows elevated specific gravity at 1.032 without evidence of intrinsic renal disease. Patient on semaglutide for 2 months. Admitted for aggressive IV fluid hydration. GLP-1 receptor agonist held. Nephrology consulted given slow recovery of renal function despite adequate volume repletion.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "AKI likely precipitated by GI fluid loss; recognized risk with GLP-1 RAs."
+  },
+  {
+    "narrative": "Okay so this is kind of embarrassing but I've been really constipated. Like, I moved up to the 1 mg dose and within a few days I just couldn't go. It's been over a week now and I'm so bloated and uncomfortable. I've tried drinking more water, eating prunes, all the things my mom always suggested, but nothing was working. Finally had to buy some laxatives from the pharmacy and that helped a bit, but I'm still not back to normal. My stomach feels so distended and I look like I'm pregnant or something. This never happened on the lower dose.",
     "category": "Gastrointestinal disorders",
     "reasoning": "Prolonged constipation post-titration aligns with common GI adverse effects."
-  },
-  {
-    "narrative": "I was out in my garden, pulling weeds - it was a really nice Saturday afternoon - and suddenly I felt really weird and dizzy and then I just blacked out. My neighbor saw me fall and came running over. When I came to, she had already called 911 and tested my blood sugar with her meter because her husband is diabetic. It was 48! The paramedics came and gave me some glucose gel. The thing is, I take my insulin every morning and I also take this Ozempic once a week, and my doctor never adjusted my insulin dose. I think that's what caused it.",
-    "category": "Hypoglycemia",
-    "reasoning": "Symptomatic severe hypoglycemia with insulin co-therapy fits this category."
-  },
-  {
-    "narrive": "Um, so I've been having this issue where I just don't feel hungry anymore, which sounds great for weight loss, right? But it's actually kind of a problem because even when I do try to eat, I feel full after like two bites. And then for hours after eating I feel this uncomfortable fullness in my stomach. My doctor ordered some kind of test - a gastric emptying study I think they called it? - and apparently my stomach is taking way longer than normal to empty. They're calling it gastroparesis. I'm not sure what to do because the medication is helping my blood sugar but this side effect is really affecting my quality of life.",
-    "category": "Gastrointestinal disorders (Gastroparesis)",
-    "reasoning": "Objective evidence of delayed gastric emptying consistent with gastroparesis.",
-    "note": "Key 'narrative' field typo intentionally included to test robustness."
-  },
-  {
-    "narrative": "My kidney function tests came back abnormal. My creatinine is elevated and my potassium is high. I've been feeling dehydrated from the constant nausea. My doctor is holding my blood pressure medication and the Ozempic to try to protect my kidneys. He says I'm in stage 2 acute kidney injury. I need to drink more water but it's hard when I feel sick.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "Stage 2 AKI with electrolyte abnormalities."
-  },
-  {
-    "narrative": "Patient presents with complaints of persistent tachycardia since dose titration to maximum dose of 2 mg weekly approximately 3 weeks prior. Resting heart rate documented at 96-102 bpm consistently over the past week, compared to baseline of 68-75 bpm prior to semaglutide initiation. Patient reports subjective sensation of heart racing, particularly in the evening hours, associated with mild anxiety. No chest pain, dyspnea, or syncope reported. EKG performed showing sinus tachycardia without acute ST-T wave changes. Holter monitor ordered for 24-hour assessment. Discussed potential dose reduction if symptoms persist.",
-    "category": "Cardiovascular signs",
-    "reasoning": "Sustained HR increase and palpitations post-titration fit CV sign category."
-  },
-  {
-    "narrative": "My kidney function is down. My creatinine is up. I was dehydrated from vomiting. The doctor is worried about my kidneys. I need fluids.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "Renal function decline requiring fluids."
-  },
-  {
-    "narrative": "I woke up in the middle of the night with this excruciating pain in my upper right abdomen. It was so bad I was crying. My husband drove me to the emergency room at like 3 AM. They did an ultrasound and found out I have gallstones - multiple ones apparently. The ER doctor said that rapid weight loss can cause this, and I have lost a lot of weight since starting Ozempic, almost 35 pounds in five months. They gave me pain medication and told me I need to follow up with a surgeon to discuss having my gallbladder removed. For now they told me to stop the Ozempic and eat a low-fat diet.",
-    "category": "Hepatobiliary (gallbladder) disease",
-    "reasoning": "Cholelithiasis temporally associated with rapid weight loss on GLP-1 RA."
   },
   {
     "narrative": "My sugar dropped to 40 while I was driving. I got confused and pulled over. I drank juice and waited. It was a close call. I was scared I would crash.",
@@ -231,44 +165,99 @@
     "reasoning": "Hypoglycemia while driving posing safety risk."
   },
   {
-    "narrative": "I'm vomiting every day. I can't keep anything down. I feel full all the time. My doctor diagnosed me with gastroparesis. My stomach isn't working. I'm losing muscle mass because I can't eat protein.",
-    "category": "Gastrointestinal disorders (Gastroparesis)",
-    "reasoning": "Daily vomiting and gastroparesis causing muscle loss."
-  },
-  {
-    "narrative": "I constantly feel like I have a brick sitting in my stomach. The bloating is painful and I look six months pregnant. I'm burping these foul, sulfur-smelling burps that are so embarrassing. I can't eat normal meals anymore because I just feel so full and sick immediately. My doctor says these are classic symptoms of gastroparesis caused by the GLP-1 agonist.",
-    "category": "Gastrointestinal disorders (Gastroparesis)",
-    "reasoning": "Classic symptoms of gastroparesis including sulfur burps and bloating."
-  },
-  {
-    "narrative": "I have severe pain in the middle of my stomach that radiates to my back. It gets worse when I eat. My labs show elevated lipase. The doctor says it's pancreatitis caused by the medication. I'm in a lot of pain.",
+    "narrative": "Presented to emergency department with severe abdominal pain, rated 9/10 in intensity, located in the epigastric region. Pain described as constant and radiating to the back. Labs remarkable for amylase 645 U/L and lipase 1,250 U/L. CT abdomen performed and negative for gallstones, though showed findings consistent with pancreatic inflammation. Patient diagnosed with acute pancreatitis. On medication review, patient taking semaglutide for 6 months. GI consulted, recommended discontinuation of GLP-1 agonist. Patient admitted for supportive management.",
     "category": "Pancreatitis",
-    "reasoning": "Classic pancreatitis pain pattern."
+    "reasoning": "Biochemical evidence and symptoms consistent with pancreatitis absent biliary cause."
   },
   {
-    "narrative": "I aspirated stomach acid during a procedure. I woke up coughing and couldn't breathe. I developed pneumonia in my right lung. The doctor said my stomach hadn't emptied from the night before due to the medication.",
-    "category": "Peri-procedural aspiration risk",
-    "reasoning": "Aspiration pneumonia due to delayed emptying."
+    "narrative": "My heart rate is fast. I feel it. It makes me nervous. The doctor checked it.",
+    "category": "Cardiovascular signs",
+    "reasoning": "Doctor check of heart rate."
   },
   {
-    "narrative": "I have gastroparesis. My stomach hurts and I vomit food. I can't eat solids. I'm losing too much weight. The doctor stopped the medication.",
+    "narrative": "I have gastroparesis. I vomit undigested food. I feel full after eating a small amount. I've lost a lot of weight. My stomach isn't working properly. I have to stop the medication.",
     "category": "Gastrointestinal disorders (Gastroparesis)",
-    "reasoning": "Gastroparesis necessitating discontinuation."
+    "reasoning": "Gastroparesis with weight loss."
   },
   {
-    "narrative": "You know, I thought I was doing everything right with this medication. Taking it on the same day every week, rotating my injection sites like they showed me. But after my last dose - must have been like two weeks ago now - I got so sick. The nausea hit me like a truck, excuse my language. And I'm not usually someone who throws up easily but I was hugging the toilet for days. My wife kept bringing me crackers and ginger ale but nothing stayed down. She finally made me call the doctor when I couldn't even keep water down for 24 hours. The nurse practitioner said to stop the medication immediately and come in for an evaluation. They were worried about dehydration. Took me almost a week to feel normal again after stopping it.",
+    "narrative": "I have pancreatitis. The pain is severe. I'm in the hospital. My pancreas is inflamed. I can't eat anything. It's from the medication. I'm in a lot of pain.",
+    "category": "Pancreatitis",
+    "reasoning": "Hospitalized with severe pain from pancreatitis."
+  },
+  {
+    "narrative": "This was really scary - I gave myself my weekly injection on Saturday morning and then about 20 minutes later my lips started tingling and then swelling up. And then my throat started feeling tight, like I couldn't quite catch my breath? My partner called 911 immediately and the paramedics came really fast, thank god. They gave me an epinephrine shot right there in my living room. They said it was a severe allergic reaction. I had to go to the hospital and they kept me for observation. The ER doctor said I absolutely cannot take this medication ever again.",
+    "category": "Hypersensitivity",
+    "reasoning": "Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
+  },
+  {
+    "narrative": "My retina specialist is concerned about the new blood vessels growing in my eye. He says I have proliferative retinopathy now. I've had some episodes where my vision goes dark for a few minutes. He attributes the rapid progression to the sudden drop in my A1C levels since starting Ozempic. I'm scheduled for laser photocoagulation surgery next week to save my sight.",
+    "category": "Eye disorders (Diabetic retinopathy complications)",
+    "reasoning": "Proliferative retinopathy with transient vision loss."
+  },
+  {
+    "narrative": "I have acute kidney failure. My creatinine is 3.0. I was dehydrated from vomiting. They are giving me fluids to try to save my kidneys. I might need dialysis.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "Acute renal failure with potential dialysis need."
+  },
+  {
+    "narrative": "So, um, after they increased my dose to that 0.5 mg - I think it was like the third week in March or maybe early April? Anyway, I started feeling really sick to my stomach. Like, I couldn't keep anything down, not even water. My husband kept saying I should call the doctor but I thought maybe it would just pass, you know? But it went on for three whole days and I was just miserable. Finally called my doctor's office and the nurse told me to stop taking it immediately. And honestly, within like a day or two after stopping, I started feeling so much better. It was definitely the medication.",
     "category": "Gastrointestinal disorders",
     "reasoning": "Prolonged nausea/vomiting shortly after dose escalation fits GI intolerance."
   },
   {
-    "narrative": "Patient with baseline chronic kidney disease stage 3 (creatinine baseline 1.4-1.5 mg/dL) presented with acute on chronic kidney injury. Reports several days of persistent nausea with markedly reduced oral intake. Physical exam notable for decreased skin turgor, orthostatic hypotension. Labs: creatinine peaked at 2.4 mg/dL, BUN 45. Urinalysis consistent with prerenal etiology. Patient recently started on semaglutide 4 weeks ago. Admitted for IV hydration; GLP-1 agonist held. Renal function improved with volume repletion but remains above baseline.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "AKI on CKD in the setting of GI intolerance is a recognized risk scenario."
+    "narrative": "Patient presented for outpatient bronchoscopy for evaluation of persistent cough. Pre-procedure assessment completed, patient confirmed adherence to NPO guidelines (nothing to eat or drink after midnight, procedure at 11 AM). During conscious sedation with midazolam and fentanyl, patient suddenly vomited and aspirated before protective reflexes could be engaged. Procedure immediately halted, patient placed in Trendelenburg position, airway suctioned. Emergently intubated for airway protection. Therapeutic bronchoscopy performed showing significant volume of gastric contents throughout bronchial tree requiring extensive suctioning. Patient transferred to ICU intubated for continued airway management and monitoring. Chest imaging consistent with bilateral aspiration. Developed severe aspiration pneumonitis requiring mechanical ventilation for 48 hours. Comprehensive medication review revealed patient on semaglutide for 5 months. Pulmonology and anesthesiology teams emphasize need for extended GLP-1 agonist washout period (minimum 2 weeks) before any sedated procedure given profound effect on gastric emptying.",
+    "category": "Peri-procedural aspiration risk",
+    "reasoning": "Aspiration event in context of delayed gastric emptying associated with GLP-1 RAs."
   },
   {
-    "narrative": "My sugar was 40. I passed out. My family called 911. They revived me. It was scary.",
+    "narrative": "I had a severe low blood sugar event where I became combative and confused. I didn't know who my family members were. They couldn't get me to eat anything so they had to use the emergency glucagon nasal spray. When I came to, I had a terrible headache and felt exhausted. It was really scary for my family to see me like that.",
     "category": "Hypoglycemia",
-    "reasoning": "Family-witnessed syncope from hypo."
+    "reasoning": "Severe hypoglycemia with altered mental status requiring glucagon."
+  },
+  {
+    "narrative": "I mean, I know I should have called my doctor sooner, but I was just dealing with the nausea, you know? Everyone said it would get better. But then I started getting this really bad diarrhea too, like I couldn't leave the bathroom. This went on for days and I wasn't drinking enough because I felt so sick. Finally my daughter made me go to the doctor and they did blood work. They said my kidneys weren't working right, something about my creatinine being too high. They had to give me IV fluids at the hospital for two days. The doctor said the dehydration from being so sick caused kidney problems. They told me to stop the Ozempic.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "AKI likely precipitated by GI fluid loss; recognized risk with GLP-1 RAs."
+  },
+  {
+    "narrative": "Um, so I've been having this issue where I just don't feel hungry anymore, which sounds great for weight loss, right? But it's actually kind of a problem because even when I do try to eat, I feel full after like two bites. And then for hours after eating I feel this uncomfortable fullness in my stomach. My doctor ordered some kind of test - a gastric emptying study I think they called it? - and apparently my stomach is taking way longer than normal to empty. They're calling it gastroparesis. I'm not sure what to do because the medication is helping my blood sugar but this side effect is really affecting my quality of life.",
+    "category": "Gastrointestinal disorders (Gastroparesis)",
+    "reasoning": "Objective evidence of delayed gastric emptying consistent with gastroparesis."
+  },
+  {
+    "narrative": "The nausea is relentless. I dry heave in the mornings. I've lost my appetite completely. Even the smell of food makes me sick. I'm thinking of stopping the medication because I can't function like this.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Relentless nausea and dry heaving."
+  },
+  {
+    "narrative": "My heart feels like it's racing all the time. My resting pulse is over 100 beats per minute. I feel jittery and anxious, like I've had too much caffeine. My doctor did an EKG and confirmed sinus tachycardia. He thinks it's a side effect of the Ozempic stimulating my heart.",
+    "category": "Cardiovascular signs",
+    "reasoning": "Persistent sinus tachycardia causing symptoms."
+  },
+  {
+    "narrative": "Patient reports significant change in bowel habits following dose escalation to 1 mg weekly. Describes difficulty with bowel movements, occurring only once every 5-7 days compared to daily pattern prior to medication. Associated with abdominal cramping, bloating, and decreased appetite. Has tried over-the-counter fiber supplements and stool softeners with minimal improvement. Physical exam notable for abdominal distension and discomfort on palpation. Recommended increased fluid intake, dietary modifications, and trial of osmotic laxative. Discussed potentially reducing dose if symptoms persist.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Prolonged constipation post-titration aligns with common GI adverse effects."
+  },
+  {
+    "narrative": "I have deep, boring pain in my upper abdomen that goes straight through to my spine. It gets worse after I eat. My abdomen is tender to the touch. I've also had some nausea. My doctor ran labs and my lipase is 3 times the normal limit. She diagnosed me with pancreatitis and stopped the medication immediately. I'm on a clear liquid diet to let my pancreas rest.",
+    "category": "Pancreatitis",
+    "reasoning": "Clinical and biochemical signs of pancreatitis."
+  },
+  {
+    "narrative": "I vomited during surgery prep. I aspirated. Now I have pneumonia. My stomach wasn't empty. It's a bad complication.",
+    "category": "Peri-procedural aspiration risk",
+    "reasoning": "Pre-op vomiting and aspiration."
+  },
+  {
+    "narrative": "I have pancreatitis. The pain is bad. I'm in the hospital. My pancreas is inflamed.",
+    "category": "Pancreatitis",
+    "reasoning": "Inflamed pancreas."
+  },
+  {
+    "narrative": "I've been feeling a fluttering sensation in my chest, like a bird is trapped in there. It happens randomly throughout the day. I checked my pulse and it was irregular. I went to urgent care and they did an EKG which showed I was having premature ventricular contractions (PVCs) and a heart rate of 115. They think the medication is stimulating my heart too much. I have to wear a Holter monitor for 24 hours now.",
+    "category": "Cardiovascular signs",
+    "reasoning": "Palpitations, PVCs, and tachycardia."
   },
   {
     "narrative": "Woke up in the middle of the night with excruciating pain in the center of my abdomen, radiating straight through to my back. It was a 9 out of 10 on the pain scale. I was sweating and felt feverish. My wife took me to the ER, and they did blood work which showed my lipase levels were over 1000. They did a CT scan and told me my pancreas was inflamed. I don't drink alcohol and don't have gallstones, so the doctors are pretty sure it's the Ozempic. They've taken me off it and I'm currently on IV fluids.",
@@ -276,8 +265,18 @@
     "reasoning": "Classic acute pancreatitis presentation with elevated enzymes and no other obvious cause."
   },
   {
-    "narrative": "I've been having this dull, gnawing pain in my upper abdomen for weeks, but yesterday it became sharp and severe. It radiates to my back and gets worse when I lie down. I've also been vomiting bile. My lipase levels came back at 800. The ER doctor diagnosed me with acute pancreatitis. I'm on a strict NPO diet and IV pain meds. I'm really worried about permanent damage to my pancreas.",
+    "narrative": "So, um, this is my second time trying to report this because I wasn't sure if it was related but my doctor said I should definitely document it. I've been on Ozempic for maybe 8 or 9 weeks now? And my blood sugar has been great, like the best it's been in years. But I've been having issues with my bowels - specifically constipation. I know, TMI, but it's been really bad. I'm only going maybe once a week if I'm lucky, and when I do it's really difficult and uncomfortable. My stomach is constantly bloated and I look like I'm pregnant even though I've actually lost weight overall. I've been taking Miralax every day, drinking tons of water, eating salads with lots of fiber, and it's still a problem. My doctor is suggesting we try a lower dose to see if that helps because apparently this is a pretty common side effect.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Prolonged constipation post-titration aligns with common GI adverse effects."
+  },
+  {
+    "narrative": "So I'm trying to remember exactly when this started... I think about a week and a half ago? Maybe two weeks? Anyway, I started having really bad pain in my stomach, like upper middle area. The pain is constant and it wraps around to my back which is just weird. It's bad enough that I haven't been able to eat much at all, and a few times the pain has been so intense I threw up. Finally my wife insisted I go to the emergency room yesterday. They did blood work and a CT scan. The doctor said I have pancreatitis - inflammation of the pancreas. They asked if I drink alcohol and I said no, not really, maybe a beer on the weekend. They said I don't have gallstones. But I am on Ozempic, been taking it for like 5 or 6 months now. The doctor said the medication could be causing it and told me to stop taking it. They admitted me to the hospital and I'm not allowed to eat or drink anything, just getting fluids through an IV. They're giving me pain medication too which is helping a bit.",
     "category": "Pancreatitis",
-    "reasoning": "Symptoms and labs consistent with acute pancreatitis."
+    "reasoning": "Biochemical evidence and symptoms consistent with pancreatitis absent biliary cause."
+  },
+  {
+    "narrative": "I had hives and swelling. My throat felt tight. I went to urgent care. They gave me steroids. It was an allergic reaction.",
+    "category": "Hypersensitivity",
+    "reasoning": "Urgent care visit for allergy."
   }
 ]

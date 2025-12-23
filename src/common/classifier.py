@@ -17,7 +17,7 @@ CLASSIFICATION_CONFIGS = {
             "One of: Gastrointestinal disorders, Pancreatitis, "
             "Hepatobiliary (gallbladder) disease, Hypoglycemia, Eye disorders (Diabetic retinopathy complications), "
             "Renal events (Acute kidney injury), Hypersensitivity, Injection-site reactions, "
-            "Cardiovascular signs, Peri-procedural aspiration risk, Gastroparesis"
+            "Cardiovascular signs, Peri-procedural aspiration risk, Gastrointestinal disorders (Gastroparesis)"
         ),
         "labels": [
             "Gastrointestinal disorders",
