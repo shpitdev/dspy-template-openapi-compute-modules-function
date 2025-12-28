@@ -37,7 +37,7 @@ except Exception as e:
 
 import dspy
 
-current_model = getattr(dspy.settings.lm, "model", None) if dspy.settings.lm else "openai/Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf"
+current_model = getattr(dspy.settings.lm, "model", None) or "openai/Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf"
 print(f"   Current model in environment: {current_model}")
 
 # Check artifacts before loading

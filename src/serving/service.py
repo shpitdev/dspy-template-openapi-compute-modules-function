@@ -78,7 +78,7 @@ def _load_classifier(model_path: Path, classification_type: str) -> ComplaintCla
     classifier.load(str(model_path))
     
     # Update artifact metadata with current model if different from saved model
-    current_model = getattr(dspy.settings.lm, "model", None) if dspy.settings.lm else None
+    current_model = getattr(dspy.settings.lm, "model", None)
     if current_model:
         try:
             # Read the current artifact
