@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import json
 import random
+import re
 from pathlib import Path
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data/pc-category-classification"
@@ -14,6 +15,71 @@ TEST_FILE = DATA_DIR / "test.json"
 
 # Test set ratio (20% of data)
 TEST_RATIO = 0.2
+RANDOM_SEED = 20240113
+
+# Reduce direct label leakage (e.g., "counterfeit", "device malfunction") in narratives.
+# This keeps the classification task from being solved by keyword matching alone.
+REDUCE_LABEL_LEAKAGE = True
+LABEL_LEAKAGE_REPLACEMENTS: tuple[tuple[re.Pattern[str], str], ...] = (
+    (re.compile(r"\bstability/appearance defect\b", re.IGNORECASE), "appearance issue"),
+    (re.compile(r"\bdevice malfunction\b", re.IGNORECASE), "device issue"),
+    (re.compile(r"\bstorage/temperature excursion\b", re.IGNORECASE), "temperature exposure issue"),
+    (re.compile(r"\blabeling error\b", re.IGNORECASE), "label mismatch"),
+    (re.compile(r"\bcontamination/foreign matter\b", re.IGNORECASE), "foreign material issue"),
+    (re.compile(r"\bpackaging defect\b", re.IGNORECASE), "packaging issue"),
+    (re.compile(r"\bcounterfeit\b", re.IGNORECASE), "not authentic"),
+    (re.compile(r"\bunauthorized source\b", re.IGNORECASE), "non-authorized source"),
+    (re.compile(r"\bpotency/assay defect\b", re.IGNORECASE), "strength inconsistency"),
+    (re.compile(r"\bdistribution/expiry\b", re.IGNORECASE), "expired stock issue"),
+    (re.compile(r"\bexpired\b", re.IGNORECASE), "past its date"),
+)
+
+
+def _case_preserving_replace(match: re.Match[str], replacement: str) -> str:
+    if not match.group(0):
+        return replacement
+    if match.group(0)[0].isupper():
+        return replacement[0].upper() + replacement[1:]
+    return replacement
+
+
+def _reduce_label_leakage(text: str) -> str:
+    for pattern, replacement in LABEL_LEAKAGE_REPLACEMENTS:
+        text = pattern.sub(lambda m: _case_preserving_replace(m, replacement), text)
+    return text
+
+
+def _prepare_examples(examples: list[dict]) -> list[dict]:
+    if not REDUCE_LABEL_LEAKAGE:
+        return list(examples)
+    prepared = []
+    for item in examples:
+        updated = dict(item)
+        updated["narrative"] = _reduce_label_leakage(item["narrative"])
+        prepared.append(updated)
+    return prepared
+
+
+def _stratified_split(
+    data: list[dict],
+    test_ratio: float,
+    rng: random.Random,
+) -> tuple[list[dict], list[dict]]:
+    by_category: dict[str, list[dict]] = {}
+    for item in data:
+        by_category.setdefault(item["category"], []).append(item)
+
+    train_data: list[dict] = []
+    test_data: list[dict] = []
+    for items in by_category.values():
+        rng.shuffle(items)
+        test_size = max(1, int(round(len(items) * test_ratio)))
+        test_data.extend(items[:test_size])
+        train_data.extend(items[test_size:])
+
+    rng.shuffle(train_data)
+    rng.shuffle(test_data)
+    return train_data, test_data
 
 complaint_category_sample_data = [
     {
@@ -1322,14 +1388,9 @@ complaint_category_sample_data = [
 def split_and_write_datasets() -> None:
     """Split data into train/test sets and write to appropriate folders."""
 
-    # Shuffle data for random split
-    data = complaint_category_sample_data.copy()
-    random.shuffle(data)
-
-    # Split into train and test
-    test_size = int(len(data) * TEST_RATIO)
-    test_data = data[:test_size]
-    train_data = data[test_size:]
+    rng = random.Random(RANDOM_SEED)
+    data = _prepare_examples(complaint_category_sample_data)
+    train_data, test_data = _stratified_split(data, TEST_RATIO, rng)
 
     # Create output directory
     DATA_DIR.mkdir(parents=True, exist_ok=True)

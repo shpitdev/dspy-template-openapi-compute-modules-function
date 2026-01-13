@@ -1,83 +1,13 @@
 [
   {
-    "narrative": "I had an allergic reaction with hives and swelling. My throat felt tight. I went to the ER. They gave me meds to stop the reaction. I can't take this drug again.",
-    "category": "Hypersensitivity",
-    "reasoning": "Allergic reaction with throat tightness."
-  },
-  {
-    "narrative": "My retinopathy is worse. I have spots in my vision. The doctor is watching it.",
-    "category": "Eye disorders (Diabetic retinopathy complications)",
-    "reasoning": "Observation of worsening retinopathy."
-  },
-  {
-    "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated. I need fluids. The doctor is worried.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "Doctor concern regarding renal failure."
-  },
-  {
-    "narrative": "Okay so I need to talk about what happened with my injection site this week because it really freaked me out. I do my injections in my thigh, alternating legs each week. This time I injected into my left thigh on Wednesday morning and by that afternoon the spot was really red and swollen. Like way more than usual - it was probably the size of a golf ball, maybe bigger? And it was hot to the touch and painful. I was worried it might be infected so I sent a picture to my doctor through the patient portal. She had me come in the next day to check it out. She said it didn't look infected, just a significant local reaction to the medication. She cleaned the area, put some hydrocortisone cream on it, and told me to apply cold compresses. It took almost a week to fully resolve. She said if it happens again we might need to consider a different medication.",
-    "category": "Injection-site reactions",
-    "reasoning": "Localized cutaneous reaction at administration site without systemic features."
-  },
-  {
-    "narrative": "This is probably my fourth or fifth injection now, and I've been doing them in my belly like they showed me. I rotate the spots but stay in the same general area. This last time though, the injection site got really angry looking. It was red and swollen - probably about the size of a half-dollar coin - and it was tender when I touched it or when my clothes rubbed against it. Also kind of itchy but not unbearable. I put a cold compress on it a few times which seemed to help. It stayed like that for about two and a half days before it started getting better. My friend who also takes this medication said she gets injection site reactions sometimes too. As long as it doesn't get worse or spread, I figure it's probably normal. But I'll definitely mention it to my doctor next time I see her.",
-    "category": "Injection-site reactions",
-    "reasoning": "Localized cutaneous reaction at administration site without systemic features."
-  },
-  {
-    "narrative": "I went for routine blood work and my doctor called me immediately to stop taking the medication. My creatinine has doubled since my last visit three months ago, indicating my kidney function has plummeted. I haven't been feeling great—tired, nauseous, drinking less water than I should. It seems the dehydration from the mild nausea has tipped my kidneys into acute failure. I need to focus on rehydration immediately.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "Asymptomatic but chemically significant acute kidney injury."
-  },
-  {
-    "narrative": "I've noticed a hard, red lump at my injection site on my thigh. It's about the size of a golf ball and it's warm to the touch. It's also really itchy and sore when my clothes rub against it. This started about 2 days after my shot and hasn't gone away yet. I've been icing it, but it's still pretty angry looking. I've never had a reaction like this before with insulin or other shots. I'm going to try injecting in my stomach next time to see if it makes a difference, but I'm worried I might be developing an allergy.",
-    "category": "Injection-site reactions",
-    "reasoning": "Significant localized injection site reaction (induration, erythema, pruritus)."
-  },
-  {
-    "narrative": "So I gave myself the injection on Thursday night before bed. Woke up Friday morning and my lips felt kind of tingly and weird. Looked in the bathroom mirror and my lips were definitely swollen, like noticeably puffed up. And then I noticed I had hives on my chest and neck too. I took some Benadryl right away and kept monitoring myself. The swelling got a bit worse over the next hour and I started to feel like my throat might be tightening up, though I could still breathe okay. My husband wanted to call 911 but I said let's go to the ER instead since I wasn't having trouble breathing yet. At the ER they gave me IV Benadryl and steroids and monitored me for like 4 hours. The swelling gradually went down. The doctor said this was an allergic reaction and I shouldn't take Ozempic anymore. He prescribed me an EpiPen just in case I ever have another reaction to something. Pretty scary honestly.",
-    "category": "Hypersensitivity",
-    "reasoning": "Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
-  },
-  {
-    "narrative": "I vomited during anesthesia induction. They had to suction my lungs. I'm now on antibiotics for aspiration pneumonia. My stomach was full despite fasting.",
+    "narrative": "I inhaled stomach contents stomach contents during a scope. I have pneumonia now. My stomach was full of liquid. The doctor says it delayed emptying.",
     "category": "Peri-procedural aspiration risk",
-    "reasoning": "Aspiration during anesthesia induction."
+    "reasoning": "Aspiration during endoscopy."
   },
   {
-    "narrative": "I passed out at the gym because my blood sugar dropped to 40. I didn't feel it coming on until it was too late. The paramedics had to revive me with glucose. It was really scary. I've had to lower my insulin dose significantly to avoid this happening again.",
-    "category": "Hypoglycemia",
-    "reasoning": "Syncope due to severe hypoglycemia."
-  },
-  {
-    "narrative": "My heart is racing. I feel palpitations in my chest. My pulse is over 100. It makes me feel anxious. The doctor says it's a side effect of the medication. I might need a beta blocker.",
-    "category": "Cardiovascular signs",
-    "reasoning": "Tachycardia requiring potential beta blocker."
-  },
-  {
-    "narrative": "I ended up in the hospital with pancreatitis. The pain was unbearable, like a belt tightening around my upper belly. My enzymes were sky high. I had to be on IVs for days without eating. The doctors blamed the Ozempic and said I can never take it again.",
-    "category": "Pancreatitis",
-    "reasoning": "Hospitalization for acute pancreatitis."
-  },
-  {
-    "narrative": "So this happened on a Tuesday morning, I remember because I had just gotten to work. Started feeling really shaky and sweaty out of nowhere. My vision got kind of blurry and I felt confused - my coworker said I wasn't making sense when I was talking. She had me check my blood sugar because she's a type 1 diabetic and recognized the symptoms. It was 52, which is really low. She gave me some juice and I started feeling better after about 10 minutes. The thing is, I take my glipizide pill every morning and I also take the Ozempic shot once a week. I called my doctor and she said we need to adjust my medications because taking them together is making my blood sugar go too low.",
-    "category": "Hypoglycemia",
-    "reasoning": "Low glucose with symptoms and a sulfonylurea co-med increases hypoglycemia risk."
-  },
-  {
-    "narrative": "I have pancreatitis. The pain is bad. I'm in the hospital. My pancreas is inflamed.",
-    "category": "Pancreatitis",
-    "reasoning": "Inflamed pancreas."
-  },
-  {
-    "narrative": "I haven't been able to keep any food down for four days because of the nausea. I've also had terrible diarrhea. I went to my doctor because I felt so weak and dizzy when I stood up. They ran some labs and told me my kidneys are in trouble—my creatinine has jumped up to 2.1 from my normal 0.9. They said I have acute kidney injury from dehydration. I'm currently in the hospital getting IV fluids to try to flush my kidneys out and get them working again. No more Ozempic for me.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "AKI secondary to severe dehydration from GI adverse events."
-  },
-  {
-    "narrative": "My resting heart rate has gone up significantly since I started this drug. I used to be in the low 60s, but now my Fitbit shows I'm consistently in the 80s or 90s, even when I'm just sitting on the couch watching TV. Sometimes I can feel my heart pounding in my chest, like palpitations. It's a bit unsettling. My doctor did an EKG and said it's sinus tachycardia, likely a side effect of the GLP-1 agonist. We're monitoring it, but if it stays this high, I might have to stop.",
-    "category": "Cardiovascular signs",
-    "reasoning": "Sustained increase in resting heart rate and palpitations."
+    "narrative": "I have explosive diarrhea multiple times a day. I can't leave the house. I'm dehydrated and weak. The doctor says it's a common side effect but it's ruining my life.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Severe diarrhea limiting daily activities."
   },
   {
     "narrative": "The constipation is so bad it's causing hemorrhoids and fissures. I'm in pain every time I try to go to the bathroom. I'm using laxatives daily but they barely help. My stomach is constantly cramped. It's affecting my quality of life significantly. I'm considering stopping the medication just to get relief from this bowel issue.",
@@ -85,129 +15,24 @@
     "reasoning": "Severe constipation causing secondary complications (hemorrhoids/fissures)."
   },
   {
-    "narrative": "I have gallstones. The pain is sharp in my right side. I need my gallbladder removed. The doctor says it's a common side effect.",
-    "category": "Hepatobiliary (gallbladder) disease",
-    "reasoning": "Common side effect of gallstones requiring surgery."
-  },
-  {
-    "narrative": "I was scheduled for a routine upper endoscopy - they were checking for Barrett's esophagus because I have bad reflux - and I followed all the prep instructions. No food after midnight, only clear liquids until 4 hours before. But during the procedure, while I was sedated, I vomited and aspirated some of it. I don't remember any of this obviously because I was under sedation. But when I woke up the gastroenterologist was really concerned and explained what happened. She said I had a significant amount of retained gastric contents despite fasting appropriately. She asked about all my medications and when I told her about the Ozempic, she said that explains it. She said these medications can dramatically slow gastric emptying. They monitored me for several hours and did a chest x-ray to check for aspiration pneumonia. Thankfully it looked okay but they put me on antibiotics as a precaution. She said if I ever need another procedure with sedation, I need to stop the Ozempic at least a week beforehand.",
-    "category": "Peri-procedural aspiration risk",
-    "reasoning": "Aspiration-like event in procedural setting linked to delayed gastric emptying risk."
-  },
-  {
-    "narrative": "I was at work and suddenly couldn't concentrate on my computer screen. My hands started trembling so bad I couldn't type. I felt like I was going to faint. My colleague noticed I looked pale and brought me a soda. I checked my sugar after drinking it and it was still only 55. It must have been even lower before. It took an hour before I felt safe to drive home.",
-    "category": "Hypoglycemia",
-    "reasoning": "Symptomatic hypoglycemia affecting work and cognitive function."
-  },
-  {
-    "narrative": "My heart rate is fast. I feel it beating. It makes me nervous. The doctor checked my heart and said it's sinus tachycardia. I have to monitor it.",
-    "category": "Cardiovascular signs",
-    "reasoning": "Monitoring required for tachycardia."
-  },
-  {
-    "narrative": "I have acute pancreatitis. The pain is severe and radiates to my back. I'm vomiting and have a fever. My labs confirm inflammation. I'm in the hospital.",
-    "category": "Pancreatitis",
-    "reasoning": "Hospitalized for acute pancreatitis symptoms."
-  },
-  {
-    "narrative": "I have stage 3 kidney failure. My creatinine is 4.0. I was dehydrated from vomiting for weeks. The doctors are trying to save my kidneys with fluids. I might need temporary dialysis.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "Stage 3 kidney failure with potential for dialysis."
-  },
-  {
-    "narrative": "My stomach is paralyzed. Food just sits there. I burp up rotten egg smells. I feel sick all the time. The gastric emptying study confirmed gastroparesis.",
-    "category": "Gastrointestinal disorders (Gastroparesis)",
-    "reasoning": "Confirmed gastroparesis with sulfur burps."
-  },
-  {
-    "narrative": "My blood sugar was 40. I passed out. My husband called 911. They gave me glucose. I woke up in the ambulance. It was a severe low blood sugar event.",
-    "category": "Hypoglycemia",
-    "reasoning": "Ambulance transport for severe hypo."
-  },
-  {
-    "narrative": "I've been dealing with persistent nausea for the past three weeks since I started the 0.5 mg dose. It's not just a little queasiness; it's a deep, rolling stomach upset that lasts all day. I'm having trouble eating anything substantial, and I've lost about 8 pounds, which is faster than I wanted. Yesterday, I actually vomited while driving to work, which was a nightmare. My doctor suggested splitting the dose or going back down, but I'm worried about losing the blood sugar control. It's really affecting my daily life.",
-    "category": "Gastrointestinal disorders",
-    "reasoning": "Persistent, severe nausea and vomiting affecting daily activities."
-  },
-  {
-    "narrative": "I have a large, painful nodule at the injection site on my abdomen. It's been there for weeks and isn't going away. It feels like a marble under my skin. The area is also red and itchy. My doctor says it's a sterile abscess or a granuloma reaction to the medication. We might have to drain it if it doesn't resolve soon.",
+    "narrative": "I have a huge, red, itchy welt on my stomach where I injected the medication. It's hot and painful to the touch. It's been there for four days and isn't getting better. It looks like a giant bug bite. My doctor says it's a localized injection site reaction but told me to watch for signs of infection.",
     "category": "Injection-site reactions",
-    "reasoning": "Persistent sterile abscess/granuloma at injection site."
+    "reasoning": "Significant localized injection site reaction."
   },
   {
-    "narrative": "Patient with baseline chronic kidney disease stage 3 (creatinine baseline 1.6 mg/dL, eGFR 42) presented to clinic with worsening renal function. Reports 10-day history of decreased oral intake secondary to severe nausea and anorexia. Unable to tolerate solid foods, minimal fluid intake. Physical exam notable for orthostatic hypotension (BP 110/70 supine, 88/60 standing), dry mucous membranes, decreased skin turgor consistent with volume depletion. Laboratory studies show creatinine 2.9 mg/dL, BUN 58, BUN:Cr ratio 20:1 suggestive of prerenal etiology. Urinalysis with specific gravity 1.034, no casts or protein. Patient started semaglutide 8 weeks prior. Hospitalized for IV fluid resuscitation. Nephrology consulted given significant rise in creatinine. GLP-1 agonist discontinued. After 72 hours of hydration, creatinine improved to 2.1 mg/dL but has not returned to baseline.",
-    "category": "Renal events (Acute kidney injury)",
-    "reasoning": "AKI on CKD in the setting of GI intolerance is a recognized risk scenario."
-  },
-  {
-    "narrative": "I've noticed that since they increased my dose - I think I'm on 1 mg now - my heart rate has been higher than normal. I have one of those Fitbit watches and it used to show my resting heart rate in the 70s, but now it's consistently in the low 90s. And sometimes I can feel my heart beating really fast, like palpitations? It's kind of concerning. I mentioned it to my doctor at my last appointment and she said to monitor it. Happened about a week after the dose increase.",
-    "category": "Cardiovascular signs",
-    "reasoning": "Sustained HR increase and palpitations post-titration fit CV sign category."
-  },
-  {
-    "narrative": "Presented to emergency department with severe epigastric pain radiating to the back, onset approximately 6 hours prior to arrival. Patient reports 8/10 pain intensity. Labs demonstrated lipase of 892 U/L (normal <60). Imaging studies consistent with acute pancreatitis. Ozempic therapy discontinued per gastroenterology consult. Patient admitted for supportive care and bowel rest.",
-    "category": "Pancreatitis",
-    "reasoning": "Classic presentation plus lab confirmation aligns with drug-associated pancreatitis warning."
-  },
-  {
-    "narrative": "My vision is blurry and I see floaters. The eye doctor says my retinopathy is active. He thinks the rapid A1C drop caused the worsening. I need treatment to save my sight.",
+    "narrative": "My retina specialist found hemorrhages in my eye. He says the diabetic eye disease is active again. He thinks the Ozempic caused the flare up by lowering my sugar too fast.",
     "category": "Eye disorders (Diabetic retinopathy complications)",
-    "reasoning": "Active retinopathy threatening sight."
+    "reasoning": "Retinopathy flare-up from rapid control."
   },
   {
-    "narrative": "Woke up at like 2 AM with the worst pain I've ever felt in my life. Right side of my belly, up near my ribs. I seriously thought something had ruptured or something. My partner drove me to the ER because I was in so much pain I was crying. They did blood tests and an ultrasound and the ER doctor said I have gallbladder inflammation - cholecystitis is what he called it. Said the gallbladder wall is thickened and there's fluid around it. They also found gallstones. I've been on Ozempic for about 7 months and have lost quite a bit of weight, like 40 pounds. The surgeon they called in said rapid weight loss is a known risk factor for gallbladder problems. They admitted me for IV antibiotics and I'm scheduled for surgery to remove my gallbladder in a few days. They stopped my Ozempic for now.",
-    "category": "Hepatobiliary (gallbladder) disease",
-    "reasoning": "Inflammation of gallbladder is within hepatobiliary risk spectrum."
+    "narrative": "My heart rate is fast. I feel it beating. It makes me nervous. The doctor checked my heart and said it's sinus tachycardia.",
+    "category": "Cardiovascular signs",
+    "reasoning": "Nervousness caused by tachycardia."
   },
   {
-    "narrative": "I have severe constipation. I haven't had a bowel movement in a week. My stomach hurts. Laxatives aren't helping. I feel bloated and uncomfortable. I need relief.",
-    "category": "Gastrointestinal disorders",
-    "reasoning": "Severe constipation seeking relief."
-  },
-  {
-    "narrative": "I had hives and lip swelling. My throat felt tight. I went to urgent care. They gave me steroids. It was an allergic reaction.",
+    "narrative": "My face and neck swelled up after the shot. I couldn't breathe. It was anaphylaxis. The ER doctor saved my life with epinephrine. I'm allergic to the medication.",
     "category": "Hypersensitivity",
-    "reasoning": "Allergic reaction treated at urgent care."
-  },
-  {
-    "narrative": "I had an allergic reaction to the injection. My face swelled up and I had trouble breathing. I went to the ER and they gave me epinephrine. I can't take this medication anymore.",
-    "category": "Hypersensitivity",
-    "reasoning": "Anaphylaxis requiring discontinuation."
-  },
-  {
-    "narrative": "I aspirated stomach acid during a procedure. I woke up coughing and couldn't breathe. I developed pneumonia in my right lung. The doctor said my stomach hadn't emptied from the night before due to the medication.",
-    "category": "Peri-procedural aspiration risk",
-    "reasoning": "Aspiration pneumonia due to delayed emptying."
-  },
-  {
-    "narrative": "I have gastroparesis. I vomit undigested food. I feel full after eating a small amount. I've lost a lot of weight. My stomach isn't working properly. I have to stop the medication.",
-    "category": "Gastrointestinal disorders (Gastroparesis)",
-    "reasoning": "Gastroparesis with weight loss."
-  },
-  {
-    "narrative": "I was out in my garden, pulling weeds - it was a really nice Saturday afternoon - and suddenly I felt really weird and dizzy and then I just blacked out. My neighbor saw me fall and came running over. When I came to, she had already called 911 and tested my blood sugar with her meter because her husband is diabetic. It was 48! The paramedics came and gave me some glucose gel. The thing is, I take my insulin every morning and I also take this Ozempic once a week, and my doctor never adjusted my insulin dose. I think that's what caused it.",
-    "category": "Hypoglycemia",
-    "reasoning": "Symptomatic severe hypoglycemia with insulin co-therapy fits this category."
-  },
-  {
-    "narrative": "I have a hard, itchy lump at the injection site. It's red and warm. It's been there for a week. I'm worried it's an infection or a bad reaction to the drug.",
-    "category": "Injection-site reactions",
-    "reasoning": "Persistent, inflammatory injection site nodule."
-  },
-  {
-    "narrative": "So I'm trying to remember exactly when this started... I think about a week and a half ago? Maybe two weeks? Anyway, I started having really bad pain in my stomach, like upper middle area. The pain is constant and it wraps around to my back which is just weird. It's bad enough that I haven't been able to eat much at all, and a few times the pain has been so intense I threw up. Finally my wife insisted I go to the emergency room yesterday. They did blood work and a CT scan. The doctor said I have pancreatitis - inflammation of the pancreas. They asked if I drink alcohol and I said no, not really, maybe a beer on the weekend. They said I don't have gallstones. But I am on Ozempic, been taking it for like 5 or 6 months now. The doctor said the medication could be causing it and told me to stop taking it. They admitted me to the hospital and I'm not allowed to eat or drink anything, just getting fluids through an IV. They're giving me pain medication too which is helping a bit.",
-    "category": "Pancreatitis",
-    "reasoning": "Biochemical evidence and symptoms consistent with pancreatitis absent biliary cause."
-  },
-  {
-    "narrative": "I aspirated stomach contents during a scope. I have pneumonia now. My stomach was full of liquid. The doctor says it delayed emptying.",
-    "category": "Peri-procedural aspiration risk",
-    "reasoning": "Aspiration during endoscopy."
-  },
-  {
-    "narrative": "My sugar dropped to 45. I was shaking and sweating. I ate sugar but it took a while to come up. I felt terrible.",
-    "category": "Hypoglycemia",
-    "reasoning": "Symptomatic hypoglycemia with slow recovery."
+    "reasoning": "Life-threatening anaphylaxis."
   },
   {
     "narrative": "Okay so, um, let me explain what happened because it's been really rough. I moved up to the 1 mg dose like three weeks ago and at first everything seemed fine. But then I started having terrible diarrhea. And I mean like 8-10 times a day, completely liquid, really urgent. Sorry if that's TMI. This went on for over a week and I was so dehydrated and weak. I also couldn't eat because I felt so nauseous, and I was afraid to eat because of the diarrhea. Finally I went to urgent care because I was feeling really out of it. They did blood work and said my kidney function was off - my creatinine was elevated, whatever that means. They gave me two bags of IV fluids and told me I needed to stop the Ozempic and see my regular doctor within a couple days. I did stop it and the diarrhea gradually got better over the next week. My doctor rechecked my kidney function and it's improving but still not back to normal. She said the dehydration from all the GI issues caused my kidneys to not work properly.",
@@ -215,68 +40,243 @@
     "reasoning": "AKI likely precipitated by GI fluid loss; recognized risk with GLP-1 RAs."
   },
   {
-    "narrative": "I've been having this dull, gnawing pain in my upper abdomen for weeks, but yesterday it became sharp and severe. It radiates to my back and gets worse when I lie down. I've also been vomiting bile. My lipase levels came back at 800. The ER doctor diagnosed me with acute pancreatitis. I'm on a strict NPO diet and IV pain meds. I'm really worried about permanent damage to my pancreas.",
-    "category": "Pancreatitis",
-    "reasoning": "Symptoms and labs consistent with acute pancreatitis."
+    "narrative": "I was scheduled for a gastric sleeve surgery, but they had to abort the procedure after induction. When they put the camera down, they found my stomach was full of solid food, even though I had fasted for 14 hours. The surgeon said the risk of inhaled stomach contents was too high to proceed. He said my stomach isn't emptying and I need to be off this medication for at least 3 weeks before we try again.",
+    "category": "Peri-procedural aspiration risk",
+    "reasoning": "Aborted surgery due to retained gastric contents (aspiration risk)."
   },
   {
-    "narrative": "My blood sugar dropped to 45 while I was sleeping. My continuous glucose monitor alarm woke me up. I was shaking so bad I could barely open a juice box. I felt like I was going to pass out. I had to eat three granola bars before I stopped shaking. I'm terrified of going to sleep now.",
+    "narrative": "I feel my heart skipping beats. It flutters in my chest. My pulse is irregular. The doctor says I'm having PVCs and my heart rate is high. It's uncomfortable and scary.",
+    "category": "Cardiovascular signs",
+    "reasoning": "Palpitations and irregular heartbeat (PVCs)."
+  },
+  {
+    "narrative": "Last Tuesday morning I was driving to work when I started feeling really strange. Sweaty, shaky, dizzy. I was worried I might pass out while driving so I pulled over into a parking lot. I sat there for a minute trying to figure out what was wrong and then I remembered my coworker who's diabetic telling me about low blood sugar symptoms. I keep some granola bars in my car and I ate one, and also drank some of the Gatorade I had. Started feeling a bit better after about 10 minutes. When I got to work I told my boss I needed to go to the clinic. They tested my blood sugar there and it was 51, which they said was quite low. The nurse asked about my diabetes medications and I told her I take Lantus insulin every night and I also take Ozempic once a week. She said I really need to see my doctor to adjust my doses because taking both can make my blood sugar go too low. This is the fourth or fifth time I've had symptoms like this in the past few weeks.",
     "category": "Hypoglycemia",
-    "reasoning": "Severe nocturnal hypoglycemia detected by CGM."
+    "reasoning": "Low glucose with symptoms and a sulfonylurea co-med increases hypoglycemia risk."
   },
   {
-    "narrative": "The injection site is bruised and painful. It's a large hematoma. It hurts to touch. I think I hit a vessel. It looks bad.",
-    "category": "Injection-site reactions",
-    "reasoning": "Hematoma appearance."
+    "narrative": "I've developed biliary stones since starting Ozempic. I have attacks of pain in my right side that last for hours, especially after I eat dinner. The ultrasound showed multiple stones. My doctor says I need surgery to remove my gallbladder because the stones are causing inflammation. I've lost 40 pounds, but now I need surgery.",
+    "category": "Hepatobiliary (gallbladder) disease",
+    "reasoning": "Symptomatic cholelithiasis (gallstones) requiring surgery."
   },
   {
-    "narrative": "My routine eye exam showed significant worsening of my diabetic eye disease. I have macular edema now, which is swelling in the back of the eye, causing my central vision to be blurry and distorted. The retina specialist says it's likely due to the 'early worsening' phenomenon from my blood sugar dropping so quickly on this medication. I need to start getting injections in my eye to treat the swelling.",
-    "category": "Eye disorders (Diabetic retinopathy complications)",
-    "reasoning": "Diabetic macular edema associated with rapid treatment response."
+    "narrative": "I had a hypoglycemic seizure. My blood sugar was 30. My husband found me shaking on the floor. He called 911. They gave me glucagon. I woke up in the ER with a headache.",
+    "category": "Hypoglycemia",
+    "reasoning": "Hypoglycemic seizure requiring emergency intervention."
   },
   {
-    "narrative": "This was really scary - I gave myself my weekly injection on Saturday morning and then about 20 minutes later my lips started tingling and then swelling up. And then my throat started feeling tight, like I couldn't quite catch my breath? My partner called 911 immediately and the paramedics came really fast, thank god. They gave me an epinephrine shot right there in my living room. They said it was a severe allergic reaction. I had to go to the hospital and they kept me for observation. The ER doctor said I absolutely cannot take this medication ever again.",
+    "narrative": "Okay so, um, I've been dealing with this really annoying rash that started maybe 6 or 7 hours after I took my third dose of this medication. It's all over my torso and arms, super itchy, kind of looks like mosquito bites but I know it's not because it's November and there aren't any mosquitos. I didn't have any breathing problems or swelling or anything scary like that, just this itchy rash. I took some Benadryl we had at home and it helped with the itching. Called my doctor the next day and they said it sounds like an allergic reaction. They want me to watch for it with my next dose and if it happens again, I'll probably need to switch to a different medication for my diabetes. Really hoping it doesn't happen again because this medication has been working really well for my blood sugar.",
     "category": "Hypersensitivity",
-    "reasoning": "Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
+    "reasoning": "Diffuse pruritic rash temporally related to dosing suggests allergic reaction."
   },
   {
-    "narrative": "After my injection this week - I do it every Friday morning before work - the spot got really irritated. Like more than usual, you know? It was red and warm to the touch and kind of swollen. Not huge or anything, but definitely noticeable. It hurt when my waistband rubbed against it. I took a picture to show my doctor at my next appointment. It took about three days for it to calm down completely. My pharmacist said some people just have more sensitive skin and get these reactions. Still works for my diabetes though, so I'm going to keep using it and just hope it doesn't happen every time.",
+    "narrative": "Patient presented for outpatient bronchoscopy for evaluation of persistent cough. Pre-procedure assessment completed, patient confirmed adherence to NPO guidelines (nothing to eat or drink after midnight, procedure at 11 AM). During conscious sedation with midazolam and fentanyl, patient suddenly vomited and inhaled stomach contents before protective reflexes could be engaged. Procedure immediately halted, patient placed in Trendelenburg position, airway suctioned. Emergently intubated for airway protection. Therapeutic bronchoscopy performed showing significant volume of gastric contents throughout bronchial tree requiring extensive suctioning. Patient transferred to ICU intubated for continued airway management and monitoring. Chest imaging consistent with bilateral inhaled stomach contents. Developed severe inhaled stomach contents pneumonitis requiring mechanical ventilation for 48 hours. Comprehensive medication review revealed patient on semaglutide for 5 months. Pulmonology and anesthesiology teams emphasize need for extended GLP-1 agonist washout period (minimum 2 weeks) before any sedated procedure given profound effect on gastric emptying.",
+    "category": "Peri-procedural aspiration risk",
+    "reasoning": "Aspiration event in context of delayed gastric emptying associated with GLP-1 RAs."
+  },
+  {
+    "narrative": "My kidney function tests came back abnormal. My creatinine is elevated and my potassium is high. I've been feeling dehydrated from the constant nausea. My doctor is holding my blood pressure medication and the Ozempic to try to protect my kidneys. He says I'm in stage 2 worsening kidney function. I need to drink more water but it's hard when I feel sick.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "Stage 2 AKI with electrolyte abnormalities."
+  },
+  {
+    "narrative": "The nausea is constant. I feel like I have the flu. I can't eat. I'm weak and tired. I've lost my appetite. It's not worth it.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Flu-like nausea and anorexia."
+  },
+  {
+    "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "Failing kidneys."
+  },
+  {
+    "narrative": "I've had diabetes for a long time and I've always been really careful about my eye health because I know diabetic eye disease is serious. I've been getting regular eye exams and my diabetic eye disease has been stable for years - just mild background changes, nothing major. But at my most recent visit the ophthalmologist seemed concerned. He said there's been progression and now I have moderate to severe changes with some bleeding in the retina. He took pictures to compare to my previous visits and the difference was pretty stark. He asked if anything had changed with my diabetes management and I told him I started Ozempic about 5 months ago and my blood sugars have improved dramatically - my A1C went from 9.3 to 6.9. He said that paradoxically, when your blood sugar improves too quickly it can cause the diabetic eye disease to temporarily worsen. He called it early worsening phenomenon. He wants to do laser treatment to protect my vision and see me much more frequently now. I'm really worried and wondering if I should have stuck with my old medications even if my sugars were higher.",
+    "category": "Eye disorders (Diabetic retinopathy complications)",
+    "reasoning": "Clinical documentation of retinopathy worsening after initiation."
+  },
+  {
+    "narrative": "I have pancreatic inflammation. The pain is severe. I'm in the hospital. My pancreas is inflamed. I can't eat anything. It's from the medication. I'm in a lot of pain.",
+    "category": "Pancreatitis",
+    "reasoning": "Hospitalized with severe pain from pancreatitis."
+  },
+  {
+    "narrative": "I inhaled stomach contents stomach contents during surgery. I have pneumonia now. My stomach wasn't empty even though I fasted. The doctor says the medication slowed down my digestion.",
+    "category": "Peri-procedural aspiration risk",
+    "reasoning": "Aspiration due to slowed digestion."
+  },
+  {
+    "narrative": "Um, so this is kind of scary but I've been having these episodes where I get really dizzy and start sweating a lot. The first time it happened I was at work and had to sit down because I thought I was going to pass out. My coworker who has diabetes suggested I check my blood sugar, so I went to the nurse's office and they tested it - it was 54! I also take that glipizide pill in the morning along with the Ozempic. Had to drink some orange juice to feel better. This has happened like three times now, always on days when I take both medications.",
+    "category": "Hypoglycemia",
+    "reasoning": "Low glucose with symptoms and a sulfonylurea co-med increases hypoglycemia risk."
+  },
+  {
+    "narrative": "I have acute pancreatic inflammation. The pain is in my back. I'm vomiting. My enzymes are elevated. I'm in the hospital.",
+    "category": "Pancreatitis",
+    "reasoning": "Back pain and vomiting from pancreatitis."
+  },
+  {
+    "narrative": "I think it was my sixth injection - I'm still on that low starter dose, 0.25 mg I think? Anyway, I did the injection on Sunday morning before church and everything seemed fine at first. But then like an hour later I started feeling itchy all over. At first I thought maybe it was my new laundry detergent or something. But then I looked in the mirror and I had these red welts all over my chest and neck and arms. My husband said they looked like hives. I took some Benadryl and it helped a bit with the itching. Called the on-call nurse and she said to monitor it and if I had any trouble breathing or my throat felt tight to call 911. Thankfully it didn't get that bad, but the hives lasted for like two days. My doctor said it's an allergic reaction and we need to consider switching medications if it happens again.",
+    "category": "Hypersensitivity",
+    "reasoning": "Acute urticaria/angioedema post-dose consistent with hypersensitivity reaction."
+  },
+  {
+    "narrative": "Presented to emergency department with severe epigastric pain radiating to the back, onset approximately 6 hours prior to arrival. Patient reports 8/10 pain intensity. Labs demonstrated lipase of 892 U/L (normal <60). Imaging studies consistent with acute pancreatic inflammation. Ozempic therapy discontinued per gastroenterology consult. Patient admitted for supportive care and bowel rest.",
+    "category": "Pancreatitis",
+    "reasoning": "Classic presentation plus lab confirmation aligns with drug-associated pancreatitis warning."
+  },
+  {
+    "narrative": "My stomach is paralyzed. I vomit undigested food. I feel full and sick all the time. The gastric emptying scan was abnormal. I have delayed stomach emptying from the drug.",
+    "category": "Gastrointestinal disorders (Gastroparesis)",
+    "reasoning": "Gastroparesis diagnosed by scan."
+  },
+  {
+    "narrative": "My vision is blurry. I have bleeding in my eye. It's diabetic eye disease. I need treatment. The doctor is concerned.",
+    "category": "Eye disorders (Diabetic retinopathy complications)",
+    "reasoning": "Concern for vision."
+  },
+  {
+    "narrative": "My heart rate is fast. I feel it. It makes me nervous. The doctor checked it.",
+    "category": "Cardiovascular signs",
+    "reasoning": "Doctor check of heart rate."
+  },
+  {
+    "narrative": "I have severe abdominal pain that radiates to my back. I'm vomiting and have a fever. My lipase levels are elevated. The doctor diagnosed me with acute pancreatic inflammation. I'm in the hospital getting fluids and pain medication.",
+    "category": "Pancreatitis",
+    "reasoning": "Standard acute pancreatitis hospitalization."
+  },
+  {
+    "narrative": "Okay so I need to talk about what happened with my injection site this week because it really freaked me out. I do my injections in my thigh, alternating legs each week. This time I injected into my left thigh on Wednesday morning and by that afternoon the spot was really red and swollen. Like way more than usual - it was probably the size of a golf ball, maybe bigger? And it was hot to the touch and painful. I was worried it might be infected so I sent a picture to my doctor through the patient portal. She had me come in the next day to check it out. She said it didn't look infected, just a significant local reaction to the medication. She cleaned the area, put some hydrocortisone cream on it, and told me to apply cold compresses. It took almost a week to fully resolve. She said if it happens again we might need to consider a different medication.",
     "category": "Injection-site reactions",
     "reasoning": "Localized cutaneous reaction at administration site without systemic features."
   },
   {
-    "narrative": "I've been dealing with really bad indigestion and nausea for like the past two months. It started maybe a month after I began Ozempic. At first I just thought it was something I ate or maybe a stomach bug. But it never went away. The nausea is worst in the mornings and after I eat anything. I've lost my appetite completely, which I guess is helping with weight loss, but it doesn't feel healthy you know? And I've been having a lot of acid reflux too, which I never had before. Sometimes I wake up in the middle of the night with acid in my throat. I've been taking Tums like candy. I mentioned all this to my doctor at my last visit and she said these are common side effects of the medication. She prescribed me something for the nausea and something for the acid reflux. Said if it doesn't get better in a few weeks we might need to try a different diabetes medication.",
-    "category": "Gastrointestinal disorders",
-    "reasoning": "Prolonged nausea/vomiting shortly after dose escalation fits GI intolerance."
+    "narrative": "My sugar dropped to 40 while I was driving. I got confused and pulled over. I drank juice and waited. It was a close call. I was scared I would crash.",
+    "category": "Hypoglycemia",
+    "reasoning": "Hypoglycemia while driving posing safety risk."
   },
   {
-    "narrative": "I had hives and swelling after the shot. My throat felt tight. I went to the ER. They gave me meds. It was an allergic reaction. I'm scared to take it again.",
-    "category": "Hypersensitivity",
-    "reasoning": "Fear of recurrence after allergy."
+    "narrative": "My dentist scheduled me for a root canal - not fun, I know - and because I'm anxious about dental work they offered me sedation, which I gladly accepted. I hadn't eaten since midnight like they told me. But during the procedure, I inhaled stomach contents. I don't remember it happening because I was sedated, but afterwards the dentist explained that I had regurgitated gastric contents and they had to suction everything out and make sure my airway was clear. He was pretty concerned and asked about all my medications. When I mentioned Ozempic, he said that was probably why I still had stuff in my stomach even after fasting. He said this medication can really slow down how fast your stomach empties. They monitored me for a couple hours afterwards and told me if I have any trouble breathing or fever to go to the ER right away. Thankfully I was okay but it was scary.",
+    "category": "Peri-procedural aspiration risk",
+    "reasoning": "Aspiration-like event in procedural setting linked to delayed gastric emptying risk."
   },
   {
-    "narrative": "I have gallstones and cholecystitis. The pain is sharp in my right side. I need surgery to remove my gallbladder. The doctor says it's from the medication.",
-    "category": "Hepatobiliary (gallbladder) disease",
-    "reasoning": "Cholecystitis requiring cholecystectomy."
+    "narrative": "The injection site on my thigh is bruised and painful. It's a large purple bruise with a lump under it. It hurts when I walk. I think I might have hit a vessel or reacted to the fluid. It's taking a long time to heal.",
+    "category": "Injection-site reactions",
+    "reasoning": "Large, painful injection site bruise/hematoma."
   },
   {
-    "narrative": "My diabetic retinopathy has gotten worse since I started this drug. I have new bleeders in my eye and my vision is cloudy. The specialist says the rapid improvement in my blood sugar actually triggered the worsening. I need eye injections now.",
+    "narrative": "My kidneys took a hit from being so dehydrated. I had diarrhea for a week and couldn't drink enough. My creatinine went up to 2.0. The doctor stopped the medication and put me on fluids. He says I have worsening kidney function.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "AKI from dehydration/diarrhea."
+  },
+  {
+    "narrative": "Every time I inject this medication, I get a reaction at the injection site. I've tried different areas - my stomach, my thighs - and it happens regardless of where I inject. The site gets red and swollen and tender. Usually it's about the size of a quarter or maybe a bit bigger. It's also itchy and warm to the touch. The reaction lasts for 3-4 days typically before it starts to fade. I've been doing these injections for about 3 months now so I've had this happen probably 12 times. I mentioned it to my doctor and she examined one of the active reactions. She said it's a localized hypersensitivity reaction but not a dangerous one since it's just at the injection site and I don't have any systemic symptoms. She suggested I try icing the area before and after injection, which has helped a little bit. The medication is working well for my diabetes so I'm willing to put up with the injection site reactions if I have to.",
+    "category": "Injection-site reactions",
+    "reasoning": "Localized cutaneous reaction at administration site without systemic features."
+  },
+  {
+    "narrative": "My vision is blurry. The eye doctor says I have bleeding in my eye. It's diabetic eye disease. I need treatment.",
     "category": "Eye disorders (Diabetic retinopathy complications)",
-    "reasoning": "Worsening retinopathy requiring intraocular injections."
+    "reasoning": "Retinal bleeding causing blur."
   },
   {
-    "narrative": "I have gastroparesis. I vomit food. I can't eat. I'm losing weight.",
+    "narrative": "So, um, this is my second time trying to report this because I wasn't sure if it was related but my doctor said I should definitely document it. I've been on Ozempic for maybe 8 or 9 weeks now? And my blood sugar has been great, like the best it's been in years. But I've been having issues with my bowels - specifically constipation. I know, TMI, but it's been really bad. I'm only going maybe once a week if I'm lucky, and when I do it's really difficult and uncomfortable. My stomach is constantly bloated and I look like I'm pregnant even though I've actually lost weight overall. I've been taking Miralax every day, drinking tons of water, eating salads with lots of fiber, and it's still a problem. My doctor is suggesting we try a lower dose to see if that helps because apparently this is a pretty common side effect.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Prolonged constipation post-titration aligns with common GI adverse effects."
+  },
+  {
+    "narrative": "I've been having this pain like right here under my ribs on the right side, especially after I eat anything fatty. Started maybe two months ago? My doctor ordered an ultrasound and they found biliary stones. The weird thing is I've lost about 30 pounds since I started on this medication back in like October, so I guess that's good, but now I have biliary stones? Doctor said the rapid weight loss might be related. We're trying to figure out what to do next.",
+    "category": "Hepatobiliary (gallbladder) disease",
+    "reasoning": "Cholelithiasis temporally associated with rapid weight loss on GLP-1 RA."
+  },
+  {
+    "narrative": "I've been having severe pain in my upper right abdomen, mostly after eating fatty meals. It's a sharp, cramping pain that doubles me over. Last night it was so bad I went to the ER. An ultrasound showed my gallbladder is full of stones and the wall is thickened. The surgeon said I have acute gallbladder inflammation and need my gallbladder out. He mentioned that rapid weight loss can cause biliary stones, and I've lost about 35 pounds in the last 4 months on this medication. It's a painful price to pay for the weight loss.",
+    "category": "Hepatobiliary (gallbladder) disease",
+    "reasoning": "Acute cholecystitis and cholelithiasis associated with rapid weight loss."
+  },
+  {
+    "narrative": "My kidneys are failing. My creatinine is high. I was dehydrated. I need fluids.",
+    "category": "Renal events (Acute kidney injury)",
+    "reasoning": "Fluids for renal failure."
+  },
+  {
+    "narrative": "I feel full after two bites of food. My stomach hurts and I feel nauseous all day. I've been vomiting undigested food hours after eating. My doctor diagnosed me with delayed stomach emptying. My stomach is paralyzed and won't move food through. I'm losing weight too fast because I can't eat.",
     "category": "Gastrointestinal disorders (Gastroparesis)",
-    "reasoning": "Weight loss from vomiting."
+    "reasoning": "Gastroparesis with early satiety and vomiting undigested food."
   },
   {
-    "narrative": "I have severe pain in the middle of my stomach that radiates to my back. It gets worse when I eat. My labs show elevated lipase. The doctor says it's pancreatitis caused by the medication. I'm in a lot of pain.",
+    "narrative": "I had intense stomach pain that felt like a knife twisting in my gut. It went straight through to my back. I was doubled over in agony. The ER diagnosed me with acute pancreatic inflammation based on my blood work and CT scan. My lipase was 1500. They said it's a known side effect of the GLP-1 medication I'm taking.",
     "category": "Pancreatitis",
-    "reasoning": "Classic pancreatitis pain pattern."
+    "reasoning": "Acute pancreatitis with high lipase and severe radiating pain."
   },
   {
-    "narrative": "About 15 minutes after my injection, I started wheezing and feeling like I couldn't catch my breath. My chest felt tight and my skin was incredibly itchy. I looked in the mirror and I was covered in hives. I used my son's EpiPen and my husband called 911. The paramedics said my blood pressure was low and I was having an anaphylactic reaction. I spent the night in the ER for observation. It was terrifying.",
+    "narrative": "So my daughter was visiting with the grandkids - they're 4 and 6, absolute handfuls but I love them - anyway, I was playing with them in the backyard and suddenly felt really lightheaded. Next thing I know I'm waking up on the grass and my daughter is freaking out. She had called 911 and also checked my blood sugar because she knows I'm diabetic. The meter said 45 which is way too low. The paramedics came and gave me something to bring my sugar up. The problem is I take insulin in the morning, been doing that for years, but I also started taking this Ozempic shot about two months ago and my doctor never lowered my insulin dose. I think the combination made my blood sugar drop too much. I have a follow-up appointment next week to adjust my medications.",
+    "category": "Hypoglycemia",
+    "reasoning": "Symptomatic severe hypoglycemia with insulin co-therapy fits this category."
+  },
+  {
+    "narrative": "Oh my god, so this was terrifying. I gave myself the injection like I always do on Thursday morning, and then like maybe an hour later I noticed my face felt weird and swollen? And then I looked in the mirror and I had hives all over my chest and neck. My husband rushed me to urgent care and by the time we got there my lips were really swollen too. They gave me some antihistamines and watched me for a couple hours. The doctor said it was an allergic reaction to the medication and I shouldn't take it anymore.",
     "category": "Hypersensitivity",
-    "reasoning": "Anaphylaxis with respiratory and cardiovascular involvement."
+    "reasoning": "Acute urticaria/angioedema post-dose consistent with hypersensitivity reaction."
+  },
+  {
+    "narrative": "So I gave myself the injection on Thursday night before bed. Woke up Friday morning and my lips felt kind of tingly and weird. Looked in the bathroom mirror and my lips were definitely swollen, like noticeably puffed up. And then I noticed I had hives on my chest and neck too. I took some Benadryl right away and kept monitoring myself. The swelling got a bit worse over the next hour and I started to feel like my throat might be tightening up, though I could still breathe okay. My husband wanted to call 911 but I said let's go to the ER instead since I wasn't having trouble breathing yet. At the ER they gave me IV Benadryl and steroids and monitored me for like 4 hours. The swelling gradually went down. The doctor said this was an allergic reaction and I shouldn't take Ozempic anymore. He prescribed me an EpiPen just in case I ever have another reaction to something. Pretty scary honestly.",
+    "category": "Hypersensitivity",
+    "reasoning": "Rapid-onset angioedema with airway involvement denotes serious allergic reaction."
+  },
+  {
+    "narrative": "So I've been having pain in my right side, kind of under my ribs, for a few weeks now. It gets worse after I eat, especially if I eat anything greasy or fatty like pizza or fried food. The pain can last for hours and it's pretty intense, like 6 or 7 out of 10. Sometimes it radiates around to my back. I finally went to the doctor last week and she ordered an ultrasound. The ultrasound showed that I have biliary stones - several of them actually. The radiologist also said my gallbladder wall is a bit thickened. My doctor said that rapid weight loss is a major risk factor for developing biliary stones and I've lost about 38 pounds since starting Ozempic 7 months ago. She referred me to a surgeon and said I'll probably need to have my gallbladder removed. In the meantime she told me to stop the Ozempic and stick to a low-fat diet to minimize symptoms. Surgery is scheduled for next month.",
+    "category": "Hepatobiliary (gallbladder) disease",
+    "reasoning": "Cholelithiasis temporally associated with rapid weight loss on GLP-1 RA."
+  },
+  {
+    "narrative": "My blood sugar was 40. I passed out. My husband called 911. They gave me glucose. I woke up in the ambulance. It was a severe low blood sugar event.",
+    "category": "Hypoglycemia",
+    "reasoning": "Ambulance transport for severe hypo."
+  },
+  {
+    "narrative": "I have severe diarrhea and cramping. I go 10 times a day. I'm losing weight from dehydration. My electrolytes are low. I feel weak and dizzy. I can't leave the house.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "High-frequency diarrhea causing electrolyte imbalance."
+  },
+  {
+    "narrative": "Patient presented via ambulance with acute gallbladder inflammation. Reports 12 hours of severe right upper quadrant abdominal pain with associated nausea and fever to 101.8°F. Ultrasound imaging revealed gallbladder wall thickening measuring 5mm, pericholecystic fluid, and a positive sonographic Murphy's sign. White blood cell count elevated at 14,200. Surgery consulted, patient hospitalized for IV antibiotics. Ozempic therapy held pending surgical evaluation for possible cholecystectomy.",
+    "category": "Hepatobiliary (gallbladder) disease",
+    "reasoning": "Inflammation of gallbladder is within hepatobiliary risk spectrum."
+  },
+  {
+    "narrative": "I'm vomiting every day. I can't keep anything down. I feel full all the time. My doctor diagnosed me with delayed stomach emptying. My stomach isn't working. I'm losing muscle mass because I can't eat protein.",
+    "category": "Gastrointestinal disorders (Gastroparesis)",
+    "reasoning": "Daily vomiting and gastroparesis causing muscle loss."
+  },
+  {
+    "narrative": "I vomit undigested food almost every day. I feel nauseous from the moment I wake up until I go to sleep. I've lost my appetite completely. My doctor says my stomach paralysis is severe based on the emptying study. I'm malnourished and weak. We stopped the drug two weeks ago but the symptoms are resolving very slowly.",
+    "category": "Gastrointestinal disorders (Gastroparesis)",
+    "reasoning": "Severe, persistent gastroparesis symptoms leading to malnutrition."
+  },
+  {
+    "narrative": "My diabetic eye disease is worse. I have bleeding in my retina. The doctor says the rapid sugar control caused it. I need laser surgery.",
+    "category": "Eye disorders (Diabetic retinopathy complications)",
+    "reasoning": "Worsening eye disease linked to control."
+  },
+  {
+    "narrative": "I have a painful, red lump at the injection site. It's hot and swollen. It looks like an infection but the doctor says it's a sterile abscess from the drug. It's very uncomfortable.",
+    "category": "Injection-site reactions",
+    "reasoning": "Sterile abscess at injection site."
+  },
+  {
+    "narrative": "I've been vomiting multiple times a day for weeks. I can't keep my oral diabetes meds down, and I'm getting weak. I've tried anti-nausea medication but it barely touches it. The vomiting is violent and dry heaving when my stomach is empty. I'm exhausted and my throat hurts from the acid. This medication is just too harsh for my system.",
+    "category": "Gastrointestinal disorders",
+    "reasoning": "Intractable vomiting unresponsive to antiemetics."
+  },
+  {
+    "narrative": "I've noticed that since they increased my dose - I think I'm on 1 mg now - my heart rate has been higher than normal. I have one of those Fitbit watches and it used to show my resting heart rate in the 70s, but now it's consistently in the low 90s. And sometimes I can feel my heart beating really fast, like palpitations? It's kind of concerning. I mentioned it to my doctor at my last appointment and she said to monitor it. Happened about a week after the dose increase.",
+    "category": "Cardiovascular signs",
+    "reasoning": "Sustained HR increase and palpitations post-titration fit CV sign category."
+  },
+  {
+    "narrative": "I have biliary stones. The pain is in my right side. I need surgery. The doctor says the weight loss caused it. I'm scheduled for a cholecystectomy.",
+    "category": "Hepatobiliary (gallbladder) disease",
+    "reasoning": "Weight-loss induced gallstones."
   }
 ]

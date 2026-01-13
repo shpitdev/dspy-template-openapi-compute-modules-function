@@ -5,29 +5,29 @@
     "demos": [
       {
         "augmented": true,
-        "complaint": "I have a red, itchy rash at the injection site. It spreads and burns. It lasts for days. I think I'm allergic to the injection.",
-        "reasoning": "The complaint describes a localized skin reaction occurring at the semaglutide injection site, characterized by redness, itching, spreading erythema, burning sensation, and persistence for several days. These features are typical of an injection\u2011site reaction rather than a systemic hypersensitivity event.",
-        "classification": "Injection-site reactions",
-        "justification": "The symptoms are confined to the injection area and match the clinical picture of an injection\u2011site reaction (red, itchy, burning rash that spreads locally and lasts days)."
+        "complaint": "I've had recurrent attacks of gallbladder pain. It feels like a vice grip under my ribs. An ultrasound showed my gallbladder is full of sludge and small stones. The gastroenterologist says the medication caused the rapid weight loss which led to the stones. I'm scheduled for a laparoscopic cholecystectomy next month to remove the gallbladder.",
+        "reasoning": "The patient reports recurrent gallbladder pain, ultrasound evidence of sludge and small stones in the gallbladder, and a physician linking the rapid weight loss (likely from medication) to stone formation, culminating in scheduled surgical removal of the gallbladder. These findings pertain directly to pathology of the gallbladder.",
+        "classification": "Hepatobiliary (gallbladder) disease",
+        "justification": "The complaint describes gallbladder pain, ultrasound findings of sludge/stones, medication\u2011related rapid weight loss leading to stones, and surgical intervention\u2014all characteristic of gallbladder disease."
       },
       {
         "augmented": true,
-        "complaint": "My kidneys are injured from dehydration. My creatinine is high. I was sick with diarrhea for days. The doctor stopped the drug to protect my kidneys.",
-        "reasoning": "The patient describes acute kidney injury manifested by elevated creatinine secondary to volume depletion (dehydration) after diarrhea, occurring while on semaglutide (Ozempic). This aligns with renal adverse events.",
-        "classification": "Renal events (Acute kidney injury)",
-        "justification": "Dehydration\u2011induced rise in creatinine in a patient on Ozempic reflects an acute kidney injury, fitting the renal events category."
+        "complaint": "My heart feels like it's racing all the time. My resting pulse is over 100 beats per minute. I feel jittery and anxious, like I've had too much caffeine. My doctor did an EKG and confirmed sinus tachycardia. He thinks it's a side effect of the Ozempic stimulating my heart.",
+        "reasoning": "The patient describes a racing heart, elevated resting pulse (>100 bpm), jitteriness, and confirmed sinus tachycardia, which the doctor attributes to a side effect of Ozempic stimulating the heart. These symptoms pertain to cardiac function and are directly related to the medication\u2019s cardiovascular effects.",
+        "classification": "Cardiovascular signs",
+        "justification": "The complaint involves tachycardia and related cardiac symptoms, which fall under the \u201cCardiovascular signs\u201d category."
       },
       {
-        "complaint": "My vision is blurry. I have bleeding in my eye. It's retinopathy.",
+        "complaint": "My retina is bleeding. I see red streaks in my vision. The doctor says I have proliferative diabetic eye disease. It got worse after I started Ozempic. I need urgent laser surgery to stop the bleeding.",
         "classification": "Eye disorders (Diabetic retinopathy complications)"
       },
       {
-        "complaint": "My retina specialist is concerned about the new blood vessels growing in my eye. He says I have proliferative retinopathy now. I've had some episodes where my vision goes dark for a few minutes. He attributes the rapid progression to the sudden drop in my A1C levels since starting Ozempic. I'm scheduled for laser photocoagulation surgery next week to save my sight.",
-        "classification": "Eye disorders (Diabetic retinopathy complications)"
+        "complaint": "The nausea is bad. I can't eat. I'm losing weight. I feel sick. I want to stop the drug. It's too much.",
+        "classification": "Gastrointestinal disorders"
       }
     ],
     "signature": {
-      "instructions": "Classify adverse events into specific categories.",
+      "instructions": "Given a free\u2011text complaint describing a medication\u2011related adverse event, generate a step\u2011by\u2011step reasoning trace, then output:\n\n1. **Reasoning** \u2013 a brief chain\u2011of\u2011thought explaining how the clinical details point to a specific adverse event type.  \n2. **Classification** \u2013 a label selected from the predefined medical categories (e.g., \u201cPancreatitis\u201d, \u201cEye disorders (Diabetic retinopathy complications)\u201d, \u201cHepatobiliary (gallbladder) disease\u201d, etc.).  \n3. **Justification** \u2013 a concise explanation linking the reasoning steps to the chosen classification.\n\nThe output should be presented in the order: reasoning, classification, justification, and must be ready for use as a prompt for a language model performing this classification task.",
       "fields": [
         {
           "prefix": "Complaint:",
@@ -51,11 +51,11 @@
   },
   "metadata": {
     "dependency_versions": {
-      "python": "3.14",
+      "python": "3.13",
       "dspy": "3.1.0",
       "cloudpickle": "3.1"
     },
-    "model": "openrouter/openai/gpt-oss-120b",
+    "model": "Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf",
     "classification_type": "ae-category",
     "classification_config": {
       "description": "Classify adverse events into specific categories.",

@@ -5,7 +5,6 @@ from __future__ import annotations
 import argparse
 import json
 
-import dspy
 from dspy.teleprompt import MIPROv2
 
 from ..common.classifier import (
@@ -14,7 +13,7 @@ from ..common.classifier import (
     classification_metric,
     evaluate_model,
 )
-from ..common.config import configure_lm
+from ..common.config import configure_lm, get_display_model_name
 from ..common.data_utils import prepare_datasets
 from ..common.logging import configure_logging
 from ..common.paths import (
@@ -27,11 +26,7 @@ from ..common.types import ClassificationType
 
 
 def run_pipeline(classification_type: ClassificationType = DEFAULT_CLASSIFICATION_TYPE) -> None:
-    """Train, optimize, and evaluate the classifier, then persist the artifact.
-
-    Args:
-        classification_type: The type of classification task. Options: 'ae-pc', 'ae-category', 'pc-category'
-    """
+    """Train, optimize, and evaluate the classifier, then persist the artifact."""
 
     # Get configuration for this classification type
     config = CLASSIFICATION_CONFIGS[classification_type]
@@ -91,8 +86,7 @@ def run_pipeline(classification_type: ClassificationType = DEFAULT_CLASSIFICATIO
     print("Saving optimized model...")
     optimized_classifier.save(str(artifact_path))
 
-    # Add model information and classification type to the saved artifact metadata
-    model_name = dspy.settings.lm.model if dspy.settings.lm else None
+    model_name = get_display_model_name()
     if model_name or classification_type:
         with open(artifact_path) as f:
             artifact_data = json.load(f)

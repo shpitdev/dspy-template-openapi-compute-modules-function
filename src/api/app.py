@@ -19,7 +19,6 @@ from ..serving.service import (
     get_pc_category_classifier,
 )
 
-
 configure_logging()
 
 
