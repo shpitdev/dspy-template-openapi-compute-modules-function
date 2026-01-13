@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import json
 import random
+import re
 from pathlib import Path
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data/ae-pc-classification"
@@ -25,6 +26,56 @@ TRANSCRIPTION_FILLERS = [
 ]
 PAUSE_MARKERS = ["...", ".", ",", " - "]
 
+RANDOM_SEED = 20240113
+RNG = random.Random(RANDOM_SEED)
+
+# Reduce direct label leakage (e.g., "pancreatitis", "counterfeit") in narratives.
+# This keeps the classification task from being solved by keyword matching alone.
+REDUCE_LABEL_LEAKAGE = True
+LABEL_LEAKAGE_REPLACEMENTS: tuple[tuple[re.Pattern[str], str], ...] = (
+    (re.compile(r"\badverse event\b", re.IGNORECASE), "reported issue"),
+    (re.compile(r"\bproduct complaint\b", re.IGNORECASE), "product issue report"),
+    (re.compile(r"\bpancreatitis\b", re.IGNORECASE), "pancreatic inflammation"),
+    (re.compile(r"\bgastroparesis\b", re.IGNORECASE), "delayed stomach emptying"),
+    (re.compile(r"\bretinopathy\b", re.IGNORECASE), "diabetic eye disease"),
+    (re.compile(r"\bhypoglycemia\b", re.IGNORECASE), "low blood sugar"),
+    (re.compile(r"\bacute kidney injury\b", re.IGNORECASE), "worsening kidney function"),
+    (re.compile(r"\bcholecystitis\b", re.IGNORECASE), "gallbladder inflammation"),
+    (re.compile(r"\bcholelithiasis\b", re.IGNORECASE), "biliary stones"),
+    (re.compile(r"\bgallstones?\b", re.IGNORECASE), "biliary stones"),
+    (re.compile(r"\baspirat(?:ed|ion)?\b", re.IGNORECASE), "inhaled stomach contents"),
+    (re.compile(r"\bdevice malfunction\b", re.IGNORECASE), "device issue"),
+    (re.compile(r"\bcounterfeit\b", re.IGNORECASE), "not authentic"),
+    (re.compile(r"\bcontamination\b", re.IGNORECASE), "foreign material"),
+    (re.compile(r"\blabeling error\b", re.IGNORECASE), "label mismatch"),
+    (re.compile(r"\bexpired\b", re.IGNORECASE), "past its date"),
+)
+
+
+def _case_preserving_replace(match: re.Match[str], replacement: str) -> str:
+    if not match.group(0):
+        return replacement
+    if match.group(0)[0].isupper():
+        return replacement[0].upper() + replacement[1:]
+    return replacement
+
+
+def _reduce_label_leakage(text: str) -> str:
+    for pattern, replacement in LABEL_LEAKAGE_REPLACEMENTS:
+        text = pattern.sub(lambda m: _case_preserving_replace(m, replacement), text)
+    return text
+
+
+def _prepare_examples(examples: list[dict]) -> list[dict]:
+    if not REDUCE_LABEL_LEAKAGE:
+        return list(examples)
+    prepared = []
+    for item in examples:
+        updated = dict(item)
+        updated["complaint"] = _reduce_label_leakage(item["complaint"])
+        prepared.append(updated)
+    return prepared
+
 
 def add_transcription_artifacts(text: str, intensity: float = 0.3) -> str:
     """Add realistic transcription artifacts to make text sound like a phone call transcript."""
@@ -33,16 +84,16 @@ def add_transcription_artifacts(text: str, intensity: float = 0.3) -> str:
 
     for i, word in enumerate(words):
         # Occasionally add filler words
-        if random.random() < intensity * 0.15 and i > 0:
-            if random.random() < 0.5:
-                result.append(random.choice(TRANSCRIPTION_FILLERS))
+        if RNG.random() < intensity * 0.15 and i > 0:
+            if RNG.random() < 0.5:
+                result.append(RNG.choice(TRANSCRIPTION_FILLERS))
 
         result.append(word)
 
         # Occasionally add pauses or incomplete sentences
-        if random.random() < intensity * 0.1:
-            if random.random() < 0.3:
-                result.append(random.choice(PAUSE_MARKERS))
+        if RNG.random() < intensity * 0.1:
+            if RNG.random() < 0.3:
+                result.append(RNG.choice(PAUSE_MARKERS))
 
     return " ".join(result)
 
@@ -638,7 +689,8 @@ def generate_training_data():
     """Generate combined training data."""
     data = _get_hardcoded_training_data()
     data.extend(load_external_data("train"))
-    random.shuffle(data)
+    data = _prepare_examples(data)
+    RNG.shuffle(data)
     return data
 
 
@@ -646,7 +698,8 @@ def generate_test_data():
     """Generate combined test data."""
     data = _get_hardcoded_test_data()
     data.extend(load_external_data("test"))
-    random.shuffle(data)
+    data = _prepare_examples(data)
+    RNG.shuffle(data)
     return data
 
 

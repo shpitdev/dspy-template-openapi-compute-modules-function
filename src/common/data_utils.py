@@ -29,14 +29,7 @@ def _load_split(path: Path, classification_type: ClassificationType) -> list[dic
 def prepare_datasets(
     classification_type: ClassificationType = DEFAULT_CLASSIFICATION_TYPE,
 ) -> tuple[list[dspy.Example], list[dspy.Example]]:
-    """Load training/test datasets and convert them into DSPy Examples.
-
-    Args:
-        classification_type: The type of classification task. Options: 'ae-pc', 'ae-category', 'pc-category'
-
-    Returns:
-        Tuple of (training examples, test examples)
-    """
+    """Load training/test datasets and convert them into DSPy Examples."""
 
     train_path = get_train_data_path(classification_type)
     test_path = get_test_data_path(classification_type)

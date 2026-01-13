@@ -65,16 +65,9 @@ source .venv/bin/activate
 
 # Generate training data for all classification types
 ```bash
-uv run python scripts/datagen/ae_pc_classification_sample_data.py
-```
-```bash
-uv run python scripts/datagen/pc_classification_sample_data.py
-```
-```bash
 uv run python scripts/datagen/adverse_event_sample_data.py
-```
-```bash
 uv run python scripts/datagen/complaint_category_sample_data.py
+uv run python scripts/datagen/ae_pc_classification_sample_data.py
 ```
 
 This creates a clean layout:
@@ -156,14 +149,10 @@ The run will:
 1. Configure DSPy with your provider settings.
 2. Load the appropriate `data/<type>-classification/train.json` and `test.json`.
 3. Evaluate the baseline classifier.
-4. Optimize via `BootstrapFewShotWithRandomSearch`.
+4. Optimize via `MIPROv2` (with `auto="medium"`).
 5. Evaluate the optimized program.
 6. Write the artifact to `artifacts/ozempic_classifier_<type>_optimized.json`.
 
-Running the pipeline is idempotent—rerun whenever you update data or want to swap underlying LMs.
-
-> **Note:** For a complete guide on working with multiple classification types, see
-> [CLASSIFICATION_GUIDE.md](CLASSIFICATION_GUIDE.md).
 
 ---
 
@@ -203,7 +192,8 @@ Response:
 ```json
 {
   "classification": "Adverse Event",
-  "justification": "Describes a systemic allergic reaction following Ozempic use."
+  "justification": "Describes a systemic allergic reaction following Ozempic use.",
+  "classification_type": "ae-pc"
 }
 ```
 
@@ -213,7 +203,7 @@ Response:
 curl -X POST http://localhost:8000/classify/ae-category \
      -H "Content-Type: application/json" \
      -d '{
-           "adverse_event": "I experienced severe nausea and vomiting after taking Ozempic."
+          "complaint": "I experienced severe nausea and vomiting after taking Ozempic."
          }'
 ```
 
@@ -223,7 +213,7 @@ curl -X POST http://localhost:8000/classify/ae-category \
 curl -X POST http://localhost:8000/classify/pc-category \
      -H "Content-Type: application/json" \
      -d '{
-           "product_complaint": "The pen arrived with a cracked dose dial."
+          "complaint": "The pen arrived with a cracked dose dial."
          }'
 ```
 
@@ -283,7 +273,7 @@ docker run --rm \
 4. Each deploy builds directly from the Dockerfile’s multi-stage workflow; use `railway up` or manual deploys after
    committing changes.
 
-The container always starts via `uvicorn api.app:app --host 0.0.0.0 --port ${PORT:-8080}`, matching the local dev
+The container always starts via `uvicorn src.api.app:app --host 0.0.0.0 --port ${PORT:-8080}`, matching the local dev
 commands.
 
 ---
@@ -302,13 +292,14 @@ cmake --build build --config Release
 # Download the model from Hugging Face (save to models directory)
 # Visit the model page on HF for the curl command, e.g.:
 # curl -L -o models/Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf <HF_URL>
-
-# Start the server
-./build/bin/llama-server -m models/Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf -c 16384 -ngl 99 --host 0.0.0.0 --port 8080
 ```
 
-Then configure DSPy to use your local server by setting:
+### Start the server
+```bash
+~/llama.cpp/build/bin/llama-server -m models/Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf
+```
 
+### Then configure DSPy to use your local server by setting:
 ```bash
 export DSPY_LOCAL_BASE=http://localhost:8080/v1
 export DSPY_MODEL_NAME=local-model

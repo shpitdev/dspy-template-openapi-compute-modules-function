@@ -1,193 +1,58 @@
 [
   {
-    "narrative": "Had a really frustrating experience with my injection this morning. I got everything ready, dialed up my usual 0.5 mg dose, attached a brand new needle like always, and started the injection. But as soon as I pressed the button, I felt wetness on my skin where the needle was. Looked down and sure enough, there's medication dripping out from around the needle hub area, not going into my skin like it should. I could see drops forming on the outside of the pen near where the needle attaches. Didn't feel right at all. So I stopped, removed the needle, cleaned everything up, got out a completely new needle from the package thinking maybe the first one wasn't seated properly, attached it carefully, made sure it was tight, and tried again. Same exact problem. More leaking around the needle connection. At this point I have no idea how much medication actually went in versus how much leaked out. The seal where the needle screws onto the pen just doesn't seem to be working correctly. Called the pharmacy and they said to bring in the pen, which I did. They're replacing it but now I'm not sure if I got my full dose today or not.",
-    "category": "Device malfunction",
-    "reasoning": "Leakage at interface during dose delivery indicates device sealing failure."
+    "narrative": "The expiration date on the pen itself is missing. The space where it's supposed to be printed is just a blank white box. The outer carton has a date, but I need to be able to verify it on the actual device for safety.",
+    "category": "Labeling error",
+    "reasoning": "Missing critical labeling information on the device."
   },
   {
-    "narrative": "I had a scary medical experience after my injection yesterday that makes me think something might be wrong with this pen. I injected my full 1 mg dose exactly as prescribed, right after breakfast like I always do. I had eaten a normal meal, wasn't doing anything different from my usual routine. But within just a few hours, I started feeling really weird - shaky, sweaty, confused. Checked my blood glucose and it had dropped to 58 mg/dL. That's hypoglycemia, lower than it's ever been. This has never happened to me before with Ozempic. I'm not on any other diabetes medications that would cause low blood sugar. I had to eat fast-acting carbs to bring my glucose back up and I felt off for the rest of the day. I still have the pen and when I look at it, the solution appears clear and normal, but I'm concerned that maybe this particular pen has a higher concentration of active ingredient than what's labeled. Like maybe instead of 1 mg per dose, it's actually delivering more. That would explain the unexpectedly severe effect and the hypoglycemia. I contacted my doctor's office and the nurse said to stop using that pen immediately and bring it in. They're going to send it to the manufacturer for potency testing. If the concentration is higher than labeled, that's a serious quality control issue that could cause dangerous overdoses. They want to make sure this isn't a batch problem affecting other pens.",
-    "category": "Potency/Assay defect",
-    "reasoning": "Unexpectedly severe pharmacological effect suggests potential overdose from incorrect potency."
-  },
-  {
-    "narrative": "The spring mechanism sounds broken. It rattles when I shake the pen. It doesn't inject smoothly.",
-    "category": "Device malfunction",
-    "reasoning": "Loose internal components."
-  },
-  {
-    "narrative": "I think there's something seriously wrong with the medication in this pen and I'm concerned it might be contaminated or spoiled. I opened a new pen yesterday and immediately noticed a very unusual smell when I removed the outer cap. It's hard to describe exactly, but kind of like a rotten or fermented smell, definitely not normal. Ozempic pens have never had any noticeable odor before in my experience. The solution inside looks clear when I examine it, no obvious particles or discoloration, but that smell is really concerning. I thought maybe I was imagining it, so I had my spouse smell it too and they agreed there's definitely an unusual odor coming from the pen. A rotten or off smell from a medication could indicate microbial contamination or that the product has degraded or spoiled somehow. Even though it's been stored properly in my refrigerator and isn't expired, something is clearly wrong. I absolutely cannot inject this into my body when there's an abnormal smell like that. It's not worth the risk. Contacted the pharmacy right away and described the smell. They said to bring the pen in immediately and not to use it under any circumstances. They're treating this as a potential contamination issue and are expediting a report to the manufacturer. They gave me a replacement pen from a completely different lot and I inspected that one very carefully - no unusual smell, appears normal. But I'm shaken by the experience and wondering how something like that happens.",
+    "narrative": "There's a bunch of tiny white flakes at the bottom of the pen. They look like dandruff or little crystals. I tried shaking it gently to see if they would dissolve, but they just float around and then settle back down. It's definitely not a clear solution anymore.",
     "category": "Stability/Appearance defect",
-    "reasoning": "Unusual rotten odor from sealed medication suggests microbial contamination or product degradation."
+    "reasoning": "Particulate precipitation/stability issue."
   },
   {
-    "narrative": "The label text is blurry and double printed. It looks like a printing error. It makes the pen look cheap and fake. I can barely read the instructions.",
-    "category": "Labeling error",
-    "reasoning": "Poor print quality/legibility."
-  },
-  {
-    "narrative": "The box arrived crushed and the protective seal on the pen was already torn open. The cap was rolling around loose in the carton. I'm worried about whether the pen was exposed to germs or if it was tampered with before reaching me.",
-    "category": "Packaging defect",
-    "reasoning": "Compromised packaging and sterile barrier."
-  },
-  {
-    "narrative": "Something is definitely wrong with this pen and I'm concerned the medication might be diluted or has incorrect concentration. Yesterday was my injection day, so I dialed up my usual 0.5 mg dose on the pen and did the injection. But it felt different than normal - the injection was over really quickly, much faster than usual, and it felt too easy, like there wasn't the usual resistance. At first I thought maybe I just imagined it, but then over the next 24 hours I didn't feel any of the usual effects of the medication. No appetite suppression, no GI effects, nothing. Like I hadn't taken anything at all. So I ended up dialing another 0.5 mg dose and taking it again, and same thing - too quick, too easy, no effect. By the end of the day I had dialed and injected the 0.5 mg dose three times total, thinking maybe it wasn't delivering properly or I was doing something wrong. But I'm experienced with this medication, I know how it should feel and work. My concern is that this particular pen might have diluted medication or incorrect concentration. Like maybe the active ingredient amount is lower than it should be. Otherwise why would I feel absolutely nothing after three doses when one dose normally has a clear effect? I kept the pen and brought it to the pharmacy. They're sending it to the manufacturer for potency testing because if the concentration is wrong in this lot, that's a serious quality control and safety issue affecting dosing accuracy.",
-    "category": "Potency/Assay defect",
-    "reasoning": "Apparent lack of expected pharmacological effect combined with unusual delivery suggests potency issue."
-  },
-  {
-    "narrative": "Opened the carton with my new pen and immediately noticed something unusual when I looked at the solution inside the cartridge. At the very bottom of the cartridge, there are what look like small crystals or salt-like particles that have settled down there. They're white or maybe slightly off-white in color, small granular particles just sitting at the bottom. I tried gently rolling and swirling the pen like the instructions say to do if you see anything unusual, but the particles didn't dissolve or go away. They just moved around a bit and then settled back at the bottom again. The solution in the upper portion of the cartridge above these particles appears clear and normal, but having any kind of undissolved crystals or precipitate is not normal. I've been using Ozempic for almost a year now and I've never seen anything like this in my previous pens - they've always been completely clear throughout with no particles or crystals. This looks like either the medication has started to crystallize or precipitate out of solution, which would indicate some kind of stability or formulation problem. Obviously I'm not using this pen. Contacted the pharmacy and they agreed that crystallization or particles that won't redissolve is abnormal and the pen should be returned to the manufacturer for analysis. They're replacing it with a pen from a different lot.",
-    "category": "Stability/Appearance defect",
-    "reasoning": "Crystallization or precipitation in solution indicates instability or formulation failure."
-  },
-  {
-    "narrative": "The shrink wrap was missing from the carton. Anyone could have opened it. I don't feel safe using medication that isn't sealed properly.",
-    "category": "Packaging defect",
-    "reasoning": "Missing secondary packaging seal."
-  },
-  {
-    "narrative": "The label is pasted over another label. I peeled it back and it's a different drug underneath. This is fraud.",
-    "category": "Labeling error",
-    "reasoning": "Over-labeling/fraud."
-  },
-  {
-    "narrative": "The barcode on the box scans as a completely different product at the register. The pharmacist couldn't sell it to me. The UPC seems to be printed wrong.",
-    "category": "Labeling error",
-    "reasoning": "Barcode/UPC error."
-  },
-  {
-    "narrative": "The label on the box says 1 mg dose, but the pen inside says 0.25 mg / 0.5 mg dose. They don't match. I don't know which one is right or if I have the right medication. This is very confusing and dangerous.",
-    "category": "Labeling error",
-    "reasoning": "Mismatch between carton and container labeling."
-  },
-  {
-    "narrative": "This medication is 2 years past expiration. I found it in the back of my grandma's fridge. Can I still use it?",
-    "category": "Distribution/Expiry",
-    "reasoning": "Patient inquiry re: expired product."
-  },
-  {
-    "narrative": "The solution in this pen has developed a distinct yellowish hue that wasn't there when I first picked it up. I've kept it refrigerated exactly as instructed, but it definitely doesn't look clear and colorless anymore. I'm hesitant to use it because discoloration usually means the chemical structure has changed or it's contaminated.",
-    "category": "Stability/Appearance defect",
-    "reasoning": "Discoloration indicating potential instability."
-  },
-  {
-    "narrative": "The pharmacy dispensed these pens to me today, but when I looked at the bottom of the box, the expiration date passed three months ago. I can't believe they're selling expired medicine. I noticed it before I injected, but it's still a major safety issue.",
-    "category": "Distribution/Expiry",
-    "reasoning": "Sale of expired product."
-  },
-  {
-    "narrative": "Okay so this is weird - I just picked up my prescription from the pharmacy about an hour ago, and when I got home and was putting it in the fridge, I noticed something strange. The outer carton, like the box it comes in, clearly says 1 mg right there on the label. But when I actually opened the box and looked at the pen itself, the pen sleeve has 0.5 mg printed on it. So the outside box says one strength and the actual device says a different strength. That's not supposed to happen, right? I drove back to the pharmacy because I needed to make sure what I actually have, and the pharmacist was surprised too. She checked their system and my prescription is definitely for 1 mg, and the carton NDC number matches the 1 mg product, but the pen inside is clearly labeled 0.5 mg. She pulled out another pen to check and that one matched correctly. She documented everything and gave me a different pen from a different lot. But I'm wondering how many other people got mismatched products from that batch and maybe didn't notice.",
-    "category": "Labeling error",
-    "reasoning": "Inconsistent strength between outer carton and device labeling is a labeling/mix-up defect."
-  },
-  {
-    "narrative": "My morning fasting blood sugar has gone from 95 to 160 since I switched to this new lot of pens. I'm following my diet and exercise plan exactly the same. I'm convinced this batch of medicine is weak or degraded.",
-    "category": "Potency/Assay defect",
-    "reasoning": "Loss of glycemic control suggesting sub-potency."
-  },
-  {
-    "narrative": "I received this pen from an 'influencer' online who was selling their extra supply. The box is in a language I can't read, and there's no FDA approval stamp anywhere on the packaging. I'm very suspicious of the contents.",
-    "category": "Counterfeit/Unauthorized source",
-    "reasoning": "Unauthorized source and foreign labeling."
-  },
-  {
-    "narrative": "The solution looks quite turbid, almost like there's a light cloud of smoke inside the liquid. It's usually crystal clear. I haven't even opened the pen yet, but I can see the cloudiness clearly through the glass window. I'm worried it's gone bad.",
-    "category": "Stability/Appearance defect",
-    "reasoning": "Turbidity/cloudiness in solution."
-  },
-  {
-    "narrative": "The printing on the box has several spelling errors, including the word 'medication' being spelled 'medicasion'. Also, the logo looks slightly stretched. This doesn't look like a professional pharmaceutical product.",
-    "category": "Counterfeit/Unauthorized source",
-    "reasoning": "Spelling errors and visual counterfeit signs."
-  },
-  {
-    "narrative": "The box is crushed and water damaged. It looks like it was dropped in a puddle. The pens are wet and dirty.",
-    "category": "Packaging defect",
-    "reasoning": "Environmental damage to packaging."
-  },
-  {
-    "narrative": "My shipment sat in a delivery truck for two days during a heatwave where temps reached over 100 degrees. When I opened the package, the ice packs were not just melted, they were actually warm to the touch. The medication box felt like it had been in an oven.",
+    "narrative": "The delivery truck had no AC. The box was scorching hot. The medication is cooked. It needs to be refrigerated.",
     "category": "Storage/Temperature excursion",
-    "reasoning": "Severe heat exposure during shipping."
+    "reasoning": "Heat damage during transport."
   },
   {
-    "narrative": "Liquid leaked out of the pen cap when I removed it. The cartridge is cracked at the neck. Glass shards fell out. It's dangerous.",
+    "narrative": "My pen broke in half when I took the cap off. The plastic snapped right at the threads. The cartridge fell out and smashed on the floor. The plastic felt very brittle.",
     "category": "Device malfunction",
-    "reasoning": "Cracked cartridge/leakage."
+    "reasoning": "Structural failure of device body."
   },
   {
-    "narrative": "I just received my three-month supply of Ozempic from my regular pharmacy, which consists of four pens. That should last me through my next refill date based on my weekly dosing schedule. But when I checked the expiration dates on all four pens, they all expire in just two weeks from now. Two weeks! There's no way I can use four pens in two weeks when I'm only supposed to take one dose per week. By my calculation, I'll use maybe one pen, possibly start the second one, but then at least two of these pens, probably three, will expire before I can even use them. That's a complete waste of medication and money. Called the pharmacy to explain the problem and ask for replacement pens with longer dating. They checked with their inventory system and their wholesaler, and basically said this is what they received and they don't have any better-dated stock available right now. Their wholesaler apparently sent them short-dated product and they can't replace it. This is really poor inventory management somewhere in the distribution chain. Someone sent product that's about to expire to pharmacies knowing that patients won't be able to use it in time. Now I'm stuck either wasting medication or I don't know what. The pharmacy said to file a complaint with the manufacturer about the distribution practices.",
-    "category": "Distribution/Expiry",
-    "reasoning": "Short-dated product that will expire before normal use cycle represents distribution chain failure."
-  },
-  {
-    "narrative": "So I just opened this brand new Ozempic pen that I picked up from the pharmacy yesterday, and I'm looking at it now and something seems really off. The solution inside looks kind of yellow, not like crystal clear like my other pens have been. And when I hold it up to the light, I can see these tiny little flakes just floating around in there near the window part of the pen. I mean, they're small but definitely visible. The box itself looked fine when I got it, no damage or anything, and I've been keeping it in the fridge like I'm supposed to. I actually went back to the pharmacy this morning and showed it to the pharmacist, and she pulled out another pen from the same shipment to compare, and that one was completely clear, no yellow color at all. So clearly something is wrong with mine. The pharmacist agreed I shouldn't use it and documented everything. I made sure to keep the lot sticker from the box so they can track which batch this came from. I'm glad I checked before injecting because who knows what's going on with that solution.",
-    "category": "Stability/Appearance defect",
-    "reasoning": "Discoloration and visible particulates indicate a potential stability failure; correct action is not to use."
-  },
-  {
-    "narrative": "The courier left the package in a mailbox that was over 90 degrees inside. When I opened the box, the pens were actually warm to the touch. The ice packs had completely failed to keep them cool during the transit.",
-    "category": "Storage/Temperature excursion",
-    "reasoning": "Temperature excursion during courier delivery."
-  },
-  {
-    "narrative": "The box didn't have any of the plastic needle tips included inside. It's supposed to come with a set, but the compartments in the tray were just empty. I had to go back to the pharmacy and buy a separate box of needles just to take my dose.",
-    "category": "Packaging defect",
-    "reasoning": "Missing components in package."
-  },
-  {
-    "narrative": "This is a strange one and I'm not sure how it even happens. I picked up my Ozempic prescription and when I got home and opened the carton to read the instructions, I realized all the labeling is in Spanish. Everything - the carton label, the patient information leaflet, all of it. I'm in the United States and my understanding is that pharmaceutical products sold here are required to have English labeling for safety and regulatory reasons. There's no English anywhere on this packaging. Called the pharmacy and they were confused too because they're definitely not a pharmacy that operates in a Spanish-speaking market. The pharmacist said this shouldn't have made it into the US distribution channel with Spanish-only labeling. She checked their records and this batch was from a different supplier than they usually use, possibly diverted from the Latin American market or something. Either way, it's a labeling compliance issue because it doesn't meet the requirements for the US market. Can't even read the important safety information or instructions properly. They replaced it with properly labeled English product, but again, makes you wonder how this kind of mix-up happens and what other problems might exist with that batch.",
-    "category": "Labeling error",
-    "reasoning": "Incorrect language for market is a labeling compliance defect."
-  },
-  {
-    "narrative": "I bought these from a seller who claimed to have 'overstock'. When they arrived, the font on the label was different and the color of the pen cap was a lighter shade of blue than my previous pens. I'm afraid these are fakes.",
-    "category": "Counterfeit/Unauthorized source",
-    "reasoning": "Suspicious sourcing and multiple visual counterfeit signs."
-  },
-  {
-    "narrative": "The inner cardboard tray is torn and the pen was loose. It looks like it was crushed during packing. The pen might be damaged.",
-    "category": "Packaging defect",
-    "reasoning": "Damaged internal packaging."
-  },
-  {
-    "narrative": "The plunger in my pen is stuck about halfway down, and no matter how hard I press the button, it won't move forward to deliver the rest of the medication. I can see there's plenty of liquid left, but the mechanism is jammed tight.",
+    "narrative": "I pushed the button to inject but no liquid came out. The counter went down to 0, but I didn't feel the injection and there was no drop on the needle tip. I checked the flow and nothing is coming out. It's clogged.",
     "category": "Device malfunction",
-    "reasoning": "Jammed plunger mechanism."
+    "reasoning": "Failure to deliver dose despite counter movement."
   },
   {
-    "narrative": "Okay I'll be honest, I probably should have known better, but with the shortage and prices being so high, I got desperate. I saw this ad on social media, Facebook I think, for a pharmacy claiming to sell Ozempic at a steep discount, like 40% less than my regular pharmacy. It was supposedly an international pharmacy, which should have been a red flag but I ordered three pens anyway. They arrived after about four weeks, way longer than normal shipping. When I opened the package and looked at the pens, something just felt off. The hologram sticker on the box doesn't look quite right compared to my old boxes - the image quality seems lower or blurry. The pen cap color is slightly different too, like a lighter shade of blue than it should be. And when you look at the text and graphics on the carton, the alignment is poor, like things aren't lined up properly the way a professional pharmaceutical package should be. I tried scanning the QR code and it doesn't work. I showed it to my pharmacist and she was pretty concerned, said these might be counterfeit and I definitely shouldn't use them. She reported it and I'm out the money I paid for them. Lesson learned about buying medication from unauthorized sellers.",
-    "category": "Counterfeit/Unauthorized source",
-    "reasoning": "Multiple authenticity red flags with non-authorized supply channel indicate counterfeit risk."
-  },
-  {
-    "narrative": "I received my order yesterday and the ice packs were completely melted and warm. The box felt hot to the touch. It sat on my porch in 90 degree weather for 6 hours. The temperature strip inside was red, indicating it got too hot. I don't trust that the medication is still good.",
-    "category": "Storage/Temperature excursion",
-    "reasoning": "High temperature exposure during shipping/delivery."
-  },
-  {
-    "narrative": "The QR code takes me to a fake website. It asks for my credit card. This product is a scam.",
-    "category": "Counterfeit/Unauthorized source",
-    "reasoning": "Phishing/Fake verification site."
-  },
-  {
-    "narrative": "The instructions for use are missing from the box. There is no pamphlet. I'm a new user and I don't know how to inject it. The box was sealed so it wasn't taken out.",
-    "category": "Packaging defect",
-    "reasoning": "Missing package insert."
-  },
-  {
-    "narrative": "This is really disturbing and makes me question the sterility of the manufacturing process. I have a brand new, unopened Ozempic pen that was sealed in its packaging when I got it from the pharmacy. Been stored in my fridge properly. Was inspecting it before first use and when I held it up to the light, I could see this tiny thread-like material floating around freely in the solution. It's white or maybe translucent, very thin, moves around when I tilt the pen. At first I thought maybe it was just a weird bubble or optical illusion, but I looked at it with a magnifying glass and it's definitely a fiber of some kind. Looks like a piece of thread or textile fiber under magnification. How does a textile fiber get inside a sealed, sterile pharmaceutical cartridge? The only way that makes sense is if it contaminated the solution during the manufacturing or filling process - like maybe it came off someone's clothing or from the manufacturing environment. This represents a complete sterility breach. This solution is supposed to be sterile for injection and there's a textile fiber floating in it. That's unacceptable. Who knows what bacteria or other contaminants came along with that fiber? The pen was properly sealed and stored, so this isn't user error. This is clearly a manufacturing quality control failure. Brought it immediately to the pharmacy and they were concerned too. Documented everything, they're filing an urgent contamination report with the manufacturer, and obviously replacing the pen.",
+    "narrative": "There is a grey particle in the solution. It looks like metal dust. It settles to the bottom. I'm returning it.",
     "category": "Contamination/Foreign matter",
-    "reasoning": "Textile fiber contamination in sterile injectable represents manufacturing quality failure."
+    "reasoning": "Metal particulate."
   },
   {
-    "narrative": "I can't believe this happened but I need to report it. Picked up my Ozempic refill at the pharmacy on Tuesday, came home, did my injection that evening like I'm supposed to. Everything seemed fine. But then the next day I was looking at the pen and happened to glance at the expiration date printed on the carton, and I realized it says it expired last month. Like a full month ago. This medication was already expired when the pharmacy dispensed it to me, and I already took one dose from it before I even noticed. When I called the pharmacy they were very apologetic and said it was a system error - apparently this stock should have been flagged as expired and pulled from their inventory but somehow it wasn't caught. They immediately pulled all remaining pens from that lot off their shelves and are checking their entire inventory system to see how this happened. They replaced my prescription with current, non-expired pens at no charge, but I'm still concerned about the dose I already took from expired medication. I mean, my doctor said it's probably fine, it's not like it becomes toxic or anything, but the effectiveness might be reduced. This is a pretty serious distribution and quality control failure that someone dispensed and I used expired product. The pharmacy is filing an incident report and their district manager contacted me to apologize.",
-    "category": "Distribution/Expiry",
-    "reasoning": "Product was supplied beyond expiry; distribution control failure."
+    "narrative": "The pen looks fake. The blue is the wrong shade. The plastic feels cheap. The label is crooked. It's a not authentic.",
+    "category": "Counterfeit/Unauthorized source",
+    "reasoning": "Visual counterfeit indicators."
   },
   {
-    "narrative": "The dial gets stuck at 0. It won't turn to start the dose. The mechanism is jammed. I can't use it at all.",
-    "category": "Device malfunction",
-    "reasoning": "Dose dial jam."
+    "narrative": "I received my Ozempic shipment from the mail order pharmacy and when I opened the insulated shipping container, I was hit with this strong chemical smell that definitely shouldn't be there. It smelled kind of like rubbing alcohol or disinfectant, really pungent and unpleasant. The smell was coming from inside the package, not from the outside box. When I examined the pens themselves through their sealed packaging, the cartons and pens looked normal, but that chemical odor was concerning. I'm worried that maybe the pens were exposed to some kind of cleaning chemical during storage or shipping, or that there was a spill of some kind in the warehouse that contaminated the packaging. Even though the medication is sealed inside the pen cartridge, I don't feel comfortable using product that was shipped in packaging that has such a strong chemical smell. What if whatever chemical caused that smell somehow penetrated the packaging or contaminated the exterior surfaces? I'd be handling those surfaces when preparing my injection. Called the mail order pharmacy customer service and after describing the smell, they agreed to send a replacement shipment and have me return the odorous one. They said they'd investigate whether there was a contamination incident in their distribution center. Better safe than sorry with something like this.",
+    "category": "Contamination/Foreign matter",
+    "reasoning": "Strong chemical odor from packaging suggests potential contamination during storage or shipping."
+  },
+  {
+    "narrative": "I accidentally left the box of pens on the kitchen counter for 24 hours in a warm room before I realized they should have gone in the fridge. I know they're supposed to stay cold until they're first used.",
+    "category": "Storage/Temperature excursion",
+    "reasoning": "Patient error resulting in room-temp exposure."
+  },
+  {
+    "narrative": "There's a small piece of dark material floating in the pen that looks like a fragment of wood or cardboard. I don't know how it got in there, but it's definitely not part of the medication. I'm returning it to the pharmacy.",
+    "category": "Contamination/Foreign matter",
+    "reasoning": "Visible foreign particulate contamination."
+  },
+  {
+    "narrative": "There is a speck of dirt inside the glass cartridge. It's dark and grainy. It's definitely inside the liquid. That's not sterile.",
+    "category": "Contamination/Foreign matter",
+    "reasoning": "Dirt/particulate contamination."
   },
   {
     "narrative": "The pen leaked the whole dose onto my leg. The needle was on tight. It leaked from the pen body seams.",
@@ -195,68 +60,198 @@
     "reasoning": "Seam leakage."
   },
   {
-    "narrative": "The needle is bent inside the sterile cap. It looks like a fish hook. I can't use it. I opened another one and it was fine. Just a bad needle batch.",
+    "narrative": "Medication is leaking out from the side of the pen body, not the needle, whenever I apply pressure. There must be a crack in the internal housing or a failed seal somewhere inside. It's getting all over my hands instead of going into my skin.",
     "category": "Device malfunction",
-    "reasoning": "Defective needle component."
+    "reasoning": "Internal device leakage."
   },
   {
-    "narrative": "This is really concerning and I haven't even used this pen yet. I opened up the box to inspect the pen before my first dose like the nurse taught me to do, and when I held it up to check that the solution was clear, I saw something floating inside. At first I thought maybe it was just a bubble, but when I tilted the pen back and forth, I could see it's actually like a hair or fiber of some kind. It's thin and looks either white or maybe translucent, kind of moves around in the liquid when I tilt the pen. This is an injectable medication that's supposed to be sterile, so having any kind of fiber or foreign material in there is just not okay. The pen itself was still sealed in its packaging, and the pharmacy seal on the outside was intact, so this isn't something that got in there after it left the manufacturer. I took pictures of it and brought it back to the pharmacy. The pharmacist agreed it shouldn't be there and filed a report with the manufacturer. She gave me a replacement from a different lot and told me to inspect it carefully too. I'm just worried about quality control if stuff like this is getting through their manufacturing process.",
-    "category": "Contamination/Foreign matter",
-    "reasoning": "Foreign fiber within primary container suggests contamination during manufacturing."
+    "narrative": "The dial made a loud cracking sound when I was turning it, and now it just spins freely without changing the dose numbers. I can't set my 0.5 mg dose because the internal gears must have snapped.",
+    "category": "Device malfunction",
+    "reasoning": "Mechanical breakage of the dial mechanism."
   },
   {
-    "narrative": "The price for these pens was less than half of what I usually pay, and they came in a plain white box with no branding. The seller said they were 'direct from the factory', but I'm 99% sure they are counterfeit.",
+    "narrative": "My blood sugar usually drops within 24 hours of my shot, but this time it's stayed consistently high. I even checked the pen to make sure I actually injected, and the dose counter moved, but I'm just not feeling any of the usual effects. This batch feels very weak.",
+    "category": "Potency/Assay defect",
+    "reasoning": "Suspected sub-potency."
+  },
+  {
+    "narrative": "The lot number is missing from the carton. The space is blank. I can't check if it's recalled. The pharmacy said it's a printing error from the manufacturer.",
+    "category": "Labeling error",
+    "reasoning": "Missing lot number."
+  },
+  {
+    "narrative": "There is oil separation in the liquid. It looks like salad dressing that needs shaking. It's supposed to be a uniform solution. Something is wrong with the formulation.",
+    "category": "Stability/Appearance defect",
+    "reasoning": "Phase separation/instability."
+  },
+  {
+    "narrative": "I opened the box and the pen was sitting in a pool of liquid. The cap was wet and when I took it off, I could see fluid leaking from the cartridge. It smells like insulin or medicine. I haven't used it but half the liquid is gone. I think the cartridge is cracked.",
+    "category": "Device malfunction",
+    "reasoning": "Leaking cartridge indicating device failure."
+  },
+  {
+    "narrative": "I'm reporting what I believe to be diverted or possibly not authentic Ozempic that I unfortunately purchased. I was looking for better prices and found an online seller advertising bulk discounts - offering twelve pens at a significant savings if you bought in quantity. They claimed to ship from Canada to the US, which I thought was legal for personal use. Placed an order and the pens arrived a few weeks later. As soon as I opened the package, I knew something was off. All the labeling is in French only, no English at all. The box design looks similar to Ozempic packaging but the colors and layout are slightly different from what I'm used to. The color scheme doesn't match the FDA-approved packaging I've seen before. I tried looking up the NDC number online and it returns no results in the US database - like the code doesn't exist in our system. My regular pharmacist looked at it and immediately said this is likely diverted product from the Canadian market that's not approved for sale in the US. Different packaging, different regulatory approval, possibly different manufacturing standards or quality oversight. Or it could be not authentic made to look like Canadian product. Either way, she strongly advised not to use it and to report the seller. The medication came from an unauthorized distribution channel and doesn't meet US regulatory requirements. I'm out the money and learned a hard lesson about buying prescription drugs from random online sellers offering bulk discounts.",
     "category": "Counterfeit/Unauthorized source",
-    "reasoning": "Unauthorized source and non-standard packaging."
+    "reasoning": "Foreign-labeled product with unapproved packaging from unauthorized channel indicates diversion or counterfeit."
   },
   {
-    "narrative": "The dose selector dial is extremely loose. It doesn't 'click' into the positions like it usually does. It just slides around, and I'm not sure if it's actually setting the dose correctly or if it's just spinning without moving the internal parts.",
-    "category": "Device malfunction",
-    "reasoning": "Loose/failed dose selector dial."
-  },
-  {
-    "narrative": "The needle tips that came with this box seem to have a manufacturing defect. Every time I try to screw one onto the pen, the plastic threads just strip away, and the needle stays loose. I've tried four different needles from the same pack and none of them will stay on securely enough to inject.",
-    "category": "Device malfunction",
-    "reasoning": "Defective needle threads preventing use."
-  },
-  {
-    "narrative": "There is a bug inside the sealed plastic tray! It looks like a small fly. It's dead but it's inside the sterile packaging with the pen. This is a major contamination issue.",
-    "category": "Contamination/Foreign matter",
-    "reasoning": "Insect contamination in packaging."
-  },
-  {
-    "narrative": "The labeling on the actual pen body is so smudged that I can't read the lot number or the expiration date. It looks like the ink wasn't cured properly. I need this info for my records, but it's just a blurry mess.",
-    "category": "Labeling error",
-    "reasoning": "Illegible primary labeling."
-  },
-  {
-    "narrative": "I'm really frustrated with my pharmacy's inventory management. This is now the second time in recent months that they've dispensed Ozempic pens to me that are practically expired. Today I picked up my refill prescription, got home, and checked the expiration dates on the pens like I always do. All of them expire in just nine days. Nine days! I take one dose per week, so with a nine-day window I can maybe use one dose before these pens expire. That's it. The rest will be wasted. This is expensive medication and my insurance doesn't cover wastage like this. When I called the pharmacy to complain, they said this is all they have in stock and can't get better-dated product right now. But here's the thing - this is the second time this has happened with this same pharmacy in the past few months. The last time they gave me pens with only two weeks until expiry, and I told them then that this was a problem. Clearly they're not managing their inventory properly, probably ordering more than they can dispense and then pushing the old stock out to patients before it expires. Or their wholesaler is sending them short-dated product. Either way, it's unacceptable that patients are repeatedly getting medication they can't fully use before expiration. I'm switching to a different pharmacy that hopefully has better inventory turnover and quality control.",
-    "category": "Distribution/Expiry",
-    "reasoning": "Systematically short-dated product distribution indicates supply chain inventory control failure."
-  },
-  {
-    "narrative": "There is white fluff floating in the pen. It looks like mold or fungus. It's growing in the liquid. It's terrifying.",
-    "category": "Contamination/Foreign matter",
-    "reasoning": "Microbial contamination (mold/fungus growth)."
-  },
-  {
-    "narrative": "The dose knob broke off in my hand when I turned it. Now I can't set the dose. The plastic just snapped. Cheap construction.",
-    "category": "Device malfunction",
-    "reasoning": "Component breakage (knob)."
-  },
-  {
-    "narrative": "Had my Ozempic delivered by courier service today and the delivery experience was terrible from a temperature control standpoint. The tracking said delivery would be between 10 AM and 2 PM, but the driver didn't actually show up until almost 6 PM, and when I opened the door to get the package, the driver was just leaving it on the ground and walking away. No temperature controlled vehicle or anything - the package had clearly been sitting in his regular delivery van all day. And this is late June, we've had record high temperatures this week, probably hitting close to 100 degrees today. The package was warm to the touch when I picked it up, and when I opened it, the gel ice packs that were supposed to keep it cool were completely melted and actually warm. The temperature monitoring sticker inside showed clear evidence of prolonged heat exposure - showed temperatures had exceeded safe limits. There's absolutely no way this medication maintained proper refrigeration during delivery. Between sitting in a hot delivery van all day and then being exposed to the heat during delayed delivery, these pens have been subjected to hours of high temperature exposure that definitely exceeds storage specifications. I refused to accept the delivery and made the driver take it back, then called the mail order pharmacy to file a complaint about their delivery service. They need to use refrigerated vehicles or at minimum ensure deliveries happen within reasonable timeframes, especially during hot weather.",
+    "narrative": "The ice packs in my mail-order shipment were actually still frozen solid, but they were placed directly against the pens without any padding. The liquid in the pens was frozen into a slushy ice. I know you're not supposed to freeze this stuff, so I'm assuming it's ruined.",
     "category": "Storage/Temperature excursion",
-    "reasoning": "Extended exposure to high temperatures in non-refrigerated delivery vehicle compromises medication integrity."
+    "reasoning": "Accidental freezing during transport."
   },
   {
-    "narrative": "This was honestly pretty scary when it happened. I was doing my usual weekly injection this morning, everything was set up normally, dose dialed, needle attached. I started the injection, pressed the button down, and suddenly I heard this cracking sound - kind of like a snap. Immediately felt the needle hub area get loose or wobbly. When I looked down, the plastic hub where the needle attaches to the pen had actually broken or separated. I carefully tried to pull the pen away from my skin like you're supposed to, but the needle itself stayed stuck in my skin while the pen pulled away. The needle had detached from the hub and was just sitting there in my injection site. I had to very carefully pull just the needle out manually, which I was not prepared to do. Thankfully it came out okay and didn't break under the skin or anything, but my hands were shaking afterward. Called the pharmacy right away and they had me come in to document everything and check the injection site. The pen clearly has some kind of structural failure at the needle attachment point. This could have been much worse if the needle had broken off completely under the skin. The manufacturer needs to know about this defect because it's a serious safety issue.",
-    "category": "Device malfunction",
-    "reasoning": "Breakage at the hub and retention of needle indicates device integrity failure."
-  },
-  {
-    "narrative": "The label on the pen is for the wrong drug. It says Victoza but the box says Ozempic. The pen looks like an Ozempic pen. It's mislabeled.",
+    "narrative": "The instructions for use inside the box are for a completely different medication—something called Victoza. The box and the pen say Ozempic, but the booklet is wrong. If I followed these instructions, I might have used the device incorrectly.",
     "category": "Labeling error",
-    "reasoning": "Product mix-up/mislabeling."
+    "reasoning": "Incorrect package insert."
+  },
+  {
+    "narrative": "The text on the pen is blurry. I can't read the dose window markings. The printing is bad quality.",
+    "category": "Labeling error",
+    "reasoning": "Illegible printing."
+  },
+  {
+    "narrative": "There is a piece of metal wire inside the cartridge. It looks like a staple. It's rusting in the liquid. This is dangerous contamination.",
+    "category": "Contamination/Foreign matter",
+    "reasoning": "Metal contaminant."
+  },
+  {
+    "narrative": "The shrink wrap was missing from the carton. Anyone could have opened it. I don't feel safe using medication that isn't sealed properly.",
+    "category": "Packaging defect",
+    "reasoning": "Missing secondary packaging seal."
+  },
+  {
+    "narrative": "The pen I received from the pharmacy today has an expiration date that passed six months ago. I can't believe they didn't catch this before handing it over to me. It's a huge oversight by the distribution team.",
+    "category": "Distribution/Expiry",
+    "reasoning": "Dispensing of significantly outdated medication."
+  },
+  {
+    "narrative": "Something is definitely wrong with this pen and I'm concerned the medication might be diluted or has incorrect concentration. Yesterday was my injection day, so I dialed up my usual 0.5 mg dose on the pen and did the injection. But it felt different than normal - the injection was over really quickly, much faster than usual, and it felt too easy, like there wasn't the usual resistance. At first I thought maybe I just imagined it, but then over the next 24 hours I didn't feel any of the usual effects of the medication. No appetite suppression, no GI effects, nothing. Like I hadn't taken anything at all. So I ended up dialing another 0.5 mg dose and taking it again, and same thing - too quick, too easy, no effect. By the end of the day I had dialed and injected the 0.5 mg dose three times total, thinking maybe it wasn't delivering properly or I was doing something wrong. But I'm experienced with this medication, I know how it should feel and work. My concern is that this particular pen might have diluted medication or incorrect concentration. Like maybe the active ingredient amount is lower than it should be. Otherwise why would I feel absolutely nothing after three doses when one dose normally has a clear effect? I kept the pen and brought it to the pharmacy. They're sending it to the manufacturer for potency testing because if the concentration is wrong in this lot, that's a serious quality control and safety issue affecting dosing accuracy.",
+    "category": "Potency/Assay defect",
+    "reasoning": "Apparent lack of expected pharmacological effect combined with unusual delivery suggests potency issue."
+  },
+  {
+    "narrative": "My shipment sat in a delivery truck for two days during a heatwave where temps reached over 100 degrees. When I opened the package, the ice packs were not just melted, they were actually warm to the touch. The medication box felt like it had been in an oven.",
+    "category": "Storage/Temperature excursion",
+    "reasoning": "Severe heat exposure during shipping."
+  },
+  {
+    "narrative": "The National Drug Code (NDC) on the pen doesn't match the one on the box. They are close, but the last few digits are different. This makes me worry that the wrong medication or the wrong strength was put in this box.",
+    "category": "Labeling error",
+    "reasoning": "Mismatch in identification codes (NDC mismatch)."
+  },
+  {
+    "narrative": "This pen seems to have just water in it. It's clear but it has no effect. My glucose is 300. It's useless.",
+    "category": "Potency/Assay defect",
+    "reasoning": "Ineffective product."
+  },
+  {
+    "narrative": "The foil seal on the pen cap was open. It's not sterile. I can't use it. It was like that in the box.",
+    "category": "Packaging defect",
+    "reasoning": "Sterile barrier breach."
+  },
+  {
+    "narrative": "The box was soaked in water when it arrived. The cardboard is falling apart. The pens inside are wet. I don't know if the water was clean or dirty. The integrity is compromised.",
+    "category": "Packaging defect",
+    "reasoning": "Water damage to packaging."
+  },
+  {
+    "narrative": "I'm a new patient just starting on Ozempic and when I got home with my prescription and opened the carton to read through everything before my first dose, I realized the patient information leaflet is completely missing. You know, that folded paper insert that's supposed to have all the instructions for use and important safety information? It's just not in the box at all. The carton had the pen and the needle tips but no paperwork whatsoever. This is my first time using this medication so I really needed those instructions. I drove back to the pharmacy and explained the situation to the pharmacist, and she was nice enough to photocopy the instruction leaflet from another box they had in stock so at least I'd have something to reference. But she said she's never seen one come without the insert before and that it should always be included. She filed a complaint or whatever they call it about the missing component. It makes me wonder what else might be wrong with that batch if they're missing basic packaging components like that. How many other people got boxes without instructions and maybe just tried to figure it out on their own without the proper safety information?",
+    "category": "Packaging defect",
+    "reasoning": "Missing IFU insert is a packaging component defect affecting safe use."
+  },
+  {
+    "narrative": "The liquid has separated into layers. Oil and water. It shouldn't look like that. It's spoiled.",
+    "category": "Stability/Appearance defect",
+    "reasoning": "Phase separation."
+  },
+  {
+    "narrative": "I found a really concerning labeling discrepancy that makes me question which batch of medication I actually have. I was documenting my medication information for my records like I always do, and I noticed that the batch number printed on the actual pen body says batch U8537B. But when I looked at the batch number printed on the outer carton, it says T8537B. The first character is different - U on the pen, T on the carton. Everything else in the batch code is the same, and the expiry dates match between the pen and carton, but that first character difference is significant. Batch numbers are supposed to be unique identifiers for traceability purposes. If there's a recall or quality issue, you need to be able to identify exactly which batch a product came from. With the pen and carton showing different batch codes, there's no way to accurately trace this product. Is the pen from batch U or batch T? I called the pharmacy to ask about this discrepancy and the pharmacist couldn't explain it. She said it shouldn't happen and they're documenting it. I returned the pen because without accurate batch identification, I can't be confident about the product's provenance, quality testing, or whether it's even the right medication. This seems like a label mismatch or mix-up during packaging where pens from one batch got put in cartons labeled for a different batch.",
+    "category": "Labeling error",
+    "reasoning": "Batch number discrepancy between device and carton prevents accurate traceability."
+  },
+  {
+    "narrative": "When I try to press the injection button, it feels like there's something blocking it internally. It takes an incredible amount of force to get it to budge, and even then, it only moves a tiny bit before getting stuck again. I'm afraid I'm not getting the full dose because the mechanism just isn't advancing the plunger correctly.",
+    "category": "Device malfunction",
+    "reasoning": "Mechanical resistance in the injection button."
+  },
+  {
+    "narrative": "The QR code takes me to a fake website. It asks for my credit card. This product is a scam.",
+    "category": "Counterfeit/Unauthorized source",
+    "reasoning": "Phishing/Fake verification site."
+  },
+  {
+    "narrative": "The pen feels very light, like it's empty. I can see liquid but maybe it's not full. I weighed it compared to my old one and it's lighter. I think it's underfilled.",
+    "category": "Potency/Assay defect",
+    "reasoning": "Suspected underfill."
+  },
+  {
+    "narrative": "This medication is 2 years past expiration. I found it in the back of my grandma's fridge. Can I still use it?",
+    "category": "Distribution/Expiry",
+    "reasoning": "Patient inquiry re: expired product."
+  },
+  {
+    "narrative": "The pharmacy is trying to sell me pens that expire in 10 days. I need a supply that lasts for at least a month. They told me 'it's all they have', but I'm not paying for medicine that will be officially past its date halfway through my treatment.",
+    "category": "Distribution/Expiry",
+    "reasoning": "Supply of medication with inadequate remaining shelf life."
+  },
+  {
+    "narrative": "I made a careless mistake and I'm really upset with myself. I travel for work and I keep my Ozempic in a small insulated travel case so I can take it with me. Last week I was rushing to catch a flight and I put the case in my car trunk instead of bringing it into the house. Then I completely forgot about it. This happened to be during a cold snap we had, with overnight temperatures dropping down to around 20 degrees Fahrenheit. The pens were in my car trunk for three full days in subfreezing temperatures before I remembered and went to retrieve them. When I opened the case and looked at the pens, I could see that the solution was partially frozen - there were visible ice crystals inside the cartridge when I held it up to the window. I brought them inside and let them thaw completely at room temperature. Once thawed, the solution looks clear again and the ice crystals are gone, but I know from the storage instructions that Ozempic should never be frozen. Even if it looks normal after thawing, freezing can denature the protein and make the medication ineffective or unreliable. I called my doctor's office and the nurse confirmed I need to throw these pens away and get new ones. Can't use medication that's been frozen even though it looks okay now. So I'm out two pens because of my own mistake. Just documenting this in case anyone else accidentally freezes their medication - don't try to use it even after it thaws.",
+    "category": "Storage/Temperature excursion",
+    "reasoning": "Freezing exposure violates storage conditions and likely denatures the protein therapeutic."
+  },
+  {
+    "narrative": "The dose dial is stuck between numbers. It won't click into place. I can't select the correct dose.",
+    "category": "Device malfunction",
+    "reasoning": "Dose selector misalignment."
+  },
+  {
+    "narrative": "I checked the lot number on the manufacturer's website to verify the authenticity, and the system says that lot number doesn't exist. I'm really concerned because I've already used one of the pens from this box. This looks like a not authentic batch.",
+    "category": "Counterfeit/Unauthorized source",
+    "reasoning": "Failed lot verification."
+  },
+  {
+    "narrative": "I suspect these pens are not authentic. The packaging looks low quality and the colors are off. The QR code on the side doesn't scan. The price was too good to be true.",
+    "category": "Counterfeit/Unauthorized source",
+    "reasoning": "Visual discrepancies and scan failure indicating counterfeit."
+  },
+  {
+    "narrative": "I was getting ready to take my very first dose of Ozempic today, so I followed the instructions exactly like it says in the booklet. I attached the needle, did the priming procedure, turned the dial to release the air and prime it, heard the clicking sound like it's supposed to make, but then nothing. No drop appeared at the needle tip at all. So I thought maybe it was the needle, took it off, put on a brand new one from the pack, tried again. Same thing. Clicked, but no medication came out. I probably tried this about five or six times with two different needles and I'm getting nowhere. The mechanism inside seems to be working - I can hear the clicks, the dial turns, but it's like the medication just won't flow through. Something must be blocked inside the pen. I called the pharmacy and they said this shouldn't happen and to bring it back for a replacement. Really frustrating because I was supposed to start my treatment today and now I have to wait.",
+    "category": "Device malfunction",
+    "reasoning": "Failure to prime/deliver dose suggests internal blockage or mechanism failure in the prefilled pen."
+  },
+  {
+    "narrative": "I pressed the button to inject, but the plunger didn't move at all. The counter stayed at 0.5 mg. I tried again, pressing much harder, and still nothing. The device is completely unresponsive even though I followed the priming steps.",
+    "category": "Device malfunction",
+    "reasoning": "Device non-responsiveness/failure to fire."
+  },
+  {
+    "narrative": "I screwed the needle on and tried to prime the pen like the manual says, but nothing comes out of the needle. I tried a second needle, but still no drop appears at the tip. It seems like the internal channel of the pen is blocked or not engaging with the needle.",
+    "category": "Device malfunction",
+    "reasoning": "Failure to prime/deliver liquid."
+  },
+  {
+    "narrative": "There are multiple issues with the packaging integrity of the pen I just received that make me question whether it's safe to use. First, the transparent plastic shrink wrap or cellophane wrapper that's supposed to be tightly sealed around the outer carton was really loose and baggy. I was able to easily slide it off without tearing anything or breaking any seal - it just slipped right off. That wrapper is supposed to be tamper-evident, so if it comes off that easily, how do I know someone hasn't already opened it? Then I opened the carton and looked at the internal blister seal - you know, that foil or plastic seal that covers the pen inside the tray. That seal was partially open at one corner. Like it had been peeled back or never fully sealed in the first place. You could actually see the edge of the pen through the gap in the seal. Between the loose outer wrapper and the compromised inner seal, the product integrity is really questionable. There's no way to be certain that this pen hasn't been tampered with, contaminated, or exposed to conditions it shouldn't have been. This is an injectable medication - sterility and integrity are absolutely critical. I took it back to the pharmacy immediately and they agreed the packaging failures are unacceptable. They documented it thoroughly, quarantined all the pens from that same lot, and are reporting it to their quality department. They gave me a replacement from a completely different lot with proper intact seals.",
+    "category": "Packaging defect",
+    "reasoning": "Multiple compromised seals indicate packaging integrity failure affecting sterility assurance."
+  },
+  {
+    "narrative": "I can see a tiny silver sliver—it looks like a piece of metal—floating in the liquid inside the pen window. I'm worried it's a piece of the manufacturing equipment that broke off during the filling process.",
+    "category": "Contamination/Foreign matter",
+    "reasoning": "Metallic particulate contamination."
+  },
+  {
+    "narrative": "The solution in this pen is not clear. It has a foggy, hazy appearance. It's supposed to be transparent. I compared it to my last pen and the difference is obvious. I'm returning it.",
+    "category": "Stability/Appearance defect",
+    "reasoning": "Hazy/foggy appearance."
+  },
+  {
+    "narrative": "There's an oily film on the surface of the liquid inside the pen window. It looks like a rainbow sheen, similar to oil on water. It doesn't look like a consistent, clear medication. I'm worried the ingredients have separated.",
+    "category": "Stability/Appearance defect",
+    "reasoning": "Phase separation/appearance defect."
+  },
+  {
+    "narrative": "I can't believe this happened but I need to report it. Picked up my Ozempic refill at the pharmacy on Tuesday, came home, did my injection that evening like I'm supposed to. Everything seemed fine. But then the next day I was looking at the pen and happened to glance at the expiration date printed on the carton, and I realized it says it past its date last month. Like a full month ago. This medication was already past its date when the pharmacy dispensed it to me, and I already took one dose from it before I even noticed. When I called the pharmacy they were very apologetic and said it was a system error - apparently this stock should have been flagged as past its date and pulled from their inventory but somehow it wasn't caught. They immediately pulled all remaining pens from that lot off their shelves and are checking their entire inventory system to see how this happened. They replaced my prescription with current, non-past its date pens at no charge, but I'm still concerned about the dose I already took from past its date medication. I mean, my doctor said it's probably fine, it's not like it becomes toxic or anything, but the effectiveness might be reduced. This is a pretty serious distribution and quality control failure that someone dispensed and I used past its date product. The pharmacy is filing an incident report and their district manager contacted me to apologize.",
+    "category": "Distribution/Expiry",
+    "reasoning": "Product was supplied beyond expiry; distribution control failure."
   }
 ]

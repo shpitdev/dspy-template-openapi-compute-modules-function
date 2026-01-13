@@ -5,29 +5,29 @@
     "demos": [
       {
         "augmented": true,
-        "complaint": "I've been on Ozempic for about 6 months now and overall it's been helping with my diabetes and I've lost a good amount of weight. But I started having pain after meals, especially dinner which tends to be my biggest meal. The pain is in my upper right abdomen, kind of under my rib cage. It's a sharp, cramping pain that gets worse if I eat anything fatty or greasy. Lasts for a couple hours after eating. This has been happening for maybe 6 weeks but it's been getting worse. Finally went to my doctor about it last week and she ordered an ultrasound of my abdomen. The ultrasound showed multiple gallstones and also my gallbladder wall is thickened. The doctor explained that rapid weight loss - I've lost about 42 pounds since starting the medication - increases the risk of forming gallstones. She referred me to a general surgeon who said I need to have my gallbladder removed. Surgery is scheduled for next month. They want me to stop the Ozempic and follow a low-fat diet until the surgery.",
-        "reasoning": "The patient describes upper right abdominal pain, gallstones, and gallbladder wall thickening; rapid weight loss from Ozempic is a known risk factor for cholelithiasis and cholecystitis; these findings pertain to biliary pathology.",
+        "complaint": "I've had recurrent attacks of gallbladder pain. It feels like a vice grip under my ribs. An ultrasound showed my gallbladder is full of sludge and small stones. The gastroenterologist says the medication caused the rapid weight loss which led to the stones. I'm scheduled for a laparoscopic cholecystectomy next month to remove the gallbladder.",
+        "reasoning": "The patient reports recurrent gallbladder pain, ultrasound evidence of sludge and small stones in the gallbladder, and a physician linking the rapid weight loss (likely from medication) to stone formation, culminating in scheduled surgical removal of the gallbladder. These findings pertain directly to pathology of the gallbladder.",
         "classification": "Hepatobiliary (gallbladder) disease",
-        "justification": "The complaint details gallstone formation and gallbladder thickening associated with rapid weight loss induced by Ozempic, which aligns with gallbladder disease."
+        "justification": "The complaint describes gallbladder pain, ultrasound findings of sludge/stones, medication\u2011related rapid weight loss leading to stones, and surgical intervention\u2014all characteristic of gallbladder disease."
       },
       {
         "augmented": true,
-        "complaint": "Okay so this is kind of embarrassing but I've been really constipated. Like, I moved up to the 1 mg dose and within a few days I just couldn't go. It's been over a week now and I'm so bloated and uncomfortable. I've tried drinking more water, eating prunes, all the things my mom always suggested, but nothing was working. Finally had to buy some laxatives from the pharmacy and that helped a bit, but I'm still not back to normal. My stomach feels so distended and I look like I'm pregnant or something. This never happened on the lower dose.",
-        "reasoning": "The patient describes new\u2010onset constipation, abdominal bloating, and a feeling of distension after increasing the Ozempic dose, which are typical gastrointestinal side effects of GLP\u20111 receptor agonists and indicate delayed gut motility.",
-        "classification": "Gastrointestinal disorders",
-        "justification": "These symptoms reflect delayed gastrointestinal motility, a common adverse effect of GLP\u20111 agonists."
+        "complaint": "My heart feels like it's racing all the time. My resting pulse is over 100 beats per minute. I feel jittery and anxious, like I've had too much caffeine. My doctor did an EKG and confirmed sinus tachycardia. He thinks it's a side effect of the Ozempic stimulating my heart.",
+        "reasoning": "The patient describes a racing heart, elevated resting pulse (>100 bpm), jitteriness, and confirmed sinus tachycardia, which the doctor attributes to a side effect of Ozempic stimulating the heart. These symptoms pertain to cardiac function and are directly related to the medication\u2019s cardiovascular effects.",
+        "classification": "Cardiovascular signs",
+        "justification": "The complaint involves tachycardia and related cardiac symptoms, which fall under the \u201cCardiovascular signs\u201d category."
       },
       {
-        "complaint": "I vomit undigested food almost every day. I feel nauseous from the moment I wake up until I go to sleep. I've lost my appetite completely. My doctor says my stomach paralysis is severe based on the emptying study. I'm malnourished and weak. We stopped the drug two weeks ago but the symptoms are resolving very slowly.",
-        "classification": "Gastrointestinal disorders (Gastroparesis)"
-      },
-      {
-        "complaint": "My vision is blurry from macular edema. The eye doctor says my retinopathy is worse. I need laser treatment. It's a complication of the rapid blood sugar drop.",
+        "complaint": "My retina is bleeding. I see red streaks in my vision. The doctor says I have proliferative diabetic eye disease. It got worse after I started Ozempic. I need urgent laser surgery to stop the bleeding.",
         "classification": "Eye disorders (Diabetic retinopathy complications)"
+      },
+      {
+        "complaint": "The nausea is bad. I can't eat. I'm losing weight. I feel sick. I want to stop the drug. It's too much.",
+        "classification": "Gastrointestinal disorders"
       }
     ],
     "signature": {
-      "instructions": "Classify the provided patient complaint into one of the predefined adverse\u2011event categories.  \n1\ufe0f\u20e3 Generate a step\u2011by\u2011step reasoning that explains how you reach the decision.  \n2\ufe0f\u20e3 Output the classification label exactly as listed (e.g., \u201cGastrointestinal disorders (Gastroparesis)\u201d).  \n3\ufe0f\u20e3 Provide a brief justification that links the complaint to the selected category.  \nKeep the response concise and structured in the order: reasoning \u2192 classification \u2192 justification.",
+      "instructions": "Given a free\u2011text complaint describing a medication\u2011related adverse event, generate a step\u2011by\u2011step reasoning trace, then output:\n\n1. **Reasoning** \u2013 a brief chain\u2011of\u2011thought explaining how the clinical details point to a specific adverse event type.  \n2. **Classification** \u2013 a label selected from the predefined medical categories (e.g., \u201cPancreatitis\u201d, \u201cEye disorders (Diabetic retinopathy complications)\u201d, \u201cHepatobiliary (gallbladder) disease\u201d, etc.).  \n3. **Justification** \u2013 a concise explanation linking the reasoning steps to the chosen classification.\n\nThe output should be presented in the order: reasoning, classification, justification, and must be ready for use as a prompt for a language model performing this classification task.",
       "fields": [
         {
           "prefix": "Complaint:",
@@ -55,7 +55,7 @@
       "dspy": "3.1.0",
       "cloudpickle": "3.1"
     },
-    "model": "openai/Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf",
+    "model": "Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf",
     "classification_type": "ae-category",
     "classification_config": {
       "description": "Classify adverse events into specific categories.",

@@ -2,16 +2,18 @@
 
 from __future__ import annotations
 
-from collections.abc import Callable
-from functools import lru_cache
 import json
 import os
+from collections.abc import Callable
+from functools import lru_cache
 from pathlib import Path
 
 import dspy
 from pydantic import BaseModel, ConfigDict, Field
 
 from ..common.classifier import CLASSIFICATION_CONFIGS, ComplaintClassifier
+from ..common.config import get_display_model_name
+from ..common.logging import reset_classification_type, set_classification_type
 from ..common.paths import get_classifier_artifact_path
 from ..common.types import ClassificationType
 
@@ -112,7 +114,7 @@ def _load_classifier(model_path: Path, classification_type: ClassificationType) 
     """Load a classifier for a specific classification type."""
     classifier = ComplaintClassifier(classification_type)
     classifier.load(str(model_path))
-    current_model = getattr(dspy.settings.lm, "model", None)
+    current_model = get_display_model_name()
     if current_model and _artifact_auto_update_enabled():
         _update_artifact_model_metadata(model_path, current_model)
     return classifier
@@ -146,12 +148,16 @@ def _create_classification_function(
         classifier = _load_classifier(resolved_path, classification_type)
 
     def _predict(request: ComplaintRequest) -> ComplaintResponse:
-        prediction: dspy.Prediction = classifier(complaint=request.complaint)
-        return ComplaintResponse(
-            classification=prediction.classification,
-            justification=prediction.justification,
-            classification_type=classification_type,
-        )
+        token = set_classification_type(classification_type)
+        try:
+            prediction: dspy.Prediction = classifier(complaint=request.complaint)
+            return ComplaintResponse(
+                classification=prediction.classification,
+                justification=prediction.justification,
+                classification_type=classification_type,
+            )
+        finally:
+            reset_classification_type(token)
 
     return _predict
 
