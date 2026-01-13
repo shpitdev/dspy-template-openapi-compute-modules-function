@@ -296,7 +296,7 @@ cmake --build build --config Release
 
 ### Start the server
 ```bash
-~/llama.cpp/build/bin/llama-server -m models/Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf
+./serve.sh -m ~/llama.cpp/models/Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf
 ```
 
 ### Then configure DSPy to use your local server by setting:
