@@ -10,22 +10,21 @@ ROOT_DIR = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT_DIR / "data"
 ARTIFACTS_DIR = ROOT_DIR / "artifacts"
 
-# Classification types
 CLASSIFICATION_TYPES: dict[ClassificationType, str] = {
-    "ae-pc": "ae-pc-classification",
-    "ae-category": "ae-category-classification",
-    "pc-category": "pc-category-classification",
+    ClassificationType.AE_PC: "ae-pc-classification",
+    ClassificationType.AE_CATEGORY: "ae-category-classification",
+    ClassificationType.PC_CATEGORY: "pc-category-classification",
 }
 
-# Default classification type
-DEFAULT_CLASSIFICATION_TYPE: ClassificationType = "ae-pc"
+DEFAULT_CLASSIFICATION_TYPE = ClassificationType.AE_PC
 
 
 def get_classification_data_dir(classification_type: ClassificationType = DEFAULT_CLASSIFICATION_TYPE) -> Path:
     """Get the data directory for a specific classification type."""
     if classification_type not in CLASSIFICATION_TYPES:
         raise ValueError(
-            f"Invalid classification type: {classification_type}. Valid types: {', '.join(CLASSIFICATION_TYPES.keys())}"
+            f"Invalid classification type: {classification_type}. "
+            f"Valid types: {', '.join(t.value for t in ClassificationType)}"
         )
     return DATA_DIR / CLASSIFICATION_TYPES[classification_type]
 

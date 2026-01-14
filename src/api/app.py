@@ -9,6 +9,7 @@ from fastapi import FastAPI, HTTPException, status
 
 from ..common.config import configure_lm
 from ..common.logging import configure_logging, reset_request_id, set_request_id
+from ..common.types import ClassificationType
 from ..serving.service import (
     AECategoryRequest,
     AEPCRequest,
@@ -35,19 +36,19 @@ async def _lifespan(app: FastAPI):
         app.state.ae_pc_predictor = get_ae_pc_classifier()
     except FileNotFoundError as exc:
         app.state.ae_pc_predictor = None
-        app.state.errors["ae-pc"] = str(exc)
+        app.state.errors[ClassificationType.AE_PC] = str(exc)
 
     try:
         app.state.ae_category_predictor = get_ae_category_classifier()
     except FileNotFoundError as exc:
         app.state.ae_category_predictor = None
-        app.state.errors["ae-category"] = str(exc)
+        app.state.errors[ClassificationType.AE_CATEGORY] = str(exc)
 
     try:
         app.state.pc_category_predictor = get_pc_category_classifier()
     except FileNotFoundError as exc:
         app.state.pc_category_predictor = None
-        app.state.errors["pc-category"] = str(exc)
+        app.state.errors[ClassificationType.PC_CATEGORY] = str(exc)
 
     yield
 
@@ -61,7 +62,8 @@ app = FastAPI(
         "1. **AE vs PC**: Classify as Adverse Event or Product Complaint\n"
         "2. **AE Category**: Classify adverse events into specific medical categories\n"
         "3. **PC Category**: Classify product complaints into specific quality/defect categories\n\n"
-        "**GitHub Repository**: [anand-testcompare/dspy-reference-examples](https://github.com/anand-testcompare/dspy-reference-examples)"
+        "**GitHub Repository**: [anand-testcompare/dspy-reference-examples](https://github.com/anand-testcompare/dspy-reference-examples)\n"
+        "**Learn More**: [shpit.dev/learn](https://shpit.dev/learn)"
     ),
     lifespan=_lifespan,
     docs_url="/docs",
@@ -105,9 +107,9 @@ def healthcheck() -> dict[str, str | dict]:
     errors = getattr(app.state, "errors", {})
 
     classifier_status = {
-        "ae-pc": "ok" if getattr(app.state, "ae_pc_predictor", None) else "unavailable",
-        "ae-category": "ok" if getattr(app.state, "ae_category_predictor", None) else "unavailable",
-        "pc-category": "ok" if getattr(app.state, "pc_category_predictor", None) else "unavailable",
+        ClassificationType.AE_PC: "ok" if getattr(app.state, "ae_pc_predictor", None) else "unavailable",
+        ClassificationType.AE_CATEGORY: "ok" if getattr(app.state, "ae_category_predictor", None) else "unavailable",
+        ClassificationType.PC_CATEGORY: "ok" if getattr(app.state, "pc_category_predictor", None) else "unavailable",
     }
 
     overall_status = "ok" if all(s == "ok" for s in classifier_status.values()) else "degraded"
@@ -137,7 +139,7 @@ def classify_ae_pc(payload: AEPCRequest) -> ComplaintResponse:
     """Classify complaint as Adverse Event or Product Complaint."""
     predictor = getattr(app.state, "ae_pc_predictor", None)
     if predictor is None:
-        error_detail = app.state.errors.get("ae-pc", "Classifier artifact not loaded")
+        error_detail = app.state.errors.get(ClassificationType.AE_PC, "Classifier artifact not loaded")
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail=f"AE-PC classifier unavailable: {error_detail}",
@@ -159,7 +161,7 @@ def classify_ae_category(payload: AECategoryRequest) -> ComplaintResponse:
     """Classify adverse event into a specific medical category."""
     predictor = getattr(app.state, "ae_category_predictor", None)
     if predictor is None:
-        error_detail = app.state.errors.get("ae-category", "Classifier artifact not loaded")
+        error_detail = app.state.errors.get(ClassificationType.AE_CATEGORY, "Classifier artifact not loaded")
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail=f"AE-Category classifier unavailable: {error_detail}",
@@ -181,7 +183,7 @@ def classify_pc_category(payload: PCCategoryRequest) -> ComplaintResponse:
     """Classify product complaint into a specific category."""
     predictor = getattr(app.state, "pc_category_predictor", None)
     if predictor is None:
-        error_detail = app.state.errors.get("pc-category", "Classifier artifact not loaded")
+        error_detail = app.state.errors.get(ClassificationType.PC_CATEGORY, "Classifier artifact not loaded")
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail=f"PC-Category classifier unavailable: {error_detail}",

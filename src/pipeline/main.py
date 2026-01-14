@@ -28,14 +28,13 @@ from ..common.types import ClassificationType
 def run_pipeline(classification_type: ClassificationType = DEFAULT_CLASSIFICATION_TYPE) -> None:
     """Train, optimize, and evaluate the classifier, then persist the artifact."""
 
-    # Get configuration for this classification type
     config = CLASSIFICATION_CONFIGS[classification_type]
     folder_name = CLASSIFICATION_TYPES[classification_type]
 
     print("\n" + "=" * 60)
     print("DSPy Ozempic Complaint Classifier")
     print(f"Classification Type: {folder_name}")
-    print(f"Task: {config['description']}")
+    print(f"Task: {config.description}")
     print("=" * 60 + "\n")
 
     configure_lm()
@@ -101,7 +100,7 @@ def run_pipeline(classification_type: ClassificationType = DEFAULT_CLASSIFICATIO
             artifact_data["metadata"]["model"] = model_name
 
         artifact_data["metadata"]["classification_type"] = classification_type
-        artifact_data["metadata"]["classification_config"] = config
+        artifact_data["metadata"]["classification_config"] = config.model_dump()
 
         # Save the updated artifact
         with open(artifact_path, "w") as f:

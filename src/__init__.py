@@ -2,6 +2,7 @@
 
 from .common import (
     CLASSIFICATION_CONFIGS,
+    ClassificationConfig,
     ComplaintClassifier,
     classification_metric,
     configure_lm,
@@ -23,6 +24,7 @@ from .serving.service import (
 
 __all__ = [
     "CLASSIFICATION_CONFIGS",
+    "ClassificationConfig",
     "create_classification_signature",
     "ComplaintClassifier",
     "classification_metric",

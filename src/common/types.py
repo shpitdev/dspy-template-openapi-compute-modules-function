@@ -2,9 +2,13 @@
 
 from __future__ import annotations
 
-from typing import Literal
+from enum import StrEnum
 
-ClassificationType = Literal["ae-pc", "ae-category", "pc-category"]
-CLASSIFICATION_TYPE_VALUES: tuple[ClassificationType, ...] = ("ae-pc", "ae-category", "pc-category")
 
-__all__ = ["ClassificationType", "CLASSIFICATION_TYPE_VALUES"]
+class ClassificationType(StrEnum):
+    AE_PC = "ae-pc"
+    AE_CATEGORY = "ae-category"
+    PC_CATEGORY = "pc-category"
+
+
+__all__ = ["ClassificationType"]

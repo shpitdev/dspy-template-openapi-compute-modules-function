@@ -3,25 +3,30 @@
 from __future__ import annotations
 
 import dspy
+from pydantic import BaseModel
 
 from .types import ClassificationType
 
-# Classification type configurations
-CLASSIFICATION_CONFIGS = {
-    "ae-pc": {
-        "description": "Classify Ozempic-related complaints as Adverse Event or Product Complaint.",
-        "output_desc": "Either 'Adverse Event' or 'Product Complaint'",
-        "labels": ["Adverse Event", "Product Complaint"],
-    },
-    "ae-category": {
-        "description": "Classify adverse events into specific categories.",
-        "output_desc": (
-            "One of: Gastrointestinal disorders, Pancreatitis, "
-            "Hepatobiliary (gallbladder) disease, Hypoglycemia, Eye disorders (Diabetic retinopathy complications), "
-            "Renal events (Acute kidney injury), Hypersensitivity, Injection-site reactions, "
-            "Cardiovascular signs, Peri-procedural aspiration risk, Gastrointestinal disorders (Gastroparesis)"
-        ),
-        "labels": [
+
+class ClassificationConfig(BaseModel):
+    """Configuration for a single classification type."""
+
+    description: str
+    labels: list[str]
+
+    @property
+    def output_desc(self) -> str:
+        return f"One of: {', '.join(self.labels)}"
+
+
+CLASSIFICATION_CONFIGS: dict[ClassificationType, ClassificationConfig] = {
+    ClassificationType.AE_PC: ClassificationConfig(
+        description="Classify Ozempic-related complaints as Adverse Event or Product Complaint.",
+        labels=["Adverse Event", "Product Complaint"],
+    ),
+    ClassificationType.AE_CATEGORY: ClassificationConfig(
+        description="Classify adverse events into specific categories.",
+        labels=[
             "Gastrointestinal disorders",
             "Pancreatitis",
             "Hepatobiliary (gallbladder) disease",
@@ -34,15 +39,10 @@ CLASSIFICATION_CONFIGS = {
             "Peri-procedural aspiration risk",
             "Gastrointestinal disorders (Gastroparesis)",
         ],
-    },
-    "pc-category": {
-        "description": "Classify product complaints into specific categories.",
-        "output_desc": (
-            "One of: Stability/Appearance defect, Device malfunction, Storage/Temperature excursion, "
-            "Labeling error, Contamination/Foreign matter, Packaging defect, Counterfeit/Unauthorized source, "
-            "Potency/Assay defect, Distribution/Expiry"
-        ),
-        "labels": [
+    ),
+    ClassificationType.PC_CATEGORY: ClassificationConfig(
+        description="Classify product complaints into specific categories.",
+        labels=[
             "Stability/Appearance defect",
             "Device malfunction",
             "Storage/Temperature excursion",
@@ -53,23 +53,25 @@ CLASSIFICATION_CONFIGS = {
             "Potency/Assay defect",
             "Distribution/Expiry",
         ],
-    },
+    ),
 }
 
 
-def create_classification_signature(classification_type: ClassificationType = "ae-pc") -> type[dspy.Signature]:
+def create_classification_signature(
+    classification_type: ClassificationType = ClassificationType.AE_PC,
+) -> type[dspy.Signature]:
     """Create a classification signature dynamically based on the classification type."""
-    config = CLASSIFICATION_CONFIGS.get(classification_type)
-    if not config:
+    if classification_type not in CLASSIFICATION_CONFIGS:
         raise ValueError(
             f"Invalid classification type: {classification_type}. "
-            f"Valid types: {', '.join(CLASSIFICATION_CONFIGS.keys())}"
+            f"Valid types: {', '.join(t.value for t in ClassificationType)}"
         )
+    config = CLASSIFICATION_CONFIGS[classification_type]
 
     class ComplaintClassification(dspy.Signature):
-        __doc__ = config["description"]
+        __doc__ = config.description
         complaint = dspy.InputField(desc="The complaint text about Ozempic")
-        classification = dspy.OutputField(desc=config["output_desc"])
+        classification = dspy.OutputField(desc=config.output_desc)
         justification = dspy.OutputField(desc="Brief explanation for the classification")
 
     return ComplaintClassification
@@ -78,7 +80,7 @@ def create_classification_signature(classification_type: ClassificationType = "a
 class ComplaintClassifier(dspy.Module):
     """DSPy module wrapping the complaint classification prompt."""
 
-    def __init__(self, classification_type: ClassificationType = "ae-pc"):
+    def __init__(self, classification_type: ClassificationType = ClassificationType.AE_PC):
         super().__init__()
         self.classification_type = classification_type
         signature = create_classification_signature(classification_type)
@@ -135,6 +137,7 @@ def evaluate_model(model: ComplaintClassifier, dataset: list[dspy.Example], data
 
 
 __all__ = [
+    "ClassificationConfig",
     "CLASSIFICATION_CONFIGS",
     "create_classification_signature",
     "ComplaintClassifier",
