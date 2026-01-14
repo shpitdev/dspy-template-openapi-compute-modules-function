@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import logging
 import os
 from pathlib import Path
 
@@ -19,8 +18,6 @@ os.environ.setdefault("DSPY_CACHEDIR", str(DSPY_CACHE_DIR))
 from src.api.app import app  # noqa: E402
 from src.common.config import configure_lm  # noqa: E402
 from src.serving.service import AEPCRequest, get_ae_pc_classifier  # noqa: E402
-
-logger = logging.getLogger(__name__)
 
 
 def _ensure_predictor():
@@ -55,11 +52,6 @@ def test_predictor_classifies_complaint():
 
     assert response.classification in {"Adverse Event", "Product Complaint"}
     assert response.justification
-    logger.info(
-        "Predictor classification=%s justification=%s",
-        response.classification,
-        response.justification,
-    )
 
 
 @pytest.mark.integration
@@ -83,8 +75,3 @@ def test_fastapi_endpoint_uses_loaded_predictor():
     payload = resp.json()
     assert payload["classification"] in {"Adverse Event", "Product Complaint"}
     assert payload["justification"]
-    logger.info(
-        "API classification=%s justification=%s",
-        payload["classification"],
-        payload["justification"],
-    )

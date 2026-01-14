@@ -207,6 +207,10 @@ cython_debug/
 # DSPy cache
 data/.dspy_cache/
 
+# MLflow experiment tracking
+mlflow/
+mlruns/
+
 # Playwright browser testing artifacts
 .playwright-mcp/
 

@@ -2,35 +2,9 @@
   "classify.predict": {
     "traces": [],
     "train": [],
-    "demos": [
-      {
-        "augmented": true,
-        "complaint": "I was doing my usual check of the pen before using it and noticed that the lot number printed on the actual pen body is really smudged, like the ink was smeared or something. I can maybe make out a couple digits but most of it is completely unreadable. And then I looked for the expiration date on the device itself and it's just not there at all. Like, it's missing entirely from the pen body. The outer carton has all the information - lot number, expiration date, everything is printed clearly on the box - but the device itself doesn't have readable traceability information. My understanding is that this information is supposed to be on both the carton and the device for safety reasons, so you can always verify what you're using even if you throw away the box. I need to be able to track which specific pen I'm using in case there's ever a recall or quality issue, and right now I can't do that because the pen itself can't be verified or traced. I contacted the pharmacy to let them know, and they're documenting this issue. They confirmed the lot number from the carton for my records, but this seems like a labeling defect that should be reported.",
-        "reasoning": "The patient reports a labeling defect on the medication delivery device: the lot number is smudged and the expiration date is missing from the pen body itself, making it impossible to verify product identity for safety and recall purposes. This is a concern about the physical presentation and traceability of the product, not a description of a medical symptom or physiological reaction to semaglutide. Therefore, it reflects an issue with the product's labeling rather than an adverse health reaction.",
-        "classification": "Product Complaint",
-        "justification": "The complaint pertains to a labeling defect (unreadable lot number and missing expiration date on the device) that impacts product traceability and safety verification, which is characteristic of a product complaint rather than an adverse medical event."
-      },
-      {
-        "augmented": true,
-        "complaint": "When I press the button to inject, the plunger doesn't move forward. I can hear the clicking sound, but the dose counter stays at 0.5 mg and no liquid comes out of the needle. The internal mechanism seems to be disconnected.",
-        "reasoning": "The complaint describes a malfunction of the injection device (plunger not moving, no liquid expelled), which pertains to the product's mechanical function rather than a physiological side effect.",
-        "classification": "Product Complaint",
-        "justification": "The issue is a device defect, not a reported adverse medical reaction to semaglutide; it concerns the injector mechanism itself."
-      },
-      {
-        "augmented": true,
-        "complaint": "My heart feels like it's doing flip-flops in my chest. I get these sudden episodes where my pulse spikes to 130 and I feel lightheaded and short of breath. It happens when I'm just sitting at my desk. It makes me feel incredibly anxious. My cardiologist ruled out other causes and believes it's a side effect of the medication increasing my sympathetic nervous system tone.",
-        "reasoning": "The patient describes specific cardiac symptoms (palpitations, tachycardia, lightheadedness, shortness of breath) that began after dose escalation of semaglutide and are attributed by the cardiologist to a medication\u2011induced increase in sympathetic nervous system activity. These are physiological adverse reactions directly linked to the drug, rather than a general dissatisfaction with the product.",
-        "classification": "Adverse Event",
-        "justification": "The complaint details a clinically observed, drug\u2011related side effect (cardiovascular symptoms) that aligns with known adverse events of semaglutide, indicating an adverse event rather than a mere product complaint."
-      },
-      {
-        "complaint": "I injected the full dose but I felt nothing. Usually it stings a little. My blood sugar didn't change at all. I wonder if it's just saline in the pen.",
-        "classification": "Product Complaint"
-      }
-    ],
+    "demos": [],
     "signature": {
-      "instructions": "Classify an Ozempic\u2011related complaint as either **Adverse Event** or **Product Complaint**.  \n- First, use chain\u2011of\u2011thought reasoning to determine whether the complaint describes a harmful medical reaction (e.g., side effects, injury, hospitalization) \u2013 which should be labeled *Adverse Event* \u2013 or a problem with the product\u2019s performance, potency, packaging, or suspected defect \u2013 which should be labeled *Product Complaint*.  \n- Then output two fields:  \n  1. **classification** \u2013 the chosen label exactly as \u201cAdverse Event\u201d or \u201cProduct Complaint\u201d.  \n  2. **justification** \u2013 a concise explanation (1\u20112 sentences) summarizing why the complaint fits that category.  \n\nRespond only with the two fields above.",
+      "instructions": "Classify Ozempic-related complaints as Adverse Event or Product Complaint.",
       "fields": [
         {
           "prefix": "Complaint:",
@@ -42,7 +16,7 @@
         },
         {
           "prefix": "Classification:",
-          "description": "Either 'Adverse Event' or 'Product Complaint'"
+          "description": "One of: Adverse Event, Product Complaint"
         },
         {
           "prefix": "Justification:",
@@ -58,15 +32,14 @@
       "dspy": "3.1.0",
       "cloudpickle": "3.1"
     },
-    "model": "Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf",
     "classification_type": "ae-pc",
     "classification_config": {
       "description": "Classify Ozempic-related complaints as Adverse Event or Product Complaint.",
-      "output_desc": "Either 'Adverse Event' or 'Product Complaint'",
       "labels": [
         "Adverse Event",
         "Product Complaint"
       ]
-    }
+    },
+    "mlflow_run_id": "8a4106d1"
   }
 }

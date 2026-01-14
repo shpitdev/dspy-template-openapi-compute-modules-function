@@ -2,9 +2,32 @@
   "classify.predict": {
     "traces": [],
     "train": [],
-    "demos": [],
+    "demos": [
+      {
+        "augmented": true,
+        "complaint": "There is a piece of cardboard inside the blister pack. It's clean but it shouldn't be there. It's foreign material.",
+        "reasoning": "The complaint reports finding an unexpected piece of cardboard inside the blister pack, which constitutes a foreign object contaminating the product.",
+        "classification": "Contamination/Foreign matter",
+        "justification": "A foreign material (cardboard) present in the packaging indicates contamination, matching the Contamination/Foreign matter category."
+      },
+      {
+        "augmented": true,
+        "complaint": "I've been taking my 1 mg dose for weeks but my blood sugar is climbing back up. It feels like I'm injecting water. I'm not getting the appetite suppression I usually get. I think this batch is defective or weak.",
+        "reasoning": "The complainant reports that, despite using the correct dose, the medication appears ineffective (blood sugar rises, lack of expected appetite suppression) and feels like injecting water. This suggests the drug\u2019s active ingredient may be insufficient or degraded, pointing to a potency or assay issue rather than a device, packaging, or labeling problem.",
+        "classification": "Potency/Assay defect",
+        "justification": "The perceived loss of therapeutic effect indicates the product may have reduced or absent active ingredient, fitting the definition of a potency/assay defect."
+      },
+      {
+        "complaint": "I received this pen from an 'influencer' online who was selling their extra supply. The box is in a language I can't read, and there's no FDA approval stamp anywhere on the packaging. I'm very suspicious of the contents.",
+        "classification": "Counterfeit/Unauthorized source"
+      },
+      {
+        "complaint": "The plunger is already halfway down the cartridge on a new pen. It looks like it's been used but the seal was intact. Is it underfilled? I'm missing doses.",
+        "classification": "Potency/Assay defect"
+      }
+    ],
     "signature": {
-      "instructions": "Classify product complaints into specific categories.",
+      "instructions": "**Task**: You are acting as a safety\u2011critical triage analyst for injectable medication pens. For each *first\u2011person complaint* about an Ozempic (or similar) pen, you must determine the single most appropriate root\u2011cause category from the regulated taxonomy below. An incorrect classification could delay reporting of a serious quality issue, expose patients to unsafe products, and result in regulatory non\u2011compliance, so you must be meticulous.\n\n**Input**:  \n`Complaint:` *<the full complaint text>*  \n\n**Output** (exactly three fields, each on its own line, prefixed as shown):\n\n1. `Reasoning:` *Provide a step\u2011by\u2011step chain\u2011of\u2011thought analysis. Identify the key clues in the complaint (e.g., device behavior, visual appearance of the solution, storage conditions, labeling statements, presence of particles, etc.) and explain how those clues map to one of the taxonomy entries. Do not skip any logical step; treat this as a formal safety investigation.*\n\n2. `Classification:` *Select **one** label from the following list, matching the root\u2011cause that best fits the evidence:*  \n   - Stability/Appearance defect  \n   - Device malfunction  \n   - Storage/Temperature excursion  \n   - Labeling error  \n   - Contamination/Foreign matter  \n   - Packaging defect  \n   - Counterfeit/Unauthorized source  \n   - Potency/Assay defect  \n   - Distribution/Expiry  \n\n3. `Justification:` *Summarize in a single sentence the primary evidence from the complaint that supports the chosen classification.*\n\n**High\u2011stakes scenario**: Imagine you are the first line of defense in a pharmacovigilance center. Your classification will be forwarded to regulatory authorities and the manufacturer\u2019s quality team within minutes. A mis\u2011label (e.g., calling a device malfunction a stability issue) could prevent a defective pen from being recalled promptly, putting patients at risk of overdose, under\u2011dose, or contamination. Therefore, ensure your reasoning is exhaustive and your label is unequivocally justified.\n\n**Guidelines**:\n- If the complaint mentions a non\u2011functional mechanical or electronic part of the pen (dose counter, needle, dial, launch mechanism, etc.), choose **Device malfunction**.\n- If the complaint describes the liquid\u2019s visual characteristics (cloudy, milky, bubbles, discoloration) or mentions degradation, choose **Stability/Appearance defect**.\n- If the complaint reports temperature problems, freezer burn, or storage conditions outside the label, choose **Storage/Temperature excursion**.\n- If the complaint points to wrong or missing information on the label, choose **Labeling error**.\n- If the complaint indicates visible particles, foreign material, or suspected microbial growth, choose **Contamination/Foreign matter**.\n- If the complaint involves damaged or incorrect packaging (tampered seals, broken caps), choose **Packaging defect**.\n- If the complaint suggests the product is from an unauthorized source, counterfeit, or lacks proper authentication, choose **Counterfeit/Unauthorized source**.\n- If the complaint mentions incorrect strength, dose concentration, or assay failures, choose **Potency/Assay defect**.\n- If the complaint references expired product, wrong batch, or distribution errors, choose **Distribution/Expiry**.\n\n**Output format example**:\n\n```\nReasoning: Let's think step by step in order to ... [full CoT]\nClassification: Device malfunction\nJustification: The dose\u2011counter window is blank, preventing dose verification, which is a hardware failure.\n```\n\nProceed to classify the given complaint accordingly.",
       "fields": [
         {
           "prefix": "Complaint:",
@@ -29,14 +52,12 @@
   "metadata": {
     "dependency_versions": {
       "python": "3.13",
-      "dspy": "3.0.3",
+      "dspy": "3.1.0",
       "cloudpickle": "3.1"
     },
-    "model": "Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf",
     "classification_type": "pc-category",
     "classification_config": {
       "description": "Classify product complaints into specific categories.",
-      "output_desc": "One of: Stability/Appearance defect, Device malfunction, Storage/Temperature excursion, Labeling error, Contamination/Foreign matter, Packaging defect, Counterfeit/Unauthorized source, Potency/Assay defect, Distribution/Expiry",
       "labels": [
         "Stability/Appearance defect",
         "Device malfunction",
@@ -48,6 +69,7 @@
         "Potency/Assay defect",
         "Distribution/Expiry"
       ]
-    }
+    },
+    "mlflow_run_id": "0480d641"
   }
 }

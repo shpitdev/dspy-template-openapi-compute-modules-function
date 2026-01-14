@@ -1,37 +1,13 @@
 {
   "file_scan_exclusions": [
     "**/.git",
-    "**/.venv",
+    // "**/.venv",
+    "**/venv",
     "**/__pycache__",
-    "**/.ruff_cache",
-    "**/.uv-cache",
-    "**/.pytest_cache",
     "**/.mypy_cache",
-    "**/*.egg-info",
     "**/node_modules",
-  ],
-  "languages": {
-    "Python": {
-      "tab_size": 4,
-      "formatter": {
-        "external": {
-          "command": "ruff",
-          "arguments": [
-            "format",
-            "--stdin-filename",
-            "{buffer_path}"
-          ],
-        },
-      },
-    },
-  },
-  "lsp": {
-    "ruff": {
-      "initialization_options": {
-        "settings": {
-          "lineLength": 88,
-        },
-      },
-    },
-  },
+    "**/.ruff_cache",
+    "**/.pytest_cache",
+    "**/dspy_reference_examples.egg-info"
+  ]
 }

@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.13+-3776AB?logo=python&logoColor=white)](https://docs.python.org/3/)
 [![DSPy](https://img.shields.io/badge/DSPy-3.1.0-1F2937)](https://dspy.ai/)
-[![LiteLLM](https://img.shields.io/badge/LiteLLM-1.72.6-00A67E)](https://docs.litellm.ai/)
+[![MLflow](https://img.shields.io/badge/MLflow-3.8.1-0194E2?logo=mlflow&logoColor=white)](https://mlflow.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.128.0-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Pydantic](https://img.shields.io/badge/Pydantic-2.12.5-E92063?logo=pydantic&logoColor=white)](https://docs.pydantic.dev/latest/)
 [![Ruff](https://img.shields.io/badge/Ruff-0.14.10-FCC21B?logo=ruff&logoColor=000000)](https://docs.astral.sh/ruff/)
@@ -23,6 +23,7 @@ The framework shows how to:
 
 - Programmatically optimize prompts with DSPy
 - Support multiple classification tasks with dynamic signatures
+- Track experiments with MLflow (SQLite backend for easy querying)
 - Persist tuned artifacts to disk (separate from source)
 - Serve classifiers via FastAPI with typed Pydantic contracts
 
@@ -46,9 +47,7 @@ The framework shows how to:
 | `DSPY_LOCAL_BASE`                                 | Base URL for local provider      | `http://localhost:8080/v1`     |
 | `DSPY_HTTP_HEADERS`                               | JSON blob for extra HTTP headers | `{}`                           |
 | `OPENROUTER_HTTP_REFERER`, `OPENROUTER_APP_TITLE` | OpenRouter analytics headers     | —                              |
-| `DSPY_LOG_LEVEL`                                  | Log verbosity                    | `INFO`                         |
-| `DSPY_LOG_FORMAT`                                 | Log format (`json` or `text`)    | `json`                         |
-| `DSPY_RUN_ID`                                     | Correlation run id               | auto-generated                 |
+| `DSPY_RUN_ID`                                     | Training run identifier          | auto-generated                 |
 | `DSPY_ARTIFACT_AUTO_UPDATE`                       | Auto-update artifact model metadata on load | `false`             |
 
 Copy `.env.example` and fill in whichever keys you need:
@@ -93,6 +92,9 @@ This creates a clean layout:
 │   └── pc-category-classification/      # PC category classification
 │       ├── train.json
 │       └── test.json
+├── mlflow/                              # MLflow experiment tracking (auto-created)
+│   ├── mlflow.db                        # SQLite database for runs/metrics
+│   └── artifacts/                       # Logged artifacts
 ├── scripts/
 │   ├── datagen/                         # Data generation scripts
 │   └── deploy/                          # Deployment scripts
@@ -149,6 +151,28 @@ uv run python -m src.pipeline.main --classification-type ae-category
 uv run python -m src.pipeline.main --classification-type pc-category
 ```
 
+### CLI Options
+
+| Flag | Short | Description |
+|------|-------|-------------|
+| `--classification-type` | `-t` | Classification type: `ae-pc`, `ae-category`, `pc-category` (default: `ae-pc`) |
+| `--verbose` | `-v` | Show detailed output (per-example evaluation, MIPROv2 progress) |
+| `--inspect` | `-i` | Show DSPy prompts/responses after optimization completes |
+
+```bash
+# Quiet output (default) - just key progress messages
+uv run python -m src.pipeline.main -t ae-pc
+
+# Verbose - see evaluation details and optimizer progress
+uv run python -m src.pipeline.main -t ae-pc --verbose
+
+# Inspect prompts after training
+uv run python -m src.pipeline.main -t ae-pc --inspect
+
+# Both verbose and inspect
+uv run python -m src.pipeline.main -t ae-pc -v -i
+```
+
 The run will:
 
 1. Configure DSPy with your provider settings.
@@ -157,7 +181,46 @@ The run will:
 4. Optimize via `MIPROv2` (with `auto="medium"`).
 5. Evaluate the optimized program.
 6. Write the artifact to `artifacts/ozempic_classifier_<type>_optimized.json`.
+7. Log params, metrics, and artifacts to MLflow (`mlflow/mlflow.db`).
 
+### Experiment Tracking with MLflow
+
+Training runs are automatically tracked in a local SQLite database. Query your experiments:
+
+```bash
+# List all runs with metrics
+sqlite3 mlflow/mlflow.db "
+SELECT 
+    e.name as experiment,
+    r.name as run_name,
+    r.status,
+    m.key,
+    m.value
+FROM runs r
+JOIN experiments e ON r.experiment_id = e.experiment_id
+LEFT JOIN metrics m ON r.run_uuid = m.run_uuid
+ORDER BY r.start_time DESC;
+"
+
+# Compare baseline vs optimized accuracy across runs
+sqlite3 mlflow/mlflow.db "
+SELECT 
+    r.name,
+    MAX(CASE WHEN m.key = 'baseline_accuracy' THEN m.value END) as baseline,
+    MAX(CASE WHEN m.key = 'optimized_accuracy' THEN m.value END) as optimized,
+    MAX(CASE WHEN m.key = 'improvement' THEN m.value END) as improvement
+FROM runs r
+JOIN metrics m ON r.run_uuid = m.run_uuid
+GROUP BY r.run_uuid
+ORDER BY r.start_time DESC;
+"
+```
+
+Or launch the MLflow UI:
+
+```bash
+mlflow ui --backend-store-uri sqlite:///mlflow/mlflow.db
+```
 
 ---
 
@@ -247,8 +310,11 @@ tenant or use-case.
 
 ## Demo Script
 
-`uv run python inference_demo.py` executes a small batch of complaints through the shared interface and prints
-latency/throughput stats. Useful for quick smoke tests after retraining.
+```bash
+uv run python inference_demo.py
+```
+
+Runs a few sample complaints through the classifier and shows the full DSPy prompt/response for each using `dspy.inspect_history()`. Useful for demos and understanding how DSPy translates to actual LLM requests.
 
 ---
 

@@ -16,7 +16,6 @@ from .config import (
     load_llm_config,
 )
 from .data_utils import prepare_datasets
-from .logging import configure_logging
 from .paths import (
     ARTIFACTS_DIR,
     CLASSIFICATION_TYPES,
@@ -42,7 +41,6 @@ __all__ = [
     "DEFAULT_CACHE_DIR",
     "LLMConfig",
     "load_llm_config",
-    "configure_logging",
     "prepare_datasets",
     "ROOT_DIR",
     "DATA_DIR",

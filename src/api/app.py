@@ -5,10 +5,10 @@ from __future__ import annotations
 from contextlib import asynccontextmanager
 from uuid import uuid4
 
-from fastapi import FastAPI, HTTPException, status
+from fastapi import FastAPI, HTTPException, Request, status
+from loguru import logger
 
 from ..common.config import configure_lm
-from ..common.logging import configure_logging, reset_request_id, set_request_id
 from ..common.types import ClassificationType
 from ..serving.service import (
     AECategoryRequest,
@@ -20,16 +20,11 @@ from ..serving.service import (
     get_pc_category_classifier,
 )
 
-configure_logging()
-
 
 @asynccontextmanager
 async def _lifespan(app: FastAPI):
-    """Load all predictors at startup so TestClient + ASGI servers share logic."""
-
     configure_lm()
 
-    # Initialize all three classifiers
     app.state.errors = {}
 
     try:
@@ -72,23 +67,21 @@ app = FastAPI(
 
 
 @app.middleware("http")
-async def attach_request_id(request, call_next):
+async def request_id_middleware(request: Request, call_next):
     request_id = request.headers.get("X-Request-ID") or uuid4().hex
-    token = set_request_id(request_id)
-    try:
-        response = await call_next(request)
-    finally:
-        reset_request_id(token)
+    request.state.request_id = request_id
+    request.state.logger = logger.bind(request_id=request_id)
+
+    response = await call_next(request)
     response.headers["X-Request-ID"] = request_id
     return response
 
 
 @app.get("/", tags=["system"], summary="API Root")
 def root() -> dict[str, str | dict[str, str]]:
-    """Root endpoint with API information and links to documentation."""
     return {
         "name": "DSPy Complaint Classifier API",
-        "version": "0.3.0",
+        "version": "0.4.0",
         "status": "running",
         "docs": "/docs",
         "redoc": "/redoc",
@@ -103,7 +96,6 @@ def root() -> dict[str, str | dict[str, str]]:
 
 @app.get("/health", tags=["system"], summary="Health check")
 def healthcheck() -> dict[str, str | dict]:
-    """Check health status of all classifiers."""
     errors = getattr(app.state, "errors", {})
 
     classifier_status = {
@@ -136,7 +128,6 @@ def healthcheck() -> dict[str, str | dict]:
     tags=["classification"],
 )
 def classify_ae_pc(payload: AEPCRequest) -> ComplaintResponse:
-    """Classify complaint as Adverse Event or Product Complaint."""
     predictor = getattr(app.state, "ae_pc_predictor", None)
     if predictor is None:
         error_detail = app.state.errors.get(ClassificationType.AE_PC, "Classifier artifact not loaded")
@@ -158,7 +149,6 @@ def classify_ae_pc(payload: AEPCRequest) -> ComplaintResponse:
     tags=["classification"],
 )
 def classify_ae_category(payload: AECategoryRequest) -> ComplaintResponse:
-    """Classify adverse event into a specific medical category."""
     predictor = getattr(app.state, "ae_category_predictor", None)
     if predictor is None:
         error_detail = app.state.errors.get(ClassificationType.AE_CATEGORY, "Classifier artifact not loaded")
@@ -180,7 +170,6 @@ def classify_ae_category(payload: AECategoryRequest) -> ComplaintResponse:
     tags=["classification"],
 )
 def classify_pc_category(payload: PCCategoryRequest) -> ComplaintResponse:
-    """Classify product complaint into a specific category."""
     predictor = getattr(app.state, "pc_category_predictor", None)
     if predictor is None:
         error_detail = app.state.errors.get(ClassificationType.PC_CATEGORY, "Classifier artifact not loaded")

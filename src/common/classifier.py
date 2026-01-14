@@ -104,34 +104,41 @@ def classification_metric(example: dspy.Example, pred: dspy.Prediction, trace=No
     return float(predicted == actual)
 
 
-def evaluate_model(model: ComplaintClassifier, dataset: list[dspy.Example], dataset_name: str) -> float:
-    """Evaluate a classifier on a dataset and log basic stats."""
-
+def evaluate_model(
+    model: ComplaintClassifier,
+    dataset: list[dspy.Example],
+    dataset_name: str,
+    verbose: bool = False,
+) -> float:
     correct = 0
     total = len(dataset)
 
-    print(f"\n{'=' * 60}")
-    print(f"Evaluating on {dataset_name} ({total} examples)")
-    print(f"{'=' * 60}\n")
+    if verbose:
+        print(f"\n{'=' * 60}")
+        print(f"Evaluating on {dataset_name} ({total} examples)")
+        print(f"{'=' * 60}\n")
 
     for i, example in enumerate(dataset, start=1):
         prediction = model(complaint=example.complaint)
         is_correct = classification_metric(example, prediction)
         correct += is_correct
 
-        status = "✓" if is_correct else "✗"
-        print(f"{status} Example {i}/{total}")
-        print(f"  Complaint: {example.complaint[:80]}...")
-        print(f"  Predicted: {prediction.classification or '(None - truncated response)'}")
-        print(f"  Actual: {example.classification}")
-        if not is_correct:
-            print(f"  Justification: {prediction.justification or '(None)'}")
-        print()
+        if verbose:
+            status = "✓" if is_correct else "✗"
+            print(f"{status} Example {i}/{total}")
+            print(f"  Complaint: {example.complaint[:80]}...")
+            print(f"  Predicted: {prediction.classification or '(None - truncated response)'}")
+            print(f"  Actual: {example.classification}")
+            if not is_correct:
+                print(f"  Justification: {prediction.justification or '(None)'}")
+            print()
 
     accuracy = correct / total
-    print(f"{'=' * 60}")
-    print(f"Accuracy: {correct}/{total} = {accuracy:.1%}")
-    print(f"{'=' * 60}\n")
+
+    if verbose:
+        print(f"{'=' * 60}")
+        print(f"Accuracy: {correct}/{total} = {accuracy:.1%}")
+        print(f"{'=' * 60}\n")
 
     return accuracy
 

@@ -12,6 +12,23 @@ fi
 
 MODEL_PATH="$2"
 
+# Switch parakeet to CPU mode to free up vRAM for llama
+echo "[serve.sh] Switching parakeet to CPU mode..."
+systemctl --user stop parakeet-tdt-0.6b-v3.service 2>/dev/null
+PARAKEET_USE_CPU=1 systemctl --user set-environment PARAKEET_USE_CPU=1
+systemctl --user start parakeet-tdt-0.6b-v3.service
+
+# Restore parakeet to GPU mode on exit
+cleanup() {
+    echo ""
+    echo "[serve.sh] Restoring parakeet to GPU mode..."
+    systemctl --user stop parakeet-tdt-0.6b-v3.service 2>/dev/null
+    systemctl --user unset-environment PARAKEET_USE_CPU
+    systemctl --user start parakeet-tdt-0.6b-v3.service
+    echo "[serve.sh] Parakeet restored to GPU mode"
+}
+trap cleanup EXIT INT TERM
+
 ~/llama.cpp/build/bin/llama-server \
     -m "$MODEL_PATH" \
     --host 0.0.0.0 \

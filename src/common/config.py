@@ -10,8 +10,6 @@ import dspy
 from pydantic import BaseModel, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-from .callbacks import LLMRequestLoggingCallback
-
 DEFAULT_MODEL = "nvidia/nemotron-3-nano-30b-a3b:free"
 DEFAULT_LOCAL_MODEL = "Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf"
 DEFAULT_OPENROUTER_BASE = "https://openrouter.ai/api/v1"
@@ -75,11 +73,6 @@ def _load_extra_headers(env: EnvironmentSettings) -> dict[str, str]:
     return headers
 
 
-def _prompt_logging_enabled() -> bool:
-    flag = os.getenv("DSPY_LOG_PROMPTS", "true").strip().lower()
-    return flag in {"1", "true", "yes", "on"}
-
-
 def load_llm_config() -> LLMConfig:
     """Load LM configuration from environment variables."""
 
@@ -140,11 +133,8 @@ def ensure_dspy_cache_dir(cache_dir: Path | None = None) -> Path:
 
 
 def configure_lm() -> dspy.LM:
-    """Configure DSPy with the loaded LM settings and return the LM instance."""
-
     ensure_dspy_cache_dir()
     cfg = load_llm_config()
-    callbacks = [LLMRequestLoggingCallback()] if _prompt_logging_enabled() else []
     lm = dspy.LM(
         cfg.model,
         api_key=cfg.api_key,
@@ -152,7 +142,7 @@ def configure_lm() -> dspy.LM:
         headers=cfg.headers or None,
         max_tokens=8000,
     )
-    dspy.configure(lm=lm, callbacks=callbacks)
+    dspy.configure(lm=lm)
     return lm
 
 

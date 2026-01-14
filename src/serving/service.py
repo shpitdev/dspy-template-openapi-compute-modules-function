@@ -13,7 +13,6 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from ..common.classifier import CLASSIFICATION_CONFIGS, ComplaintClassifier
 from ..common.config import get_display_model_name
-from ..common.logging import reset_classification_type, set_classification_type
 from ..common.paths import get_classifier_artifact_path
 from ..common.types import ClassificationType
 
@@ -146,16 +145,12 @@ def _create_classification_function(
         classifier = _load_classifier(resolved_path, classification_type)
 
     def _predict(request: ComplaintRequest) -> ComplaintResponse:
-        token = set_classification_type(classification_type)
-        try:
-            prediction: dspy.Prediction = classifier(complaint=request.complaint)
-            return ComplaintResponse(
-                classification=prediction.classification,
-                justification=prediction.justification,
-                classification_type=classification_type,
-            )
-        finally:
-            reset_classification_type(token)
+        prediction: dspy.Prediction = classifier(complaint=request.complaint)
+        return ComplaintResponse(
+            classification=prediction.classification,
+            justification=prediction.justification,
+            classification_type=classification_type,
+        )
 
     return _predict
 

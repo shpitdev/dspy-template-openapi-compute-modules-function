@@ -2,32 +2,9 @@
   "classify.predict": {
     "traces": [],
     "train": [],
-    "demos": [
-      {
-        "augmented": true,
-        "complaint": "I've had recurrent attacks of gallbladder pain. It feels like a vice grip under my ribs. An ultrasound showed my gallbladder is full of sludge and small stones. The gastroenterologist says the medication caused the rapid weight loss which led to the stones. I'm scheduled for a laparoscopic cholecystectomy next month to remove the gallbladder.",
-        "reasoning": "The patient reports recurrent gallbladder pain, ultrasound evidence of sludge and small stones in the gallbladder, and a physician linking the rapid weight loss (likely from medication) to stone formation, culminating in scheduled surgical removal of the gallbladder. These findings pertain directly to pathology of the gallbladder.",
-        "classification": "Hepatobiliary (gallbladder) disease",
-        "justification": "The complaint describes gallbladder pain, ultrasound findings of sludge/stones, medication\u2011related rapid weight loss leading to stones, and surgical intervention\u2014all characteristic of gallbladder disease."
-      },
-      {
-        "augmented": true,
-        "complaint": "My heart feels like it's racing all the time. My resting pulse is over 100 beats per minute. I feel jittery and anxious, like I've had too much caffeine. My doctor did an EKG and confirmed sinus tachycardia. He thinks it's a side effect of the Ozempic stimulating my heart.",
-        "reasoning": "The patient describes a racing heart, elevated resting pulse (>100 bpm), jitteriness, and confirmed sinus tachycardia, which the doctor attributes to a side effect of Ozempic stimulating the heart. These symptoms pertain to cardiac function and are directly related to the medication\u2019s cardiovascular effects.",
-        "classification": "Cardiovascular signs",
-        "justification": "The complaint involves tachycardia and related cardiac symptoms, which fall under the \u201cCardiovascular signs\u201d category."
-      },
-      {
-        "complaint": "My retina is bleeding. I see red streaks in my vision. The doctor says I have proliferative diabetic eye disease. It got worse after I started Ozempic. I need urgent laser surgery to stop the bleeding.",
-        "classification": "Eye disorders (Diabetic retinopathy complications)"
-      },
-      {
-        "complaint": "The nausea is bad. I can't eat. I'm losing weight. I feel sick. I want to stop the drug. It's too much.",
-        "classification": "Gastrointestinal disorders"
-      }
-    ],
+    "demos": [],
     "signature": {
-      "instructions": "Given a free\u2011text complaint describing a medication\u2011related adverse event, generate a step\u2011by\u2011step reasoning trace, then output:\n\n1. **Reasoning** \u2013 a brief chain\u2011of\u2011thought explaining how the clinical details point to a specific adverse event type.  \n2. **Classification** \u2013 a label selected from the predefined medical categories (e.g., \u201cPancreatitis\u201d, \u201cEye disorders (Diabetic retinopathy complications)\u201d, \u201cHepatobiliary (gallbladder) disease\u201d, etc.).  \n3. **Justification** \u2013 a concise explanation linking the reasoning steps to the chosen classification.\n\nThe output should be presented in the order: reasoning, classification, justification, and must be ready for use as a prompt for a language model performing this classification task.",
+      "instructions": "Classify adverse events into specific categories.",
       "fields": [
         {
           "prefix": "Complaint:",
@@ -55,11 +32,9 @@
       "dspy": "3.1.0",
       "cloudpickle": "3.1"
     },
-    "model": "Nemotron-3-Nano-30B-A3B-UD-Q3_K_XL.gguf",
     "classification_type": "ae-category",
     "classification_config": {
       "description": "Classify adverse events into specific categories.",
-      "output_desc": "One of: Gastrointestinal disorders, Pancreatitis, Hepatobiliary (gallbladder) disease, Hypoglycemia, Eye disorders (Diabetic retinopathy complications), Renal events (Acute kidney injury), Hypersensitivity, Injection-site reactions, Cardiovascular signs, Peri-procedural aspiration risk, Gastrointestinal disorders (Gastroparesis)",
       "labels": [
         "Gastrointestinal disorders",
         "Pancreatitis",
@@ -73,6 +48,7 @@
         "Peri-procedural aspiration risk",
         "Gastrointestinal disorders (Gastroparesis)"
       ]
-    }
+    },
+    "mlflow_run_id": "ff75ead1"
   }
 }
