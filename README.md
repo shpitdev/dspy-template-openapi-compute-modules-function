@@ -1,7 +1,7 @@
 # DSPy Reference Examples
 
 [![Python](https://img.shields.io/badge/Python-3.13+-3776AB?logo=python&logoColor=white)](https://docs.python.org/3/)
-[![DSPy](https://img.shields.io/badge/DSPy-3.1.0-1F2937)](https://dspy.ai/)
+[![DSPy](https://img.shields.io/badge/DSPy-3.1.0-DC2626?logo=dspy&logoColor=white)](https://dspy.ai/)
 [![MLflow](https://img.shields.io/badge/MLflow-3.8.1-0194E2?logo=mlflow&logoColor=white)](https://mlflow.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.128.0-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Pydantic](https://img.shields.io/badge/Pydantic-2.12.5-E92063?logo=pydantic&logoColor=white)](https://docs.pydantic.dev/latest/)
@@ -187,8 +187,9 @@ The run will:
 
 Training runs are automatically tracked in a local SQLite database. Query your experiments:
 
+#### List all runs with metrics
+
 ```bash
-# List all runs with metrics
 sqlite3 mlflow/mlflow.db "
 SELECT 
     e.name as experiment,
@@ -201,8 +202,10 @@ JOIN experiments e ON r.experiment_id = e.experiment_id
 LEFT JOIN metrics m ON r.run_uuid = m.run_uuid
 ORDER BY r.start_time DESC;
 "
+```
 
-# Compare baseline vs optimized accuracy across runs
+#### Compare baseline vs optimized accuracy across runs
+```bash
 sqlite3 mlflow/mlflow.db "
 SELECT 
     r.name,

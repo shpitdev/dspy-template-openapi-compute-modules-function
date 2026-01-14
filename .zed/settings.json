@@ -8,6 +8,7 @@
     "**/node_modules",
     "**/.ruff_cache",
     "**/.pytest_cache",
-    "**/dspy_reference_examples.egg-info"
+    "**/dspy_reference_examples.egg-info",
+    "**/.dspy_cache"
   ]
 }
