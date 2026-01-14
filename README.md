@@ -12,6 +12,8 @@
 [![Nemotron-3-Nano-30B](https://img.shields.io/badge/Nemotron--3--Nano--30B-HF_(unsloth_quantized)-76B900?logo=nvidia&logoColor=white)](https://huggingface.co/unsloth/Nemotron-3-Nano-30B-A3B-GGUF)
 [![GPT-OSS-120B](https://img.shields.io/badge/openai/gpt--oss--120b-OpenRouter_(Cerebras)-F76B1C?logo=openai&logoColor=white)](https://openrouter.ai/openai/gpt-oss-120b?sort=throughput)
 
+![DSPy Reference Examples](assets/dspy-video-thumbnail.png)
+
 Real-world DSPy workflows for pharma/medtech teams. This project provides a flexible multi-classification system for
 Ozempic-related text analysis. Currently supports three classification tasks:
 
@@ -400,3 +402,9 @@ export DSPY_MODEL_NAME=local-model
 ## License
 
 MIT – see `LICENSE` for details.
+
+---
+
+## Author
+
+Created by [Anand Pant](https://github.com/anand-testcompare)
