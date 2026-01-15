@@ -141,6 +141,7 @@ def configure_lm() -> dspy.LM:
         api_base=cfg.api_base,
         headers=cfg.headers or None,
         max_tokens=8000,
+        cache=False,
     )
     dspy.configure(lm=lm)
     return lm
