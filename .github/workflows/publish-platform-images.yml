@@ -97,18 +97,27 @@ jobs:
           echo "${FOUNDRY_TOKEN}" | docker login -u "${FOUNDRY_ARTIFACT_REPOSITORY_RID}" --password-stdin "${FOUNDRY_REGISTRY_HOST}"
 
       - name: Build once and publish to GHCR + Foundry
-        id: build
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          file: Dockerfile
-          platforms: linux/amd64
-          push: true
-          tags: ${{ steps.tags.outputs.tags }}
-          build-args: |
-            SERVER_OPENAPI=${{ steps.openapi.outputs.value }}
-          provenance: false
-          sbom: false
+        env:
+          TAGS: ${{ steps.tags.outputs.tags }}
+        run: |
+          set -euo pipefail
+
+          OPENAPI_JSON="$(uv run python -c 'import json; print(json.dumps(json.load(open("openapi.foundry.json", encoding="utf-8")), separators=(",", ":")))')"
+
+          tag_args=()
+          while IFS= read -r tag; do
+            [[ -z "${tag}" ]] && continue
+            tag_args+=(--tag "${tag}")
+          done <<<"${TAGS}"
+
+          docker buildx build \
+            --platform linux/amd64 \
+            --build-arg SERVER_OPENAPI="${OPENAPI_JSON}" \
+            "${tag_args[@]}" \
+            --provenance=false \
+            --sbom=false \
+            --push \
+            .
 
       - name: Workflow summary
         if: always()
@@ -127,5 +136,5 @@ jobs:
             done <<'TAGS'
           ${{ steps.tags.outputs.tags }}
           TAGS
-            echo "- Digest: \`${{ steps.build.outputs.digest }}\`"
+            echo "- Digest: (see registry manifest)"
           } >> "${GITHUB_STEP_SUMMARY}"

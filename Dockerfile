@@ -37,7 +37,7 @@ COPY --chown=5000:5000 pyproject.toml uv.lock README.md ./
 
 RUN mkdir -p /app/data/.dspy_cache && chown -R 5000:5000 /app
 
-LABEL server.openapi=$SERVER_OPENAPI
+LABEL server.openapi="${SERVER_OPENAPI}"
 
 EXPOSE 8080
 
