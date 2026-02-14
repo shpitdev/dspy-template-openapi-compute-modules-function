@@ -14,6 +14,8 @@ Verification note: workflow chain was validated end-to-end on 2026-02-14.
   - Builds one linux/amd64 image and pushes immutable tags to:
     - `ghcr.io/<owner>/<repo>`
     - `<FOUNDRY_REGISTRY_HOST>/<FOUNDRY_DOCKER_IMAGE_NAME>`
+- `.github/workflows/release-version.yml`
+  - After successful `CI` on `main`, automatically bumps patch version in `pyproject.toml`, creates a `vX.Y.Z` git tag, and triggers a Foundry + GHCR publish for that release.
 - `.github/workflows/railway-preview-smoke.yml`
   - Runs on successful preview `deployment_status` events (or manual dispatch).
   - Resolves preview URL and runs deployed smoke tests from `tests/routes`.
@@ -64,6 +66,7 @@ Mapping:
 - Foundry OpenAPI contract is generated to `openapi.foundry.json` and validated with server URL `http://localhost:5000`.
 - Container runs as numeric non-root user `5000:5000`.
 - Image label `server.openapi` is required and must exactly match `openapi.foundry.json`.
+- Foundry registry should primarily use version tags (e.g. `0.1.2`) rather than `main-...` tags.
 
 ## Railway Runtime Notes
 
