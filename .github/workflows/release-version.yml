@@ -1,0 +1,205 @@
+name: release-version
+
+on:
+  workflow_run:
+    workflows:
+      - CI
+    types:
+      - completed
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: release-version-main
+  cancel-in-progress: false
+
+jobs:
+  bump-and-tag:
+    if: |
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      !startsWith(github.event.workflow_run.head_commit.message, 'chore(release): bump version to')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Compute next patch version
+        id: version
+        run: |
+          set -euo pipefail
+          current="$(python - <<'PY'
+          import re
+          from pathlib import Path
+
+          content = Path('pyproject.toml').read_text(encoding='utf-8')
+          m = re.search(r'^version\s*=\s*"(\d+\.\d+\.\d+)"\s*$', content, flags=re.MULTILINE)
+          if not m:
+              raise SystemExit('failed to parse version from pyproject.toml')
+          print(m.group(1))
+          PY
+          )"
+
+          IFS='.' read -r major minor patch <<< "${current}"
+          next="${major}.${minor}.$((patch + 1))"
+          tag="v${next}"
+
+          echo "current=${current}" >> "${GITHUB_OUTPUT}"
+          echo "next=${next}" >> "${GITHUB_OUTPUT}"
+          echo "tag=${tag}" >> "${GITHUB_OUTPUT}"
+
+      - name: Skip if target tag already exists
+        id: exists
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --tags origin "refs/tags/${{ steps.version.outputs.tag }}" >/dev/null; then
+            echo "tag_exists=true" >> "${GITHUB_OUTPUT}"
+            echo "tag ${{ steps.version.outputs.tag }} already exists; skipping release bump."
+          else
+            echo "tag_exists=false" >> "${GITHUB_OUTPUT}"
+          fi
+
+      - name: Create release bump PR
+        id: pr
+        if: steps.exists.outputs.tag_exists != 'true'
+        run: |
+          set -euo pipefail
+
+          next="${{ steps.version.outputs.next }}"
+          branch="chore/release-v${next}-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "${branch}"
+
+          python - <<'PY'
+          import re
+          from pathlib import Path
+
+          next_version = '${{ steps.version.outputs.next }}'
+          path = Path('pyproject.toml')
+          content = path.read_text(encoding='utf-8')
+
+          def repl(match: re.Match[str]) -> str:
+              return f'version = "{next_version}"'
+
+          updated, count = re.subn(r'^version\s*=\s*"\d+\.\d+\.\d+"\s*$', repl, content, flags=re.MULTILINE)
+          if count != 1:
+              raise SystemExit(f'expected 1 version assignment, found {count}')
+          path.write_text(updated, encoding='utf-8')
+          PY
+
+          git add pyproject.toml
+          git commit -m "chore(release): bump version to v${next}"
+          git push --set-upstream origin "${branch}"
+
+          pr_body="$(
+            cat <<EOF
+          Automated release bump after successful CI on main.
+
+          - Previous version: v${{ steps.version.outputs.current }}
+          - Next version: v${next}
+
+          This PR is merged automatically.
+          EOF
+          )"
+
+          pr_url="$(
+            gh pr create \
+              --repo "${REPO}" \
+              --base main \
+              --head "${branch}" \
+              --title "chore(release): bump version to v${next}" \
+              --body "${pr_body}"
+          )"
+
+          pr_number="${pr_url##*/}"
+          echo "branch=${branch}" >> "${GITHUB_OUTPUT}"
+          echo "number=${pr_number}" >> "${GITHUB_OUTPUT}"
+
+      - name: Merge release PR
+        if: steps.exists.outputs.tag_exists != 'true'
+        run: |
+          set -euo pipefail
+          pr_number="${{ steps.pr.outputs.number }}"
+          next="${{ steps.version.outputs.next }}"
+
+          if ! gh pr merge "${pr_number}" --repo "${REPO}" --auto --squash --delete-branch --subject "chore(release): bump version to v${next}"; then
+            gh pr merge "${pr_number}" --repo "${REPO}" --squash --delete-branch --subject "chore(release): bump version to v${next}"
+          fi
+
+      - name: Wait for merge commit
+        id: merge
+        if: steps.exists.outputs.tag_exists != 'true'
+        run: |
+          set -euo pipefail
+          pr_number="${{ steps.pr.outputs.number }}"
+
+          merge_sha=""
+          for _ in $(seq 1 120); do
+            merge_sha="$(gh pr view "${pr_number}" --repo "${REPO}" --json mergeCommit --jq '.mergeCommit.oid // empty')"
+            if [[ -n "${merge_sha}" ]]; then
+              break
+            fi
+            sleep 5
+          done
+
+          if [[ -z "${merge_sha}" ]]; then
+            echo "timed out waiting for PR #${pr_number} to merge" >&2
+            exit 1
+          fi
+
+          echo "sha=${merge_sha}" >> "${GITHUB_OUTPUT}"
+
+      - name: Create release tag
+        if: steps.exists.outputs.tag_exists != 'true'
+        run: |
+          set -euo pipefail
+          tag="${{ steps.version.outputs.tag }}"
+          sha="${{ steps.merge.outputs.sha }}"
+
+          if git ls-remote --exit-code --tags origin "refs/tags/${tag}" >/dev/null; then
+            echo "tag ${tag} already exists; nothing to do."
+            exit 0
+          fi
+
+          git fetch --no-tags origin main
+          git tag -a "${tag}" "${sha}" -m "Release ${tag}"
+          git push origin "refs/tags/${tag}"
+
+      - name: Trigger publish for release tag
+        if: steps.exists.outputs.tag_exists != 'true'
+        run: |
+          set -euo pipefail
+          tag="${{ steps.version.outputs.tag }}"
+          gh workflow run publish-platform-images.yml --repo "${REPO}" --ref "${tag}"
+
+      - name: Workflow summary
+        run: |
+          set -euo pipefail
+          {
+            echo "## Automated Release Bump"
+            echo ""
+            echo "- Source workflow run: [${{ github.event.workflow_run.id }}](${{ github.event.workflow_run.html_url }})"
+            echo "- Previous version: \`${{ steps.version.outputs.current }}\`"
+            if [[ "${{ steps.exists.outputs.tag_exists }}" == "true" ]]; then
+              echo "- Result: skipped (tag already existed)"
+            else
+              echo "- New version: \`${{ steps.version.outputs.next }}\`"
+              echo "- Git tag: \`${{ steps.version.outputs.tag }}\`"
+              echo "- PR: #${{ steps.pr.outputs.number }}"
+            fi
+          } >> "${GITHUB_STEP_SUMMARY}"
