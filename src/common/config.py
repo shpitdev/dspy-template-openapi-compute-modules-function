@@ -73,6 +73,64 @@ def _load_extra_headers(env: EnvironmentSettings) -> dict[str, str]:
     return headers
 
 
+def _load_source_credentials() -> dict[str, object]:
+    """Load compute module source credentials JSON, if present."""
+
+    path = os.environ.get("SOURCE_CREDENTIALS")
+    if not path:
+        return {}
+
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
+    except FileNotFoundError:
+        return {}
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(
+            "Invalid JSON in SOURCE_CREDENTIALS file. Check compute module Source configuration."
+        ) from exc
+
+    if not isinstance(data, dict):
+        return {}
+
+    return data
+
+
+def _get_openrouter_api_key_from_sources() -> str | None:
+    """Try to resolve OpenRouter API key from compute module Sources."""
+
+    credentials = _load_source_credentials()
+
+    preferred_source = os.environ.get("OPENROUTER_SOURCE_API_NAME") or "OpenRouterAPIService"
+    preferred_field = os.environ.get("OPENROUTER_SOURCE_SECRET_FIELD") or "additionalSecretOpenRouterApiKey"
+
+    keys = [
+        preferred_field,
+        "additionalSecretOpenRouterApiKey",
+        "apiKey",
+        "OPENROUTER_API_KEY",
+    ]
+
+    source_names: list[str] = []
+    if preferred_source in credentials:
+        source_names.append(preferred_source)
+    source_names.extend([name for name in sorted(credentials.keys()) if name != preferred_source])
+
+    for source_name in source_names:
+        entry = credentials.get(source_name)
+        if not isinstance(entry, dict):
+            continue
+        for field in keys:
+            value = entry.get(field)
+            if isinstance(value, str):
+                value = value.strip()
+                if value:
+                    os.environ.setdefault("OPENROUTER_API_KEY", value)
+                    return value
+
+    return None
+
+
 def load_llm_config() -> LLMConfig:
     """Load LM configuration from environment variables."""
 
@@ -92,8 +150,12 @@ def load_llm_config() -> LLMConfig:
         )
 
     # OpenRouter provider (default)
-    if not env.openrouter_api_key:
-        raise RuntimeError("No API key found. Set OPENROUTER_API_KEY or use DSPY_PROVIDER=local.")
+    openrouter_api_key = env.openrouter_api_key or _get_openrouter_api_key_from_sources()
+    if not openrouter_api_key:
+        raise RuntimeError(
+            "No API key found. Set OPENROUTER_API_KEY, or bind a compute module Source containing "
+            "additionalSecretOpenRouterApiKey, or use DSPY_PROVIDER=local."
+        )
 
     model_name = env.model_name or DEFAULT_MODEL
     # Ensure model has openrouter/ prefix for litellm provider routing
@@ -102,7 +164,7 @@ def load_llm_config() -> LLMConfig:
 
     return LLMConfig(
         model=model_name,
-        api_key=env.openrouter_api_key,
+        api_key=openrouter_api_key,
         api_base=DEFAULT_OPENROUTER_BASE,
         headers=_load_extra_headers(env),
     )
