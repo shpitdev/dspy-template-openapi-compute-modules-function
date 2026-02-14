@@ -88,13 +88,14 @@ jobs:
           git tag -a "${tag}" "${sha}" -m "Release ${tag}"
           git push origin "refs/tags/${tag}"
 
-      - name: Trigger publish for release tag
+      - name: Trigger publishes for release tag
         if: steps.exists.outputs.tag_exists != 'true'
         run: |
           set -euo pipefail
           tag="${{ steps.version.outputs.tag }}"
           # Tags pushed by workflows do not reliably trigger tag-push workflows, so dispatch explicitly.
           gh workflow run publish-platform-images.yml --repo "${REPO}" --ref "${tag}"
+          gh workflow run publish-foundry.yml --repo "${REPO}" --ref "${tag}"
 
       - name: Workflow summary
         run: |

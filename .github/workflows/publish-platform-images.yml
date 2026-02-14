@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       release_version:
-        description: "Optional release version (e.g. 0.1.2). When set, publishes versioned tags to Foundry + GHCR."
+        description: "Optional release version (e.g. 0.1.2). When set, publishes versioned tags to GHCR."
         required: false
         type: string
 
@@ -41,45 +41,30 @@ jobs:
         id: tags
         env:
           GHCR_IMAGE: ghcr.io/${{ github.repository }}
-          FOUNDRY_REGISTRY_HOST: ${{ secrets.FOUNDRY_REGISTRY_HOST }}
-          FOUNDRY_DOCKER_IMAGE_NAME: ${{ secrets.FOUNDRY_DOCKER_IMAGE_NAME }}
         run: |
           set -euo pipefail
 
           image_tag="$(date -u +%Y%m%d-%H%M%S)-${GITHUB_SHA::7}"
           short_sha="${GITHUB_SHA::12}"
 
-          publish_foundry="false"
           release_version=""
 
           if [[ "${GITHUB_REF_TYPE:-}" == "tag" && "${GITHUB_REF_NAME:-}" == v* ]]; then
-            publish_foundry="true"
             release_version="${GITHUB_REF_NAME#v}"
           fi
 
           if [[ "${GITHUB_EVENT_NAME}" == "workflow_dispatch" && -n "${{ inputs.release_version }}" ]]; then
-            publish_foundry="true"
             release_version="${{ inputs.release_version }}"
-          fi
-
-          foundry_image=""
-          if [[ "${publish_foundry}" == "true" ]]; then
-            : "${FOUNDRY_REGISTRY_HOST:?missing FOUNDRY_REGISTRY_HOST secret}"
-            : "${FOUNDRY_DOCKER_IMAGE_NAME:?missing FOUNDRY_DOCKER_IMAGE_NAME secret}"
-            foundry_image="${FOUNDRY_REGISTRY_HOST}/${FOUNDRY_DOCKER_IMAGE_NAME}"
           fi
 
           {
             echo "ghcr_image=${GHCR_IMAGE}"
-            echo "foundry_image=${foundry_image}"
             echo "image_tag=${image_tag}"
-            echo "publish_foundry=${publish_foundry}"
             echo "release_version=${release_version}"
             echo "tags<<EOF"
-            if [[ "${publish_foundry}" == "true" ]]; then
+            if [[ -n "${release_version}" ]]; then
               echo "${GHCR_IMAGE}:${release_version}"
               echo "${GHCR_IMAGE}:sha-${short_sha}"
-              echo "${foundry_image}:${release_version}"
             else
               echo "${GHCR_IMAGE}:${image_tag}"
               echo "${GHCR_IMAGE}:main-${short_sha}"
@@ -114,20 +99,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Login to Foundry registry
-        if: steps.tags.outputs.publish_foundry == 'true'
-        env:
-          FOUNDRY_ARTIFACT_REPOSITORY_RID: ${{ secrets.FOUNDRY_ARTIFACT_REPOSITORY_RID }}
-          FOUNDRY_TOKEN: ${{ secrets.FOUNDRY_TOKEN }}
-          FOUNDRY_REGISTRY_HOST: ${{ secrets.FOUNDRY_REGISTRY_HOST }}
-        run: |
-          set -euo pipefail
-          : "${FOUNDRY_ARTIFACT_REPOSITORY_RID:?missing FOUNDRY_ARTIFACT_REPOSITORY_RID secret}"
-          : "${FOUNDRY_TOKEN:?missing FOUNDRY_TOKEN secret}"
-          : "${FOUNDRY_REGISTRY_HOST:?missing FOUNDRY_REGISTRY_HOST secret}"
-          echo "${FOUNDRY_TOKEN}" | docker login -u "${FOUNDRY_ARTIFACT_REPOSITORY_RID}" --password-stdin "${FOUNDRY_REGISTRY_HOST}"
-
-      - name: Build once and publish to GHCR + Foundry
+      - name: Build once and publish to GHCR
         env:
           TAGS: ${{ steps.tags.outputs.tags }}
         run: |
@@ -158,11 +130,8 @@ jobs:
             echo ""
             echo "- Event: \`${GITHUB_EVENT_NAME}\`"
             echo "- GHCR image: \`${{ steps.tags.outputs.ghcr_image }}\`"
-            if [[ "${{ steps.tags.outputs.publish_foundry }}" == "true" ]]; then
-              echo "- Foundry image: \`${{ steps.tags.outputs.foundry_image }}\`"
+            if [[ -n "${{ steps.tags.outputs.release_version }}" ]]; then
               echo "- Release version: \`${{ steps.tags.outputs.release_version }}\`"
-            else
-              echo "- Foundry publish: skipped"
             fi
             echo "- Immutable tag: \`${{ steps.tags.outputs.image_tag }}\`"
             echo "- Tags:"
