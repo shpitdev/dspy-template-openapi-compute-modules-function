@@ -15,7 +15,7 @@
         "-y",
         "palantir-mcp",
         "--foundry-api-url",
-        "https://23dimethyl.usw-3.palantirfoundry.com"
+        "{env:FOUNDRY_URL}"
       ],
       "environment": {
         "FOUNDRY_TOKEN": "{env:FOUNDRY_TOKEN}"
