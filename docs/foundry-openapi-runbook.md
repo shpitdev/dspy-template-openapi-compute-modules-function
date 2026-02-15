@@ -2,6 +2,8 @@
 
 This runbook captures the full M1-M7 flow for the FastAPI compute module import path.
 
+For the conceptual overview and screenshots of the import UX, see `docs/foundry-auto-deploy.md`.
+
 ## Locked Targets
 
 - `FOUNDRY_URL=https://23dimethyl.usw-3.palantirfoundry.com`

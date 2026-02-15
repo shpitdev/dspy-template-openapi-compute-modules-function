@@ -112,14 +112,43 @@ jobs:
         if: steps.meta.outputs.publish == 'true'
         env:
           FOUNDRY_ARTIFACT_REPOSITORY_RID: ${{ secrets.FOUNDRY_ARTIFACT_REPOSITORY_RID }}
-          FOUNDRY_TOKEN: ${{ secrets.FOUNDRY_TOKEN }}
           FOUNDRY_REGISTRY_HOST: ${{ secrets.FOUNDRY_REGISTRY_HOST }}
+          # Preferred: OAuth2 Client Credentials (short-lived access token minted at runtime)
+          FOUNDRY_URL: ${{ secrets.FOUNDRY_URL }}
+          FOUNDRY_OAUTH_CLIENT_ID: ${{ secrets.FOUNDRY_OAUTH_CLIENT_ID }}
+          FOUNDRY_OAUTH_CLIENT_SECRET: ${{ secrets.FOUNDRY_OAUTH_CLIENT_SECRET }}
+          # Optional: explicitly request a scope in the token request.
+          # Some enrollments/app-scope configurations may require this.
+          FOUNDRY_OAUTH_SCOPE: ${{ secrets.FOUNDRY_OAUTH_SCOPE }}
+          # Fallback: legacy static token (e.g., user-generated / UI token)
+          FOUNDRY_TOKEN: ${{ secrets.FOUNDRY_TOKEN }}
         run: |
           set -euo pipefail
           : "${FOUNDRY_ARTIFACT_REPOSITORY_RID:?missing FOUNDRY_ARTIFACT_REPOSITORY_RID secret}"
-          : "${FOUNDRY_TOKEN:?missing FOUNDRY_TOKEN secret}"
           : "${FOUNDRY_REGISTRY_HOST:?missing FOUNDRY_REGISTRY_HOST secret}"
-          echo "${FOUNDRY_TOKEN}" | docker login -u "${FOUNDRY_ARTIFACT_REPOSITORY_RID}" --password-stdin "${FOUNDRY_REGISTRY_HOST}"
+
+          if [[ -n "${FOUNDRY_URL:-}" && -n "${FOUNDRY_OAUTH_CLIENT_ID:-}" && -n "${FOUNDRY_OAUTH_CLIENT_SECRET:-}" ]]; then
+            foundry_url="${FOUNDRY_URL%/}"
+            scope_arg=()
+            if [[ -n "${FOUNDRY_OAUTH_SCOPE:-}" ]]; then
+              scope_arg=(--data-urlencode "scope=${FOUNDRY_OAUTH_SCOPE}")
+            fi
+            token_json="$(
+              curl -fsS -X POST "${foundry_url}/multipass/api/oauth2/token" \
+                -H "Content-Type: application/x-www-form-urlencoded" \
+                --data-urlencode "grant_type=client_credentials" \
+                --data-urlencode "client_id=${FOUNDRY_OAUTH_CLIENT_ID}" \
+                --data-urlencode "client_secret=${FOUNDRY_OAUTH_CLIENT_SECRET}" \
+                "${scope_arg[@]}"
+            )"
+
+            oauth_token="$(python -c 'import json,sys; print(json.loads(sys.stdin.read())["access_token"])' <<<"${token_json}")"
+            echo "::add-mask::${oauth_token}"
+            echo "${oauth_token}" | docker login -u "${FOUNDRY_ARTIFACT_REPOSITORY_RID}" --password-stdin "${FOUNDRY_REGISTRY_HOST}"
+          else
+            : "${FOUNDRY_TOKEN:?missing FOUNDRY_TOKEN secret (or set FOUNDRY_URL + FOUNDRY_OAUTH_CLIENT_ID + FOUNDRY_OAUTH_CLIENT_SECRET)}"
+            echo "${FOUNDRY_TOKEN}" | docker login -u "${FOUNDRY_ARTIFACT_REPOSITORY_RID}" --password-stdin "${FOUNDRY_REGISTRY_HOST}"
+          fi
 
       - name: Build (and maybe push)
         env:
@@ -209,4 +238,3 @@ jobs:
               echo "- Publish: no (build + validate only)"
             fi
           } >> "${GITHUB_STEP_SUMMARY}"
-

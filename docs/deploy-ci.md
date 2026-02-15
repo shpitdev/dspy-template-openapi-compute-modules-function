@@ -68,6 +68,8 @@ Mapping:
 - Image label `server.openapi` is required and must exactly match `openapi.foundry.json`.
 - Foundry registry should primarily use version tags (e.g. `0.1.2`) rather than `main-...` tags.
 
+For a short explanation of the "OpenAPI -> functions" import path (plus screenshots), see `docs/foundry-auto-deploy.md`.
+
 ## Railway Runtime Notes
 
 - Runtime continues to honor `PORT` with default `8080`.

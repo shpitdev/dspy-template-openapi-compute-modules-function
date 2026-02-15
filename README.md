@@ -364,6 +364,14 @@ commands.
 
 ## 5. Foundry OpenAPI Compute Module Deployment
 
+This repo is configured to support a Foundry-friendly workflow: ship a Docker image that embeds an OpenAPI contract (as the `server.openapi` image label), then import FastAPI routes as Foundry functions via **Detect from OpenAPI specification**.
+
+![Foundry function call from imported OpenAPI](assets/palantir-compute-modules-function-call.png)
+
+More context + screenshots:
+
+- `docs/foundry-auto-deploy.md`
+
 Generate and validate the Foundry-constrained OpenAPI artifact:
 
 ```bash
