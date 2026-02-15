@@ -36,6 +36,9 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/AEPCRequest"
+              },
+              "example": {
+                "complaint": "I experienced severe nausea and vomiting after taking Ozempic."
               }
             }
           },
@@ -68,6 +71,9 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/AECategoryRequest"
+              },
+              "example": {
+                "complaint": "I developed pancreatitis after using Ozempic for 3 months."
               }
             }
           },
@@ -100,6 +106,9 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/PCCategoryRequest"
+              },
+              "example": {
+                "complaint": "The medication arrived warm, temperature control was not maintained during shipping."
               }
             }
           },

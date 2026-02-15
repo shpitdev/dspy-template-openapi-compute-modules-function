@@ -74,7 +74,11 @@ def _collect_combiners(node: Any, path: str = "$", issues: list[str] | None = No
     return issues
 
 
-def _normalize_operation(operation: dict[str, Any], operation_id: str) -> dict[str, Any]:
+def _normalize_operation(
+    operation: dict[str, Any],
+    operation_id: str,
+    schemas: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     normalized: dict[str, Any] = {
         "operationId": operation_id,
         "responses": {},
@@ -91,6 +95,22 @@ def _normalize_operation(operation: dict[str, Any], operation_id: str) -> dict[s
         if not json_content:
             raise ValueError(f"Operation {operation_id} has no request content")
         request_copy["content"] = json_content
+
+        # Help Foundry generate better example payloads.
+        # Foundry's function UI appears to prefer a media-type `example` over a
+        # schema-level `example` behind a $ref.
+        if schemas is not None:
+            media = request_copy.get("content", {}).get("application/json")
+            if isinstance(media, dict) and "example" not in media:
+                schema = media.get("schema")
+                if isinstance(schema, dict):
+                    ref = schema.get("$ref")
+                    if isinstance(ref, str) and ref.startswith("#/components/schemas/"):
+                        schema_name = ref.rsplit("/", maxsplit=1)[-1]
+                        schema_obj = schemas.get(schema_name)
+                        if isinstance(schema_obj, dict) and "example" in schema_obj:
+                            media["example"] = deepcopy(schema_obj["example"])
+
         normalized["requestBody"] = request_copy
 
     responses = operation.get("responses")
@@ -113,6 +133,7 @@ def build_foundry_openapi_spec(server_url: str = DEFAULT_FOUNDRY_SERVER_URL) -> 
 
     raw_spec = app.openapi()
     raw_paths = raw_spec.get("paths", {})
+    raw_schemas = raw_spec.get("components", {}).get("schemas", {})
 
     filtered_paths: dict[str, Any] = {}
     for path, operation_id in EXPECTED_OPERATIONS.items():
@@ -120,10 +141,9 @@ def build_foundry_openapi_spec(server_url: str = DEFAULT_FOUNDRY_SERVER_URL) -> 
         if not isinstance(path_item, dict) or "post" not in path_item:
             raise ValueError(f"Missing POST operation for required path: {path}")
         filtered_paths[path] = {
-            "post": _normalize_operation(path_item["post"], operation_id),
+            "post": _normalize_operation(path_item["post"], operation_id, schemas=raw_schemas),
         }
 
-    raw_schemas = raw_spec.get("components", {}).get("schemas", {})
     referenced_schemas: set[str] = set()
     _collect_schema_refs(filtered_paths, referenced_schemas)
 
