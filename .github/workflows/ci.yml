@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   test-and-validate:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 45
 
     steps:
@@ -45,8 +45,8 @@ jobs:
             --server-url http://localhost:5000
           git diff --exit-code -- openapi.foundry.json
 
-      - name: Setup Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Setup Blacksmith Builder
+        uses: useblacksmith/setup-docker-builder@v1
 
       - name: Build image with Foundry OpenAPI label
         run: |

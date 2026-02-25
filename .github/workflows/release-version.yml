@@ -22,7 +22,7 @@ jobs:
       github.event.workflow_run.event == 'push' &&
       github.event.workflow_run.head_branch == 'main' &&
       !startsWith(github.event.workflow_run.head_commit.message, 'chore(release): bump version to')
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     env:
       GH_TOKEN: ${{ github.token }}
       REPO: ${{ github.repository }}
