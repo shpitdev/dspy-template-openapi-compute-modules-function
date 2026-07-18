@@ -3,7 +3,7 @@
   "info": {
     "title": "DSPy Complaint Classifier API",
     "version": "0.3.0",
-    "description": "Multi-stage complaint classification API for Ozempic-related issues. Supports three classification types:\n\n1. **AE vs PC**: Classify as Adverse Event or Product Complaint\n2. **AE Category**: Classify adverse events into specific medical categories\n3. **PC Category**: Classify product complaints into specific quality/defect categories\n\n**GitHub Repository**: [anand-testcompare/dspy-reference-examples](https://github.com/anand-testcompare/dspy-reference-examples)\n**Learn More**: [shpit.dev/learn](https://shpit.dev/learn)"
+    "description": "Multi-stage complaint classification API for Ozempic-related issues. Supports three classification types:\n\n1. **AE vs PC**: Classify as Adverse Event or Product Complaint\n2. **AE Category**: Classify adverse events into specific medical categories\n3. **PC Category**: Classify product complaints into specific quality/defect categories\n\n**GitHub Repository**: [shpitdev/dspy-template-openapi-compute-modules-function](https://github.com/shpitdev/dspy-template-openapi-compute-modules-function)\n**Learn More**: [shpit.dev/learn](https://shpit.dev/learn)"
   },
   "servers": [
     {

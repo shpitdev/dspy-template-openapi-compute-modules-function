@@ -57,7 +57,7 @@ app = FastAPI(
         "1. **AE vs PC**: Classify as Adverse Event or Product Complaint\n"
         "2. **AE Category**: Classify adverse events into specific medical categories\n"
         "3. **PC Category**: Classify product complaints into specific quality/defect categories\n\n"
-        "**GitHub Repository**: [anand-testcompare/dspy-reference-examples](https://github.com/anand-testcompare/dspy-reference-examples)\n"
+        "**GitHub Repository**: [shpitdev/dspy-template-openapi-compute-modules-function](https://github.com/shpitdev/dspy-template-openapi-compute-modules-function)\n"
         "**Learn More**: [shpit.dev/learn](https://shpit.dev/learn)"
     ),
     lifespan=_lifespan,

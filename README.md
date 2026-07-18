@@ -447,4 +447,4 @@ MIT – see `LICENSE` for details.
 
 ## Author
 
-Created by [Anand Pant](https://github.com/anand-testcompare)
+Created by [Anand Pant](https://github.com/anandpant)
